@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libOs_Stubs.a CMakeFiles/Os_Stubs.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libOs_Stubs.a

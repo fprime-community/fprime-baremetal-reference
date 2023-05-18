@@ -1,2 +1,2 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp

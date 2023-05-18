@@ -1,4 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/LinuxGpioDriver/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/Cycle.fpp

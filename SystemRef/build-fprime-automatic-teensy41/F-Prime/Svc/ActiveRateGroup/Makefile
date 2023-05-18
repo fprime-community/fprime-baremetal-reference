@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveRateGroup//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveRateGroup//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/rule
 .PHONY : F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_ActiveRateGroup: F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.
 
 # fast build rule for target.
 Svc_ActiveRateGroup/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build
 .PHONY : Svc_ActiveRateGroup/fast
 
 # Convenience name for target.
 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/rule
 .PHONY : F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_ActiveRateGroup_impl: F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateG
 
 # fast build rule for target.
 Svc_ActiveRateGroup_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup_impl.dir/build
 .PHONY : Svc_ActiveRateGroup_impl/fast
 
 ActiveRateGroup.obj: ActiveRateGroup.cpp.obj
@@ -195,7 +195,7 @@ ActiveRateGroup.obj: ActiveRateGroup.cpp.obj
 
 # target to build an object file
 ActiveRateGroup.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroup.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroup.cpp.obj
 .PHONY : ActiveRateGroup.cpp.obj
 
 ActiveRateGroup.i: ActiveRateGroup.cpp.i
@@ -203,7 +203,7 @@ ActiveRateGroup.i: ActiveRateGroup.cpp.i
 
 # target to preprocess a source file
 ActiveRateGroup.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroup.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroup.cpp.i
 .PHONY : ActiveRateGroup.cpp.i
 
 ActiveRateGroup.s: ActiveRateGroup.cpp.s
@@ -211,7 +211,7 @@ ActiveRateGroup.s: ActiveRateGroup.cpp.s
 
 # target to generate assembly for a file
 ActiveRateGroup.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroup.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroup.cpp.s
 .PHONY : ActiveRateGroup.cpp.s
 
 ActiveRateGroupComponentAc.obj: ActiveRateGroupComponentAc.cpp.obj
@@ -219,7 +219,7 @@ ActiveRateGroupComponentAc.obj: ActiveRateGroupComponentAc.cpp.obj
 
 # target to build an object file
 ActiveRateGroupComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroupComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroupComponentAc.cpp.obj
 .PHONY : ActiveRateGroupComponentAc.cpp.obj
 
 ActiveRateGroupComponentAc.i: ActiveRateGroupComponentAc.cpp.i
@@ -227,7 +227,7 @@ ActiveRateGroupComponentAc.i: ActiveRateGroupComponentAc.cpp.i
 
 # target to preprocess a source file
 ActiveRateGroupComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroupComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroupComponentAc.cpp.i
 .PHONY : ActiveRateGroupComponentAc.cpp.i
 
 ActiveRateGroupComponentAc.s: ActiveRateGroupComponentAc.cpp.s
@@ -235,7 +235,7 @@ ActiveRateGroupComponentAc.s: ActiveRateGroupComponentAc.cpp.s
 
 # target to generate assembly for a file
 ActiveRateGroupComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroupComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/ActiveRateGroupComponentAc.cpp.s
 .PHONY : ActiveRateGroupComponentAc.cpp.s
 
 # Help Target
@@ -269,7 +269,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

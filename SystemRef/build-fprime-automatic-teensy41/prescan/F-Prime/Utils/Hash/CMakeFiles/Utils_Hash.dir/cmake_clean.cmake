@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../../lib/teensy41/libUtils_Hash.a"
   "../../../lib/teensy41/libUtils_Hash.pdb"
-  "CMakeFiles/Utils_Hash.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
-  "CMakeFiles/Utils_Hash.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj.d"
+  "CMakeFiles/Utils_Hash.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
+  "CMakeFiles/Utils_Hash.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

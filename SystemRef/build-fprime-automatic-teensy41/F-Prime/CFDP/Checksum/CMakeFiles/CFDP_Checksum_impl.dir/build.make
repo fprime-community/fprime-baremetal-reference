@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for CFDP_Checksum_impl.
 
@@ -74,10 +74,10 @@ F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/build: CFDP_Checksum_imp
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/build
 
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -P CMakeFiles/CFDP_Checksum_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -P CMakeFiles/CFDP_Checksum_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/clean
 
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum_impl.dir/depend
 

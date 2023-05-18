@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libArduino_Drv_SerialDriver.a CMakeFiles/Arduino_Drv_SerialDriver.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libArduino_Drv_SerialDriver.a

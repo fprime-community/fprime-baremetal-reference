@@ -1,14 +1,14 @@
 F-Prime/Os/CMakeFiles/Os.dir/IPCQueueCommon.cpp.obj: \
- /home/ethan/jpl/projects/BareMetal/fprime/Os/IPCQueueCommon.cpp \
- /home/ethan/jpl/projects/BareMetal/fprime/Os/IPCQueue.hpp \
- /home/ethan/jpl/projects/BareMetal/fprime/Os/Queue.hpp \
- /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
- /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
- /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
- /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
- /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
- /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
- /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.hpp \
- /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp \
- /home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.hpp \
- /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/IPCQueueCommon.cpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/IPCQueue.hpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Queue.hpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.hpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.hpp \
+ /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp

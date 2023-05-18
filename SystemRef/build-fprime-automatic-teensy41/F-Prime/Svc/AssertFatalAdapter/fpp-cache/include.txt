@@ -1,1 +1,1 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalEvents.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalEvents.fppi

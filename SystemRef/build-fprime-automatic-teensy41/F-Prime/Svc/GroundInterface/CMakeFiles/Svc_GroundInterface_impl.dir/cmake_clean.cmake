@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template"
   "CMakeFiles/Svc_GroundInterface_impl"
   "GroundInterfaceComponentAi.xml"
 )

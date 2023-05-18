@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveTextLogger/ActiveTextLoggerComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveTextLogger/ActiveTextLoggerComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveTextLogger/ActiveTextLoggerComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveTextLogger/ActiveTextLoggerComponentImpl.hpp-template"
   "ActiveTextLoggerComponentAi.xml"
   "CMakeFiles/Svc_ActiveTextLogger_impl"
 )

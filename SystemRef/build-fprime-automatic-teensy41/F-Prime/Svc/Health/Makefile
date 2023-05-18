@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Health//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Health//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/rule
 .PHONY : F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_Health: F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/rule
 
 # fast build rule for target.
 Svc_Health/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build
 .PHONY : Svc_Health/fast
 
 # Convenience name for target.
 F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/rule
 .PHONY : F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_Health_impl: F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/rule
 
 # fast build rule for target.
 Svc_Health_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health_impl.dir/build
 .PHONY : Svc_Health_impl/fast
 
 HealthComponentAc.obj: HealthComponentAc.cpp.obj
@@ -195,7 +195,7 @@ HealthComponentAc.obj: HealthComponentAc.cpp.obj
 
 # target to build an object file
 HealthComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentAc.cpp.obj
 .PHONY : HealthComponentAc.cpp.obj
 
 HealthComponentAc.i: HealthComponentAc.cpp.i
@@ -203,7 +203,7 @@ HealthComponentAc.i: HealthComponentAc.cpp.i
 
 # target to preprocess a source file
 HealthComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentAc.cpp.i
 .PHONY : HealthComponentAc.cpp.i
 
 HealthComponentAc.s: HealthComponentAc.cpp.s
@@ -211,7 +211,7 @@ HealthComponentAc.s: HealthComponentAc.cpp.s
 
 # target to generate assembly for a file
 HealthComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentAc.cpp.s
 .PHONY : HealthComponentAc.cpp.s
 
 HealthComponentImpl.obj: HealthComponentImpl.cpp.obj
@@ -219,7 +219,7 @@ HealthComponentImpl.obj: HealthComponentImpl.cpp.obj
 
 # target to build an object file
 HealthComponentImpl.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentImpl.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentImpl.cpp.obj
 .PHONY : HealthComponentImpl.cpp.obj
 
 HealthComponentImpl.i: HealthComponentImpl.cpp.i
@@ -227,7 +227,7 @@ HealthComponentImpl.i: HealthComponentImpl.cpp.i
 
 # target to preprocess a source file
 HealthComponentImpl.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentImpl.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentImpl.cpp.i
 .PHONY : HealthComponentImpl.cpp.i
 
 HealthComponentImpl.s: HealthComponentImpl.cpp.s
@@ -235,7 +235,7 @@ HealthComponentImpl.s: HealthComponentImpl.cpp.s
 
 # target to generate assembly for a file
 HealthComponentImpl.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentImpl.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/HealthComponentImpl.cpp.s
 .PHONY : HealthComponentImpl.cpp.s
 
 Stub/HealthComponentStubChecks.obj: Stub/HealthComponentStubChecks.cpp.obj
@@ -243,7 +243,7 @@ Stub/HealthComponentStubChecks.obj: Stub/HealthComponentStubChecks.cpp.obj
 
 # target to build an object file
 Stub/HealthComponentStubChecks.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/Stub/HealthComponentStubChecks.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/Stub/HealthComponentStubChecks.cpp.obj
 .PHONY : Stub/HealthComponentStubChecks.cpp.obj
 
 Stub/HealthComponentStubChecks.i: Stub/HealthComponentStubChecks.cpp.i
@@ -251,7 +251,7 @@ Stub/HealthComponentStubChecks.i: Stub/HealthComponentStubChecks.cpp.i
 
 # target to preprocess a source file
 Stub/HealthComponentStubChecks.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/Stub/HealthComponentStubChecks.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/Stub/HealthComponentStubChecks.cpp.i
 .PHONY : Stub/HealthComponentStubChecks.cpp.i
 
 Stub/HealthComponentStubChecks.s: Stub/HealthComponentStubChecks.cpp.s
@@ -259,7 +259,7 @@ Stub/HealthComponentStubChecks.s: Stub/HealthComponentStubChecks.cpp.s
 
 # target to generate assembly for a file
 Stub/HealthComponentStubChecks.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/Stub/HealthComponentStubChecks.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/Stub/HealthComponentStubChecks.cpp.s
 .PHONY : Stub/HealthComponentStubChecks.cpp.s
 
 # Help Target
@@ -296,7 +296,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

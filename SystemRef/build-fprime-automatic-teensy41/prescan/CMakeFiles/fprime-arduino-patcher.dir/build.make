@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan
 
 # Utility rule file for fprime-arduino-patcher.
 
@@ -78,6 +78,6 @@ CMakeFiles/fprime-arduino-patcher.dir/clean:
 .PHONY : CMakeFiles/fprime-arduino-patcher.dir/clean
 
 CMakeFiles/fprime-arduino-patcher.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/fprime-arduino-patcher.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/fprime-arduino-patcher.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fprime-arduino-patcher.dir/depend
 

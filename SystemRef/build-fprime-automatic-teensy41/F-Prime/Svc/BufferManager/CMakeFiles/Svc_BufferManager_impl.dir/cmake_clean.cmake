@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template"
   "BufferManagerComponentAi.xml"
   "CMakeFiles/Svc_BufferManager_impl"
 )

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template"
   "BuffQueueDepthArrayAc.cpp"
   "BuffQueueDepthArrayAc.hpp"
   "BuffQueueDepthArrayAi.xml"

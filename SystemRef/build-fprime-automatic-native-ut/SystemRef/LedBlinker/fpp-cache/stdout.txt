@@ -1,9 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/Prm.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp

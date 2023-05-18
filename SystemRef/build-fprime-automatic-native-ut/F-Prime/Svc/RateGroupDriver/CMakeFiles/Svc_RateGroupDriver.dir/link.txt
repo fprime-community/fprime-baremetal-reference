@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libSvc_RateGroupDriver.a CMakeFiles/Svc_RateGroupDriver.dir/RateGroupDriver.cpp.o CMakeFiles/Svc_RateGroupDriver.dir/RateGroupDriverComponentAc.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libSvc_RateGroupDriver.a

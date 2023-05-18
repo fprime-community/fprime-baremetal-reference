@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/SystemRef.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o -o bin/Linux/SystemRef 

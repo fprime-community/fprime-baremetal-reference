@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_Cycle_impl.
 
@@ -70,16 +70,16 @@ F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl: F-Prime/Svc/Cycle/CyclePortAi.xml
 F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl: F-Prime/Svc/Cycle/CyclePortAc.cpp
 F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl: F-Prime/Svc/Cycle/CyclePortAc.hpp
 
-F-Prime/Svc/Cycle/CyclePortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/Cycle.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating CyclePortAc.cpp, CyclePortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/Cycle.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+F-Prime/Svc/Cycle/CyclePortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/Cycle.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating CyclePortAc.cpp, CyclePortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/Cycle.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/Cycle/CyclePortAc.hpp: F-Prime/Svc/Cycle/CyclePortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/Cycle/CyclePortAc.hpp
 
-F-Prime/Svc/Cycle/CyclePortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/Cycle.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating CyclePortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/Cycle.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+F-Prime/Svc/Cycle/CyclePortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/Cycle.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating CyclePortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/Cycle.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 Svc_Cycle_impl: F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl
 Svc_Cycle_impl: F-Prime/Svc/Cycle/CyclePortAc.cpp
@@ -93,10 +93,10 @@ F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/build: Svc_Cycle_impl
 .PHONY : F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/build
 
 F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Cycle_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Cycle_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/clean
 
 F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle_impl.dir/depend
 

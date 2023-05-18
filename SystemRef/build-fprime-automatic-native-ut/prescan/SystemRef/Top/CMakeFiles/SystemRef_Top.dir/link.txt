@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../lib/Linux/libSystemRef_Top.a CMakeFiles/SystemRef_Top.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
-/usr/bin/ranlib ../../lib/Linux/libSystemRef_Top.a

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/depend.make
@@ -70,32 +70,32 @@ include F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/progress.make
 include F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/flags.make
 
 F-Prime/Svc/Time/TimeComponentAc.hpp: F-Prime/Svc/Time/TimeComponentAi.xml
-F-Prime/Svc/Time/TimeComponentAc.hpp: /home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating TimeComponentAc.hpp, TimeComponentAc.cpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time --build_root /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAi.xml
+F-Prime/Svc/Time/TimeComponentAc.hpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating TimeComponentAc.hpp, TimeComponentAc.cpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time --build_root /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAi.xml
 
 F-Prime/Svc/Time/TimeComponentAc.cpp: F-Prime/Svc/Time/TimeComponentAc.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/Time/TimeComponentAc.cpp
 
-F-Prime/Svc/Time/TimeComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Time/Time.fpp
+F-Prime/Svc/Time/TimeComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Time/Time.fpp
 F-Prime/Svc/Time/TimeComponentAi.xml: lib/teensy41/libFw_Time.a
 F-Prime/Svc/Time/TimeComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating TimeComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/Time/Time.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating TimeComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Time/Time.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj: F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/flags.make
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj: F-Prime/Svc/Time/TimeComponentAc.cpp
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj: F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xb03e8d12 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp"' -MD -MT F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj -MF CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj.d -o CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xb03e8d12 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp"' -MD -MT F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj -MF CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj.d -o CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp
 
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xb03e8d12 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp > CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xb03e8d12 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp > CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.i
 
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xb03e8d12 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp -o CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xb03e8d12 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/TimeComponentAc.cpp -o CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.s
 
 # Object files for target Svc_Time
 Svc_Time_OBJECTS = \
@@ -107,21 +107,21 @@ Svc_Time_EXTERNAL_OBJECTS =
 lib/teensy41/libSvc_Time.a: F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj
 lib/teensy41/libSvc_Time.a: F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/build.make
 lib/teensy41/libSvc_Time.a: F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/teensy41/libSvc_Time.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Time.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_Time.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/teensy41/libSvc_Time.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Time.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_Time.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/build: lib/teensy41/libSvc_Time.a
 .PHONY : F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/build
 
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Time.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Time.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/clean
 
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/depend: F-Prime/Svc/Time/TimeComponentAc.cpp
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/depend: F-Prime/Svc/Time/TimeComponentAc.hpp
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/depend: F-Prime/Svc/Time/TimeComponentAi.xml
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/Time /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Time /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/depend
 

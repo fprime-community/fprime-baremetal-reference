@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_CmdSequencer_impl.
 
@@ -76,13 +76,13 @@ F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequen
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencer_FileReadStageEnumAc.hpp
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.cpp
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp
-F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template
-F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template
+F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template
+F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template
 
-F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp
-F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Commands.fppi
-F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Events.fppi
-F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Telemetry.fppi
+F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp
+F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Commands.fppi
+F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Events.fppi
+F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Telemetry.fppi
 F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: lib/teensy41/libFw_Com.a
 F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: lib/teensy41/libFw_Log.a
@@ -92,8 +92,8 @@ F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: lib/teensy41/libSvc_Sched.
 F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: lib/teensy41/libSvc_Seq.a
 F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating CmdSequencerComponentAi.xml, CmdSequencer_BlockStateEnumAi.xml, CmdSequencer_FileReadStageEnumAi.xml, CmdSequencer_SeqModeEnumAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Seq/Seq.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating CmdSequencerComponentAi.xml, CmdSequencer_BlockStateEnumAi.xml, CmdSequencer_FileReadStageEnumAi.xml, CmdSequencer_SeqModeEnumAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Seq/Seq.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAi.xml: F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAi.xml
@@ -104,10 +104,10 @@ F-Prime/Svc/CmdSequencer/CmdSequencer_FileReadStageEnumAi.xml: F-Prime/Svc/CmdSe
 F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAi.xml: F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAi.xml
 
-F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp
-F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Commands.fppi
-F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Events.fppi
-F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Telemetry.fppi
+F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp
+F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Commands.fppi
+F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Events.fppi
+F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Telemetry.fppi
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: lib/teensy41/libFw_Com.a
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: lib/teensy41/libFw_Log.a
@@ -117,8 +117,8 @@ F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: lib/teensy41/libSvc_
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: lib/teensy41/libSvc_Seq.a
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating CmdSequencer_BlockStateEnumAc.cpp, CmdSequencer_BlockStateEnumAc.hpp, CmdSequencer_FileReadStageEnumAc.cpp, CmdSequencer_FileReadStageEnumAc.hpp, CmdSequencer_SeqModeEnumAc.cpp, CmdSequencer_SeqModeEnumAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Seq/Seq.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating CmdSequencer_BlockStateEnumAc.cpp, CmdSequencer_BlockStateEnumAc.hpp, CmdSequencer_FileReadStageEnumAc.cpp, CmdSequencer_FileReadStageEnumAc.hpp, CmdSequencer_SeqModeEnumAc.cpp, CmdSequencer_SeqModeEnumAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Seq/Seq.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencer.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.hpp: F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.hpp
@@ -135,12 +135,12 @@ F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.cpp: F-Prime/Svc/CmdSequence
 F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp: F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template: F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template: F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template
 
 Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl
 Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencerComponentAi.xml
@@ -153,8 +153,8 @@ Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencer_FileReadStageEnumAi
 Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.cpp
 Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp
 Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAi.xml
-Svc_CmdSequencer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template
-Svc_CmdSequencer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template
+Svc_CmdSequencer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template
+Svc_CmdSequencer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template
 Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/build.make
 .PHONY : Svc_CmdSequencer_impl
 
@@ -163,10 +163,10 @@ F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/build: Svc_CmdSequ
 .PHONY : F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/build
 
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && $(CMAKE_COMMAND) -P CMakeFiles/Svc_CmdSequencer_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer && $(CMAKE_COMMAND) -P CMakeFiles/Svc_CmdSequencer_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/clean
 
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/depend
 

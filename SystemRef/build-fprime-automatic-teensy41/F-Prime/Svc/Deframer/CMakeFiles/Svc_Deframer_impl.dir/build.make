@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_Deframer_impl.
 
@@ -67,30 +67,30 @@ include F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/compiler_depend.ma
 include F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/progress.make
 
 F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl: F-Prime/Svc/Deframer/DeframerComponentAi.xml
-F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template
-F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template
+F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template
+F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template
 
-F-Prime/Svc/Deframer/DeframerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/Deframer.fpp
+F-Prime/Svc/Deframer/DeframerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/Deframer.fpp
 F-Prime/Svc/Deframer/DeframerComponentAi.xml: lib/teensy41/libDrv_ByteStreamDriverModel.a
 F-Prime/Svc/Deframer/DeframerComponentAi.xml: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/Deframer/DeframerComponentAi.xml: lib/teensy41/libFw_Com.a
 F-Prime/Svc/Deframer/DeframerComponentAi.xml: lib/teensy41/libSvc_Sched.a
 F-Prime/Svc/Deframer/DeframerComponentAi.xml: lib/teensy41/libOs.a
 F-Prime/Svc/Deframer/DeframerComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating DeframerComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer -i /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/Deframer.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating DeframerComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/Deframer.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template: F-Prime/Svc/Deframer/DeframerComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer/DeframerComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template: F-Prime/Svc/Deframer/DeframerComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer/DeframerComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template
 
 Svc_Deframer_impl: F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl
 Svc_Deframer_impl: F-Prime/Svc/Deframer/DeframerComponentAi.xml
-Svc_Deframer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template
-Svc_Deframer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template
+Svc_Deframer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.cpp-template
+Svc_Deframer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/DeframerComponentImpl.hpp-template
 Svc_Deframer_impl: F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/build.make
 .PHONY : Svc_Deframer_impl
 
@@ -99,10 +99,10 @@ F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/build: Svc_Deframer_impl
 .PHONY : F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/build
 
 F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Deframer_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Deframer_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/clean
 
 F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer_impl.dir/depend
 

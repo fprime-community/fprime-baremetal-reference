@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriverComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriverComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriverComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriverComponentImpl.hpp-template"
   "CMakeFiles/Arduino_Drv_HardwareRateDriver_impl"
   "HardwareRateDriverComponentAi.xml"
 )

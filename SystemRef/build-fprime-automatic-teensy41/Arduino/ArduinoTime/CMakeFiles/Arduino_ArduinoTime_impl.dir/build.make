@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Arduino_ArduinoTime_impl.
 
@@ -74,10 +74,10 @@ Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/build: Arduino_Ardui
 .PHONY : Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/build
 
 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime && $(CMAKE_COMMAND) -P CMakeFiles/Arduino_ArduinoTime_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime && $(CMAKE_COMMAND) -P CMakeFiles/Arduino_ArduinoTime_impl.dir/cmake_clean.cmake
 .PHONY : Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/clean
 
 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/ArduinoTime /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/ArduinoTime /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/depend
 

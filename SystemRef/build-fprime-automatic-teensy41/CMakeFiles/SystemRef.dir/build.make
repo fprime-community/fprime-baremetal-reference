@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SystemRef.dir/depend.make
@@ -72,16 +72,16 @@ include CMakeFiles/SystemRef.dir/flags.make
 CMakeFiles/SystemRef.dir/Main.cpp.obj: CMakeFiles/SystemRef.dir/flags.make
 CMakeFiles/SystemRef.dir/Main.cpp.obj: ../Main.cpp
 CMakeFiles/SystemRef.dir/Main.cpp.obj: CMakeFiles/SystemRef.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SystemRef.dir/Main.cpp.obj"
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x21fcd3ea -DASSERT_RELATIVE_PATH='"SystemRef/Main.cpp"' -MD -MT CMakeFiles/SystemRef.dir/Main.cpp.obj -MF CMakeFiles/SystemRef.dir/Main.cpp.obj.d -o CMakeFiles/SystemRef.dir/Main.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/Main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SystemRef.dir/Main.cpp.obj"
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x21fcd3ea -DASSERT_RELATIVE_PATH='"SystemRef/Main.cpp"' -MD -MT CMakeFiles/SystemRef.dir/Main.cpp.obj -MF CMakeFiles/SystemRef.dir/Main.cpp.obj.d -o CMakeFiles/SystemRef.dir/Main.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/Main.cpp
 
 CMakeFiles/SystemRef.dir/Main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SystemRef.dir/Main.cpp.i"
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x21fcd3ea -DASSERT_RELATIVE_PATH='"SystemRef/Main.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/Main.cpp > CMakeFiles/SystemRef.dir/Main.cpp.i
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x21fcd3ea -DASSERT_RELATIVE_PATH='"SystemRef/Main.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/Main.cpp > CMakeFiles/SystemRef.dir/Main.cpp.i
 
 CMakeFiles/SystemRef.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SystemRef.dir/Main.cpp.s"
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x21fcd3ea -DASSERT_RELATIVE_PATH='"SystemRef/Main.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/Main.cpp -o CMakeFiles/SystemRef.dir/Main.cpp.s
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x21fcd3ea -DASSERT_RELATIVE_PATH='"SystemRef/Main.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/Main.cpp -o CMakeFiles/SystemRef.dir/Main.cpp.s
 
 # Object files for target SystemRef
 SystemRef_OBJECTS = \
@@ -157,17 +157,17 @@ bin/teensy41/SystemRef: lib/teensy41/libfprime_arduino_patcher.a
 bin/teensy41/SystemRef: lib/teensy41/libfprime_arduino_patcher.a
 bin/teensy41/SystemRef: arduino-cli-sketch/core/core.a
 bin/teensy41/SystemRef: CMakeFiles/SystemRef.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/teensy41/SystemRef"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/teensy41/SystemRef"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SystemRef.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/cmake -DCMAKE_INSTALL_COMPONENT=SystemRef -P/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/cmake_install.cmake
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.eep
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objcopy -O ihex -R .eeprom /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.hex
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_secure encrypthex TEENSY41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.hex
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_post_compile -file=SystemRef -path=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41 -tools=/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/ -board=TEENSY41
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/stdout_redirect /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.sym /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump -t -C /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_size /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef
-	/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/stdout_redirect /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.lst /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump -d -S -C /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef
-	/usr/bin/cmake -E copy_if_different /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef* /home/ethan/jpl/projects/BareMetal/SystemRef/build-artifacts/teensy41/bin
+	/usr/bin/cmake -DCMAKE_INSTALL_COMPONENT=SystemRef -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/cmake_install.cmake
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.eep
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objcopy -O ihex -R .eeprom /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.hex
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_secure encrypthex TEENSY41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.hex
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_post_compile -file=SystemRef -path=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41 -tools=/home/ethanchee/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/ -board=TEENSY41
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/stdout_redirect /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.sym /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump -t -C /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_size /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef
+	/home/ethanchee/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/stdout_redirect /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef.lst /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump -d -S -C /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef
+	/usr/bin/cmake -E copy_if_different /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/bin/teensy41/SystemRef* /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-artifacts/teensy41/bin
 
 # Rule to build all files generated by this target.
 CMakeFiles/SystemRef.dir/build: bin/teensy41/SystemRef
@@ -178,6 +178,6 @@ CMakeFiles/SystemRef.dir/clean:
 .PHONY : CMakeFiles/SystemRef.dir/clean
 
 CMakeFiles/SystemRef.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/SystemRef.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/SystemRef.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SystemRef.dir/depend
 

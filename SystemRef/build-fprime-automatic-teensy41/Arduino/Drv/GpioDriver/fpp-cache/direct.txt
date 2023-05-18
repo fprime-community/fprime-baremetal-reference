@@ -1,1 +1,1 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp

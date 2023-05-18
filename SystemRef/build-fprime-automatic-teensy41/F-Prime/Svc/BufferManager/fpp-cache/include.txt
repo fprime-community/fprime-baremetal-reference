@@ -1,2 +1,2 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/Telemetry.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/Events.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/Telemetry.fppi

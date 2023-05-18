@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/rule
 .PHONY : F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_BufferAccumulator: F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumu
 
 # fast build rule for target.
 Svc_BufferAccumulator/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build
 .PHONY : Svc_BufferAccumulator/fast
 
 # Convenience name for target.
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/rule
 .PHONY : F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferA
 
 # fast build rule for target.
 Svc_BufferAccumulator_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/build
 .PHONY : Svc_BufferAccumulator_impl/fast
 
 ArrayFIFOBuffer.obj: ArrayFIFOBuffer.cpp.obj
@@ -195,7 +195,7 @@ ArrayFIFOBuffer.obj: ArrayFIFOBuffer.cpp.obj
 
 # target to build an object file
 ArrayFIFOBuffer.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/ArrayFIFOBuffer.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/ArrayFIFOBuffer.cpp.obj
 .PHONY : ArrayFIFOBuffer.cpp.obj
 
 ArrayFIFOBuffer.i: ArrayFIFOBuffer.cpp.i
@@ -203,7 +203,7 @@ ArrayFIFOBuffer.i: ArrayFIFOBuffer.cpp.i
 
 # target to preprocess a source file
 ArrayFIFOBuffer.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/ArrayFIFOBuffer.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/ArrayFIFOBuffer.cpp.i
 .PHONY : ArrayFIFOBuffer.cpp.i
 
 ArrayFIFOBuffer.s: ArrayFIFOBuffer.cpp.s
@@ -211,7 +211,7 @@ ArrayFIFOBuffer.s: ArrayFIFOBuffer.cpp.s
 
 # target to generate assembly for a file
 ArrayFIFOBuffer.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/ArrayFIFOBuffer.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/ArrayFIFOBuffer.cpp.s
 .PHONY : ArrayFIFOBuffer.cpp.s
 
 BufferAccumulator.obj: BufferAccumulator.cpp.obj
@@ -219,7 +219,7 @@ BufferAccumulator.obj: BufferAccumulator.cpp.obj
 
 # target to build an object file
 BufferAccumulator.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator.cpp.obj
 .PHONY : BufferAccumulator.cpp.obj
 
 BufferAccumulator.i: BufferAccumulator.cpp.i
@@ -227,7 +227,7 @@ BufferAccumulator.i: BufferAccumulator.cpp.i
 
 # target to preprocess a source file
 BufferAccumulator.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator.cpp.i
 .PHONY : BufferAccumulator.cpp.i
 
 BufferAccumulator.s: BufferAccumulator.cpp.s
@@ -235,7 +235,7 @@ BufferAccumulator.s: BufferAccumulator.cpp.s
 
 # target to generate assembly for a file
 BufferAccumulator.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator.cpp.s
 .PHONY : BufferAccumulator.cpp.s
 
 BufferAccumulatorComponentAc.obj: BufferAccumulatorComponentAc.cpp.obj
@@ -243,7 +243,7 @@ BufferAccumulatorComponentAc.obj: BufferAccumulatorComponentAc.cpp.obj
 
 # target to build an object file
 BufferAccumulatorComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulatorComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulatorComponentAc.cpp.obj
 .PHONY : BufferAccumulatorComponentAc.cpp.obj
 
 BufferAccumulatorComponentAc.i: BufferAccumulatorComponentAc.cpp.i
@@ -251,7 +251,7 @@ BufferAccumulatorComponentAc.i: BufferAccumulatorComponentAc.cpp.i
 
 # target to preprocess a source file
 BufferAccumulatorComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulatorComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulatorComponentAc.cpp.i
 .PHONY : BufferAccumulatorComponentAc.cpp.i
 
 BufferAccumulatorComponentAc.s: BufferAccumulatorComponentAc.cpp.s
@@ -259,7 +259,7 @@ BufferAccumulatorComponentAc.s: BufferAccumulatorComponentAc.cpp.s
 
 # target to generate assembly for a file
 BufferAccumulatorComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulatorComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulatorComponentAc.cpp.s
 .PHONY : BufferAccumulatorComponentAc.cpp.s
 
 BufferAccumulator_BlockModeEnumAc.obj: BufferAccumulator_BlockModeEnumAc.cpp.obj
@@ -267,7 +267,7 @@ BufferAccumulator_BlockModeEnumAc.obj: BufferAccumulator_BlockModeEnumAc.cpp.obj
 
 # target to build an object file
 BufferAccumulator_BlockModeEnumAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_BlockModeEnumAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_BlockModeEnumAc.cpp.obj
 .PHONY : BufferAccumulator_BlockModeEnumAc.cpp.obj
 
 BufferAccumulator_BlockModeEnumAc.i: BufferAccumulator_BlockModeEnumAc.cpp.i
@@ -275,7 +275,7 @@ BufferAccumulator_BlockModeEnumAc.i: BufferAccumulator_BlockModeEnumAc.cpp.i
 
 # target to preprocess a source file
 BufferAccumulator_BlockModeEnumAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_BlockModeEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_BlockModeEnumAc.cpp.i
 .PHONY : BufferAccumulator_BlockModeEnumAc.cpp.i
 
 BufferAccumulator_BlockModeEnumAc.s: BufferAccumulator_BlockModeEnumAc.cpp.s
@@ -283,7 +283,7 @@ BufferAccumulator_BlockModeEnumAc.s: BufferAccumulator_BlockModeEnumAc.cpp.s
 
 # target to generate assembly for a file
 BufferAccumulator_BlockModeEnumAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_BlockModeEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_BlockModeEnumAc.cpp.s
 .PHONY : BufferAccumulator_BlockModeEnumAc.cpp.s
 
 BufferAccumulator_OpStateEnumAc.obj: BufferAccumulator_OpStateEnumAc.cpp.obj
@@ -291,7 +291,7 @@ BufferAccumulator_OpStateEnumAc.obj: BufferAccumulator_OpStateEnumAc.cpp.obj
 
 # target to build an object file
 BufferAccumulator_OpStateEnumAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_OpStateEnumAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_OpStateEnumAc.cpp.obj
 .PHONY : BufferAccumulator_OpStateEnumAc.cpp.obj
 
 BufferAccumulator_OpStateEnumAc.i: BufferAccumulator_OpStateEnumAc.cpp.i
@@ -299,7 +299,7 @@ BufferAccumulator_OpStateEnumAc.i: BufferAccumulator_OpStateEnumAc.cpp.i
 
 # target to preprocess a source file
 BufferAccumulator_OpStateEnumAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_OpStateEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_OpStateEnumAc.cpp.i
 .PHONY : BufferAccumulator_OpStateEnumAc.cpp.i
 
 BufferAccumulator_OpStateEnumAc.s: BufferAccumulator_OpStateEnumAc.cpp.s
@@ -307,7 +307,7 @@ BufferAccumulator_OpStateEnumAc.s: BufferAccumulator_OpStateEnumAc.cpp.s
 
 # target to generate assembly for a file
 BufferAccumulator_OpStateEnumAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_OpStateEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_OpStateEnumAc.cpp.s
 .PHONY : BufferAccumulator_OpStateEnumAc.cpp.s
 
 # Help Target
@@ -350,7 +350,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

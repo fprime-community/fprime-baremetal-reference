@@ -1,3 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Commands.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Telemetry.fppi

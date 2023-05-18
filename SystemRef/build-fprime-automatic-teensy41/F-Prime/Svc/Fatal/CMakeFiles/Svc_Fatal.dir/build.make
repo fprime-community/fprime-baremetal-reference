@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/depend.make
@@ -69,13 +69,13 @@ include F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/progress.make
 # Include the compile flags for this target's objects.
 include F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/flags.make
 
-F-Prime/Svc/Fatal/FatalEventPortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal/Fatal.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FatalEventPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal -i /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal/Fatal.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+F-Prime/Svc/Fatal/FatalEventPortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FatalEventPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-F-Prime/Svc/Fatal/FatalEventPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal/Fatal.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating FatalEventPortAc.cpp, FatalEventPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal -i /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal/Fatal.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+F-Prime/Svc/Fatal/FatalEventPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating FatalEventPortAc.cpp, FatalEventPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/Fatal/FatalEventPortAc.hpp: F-Prime/Svc/Fatal/FatalEventPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/Fatal/FatalEventPortAc.hpp
@@ -83,16 +83,16 @@ F-Prime/Svc/Fatal/FatalEventPortAc.hpp: F-Prime/Svc/Fatal/FatalEventPortAc.cpp
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj: F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/flags.make
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj: F-Prime/Svc/Fatal/FatalEventPortAc.cpp
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj: F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x9bc6e458 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp"' -MD -MT F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj -MF CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj.d -o CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x9bc6e458 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp"' -MD -MT F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj -MF CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj.d -o CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp
 
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x9bc6e458 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp > CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x9bc6e458 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp > CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.i
 
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x9bc6e458 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp -o CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x9bc6e458 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/FatalEventPortAc.cpp -o CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.s
 
 # Object files for target Svc_Fatal
 Svc_Fatal_OBJECTS = \
@@ -104,21 +104,21 @@ Svc_Fatal_EXTERNAL_OBJECTS =
 lib/teensy41/libSvc_Fatal.a: F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/FatalEventPortAc.cpp.obj
 lib/teensy41/libSvc_Fatal.a: F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/build.make
 lib/teensy41/libSvc_Fatal.a: F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/teensy41/libSvc_Fatal.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Fatal.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_Fatal.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/teensy41/libSvc_Fatal.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Fatal.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_Fatal.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/build: lib/teensy41/libSvc_Fatal.a
 .PHONY : F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/build
 
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Fatal.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Fatal.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/clean
 
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/depend: F-Prime/Svc/Fatal/FatalEventPortAc.cpp
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/depend: F-Prime/Svc/Fatal/FatalEventPortAc.hpp
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/depend: F-Prime/Svc/Fatal/FatalEventPortAi.xml
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_FatalHandler_impl.
 
@@ -67,26 +67,26 @@ include F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/compiler_d
 include F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/progress.make
 
 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl: F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml
-F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template
-F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template
+F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template
+F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template
 
-F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandler.fpp
+F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandler.fpp
 F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml: lib/teensy41/libSvc_Fatal.a
 F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FatalHandlerComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler -i /home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal/Fatal.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandler.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FatalHandlerComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandler.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template: F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template: F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template
 
 Svc_FatalHandler_impl: F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl
 Svc_FatalHandler_impl: F-Prime/Svc/FatalHandler/FatalHandlerComponentAi.xml
-Svc_FatalHandler_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template
-Svc_FatalHandler_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template
+Svc_FatalHandler_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.cpp-template
+Svc_FatalHandler_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp-template
 Svc_FatalHandler_impl: F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/build.make
 .PHONY : Svc_FatalHandler_impl
 
@@ -95,10 +95,10 @@ F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/build: Svc_FatalHa
 .PHONY : F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/build
 
 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler && $(CMAKE_COMMAND) -P CMakeFiles/Svc_FatalHandler_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler && $(CMAKE_COMMAND) -P CMakeFiles/Svc_FatalHandler_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/clean
 
 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/depend
 

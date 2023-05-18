@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,7 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -1222,29 +1222,29 @@ SystemRef_Top/fast:
 	$(MAKE) $(MAKESILENT) -f SystemRef/Top/CMakeFiles/SystemRef_Top.dir/build.make SystemRef/Top/CMakeFiles/SystemRef_Top.dir/build
 .PHONY : SystemRef_Top/fast
 
-home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.obj: home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.i: home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.s: home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s
 
 # Help Target
 help:
@@ -1339,9 +1339,9 @@ help:
 	@echo "... Utils_Hash"
 	@echo "... Utils_Types"
 	@echo "... config"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.s"
 .PHONY : help
 
 
@@ -1353,7 +1353,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template"
   "CMakeFiles/Arduino_Drv_GpioDriver_impl"
   "GpioDriverComponentAi.xml"
 )

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Os//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Os//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Arduino/Os/CMakeFiles/Arduino_Os.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/CMakeFiles/Arduino_Os.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/CMakeFiles/Arduino_Os.dir/rule
 .PHONY : Arduino/Os/CMakeFiles/Arduino_Os.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Arduino_Os: Arduino/Os/CMakeFiles/Arduino_Os.dir/rule
 
 # fast build rule for target.
 Arduino_Os/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/build
 .PHONY : Arduino_Os/fast
 
 # Convenience name for target.
 Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/rule
 .PHONY : Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Arduino_Os_impl: Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/rule
 
 # fast build rule for target.
 Arduino_Os_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os_impl.dir/build
 .PHONY : Arduino_Os_impl/fast
 
 IntervalTimer.obj: IntervalTimer.cpp.obj
@@ -195,7 +195,7 @@ IntervalTimer.obj: IntervalTimer.cpp.obj
 
 # target to build an object file
 IntervalTimer.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/IntervalTimer.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/IntervalTimer.cpp.obj
 .PHONY : IntervalTimer.cpp.obj
 
 IntervalTimer.i: IntervalTimer.cpp.i
@@ -203,7 +203,7 @@ IntervalTimer.i: IntervalTimer.cpp.i
 
 # target to preprocess a source file
 IntervalTimer.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/IntervalTimer.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/IntervalTimer.cpp.i
 .PHONY : IntervalTimer.cpp.i
 
 IntervalTimer.s: IntervalTimer.cpp.s
@@ -211,7 +211,7 @@ IntervalTimer.s: IntervalTimer.cpp.s
 
 # target to generate assembly for a file
 IntervalTimer.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/IntervalTimer.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/IntervalTimer.cpp.s
 .PHONY : IntervalTimer.cpp.s
 
 StreamLog.obj: StreamLog.cpp.obj
@@ -219,7 +219,7 @@ StreamLog.obj: StreamLog.cpp.obj
 
 # target to build an object file
 StreamLog.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/StreamLog.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/StreamLog.cpp.obj
 .PHONY : StreamLog.cpp.obj
 
 StreamLog.i: StreamLog.cpp.i
@@ -227,7 +227,7 @@ StreamLog.i: StreamLog.cpp.i
 
 # target to preprocess a source file
 StreamLog.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/StreamLog.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/StreamLog.cpp.i
 .PHONY : StreamLog.cpp.i
 
 StreamLog.s: StreamLog.cpp.s
@@ -235,296 +235,296 @@ StreamLog.s: StreamLog.cpp.s
 
 # target to generate assembly for a file
 StreamLog.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/StreamLog.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/StreamLog.cpp.s
 .PHONY : StreamLog.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.i: home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.s: home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.i: home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.s: home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.i: home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.s: home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.i: home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.s: home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.cpp.s
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.obj: home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.obj: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.obj
 
 # target to build an object file
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.obj
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.obj
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.obj:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.obj
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.obj
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.i: home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.i: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.i
 
 # target to preprocess a source file
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.i
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.i
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.i:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.i
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.i
 
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.s: home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.s: home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.s
 
 # target to generate assembly for a file
-home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.s
-.PHONY : home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.cpp.s
+home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.s:
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.s
+.PHONY : home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.cpp.s
 
 # Help Target
 help:
@@ -546,42 +546,42 @@ help:
 	@echo "... StreamLog.obj"
 	@echo "... StreamLog.i"
 	@echo "... StreamLog.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/File.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/FileSystem.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/IntervalTimer.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Mutex.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Queue.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/Task.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/BufferQueueCommon.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/Pthreads/FIFOBufferQueue.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/QueueCommon.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/TaskCommon.s"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.obj"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.i"
-	@echo "... home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/File.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/FileSystem.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/IntervalTimer.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Mutex.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Queue.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/Task.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/BufferQueueCommon.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Pthreads/FIFOBufferQueue.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueCommon.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskCommon.s"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.obj"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.i"
+	@echo "... home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.s"
 .PHONY : help
 
 
@@ -593,7 +593,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

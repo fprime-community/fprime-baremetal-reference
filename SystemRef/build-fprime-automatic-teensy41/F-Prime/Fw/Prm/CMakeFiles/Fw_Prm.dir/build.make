@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend.make
@@ -69,7 +69,7 @@ include F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/progress.make
 # Include the compile flags for this target's objects.
 include F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/flags.make
 
-F-Prime/Fw/Prm/ParamValidEnumAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/Prm.fpp
+F-Prime/Fw/Prm/ParamValidEnumAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/Prm.fpp
 F-Prime/Fw/Prm/ParamValidEnumAi.xml: lib/teensy41/libFw_Cmd.a
 F-Prime/Fw/Prm/ParamValidEnumAi.xml: lib/teensy41/libFw_Log.a
 F-Prime/Fw/Prm/ParamValidEnumAi.xml: lib/teensy41/libFw_Tlm.a
@@ -78,8 +78,8 @@ F-Prime/Fw/Prm/ParamValidEnumAi.xml: lib/teensy41/libFw_Time.a
 F-Prime/Fw/Prm/ParamValidEnumAi.xml: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Prm/ParamValidEnumAi.xml: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Prm/ParamValidEnumAi.xml: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ParamValidEnumAi.xml, PrmGetPortAi.xml, PrmSetPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm -i /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/Prm.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ParamValidEnumAi.xml, PrmGetPortAi.xml, PrmSetPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/Prm.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Fw/Prm/PrmGetPortAi.xml: F-Prime/Fw/Prm/ParamValidEnumAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Prm/PrmGetPortAi.xml
@@ -87,7 +87,7 @@ F-Prime/Fw/Prm/PrmGetPortAi.xml: F-Prime/Fw/Prm/ParamValidEnumAi.xml
 F-Prime/Fw/Prm/PrmSetPortAi.xml: F-Prime/Fw/Prm/ParamValidEnumAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Prm/PrmSetPortAi.xml
 
-F-Prime/Fw/Prm/ParamValidEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/Prm.fpp
+F-Prime/Fw/Prm/ParamValidEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/Prm.fpp
 F-Prime/Fw/Prm/ParamValidEnumAc.cpp: lib/teensy41/libFw_Cmd.a
 F-Prime/Fw/Prm/ParamValidEnumAc.cpp: lib/teensy41/libFw_Log.a
 F-Prime/Fw/Prm/ParamValidEnumAc.cpp: lib/teensy41/libFw_Tlm.a
@@ -96,8 +96,8 @@ F-Prime/Fw/Prm/ParamValidEnumAc.cpp: lib/teensy41/libFw_Time.a
 F-Prime/Fw/Prm/ParamValidEnumAc.cpp: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Prm/ParamValidEnumAc.cpp: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Prm/ParamValidEnumAc.cpp: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ParamValidEnumAc.cpp, ParamValidEnumAc.hpp, PrmGetPortAc.cpp, PrmGetPortAc.hpp, PrmSetPortAc.cpp, PrmSetPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm -i /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/Prm.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ParamValidEnumAc.cpp, ParamValidEnumAc.hpp, PrmGetPortAc.cpp, PrmGetPortAc.hpp, PrmSetPortAc.cpp, PrmSetPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/Prm.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Fw/Prm/ParamValidEnumAc.hpp: F-Prime/Fw/Prm/ParamValidEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Prm/ParamValidEnumAc.hpp
@@ -115,74 +115,74 @@ F-Prime/Fw/Prm/PrmSetPortAc.hpp: F-Prime/Fw/Prm/ParamValidEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Prm/PrmSetPortAc.hpp
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/flags.make
-F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmBuffer.cpp
+F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmBuffer.cpp
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xc760757b -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmBuffer.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xc760757b -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmBuffer.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmBuffer.cpp
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xc760757b -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmBuffer.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmBuffer.cpp > CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xc760757b -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmBuffer.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmBuffer.cpp > CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.i
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xc760757b -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmBuffer.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmBuffer.cpp -o CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xc760757b -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmBuffer.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmBuffer.cpp -o CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.s
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/flags.make
-F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmString.cpp
+F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmString.cpp
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x1ec8bfed -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmString.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x1ec8bfed -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmString.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmString.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmString.cpp
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Prm.dir/PrmString.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x1ec8bfed -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmString.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmString.cpp > CMakeFiles/Fw_Prm.dir/PrmString.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x1ec8bfed -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmString.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmString.cpp > CMakeFiles/Fw_Prm.dir/PrmString.cpp.i
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmString.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Prm.dir/PrmString.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x1ec8bfed -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmString.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmString.cpp -o CMakeFiles/Fw_Prm.dir/PrmString.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x1ec8bfed -DASSERT_RELATIVE_PATH='"Fw/Prm/PrmString.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmString.cpp -o CMakeFiles/Fw_Prm.dir/PrmString.cpp.s
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/flags.make
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj: F-Prime/Fw/Prm/ParamValidEnumAc.cpp
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8fd8dc63 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj -MF CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8fd8dc63 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj -MF CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8fd8dc63 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp > CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8fd8dc63 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp > CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.i
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8fd8dc63 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp -o CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8fd8dc63 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/ParamValidEnumAc.cpp -o CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.s
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/flags.make
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj: F-Prime/Fw/Prm/PrmGetPortAc.cpp
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xea461ffb -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xea461ffb -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xea461ffb -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp > CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xea461ffb -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp > CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.i
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xea461ffb -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp -o CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xea461ffb -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmGetPortAc.cpp -o CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.s
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/flags.make
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj: F-Prime/Fw/Prm/PrmSetPortAc.cpp
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x49df8b22 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x49df8b22 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp"' -MD -MT F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj -MF CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj.d -o CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x49df8b22 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp > CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x49df8b22 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp > CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.i
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x49df8b22 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp -o CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x49df8b22 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/PrmSetPortAc.cpp -o CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.s
 
 # Object files for target Fw_Prm
 Fw_Prm_OBJECTS = \
@@ -202,16 +202,16 @@ lib/teensy41/libFw_Prm.a: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.
 lib/teensy41/libFw_Prm.a: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.obj
 lib/teensy41/libFw_Prm.a: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/build.make
 lib/teensy41/libFw_Prm.a: F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../../lib/teensy41/libFw_Prm.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Prm.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Prm.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library ../../../lib/teensy41/libFw_Prm.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Prm.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Prm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/build: lib/teensy41/libFw_Prm.a
 .PHONY : F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/build
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Prm.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Prm.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/clean
 
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend: F-Prime/Fw/Prm/ParamValidEnumAc.cpp
@@ -223,6 +223,6 @@ F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend: F-Prime/Fw/Prm/PrmGetPortAi.xml
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend: F-Prime/Fw/Prm/PrmSetPortAc.cpp
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend: F-Prime/Fw/Prm/PrmSetPortAc.hpp
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend: F-Prime/Fw/Prm/PrmSetPortAi.xml
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend
 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../../lib/Linux/libFw_Types_GTest.a CMakeFiles/Fw_Types_GTest.dir/Bytes.cpp.o
-/usr/bin/ranlib ../../../../lib/Linux/libFw_Types_GTest.a

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_PolyIf_impl.
 
@@ -73,11 +73,11 @@ F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl: F-Prime/Svc/PolyIf/MeasurementSta
 F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl: F-Prime/Svc/PolyIf/PolyPortAc.cpp
 F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl: F-Prime/Svc/PolyIf/PolyPortAc.hpp
 
-F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PolyIf/PolyIf.fpp
+F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PolyIf/PolyIf.fpp
 F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.cpp: lib/teensy41/libFw_Time.a
 F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.cpp: lib/teensy41/libFw_Types.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating MeasurementStatusEnumAc.cpp, MeasurementStatusEnumAc.hpp, PolyPortAc.cpp, PolyPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/PolyIf/PolyIf.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating MeasurementStatusEnumAc.cpp, MeasurementStatusEnumAc.hpp, PolyPortAc.cpp, PolyPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PolyIf/PolyIf.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.hpp: F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.hpp
@@ -88,11 +88,11 @@ F-Prime/Svc/PolyIf/PolyPortAc.cpp: F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.cp
 F-Prime/Svc/PolyIf/PolyPortAc.hpp: F-Prime/Svc/PolyIf/MeasurementStatusEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/PolyIf/PolyPortAc.hpp
 
-F-Prime/Svc/PolyIf/MeasurementStatusEnumAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PolyIf/PolyIf.fpp
+F-Prime/Svc/PolyIf/MeasurementStatusEnumAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PolyIf/PolyIf.fpp
 F-Prime/Svc/PolyIf/MeasurementStatusEnumAi.xml: lib/teensy41/libFw_Time.a
 F-Prime/Svc/PolyIf/MeasurementStatusEnumAi.xml: lib/teensy41/libFw_Types.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating MeasurementStatusEnumAi.xml, PolyPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/PolyIf/PolyIf.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating MeasurementStatusEnumAi.xml, PolyPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PolyIf/PolyIf.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Svc/PolyIf/PolyPortAi.xml: F-Prime/Svc/PolyIf/MeasurementStatusEnumAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/PolyIf/PolyPortAi.xml
@@ -112,10 +112,10 @@ F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/build: Svc_PolyIf_impl
 .PHONY : F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/build
 
 F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf && $(CMAKE_COMMAND) -P CMakeFiles/Svc_PolyIf_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf && $(CMAKE_COMMAND) -P CMakeFiles/Svc_PolyIf_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/clean
 
 F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/PolyIf /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PolyIf /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf_impl.dir/depend
 

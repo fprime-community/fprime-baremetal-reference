@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/depend.make
@@ -69,13 +69,13 @@ include F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/progress.make
 # Include the compile flags for this target's objects.
 include F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/flags.make
 
-F-Prime/Svc/Sched/SchedPortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SchedPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched -i /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+F-Prime/Svc/Sched/SchedPortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SchedPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-F-Prime/Svc/Sched/SchedPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating SchedPortAc.cpp, SchedPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched -i /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+F-Prime/Svc/Sched/SchedPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating SchedPortAc.cpp, SchedPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/Sched/SchedPortAc.hpp: F-Prime/Svc/Sched/SchedPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/Sched/SchedPortAc.hpp
@@ -83,16 +83,16 @@ F-Prime/Svc/Sched/SchedPortAc.hpp: F-Prime/Svc/Sched/SchedPortAc.cpp
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj: F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/flags.make
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj: F-Prime/Svc/Sched/SchedPortAc.cpp
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj: F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x69e6d306 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp"' -MD -MT F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj -MF CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj.d -o CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x69e6d306 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp"' -MD -MT F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj -MF CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj.d -o CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp
 
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x69e6d306 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp > CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x69e6d306 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp > CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.i
 
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x69e6d306 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp -o CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x69e6d306 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/SchedPortAc.cpp -o CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.s
 
 # Object files for target Svc_Sched
 Svc_Sched_OBJECTS = \
@@ -104,21 +104,21 @@ Svc_Sched_EXTERNAL_OBJECTS =
 lib/teensy41/libSvc_Sched.a: F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.obj
 lib/teensy41/libSvc_Sched.a: F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/build.make
 lib/teensy41/libSvc_Sched.a: F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/teensy41/libSvc_Sched.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Sched.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_Sched.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../../lib/teensy41/libSvc_Sched.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Sched.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_Sched.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/build: lib/teensy41/libSvc_Sched.a
 .PHONY : F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/build
 
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Sched.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Sched.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/clean
 
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/depend: F-Prime/Svc/Sched/SchedPortAc.cpp
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/depend: F-Prime/Svc/Sched/SchedPortAc.hpp
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/depend: F-Prime/Svc/Sched/SchedPortAi.xml
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/depend
 

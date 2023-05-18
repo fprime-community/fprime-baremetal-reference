@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComSplitter/ComSplitterComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComSplitter/ComSplitterComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComSplitter/ComSplitterComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComSplitter/ComSplitterComponentImpl.hpp-template"
   "CMakeFiles/Svc_ComSplitter_impl"
   "ComSplitterComponentAi.xml"
 )

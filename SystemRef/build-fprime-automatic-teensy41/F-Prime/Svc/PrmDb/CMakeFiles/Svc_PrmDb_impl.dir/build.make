@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_PrmDb_impl.
 
@@ -73,18 +73,18 @@ F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmReadErro
 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.hpp
 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAc.cpp
 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAc.hpp
-F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template
-F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template
+F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template
+F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template
 
-F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDb.fpp
+F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDb.fpp
 F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: lib/teensy41/libFw_Log.a
 F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: lib/teensy41/libFw_Prm.a
 F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: lib/teensy41/libSvc_Ping.a
 F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/PrmDb/PrmDbComponentAi.xml: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating PrmDbComponentAi.xml, PrmDb_PrmReadErrorEnumAi.xml, PrmDb_PrmWriteErrorEnumAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/Prm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDb.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating PrmDbComponentAi.xml, PrmDb_PrmReadErrorEnumAi.xml, PrmDb_PrmWriteErrorEnumAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/Prm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDb.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAi.xml: F-Prime/Svc/PrmDb/PrmDbComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAi.xml
@@ -92,15 +92,15 @@ F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAi.xml: F-Prime/Svc/PrmDb/PrmDbComponent
 F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAi.xml: F-Prime/Svc/PrmDb/PrmDbComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAi.xml
 
-F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDb.fpp
+F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDb.fpp
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: lib/teensy41/libFw_Log.a
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: lib/teensy41/libFw_Prm.a
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: lib/teensy41/libSvc_Ping.a
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating PrmDb_PrmReadErrorEnumAc.cpp, PrmDb_PrmReadErrorEnumAc.hpp, PrmDb_PrmWriteErrorEnumAc.cpp, PrmDb_PrmWriteErrorEnumAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/Prm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDb.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating PrmDb_PrmReadErrorEnumAc.cpp, PrmDb_PrmReadErrorEnumAc.hpp, PrmDb_PrmWriteErrorEnumAc.cpp, PrmDb_PrmWriteErrorEnumAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/Prm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDb.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.hpp: F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.hpp
@@ -111,12 +111,12 @@ F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAc.cpp: F-Prime/Svc/PrmDb/PrmDb_PrmRead
 F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAc.hpp: F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAc.hpp
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template: F-Prime/Svc/PrmDb/PrmDbComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb/PrmDbComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template: F-Prime/Svc/PrmDb/PrmDbComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb/PrmDbComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template
 
 Svc_PrmDb_impl: F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl
 Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDbComponentAi.xml
@@ -126,8 +126,8 @@ Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmReadErrorEnumAi.xml
 Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAc.cpp
 Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAc.hpp
 Svc_PrmDb_impl: F-Prime/Svc/PrmDb/PrmDb_PrmWriteErrorEnumAi.xml
-Svc_PrmDb_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template
-Svc_PrmDb_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template
+Svc_PrmDb_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template
+Svc_PrmDb_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template
 Svc_PrmDb_impl: F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/build.make
 .PHONY : Svc_PrmDb_impl
 
@@ -136,10 +136,10 @@ F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/build: Svc_PrmDb_impl
 .PHONY : F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/build
 
 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && $(CMAKE_COMMAND) -P CMakeFiles/Svc_PrmDb_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb && $(CMAKE_COMMAND) -P CMakeFiles/Svc_PrmDb_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/clean
 
 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb_impl.dir/depend
 

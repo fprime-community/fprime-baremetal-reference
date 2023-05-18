@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_ComQueue_impl.
 
@@ -76,10 +76,10 @@ F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: F-Prime/Svc/ComQueue/ComQueue
 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: F-Prime/Svc/ComQueue/ComQueueDepthArrayAc.hpp
 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: F-Prime/Svc/ComQueue/QueueTypeEnumAc.cpp
 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: F-Prime/Svc/ComQueue/QueueTypeEnumAc.hpp
-F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template
-F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template
+F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template
+F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template
 
-F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueue.fpp
+F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueue.fpp
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: lib/teensy41/libFw_Com.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: lib/teensy41/libFw_Log.a
@@ -88,8 +88,8 @@ F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: lib/teensy41/libFw_Tlm.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: lib/teensy41/libSvc_Sched.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating BuffQueueDepthArrayAc.cpp, BuffQueueDepthArrayAc.hpp, ComQueueDepthArrayAc.cpp, ComQueueDepthArrayAc.hpp, QueueTypeEnumAc.cpp, QueueTypeEnumAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueue.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating BuffQueueDepthArrayAc.cpp, BuffQueueDepthArrayAc.hpp, ComQueueDepthArrayAc.cpp, ComQueueDepthArrayAc.hpp, QueueTypeEnumAc.cpp, QueueTypeEnumAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueue.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.hpp: F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.hpp
@@ -106,7 +106,7 @@ F-Prime/Svc/ComQueue/QueueTypeEnumAc.cpp: F-Prime/Svc/ComQueue/BuffQueueDepthArr
 F-Prime/Svc/ComQueue/QueueTypeEnumAc.hpp: F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ComQueue/QueueTypeEnumAc.hpp
 
-F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueue.fpp
+F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueue.fpp
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: lib/teensy41/libFw_Com.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: lib/teensy41/libFw_Log.a
@@ -115,8 +115,8 @@ F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: lib/teensy41/libFw_Tlm.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: lib/teensy41/libSvc_Sched.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating BuffQueueDepthArrayAi.xml, ComQueueComponentAi.xml, ComQueueDepthArrayAi.xml, QueueTypeEnumAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueue.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating BuffQueueDepthArrayAi.xml, ComQueueComponentAi.xml, ComQueueDepthArrayAi.xml, QueueTypeEnumAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueue.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Svc/ComQueue/ComQueueComponentAi.xml: F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ComQueue/ComQueueComponentAi.xml
@@ -127,12 +127,12 @@ F-Prime/Svc/ComQueue/ComQueueDepthArrayAi.xml: F-Prime/Svc/ComQueue/BuffQueueDep
 F-Prime/Svc/ComQueue/QueueTypeEnumAi.xml: F-Prime/Svc/ComQueue/BuffQueueDepthArrayAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ComQueue/QueueTypeEnumAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template: F-Prime/Svc/ComQueue/ComQueueComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue/ComQueueComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template: F-Prime/Svc/ComQueue/ComQueueComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue/ComQueueComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template
 
 Svc_ComQueue_impl: F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.cpp
 Svc_ComQueue_impl: F-Prime/Svc/ComQueue/BuffQueueDepthArrayAc.hpp
@@ -145,8 +145,8 @@ Svc_ComQueue_impl: F-Prime/Svc/ComQueue/ComQueueDepthArrayAi.xml
 Svc_ComQueue_impl: F-Prime/Svc/ComQueue/QueueTypeEnumAc.cpp
 Svc_ComQueue_impl: F-Prime/Svc/ComQueue/QueueTypeEnumAc.hpp
 Svc_ComQueue_impl: F-Prime/Svc/ComQueue/QueueTypeEnumAi.xml
-Svc_ComQueue_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template
-Svc_ComQueue_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template
+Svc_ComQueue_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.cpp-template
+Svc_ComQueue_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue/ComQueueComponentImpl.hpp-template
 Svc_ComQueue_impl: F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/build.make
 .PHONY : Svc_ComQueue_impl
 
@@ -155,10 +155,10 @@ F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/build: Svc_ComQueue_impl
 .PHONY : F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/build
 
 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ComQueue_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ComQueue_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/clean
 
 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComQueue /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComQueue /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue_impl.dir/depend
 

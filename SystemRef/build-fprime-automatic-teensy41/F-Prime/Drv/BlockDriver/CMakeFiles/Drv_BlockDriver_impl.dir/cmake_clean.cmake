@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriverComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriverComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriverComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriverComponentImpl.hpp-template"
   "BlockDriverComponentAi.xml"
   "CMakeFiles/Drv_BlockDriver_impl"
 )

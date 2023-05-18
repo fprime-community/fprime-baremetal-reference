@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libSvc_GroundInterface.a CMakeFiles/Svc_GroundInterface.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libSvc_GroundInterface.a

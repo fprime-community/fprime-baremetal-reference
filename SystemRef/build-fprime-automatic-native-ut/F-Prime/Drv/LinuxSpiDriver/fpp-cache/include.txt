@@ -1,2 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/LinuxSpiDriver/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/LinuxSpiDriver/Telemetry.fppi

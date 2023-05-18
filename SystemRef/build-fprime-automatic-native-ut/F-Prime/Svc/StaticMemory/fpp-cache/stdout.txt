@@ -1,2 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp

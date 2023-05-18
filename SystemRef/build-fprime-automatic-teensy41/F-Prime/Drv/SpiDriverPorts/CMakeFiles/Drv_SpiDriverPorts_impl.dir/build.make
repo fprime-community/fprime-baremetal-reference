@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Drv_SpiDriverPorts_impl.
 
@@ -70,18 +70,18 @@ F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl: F-Prime/Drv/SpiDr
 F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl: F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.cpp
 F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl: F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.hpp
 
-F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp
+F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp
 F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.cpp: lib/teensy41/libFw_Buffer.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SpiReadWritePortAc.cpp, SpiReadWritePortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SpiReadWritePortAc.cpp, SpiReadWritePortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.hpp: F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.hpp
 
-F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp
+F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp
 F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAi.xml: lib/teensy41/libFw_Buffer.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating SpiReadWritePortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating SpiReadWritePortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/SpiDriverPorts/SpiDriverPorts.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 Drv_SpiDriverPorts_impl: F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl
 Drv_SpiDriverPorts_impl: F-Prime/Drv/SpiDriverPorts/SpiReadWritePortAc.cpp
@@ -95,10 +95,10 @@ F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/build: Drv_Spi
 .PHONY : F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/build
 
 F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts && $(CMAKE_COMMAND) -P CMakeFiles/Drv_SpiDriverPorts_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts && $(CMAKE_COMMAND) -P CMakeFiles/Drv_SpiDriverPorts_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/clean
 
 F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Drv/SpiDriverPorts /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/SpiDriverPorts /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts_impl.dir/depend
 

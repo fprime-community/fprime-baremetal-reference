@@ -8,16 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/LogAssert.cpp" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj" "gcc" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj.d"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/Logger.cpp" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj" "gcc" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj.d"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/LogAssert.cpp" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj" "gcc" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj.d"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/Logger.cpp" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj" "gcc" "F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/DependInfo.cmake"
-  "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/DependInfo.cmake"
-  "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config/CMakeFiles/config.dir/DependInfo.cmake"
-  "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/fprime_arduino_patcher.dir/DependInfo.cmake"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/DependInfo.cmake"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/DependInfo.cmake"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config/CMakeFiles/config.dir/DependInfo.cmake"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/fprime_arduino_patcher.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

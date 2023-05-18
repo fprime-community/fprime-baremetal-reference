@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Fw_Ports_SuccessCondition_impl.
 
@@ -70,7 +70,7 @@ F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl: F-P
 F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl: F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp
 F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl: F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.hpp
 
-F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp
+F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: lib/teensy41/libFw_Prm.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: lib/teensy41/libFw_Cmd.a
@@ -80,13 +80,13 @@ F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: lib/teensy41/libFw
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: lib/teensy41/libFw_Time.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SuccessConditionPortAc.cpp, SuccessConditionPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SuccessConditionPortAc.cpp, SuccessConditionPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.hpp: F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.hpp
 
-F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp
+F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: lib/teensy41/libFw_Prm.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: lib/teensy41/libFw_Cmd.a
@@ -96,8 +96,8 @@ F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: lib/teensy41/libFw
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: lib/teensy41/libFw_Time.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAi.xml: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating SuccessConditionPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating SuccessConditionPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 Fw_Ports_SuccessCondition_impl: F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl
 Fw_Ports_SuccessCondition_impl: F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.cpp
@@ -111,10 +111,10 @@ F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/
 .PHONY : F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/build
 
 F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/clean
 
 F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition_impl.dir/depend
 

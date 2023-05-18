@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Fw_Tlm_impl.
 
@@ -73,14 +73,14 @@ F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl: F-Prime/Fw/Tlm/TlmGetPortAc.hpp
 F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl: F-Prime/Fw/Tlm/TlmPortAc.cpp
 F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl: F-Prime/Fw/Tlm/TlmPortAc.hpp
 
-F-Prime/Fw/Tlm/TlmGetPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp
+F-Prime/Fw/Tlm/TlmGetPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp
 F-Prime/Fw/Tlm/TlmGetPortAc.cpp: lib/teensy41/libFw_Time.a
 F-Prime/Fw/Tlm/TlmGetPortAc.cpp: lib/teensy41/libFw_Com.a
 F-Prime/Fw/Tlm/TlmGetPortAc.cpp: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Tlm/TlmGetPortAc.cpp: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Tlm/TlmGetPortAc.cpp: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating TlmGetPortAc.cpp, TlmGetPortAc.hpp, TlmPortAc.cpp, TlmPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating TlmGetPortAc.cpp, TlmGetPortAc.hpp, TlmPortAc.cpp, TlmPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Fw/Tlm/TlmGetPortAc.hpp: F-Prime/Fw/Tlm/TlmGetPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Tlm/TlmGetPortAc.hpp
@@ -91,14 +91,14 @@ F-Prime/Fw/Tlm/TlmPortAc.cpp: F-Prime/Fw/Tlm/TlmGetPortAc.cpp
 F-Prime/Fw/Tlm/TlmPortAc.hpp: F-Prime/Fw/Tlm/TlmGetPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Tlm/TlmPortAc.hpp
 
-F-Prime/Fw/Tlm/TlmGetPortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp
+F-Prime/Fw/Tlm/TlmGetPortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp
 F-Prime/Fw/Tlm/TlmGetPortAi.xml: lib/teensy41/libFw_Time.a
 F-Prime/Fw/Tlm/TlmGetPortAi.xml: lib/teensy41/libFw_Com.a
 F-Prime/Fw/Tlm/TlmGetPortAi.xml: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Tlm/TlmGetPortAi.xml: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Tlm/TlmGetPortAi.xml: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating TlmGetPortAi.xml, TlmPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating TlmGetPortAi.xml, TlmPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Fw/Tlm/TlmPortAi.xml: F-Prime/Fw/Tlm/TlmGetPortAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Tlm/TlmPortAi.xml
@@ -118,10 +118,10 @@ F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/build: Fw_Tlm_impl
 .PHONY : F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/build
 
 F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Tlm_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Tlm_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/clean
 
 F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm_impl.dir/depend
 

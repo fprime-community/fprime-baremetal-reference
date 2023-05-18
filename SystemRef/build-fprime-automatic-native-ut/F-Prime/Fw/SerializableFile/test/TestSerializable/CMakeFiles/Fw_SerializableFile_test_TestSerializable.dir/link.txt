@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../../../lib/Linux/libFw_SerializableFile_test_TestSerializable.a CMakeFiles/Fw_SerializableFile_test_TestSerializable.dir/TestSerializableAc.cpp.o
-/usr/bin/ranlib ../../../../../lib/Linux/libFw_SerializableFile_test_TestSerializable.a

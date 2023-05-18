@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/SystemResources/SystemResourcesComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/SystemResources/SystemResourcesComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/SystemResources/SystemResourcesComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/SystemResources/SystemResourcesComponentImpl.hpp-template"
   "CMakeFiles/Svc_SystemResources_impl"
   "SystemResourceEnabledEnumAc.cpp"
   "SystemResourceEnabledEnumAc.hpp"

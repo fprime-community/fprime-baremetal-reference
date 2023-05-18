@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_ActiveLogger_impl.
 
@@ -73,10 +73,10 @@ F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLog
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.hpp
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.cpp
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp
-F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template
-F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template
+F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template
+F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template
 
-F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp
+F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp
 F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: lib/teensy41/libFw_Com.a
 F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: lib/teensy41/libFw_Log.a
@@ -85,8 +85,8 @@ F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: lib/teensy41/libSvc_Fatal.
 F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: lib/teensy41/libSvc_Ping.a
 F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ActiveLoggerComponentAi.xml, ActiveLogger_EnabledEnumAi.xml, ActiveLogger_FilterSeverityEnumAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal/Fatal.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ActiveLoggerComponentAi.xml, ActiveLogger_EnabledEnumAi.xml, ActiveLogger_FilterSeverityEnumAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAi.xml: F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAi.xml
@@ -94,7 +94,7 @@ F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAi.xml: F-Prime/Svc/ActiveLogge
 F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAi.xml: F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAi.xml
 
-F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp
+F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: lib/teensy41/libFw_Com.a
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: lib/teensy41/libFw_Log.a
@@ -103,8 +103,8 @@ F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: lib/teensy41/libSvc_Fat
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: lib/teensy41/libSvc_Ping.a
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ActiveLogger_EnabledEnumAc.cpp, ActiveLogger_EnabledEnumAc.hpp, ActiveLogger_FilterSeverityEnumAc.cpp, ActiveLogger_FilterSeverityEnumAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Fatal/Fatal.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ActiveLogger_EnabledEnumAc.cpp, ActiveLogger_EnabledEnumAc.hpp, ActiveLogger_FilterSeverityEnumAc.cpp, ActiveLogger_FilterSeverityEnumAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLogger.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.hpp: F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.hpp
@@ -115,12 +115,12 @@ F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.cpp: F-Prime/Svc/Acti
 F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp: F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template: F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template: F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template
 
 Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAi.xml
 Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.cpp
@@ -130,8 +130,8 @@ Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumA
 Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp
 Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAi.xml
 Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl
-Svc_ActiveLogger_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template
-Svc_ActiveLogger_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template
+Svc_ActiveLogger_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template
+Svc_ActiveLogger_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template
 Svc_ActiveLogger_impl: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/build.make
 .PHONY : Svc_ActiveLogger_impl
 
@@ -140,10 +140,10 @@ F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/build: Svc_ActiveL
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/build
 
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ActiveLogger_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ActiveLogger_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/clean
 
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger_impl.dir/depend
 

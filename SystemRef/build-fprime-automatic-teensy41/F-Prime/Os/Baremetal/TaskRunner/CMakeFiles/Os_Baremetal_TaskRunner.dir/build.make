@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/depend.make
@@ -70,18 +70,18 @@ include F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/p
 include F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/flags.make
 
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj: F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/flags.make
-F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp
+F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj: F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xa1deaba2 -DASSERT_RELATIVE_PATH='"Os/Baremetal/TaskRunner/TaskRunner.cpp"' -MD -MT F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj -MF CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj.d -o CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xa1deaba2 -DASSERT_RELATIVE_PATH='"Os/Baremetal/TaskRunner/TaskRunner.cpp"' -MD -MT F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj -MF CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj.d -o CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp
 
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xa1deaba2 -DASSERT_RELATIVE_PATH='"Os/Baremetal/TaskRunner/TaskRunner.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp > CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xa1deaba2 -DASSERT_RELATIVE_PATH='"Os/Baremetal/TaskRunner/TaskRunner.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp > CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.i
 
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xa1deaba2 -DASSERT_RELATIVE_PATH='"Os/Baremetal/TaskRunner/TaskRunner.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp -o CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xa1deaba2 -DASSERT_RELATIVE_PATH='"Os/Baremetal/TaskRunner/TaskRunner.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/TaskRunner/TaskRunner.cpp -o CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.s
 
 # Object files for target Os_Baremetal_TaskRunner
 Os_Baremetal_TaskRunner_OBJECTS = \
@@ -93,19 +93,19 @@ Os_Baremetal_TaskRunner_EXTERNAL_OBJECTS =
 lib/teensy41/libOs_Baremetal_TaskRunner.a: F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj
 lib/teensy41/libOs_Baremetal_TaskRunner.a: F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/build.make
 lib/teensy41/libOs_Baremetal_TaskRunner.a: F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../lib/teensy41/libOs_Baremetal_TaskRunner.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && $(CMAKE_COMMAND) -P CMakeFiles/Os_Baremetal_TaskRunner.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Os_Baremetal_TaskRunner.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../lib/teensy41/libOs_Baremetal_TaskRunner.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && $(CMAKE_COMMAND) -P CMakeFiles/Os_Baremetal_TaskRunner.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Os_Baremetal_TaskRunner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/build: lib/teensy41/libOs_Baremetal_TaskRunner.a
 .PHONY : F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/build
 
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && $(CMAKE_COMMAND) -P CMakeFiles/Os_Baremetal_TaskRunner.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner && $(CMAKE_COMMAND) -P CMakeFiles/Os_Baremetal_TaskRunner.dir/cmake_clean.cmake
 .PHONY : F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/clean
 
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Os/Baremetal/TaskRunner /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Baremetal/TaskRunner /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/depend
 

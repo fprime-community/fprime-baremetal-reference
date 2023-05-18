@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/rule
 .PHONY : Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Arduino_Drv_SerialDriver: Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_Serial
 
 # fast build rule for target.
 Arduino_Drv_SerialDriver/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build
 .PHONY : Arduino_Drv_SerialDriver/fast
 
 # Convenience name for target.
 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/rule
 .PHONY : Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Arduino_Drv_SerialDriver_impl: Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_S
 
 # fast build rule for target.
 Arduino_Drv_SerialDriver_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/build
 .PHONY : Arduino_Drv_SerialDriver_impl/fast
 
 SerialDriver.obj: SerialDriver.cpp.obj
@@ -195,7 +195,7 @@ SerialDriver.obj: SerialDriver.cpp.obj
 
 # target to build an object file
 SerialDriver.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriver.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriver.cpp.obj
 .PHONY : SerialDriver.cpp.obj
 
 SerialDriver.i: SerialDriver.cpp.i
@@ -203,7 +203,7 @@ SerialDriver.i: SerialDriver.cpp.i
 
 # target to preprocess a source file
 SerialDriver.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriver.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriver.cpp.i
 .PHONY : SerialDriver.cpp.i
 
 SerialDriver.s: SerialDriver.cpp.s
@@ -211,7 +211,7 @@ SerialDriver.s: SerialDriver.cpp.s
 
 # target to generate assembly for a file
 SerialDriver.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriver.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriver.cpp.s
 .PHONY : SerialDriver.cpp.s
 
 SerialDriverArduino.obj: SerialDriverArduino.cpp.obj
@@ -219,7 +219,7 @@ SerialDriverArduino.obj: SerialDriverArduino.cpp.obj
 
 # target to build an object file
 SerialDriverArduino.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverArduino.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverArduino.cpp.obj
 .PHONY : SerialDriverArduino.cpp.obj
 
 SerialDriverArduino.i: SerialDriverArduino.cpp.i
@@ -227,7 +227,7 @@ SerialDriverArduino.i: SerialDriverArduino.cpp.i
 
 # target to preprocess a source file
 SerialDriverArduino.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverArduino.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverArduino.cpp.i
 .PHONY : SerialDriverArduino.cpp.i
 
 SerialDriverArduino.s: SerialDriverArduino.cpp.s
@@ -235,7 +235,7 @@ SerialDriverArduino.s: SerialDriverArduino.cpp.s
 
 # target to generate assembly for a file
 SerialDriverArduino.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverArduino.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverArduino.cpp.s
 .PHONY : SerialDriverArduino.cpp.s
 
 SerialDriverComponentAc.obj: SerialDriverComponentAc.cpp.obj
@@ -243,7 +243,7 @@ SerialDriverComponentAc.obj: SerialDriverComponentAc.cpp.obj
 
 # target to build an object file
 SerialDriverComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverComponentAc.cpp.obj
 .PHONY : SerialDriverComponentAc.cpp.obj
 
 SerialDriverComponentAc.i: SerialDriverComponentAc.cpp.i
@@ -251,7 +251,7 @@ SerialDriverComponentAc.i: SerialDriverComponentAc.cpp.i
 
 # target to preprocess a source file
 SerialDriverComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverComponentAc.cpp.i
 .PHONY : SerialDriverComponentAc.cpp.i
 
 SerialDriverComponentAc.s: SerialDriverComponentAc.cpp.s
@@ -259,7 +259,7 @@ SerialDriverComponentAc.s: SerialDriverComponentAc.cpp.s
 
 # target to generate assembly for a file
 SerialDriverComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverComponentAc.cpp.s
 .PHONY : SerialDriverComponentAc.cpp.s
 
 # Help Target
@@ -296,7 +296,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

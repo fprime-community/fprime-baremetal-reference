@@ -1,3 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Commands.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Telemetry.fppi

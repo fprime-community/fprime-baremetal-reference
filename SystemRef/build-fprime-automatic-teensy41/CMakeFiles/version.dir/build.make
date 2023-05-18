@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for version.
 
@@ -67,8 +67,8 @@ include CMakeFiles/version.dir/compiler_depend.make
 include CMakeFiles/version.dir/progress.make
 
 CMakeFiles/version:
-	cd /home/ethan/jpl/projects/BareMetal && /usr/bin/cmake -E env PYTHONPATH=:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src /home/ethan/jpl/projects/BareMetal/fprime/cmake/target/version/generate_version_header.py /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/version.hpp.tmp 
-	cd /home/ethan/jpl/projects/BareMetal && /usr/bin/cmake -E copy_if_different /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/version.hpp.tmp /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/version.hpp
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal && /usr/bin/cmake -E env PYTHONPATH=:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/target/version/generate_version_header.py /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/version.hpp.tmp 
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal && /usr/bin/cmake -E copy_if_different /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/version.hpp.tmp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/version.hpp
 
 version: CMakeFiles/version
 version: CMakeFiles/version.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/version.dir/clean:
 .PHONY : CMakeFiles/version.dir/clean
 
 CMakeFiles/version.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/version.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/version.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/version.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include config/CMakeFiles/config.dir/depend.make
@@ -69,10 +69,10 @@ include config/CMakeFiles/config.dir/progress.make
 # Include the compile flags for this target's objects.
 include config/CMakeFiles/config.dir/flags.make
 
-config/FppConstantsAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp
-config/FppConstantsAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FppConstantsAc.cpp, FppConstantsAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+config/FppConstantsAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp
+config/FppConstantsAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FppConstantsAc.cpp, FppConstantsAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 config/FppConstantsAc.hpp: config/FppConstantsAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate config/FppConstantsAc.hpp
@@ -80,16 +80,16 @@ config/FppConstantsAc.hpp: config/FppConstantsAc.cpp
 config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj: config/CMakeFiles/config.dir/flags.make
 config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj: config/FppConstantsAc.cpp
 config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj: config/CMakeFiles/config.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x7dd7d66c -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp"' -MD -MT config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj -MF CMakeFiles/config.dir/FppConstantsAc.cpp.obj.d -o CMakeFiles/config.dir/FppConstantsAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x7dd7d66c -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp"' -MD -MT config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj -MF CMakeFiles/config.dir/FppConstantsAc.cpp.obj.d -o CMakeFiles/config.dir/FppConstantsAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp
 
 config/CMakeFiles/config.dir/FppConstantsAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/config.dir/FppConstantsAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x7dd7d66c -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp > CMakeFiles/config.dir/FppConstantsAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x7dd7d66c -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp > CMakeFiles/config.dir/FppConstantsAc.cpp.i
 
 config/CMakeFiles/config.dir/FppConstantsAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/config.dir/FppConstantsAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x7dd7d66c -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp -o CMakeFiles/config.dir/FppConstantsAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x7dd7d66c -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config/FppConstantsAc.cpp -o CMakeFiles/config.dir/FppConstantsAc.cpp.s
 
 # Object files for target config
 config_OBJECTS = \
@@ -101,20 +101,20 @@ config_EXTERNAL_OBJECTS =
 lib/teensy41/libconfig.a: config/CMakeFiles/config.dir/FppConstantsAc.cpp.obj
 lib/teensy41/libconfig.a: config/CMakeFiles/config.dir/build.make
 lib/teensy41/libconfig.a: config/CMakeFiles/config.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../lib/teensy41/libconfig.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/config.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../lib/teensy41/libconfig.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/config.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 config/CMakeFiles/config.dir/build: lib/teensy41/libconfig.a
 .PHONY : config/CMakeFiles/config.dir/build
 
 config/CMakeFiles/config.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config && $(CMAKE_COMMAND) -P CMakeFiles/config.dir/cmake_clean.cmake
 .PHONY : config/CMakeFiles/config.dir/clean
 
 config/CMakeFiles/config.dir/depend: config/FppConstantsAc.cpp
 config/CMakeFiles/config.dir/depend: config/FppConstantsAc.hpp
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/config /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/config/CMakeFiles/config.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/config/CMakeFiles/config.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : config/CMakeFiles/config.dir/depend
 

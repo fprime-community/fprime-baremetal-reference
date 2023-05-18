@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template"
   "CMakeFiles/Svc_FileDownlink_impl"
   "FileDownlinkComponentAi.xml"
 )

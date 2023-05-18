@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_RateGroupDriver_impl.
 
@@ -67,26 +67,26 @@ include F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/comp
 include F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/progress.make
 
 F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl: F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml
-F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template
-F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template
+F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template
+F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template
 
-F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriver.fpp
+F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriver.fpp
 F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml: lib/teensy41/libSvc_Cycle.a
 F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating RateGroupDriverComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver -i /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/Cycle.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriver.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating RateGroupDriverComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/Cycle.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriver.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template: F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template: F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template
 
 Svc_RateGroupDriver_impl: F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl
 Svc_RateGroupDriver_impl: F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAi.xml
-Svc_RateGroupDriver_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template
-Svc_RateGroupDriver_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template
+Svc_RateGroupDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template
+Svc_RateGroupDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template
 Svc_RateGroupDriver_impl: F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/build.make
 .PHONY : Svc_RateGroupDriver_impl
 
@@ -95,10 +95,10 @@ F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/build: Svc_R
 .PHONY : F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/build
 
 F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver && $(CMAKE_COMMAND) -P CMakeFiles/Svc_RateGroupDriver_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver && $(CMAKE_COMMAND) -P CMakeFiles/Svc_RateGroupDriver_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/clean
 
 F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver_impl.dir/depend
 

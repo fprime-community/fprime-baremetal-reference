@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../../lib/teensy41/libArduino_Drv_GpioDriver.a"
   "../../../lib/teensy41/libArduino_Drv_GpioDriver.pdb"
-  "CMakeFiles/Arduino_Drv_GpioDriver.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
-  "CMakeFiles/Arduino_Drv_GpioDriver.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj.d"
+  "CMakeFiles/Arduino_Drv_GpioDriver.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
+  "CMakeFiles/Arduino_Drv_GpioDriver.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

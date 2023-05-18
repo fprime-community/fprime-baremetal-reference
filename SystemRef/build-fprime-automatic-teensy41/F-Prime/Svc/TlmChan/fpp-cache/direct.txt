@@ -1,4 +1,4 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp

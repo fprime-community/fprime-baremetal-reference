@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_BufferManager_impl.
 
@@ -67,12 +67,12 @@ include F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/compiler
 include F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/progress.make
 
 F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl: F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml
-F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template
-F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template
+F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template
+F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template
 
-F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManager.fpp
-F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/Events.fppi
-F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/Telemetry.fppi
+F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManager.fpp
+F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/Events.fppi
+F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/Telemetry.fppi
 F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: lib/teensy41/libFw_Log.a
 F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: lib/teensy41/libFw_Time.a
@@ -80,20 +80,20 @@ F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: lib/teensy41/libFw_Tlm.a
 F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: lib/teensy41/libSvc_Sched.a
 F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: lib/teensy41/libOs.a
 F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating BufferManagerComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManager.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating BufferManagerComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManager.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template: F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template: F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template
 
 Svc_BufferManager_impl: F-Prime/Svc/BufferManager/BufferManagerComponentAi.xml
 Svc_BufferManager_impl: F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl
-Svc_BufferManager_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template
-Svc_BufferManager_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template
+Svc_BufferManager_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.cpp-template
+Svc_BufferManager_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp-template
 Svc_BufferManager_impl: F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/build.make
 .PHONY : Svc_BufferManager_impl
 
@@ -102,10 +102,10 @@ F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/build: Svc_Buffe
 .PHONY : F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/build
 
 F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager && $(CMAKE_COMMAND) -P CMakeFiles/Svc_BufferManager_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager && $(CMAKE_COMMAND) -P CMakeFiles/Svc_BufferManager_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/clean
 
 F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager_impl.dir/depend
 

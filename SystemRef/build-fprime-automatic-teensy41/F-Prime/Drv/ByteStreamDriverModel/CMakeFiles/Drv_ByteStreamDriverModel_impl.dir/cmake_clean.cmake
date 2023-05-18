@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template"
   "ByteStreamDriverModelComponentAi.xml"
   "ByteStreamPollPortAc.cpp"
   "ByteStreamPollPortAc.hpp"

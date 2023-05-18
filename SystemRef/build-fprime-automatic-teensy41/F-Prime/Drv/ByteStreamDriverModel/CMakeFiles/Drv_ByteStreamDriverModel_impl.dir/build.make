@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Drv_ByteStreamDriverModel_impl.
 
@@ -88,15 +88,15 @@ F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: F-P
 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/RecvStatusEnumAc.hpp
 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.cpp
 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp
-F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template
-F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template
+F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template
+F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template
 
-F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
+F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml: lib/teensy41/libOs.a
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ByteStreamDriverModelComponentAi.xml, ByteStreamPollPortAi.xml, ByteStreamReadyPortAi.xml, ByteStreamRecvPortAi.xml, ByteStreamSendPortAi.xml, PollStatusEnumAi.xml, RecvStatusEnumAi.xml, SendStatusEnumAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ByteStreamDriverModelComponentAi.xml, ByteStreamPollPortAi.xml, ByteStreamReadyPortAi.xml, ByteStreamRecvPortAi.xml, ByteStreamSendPortAi.xml, PollStatusEnumAi.xml, RecvStatusEnumAi.xml, SendStatusEnumAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAi.xml: F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAi.xml
@@ -119,12 +119,12 @@ F-Prime/Drv/ByteStreamDriverModel/RecvStatusEnumAi.xml: F-Prime/Drv/ByteStreamDr
 F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAi.xml: F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAi.xml
 
-F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
+F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp: lib/teensy41/libFw_Buffer.a
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp: lib/teensy41/libOs.a
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ByteStreamPollPortAc.cpp, ByteStreamPollPortAc.hpp, ByteStreamReadyPortAc.cpp, ByteStreamReadyPortAc.hpp, ByteStreamRecvPortAc.cpp, ByteStreamRecvPortAc.hpp, ByteStreamSendPortAc.cpp, ByteStreamSendPortAc.hpp, PollStatusEnumAc.cpp, PollStatusEnumAc.hpp, RecvStatusEnumAc.cpp, RecvStatusEnumAc.hpp, SendStatusEnumAc.cpp, SendStatusEnumAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ByteStreamPollPortAc.cpp, ByteStreamPollPortAc.hpp, ByteStreamReadyPortAc.cpp, ByteStreamReadyPortAc.hpp, ByteStreamRecvPortAc.cpp, ByteStreamRecvPortAc.hpp, ByteStreamSendPortAc.cpp, ByteStreamSendPortAc.hpp, PollStatusEnumAc.cpp, PollStatusEnumAc.hpp, RecvStatusEnumAc.cpp, RecvStatusEnumAc.hpp, SendStatusEnumAc.cpp, SendStatusEnumAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.hpp: F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.hpp
@@ -165,12 +165,12 @@ F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.cpp: F-Prime/Drv/ByteStreamDr
 F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp: F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp
 
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template: F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template: F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template
 
 Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentAi.xml
 Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.cpp
@@ -195,8 +195,8 @@ Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/RecvStatusEnum
 Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.cpp
 Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp
 Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAi.xml
-Drv_ByteStreamDriverModel_impl: /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template
-Drv_ByteStreamDriverModel_impl: /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template
+Drv_ByteStreamDriverModel_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.cpp-template
+Drv_ByteStreamDriverModel_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModelComponentImpl.hpp-template
 Drv_ByteStreamDriverModel_impl: F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/build.make
 .PHONY : Drv_ByteStreamDriverModel_impl
 
@@ -205,10 +205,10 @@ F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/
 .PHONY : F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/build
 
 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && $(CMAKE_COMMAND) -P CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel && $(CMAKE_COMMAND) -P CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/clean
 
 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel_impl.dir/depend
 

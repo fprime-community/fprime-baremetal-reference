@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libCFDP_Checksum.a CMakeFiles/CFDP_Checksum.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libCFDP_Checksum.a

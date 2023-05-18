@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyDb//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/PolyDb//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/rule
 .PHONY : F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_PolyDb: F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/rule
 
 # fast build rule for target.
 Svc_PolyDb/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build
 .PHONY : Svc_PolyDb/fast
 
 # Convenience name for target.
 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/rule
 .PHONY : F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_PolyDb_impl: F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/rule
 
 # fast build rule for target.
 Svc_PolyDb_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb_impl.dir/build
 .PHONY : Svc_PolyDb_impl/fast
 
 PolyDbComponentAc.obj: PolyDbComponentAc.cpp.obj
@@ -195,7 +195,7 @@ PolyDbComponentAc.obj: PolyDbComponentAc.cpp.obj
 
 # target to build an object file
 PolyDbComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbComponentAc.cpp.obj
 .PHONY : PolyDbComponentAc.cpp.obj
 
 PolyDbComponentAc.i: PolyDbComponentAc.cpp.i
@@ -203,7 +203,7 @@ PolyDbComponentAc.i: PolyDbComponentAc.cpp.i
 
 # target to preprocess a source file
 PolyDbComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbComponentAc.cpp.i
 .PHONY : PolyDbComponentAc.cpp.i
 
 PolyDbComponentAc.s: PolyDbComponentAc.cpp.s
@@ -211,7 +211,7 @@ PolyDbComponentAc.s: PolyDbComponentAc.cpp.s
 
 # target to generate assembly for a file
 PolyDbComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbComponentAc.cpp.s
 .PHONY : PolyDbComponentAc.cpp.s
 
 PolyDbImpl.obj: PolyDbImpl.cpp.obj
@@ -219,7 +219,7 @@ PolyDbImpl.obj: PolyDbImpl.cpp.obj
 
 # target to build an object file
 PolyDbImpl.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbImpl.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbImpl.cpp.obj
 .PHONY : PolyDbImpl.cpp.obj
 
 PolyDbImpl.i: PolyDbImpl.cpp.i
@@ -227,7 +227,7 @@ PolyDbImpl.i: PolyDbImpl.cpp.i
 
 # target to preprocess a source file
 PolyDbImpl.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbImpl.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbImpl.cpp.i
 .PHONY : PolyDbImpl.cpp.i
 
 PolyDbImpl.s: PolyDbImpl.cpp.s
@@ -235,7 +235,7 @@ PolyDbImpl.s: PolyDbImpl.cpp.s
 
 # target to generate assembly for a file
 PolyDbImpl.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbImpl.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/PolyDbImpl.cpp.s
 .PHONY : PolyDbImpl.cpp.s
 
 # Help Target
@@ -269,7 +269,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

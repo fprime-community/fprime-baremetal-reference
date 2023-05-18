@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Arduino_Drv_GpioDriver_impl.
 
@@ -67,26 +67,26 @@ include Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/compil
 include Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/progress.make
 
 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl: Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml
-Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template
-Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template
+Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template
+Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template
 
-Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.fpp
+Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.fpp
 Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml: lib/teensy41/libDrv_GpioDriverPorts.a
 Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GpioDriverComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver -i /home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GpioDriverComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template: Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template: Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template
 
 Arduino_Drv_GpioDriver_impl: Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl
 Arduino_Drv_GpioDriver_impl: Arduino/Drv/GpioDriver/GpioDriverComponentAi.xml
-Arduino_Drv_GpioDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template
-Arduino_Drv_GpioDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template
+Arduino_Drv_GpioDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.cpp-template
+Arduino_Drv_GpioDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriverComponentImpl.hpp-template
 Arduino_Drv_GpioDriver_impl: Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/build.make
 .PHONY : Arduino_Drv_GpioDriver_impl
 
@@ -95,10 +95,10 @@ Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/build: Arduino
 .PHONY : Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/build
 
 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver && $(CMAKE_COMMAND) -P CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver && $(CMAKE_COMMAND) -P CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/cmake_clean.cmake
 .PHONY : Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/clean
 
 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/depend
 

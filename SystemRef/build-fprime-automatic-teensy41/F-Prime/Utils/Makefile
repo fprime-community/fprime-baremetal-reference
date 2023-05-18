@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Utils/CMakeFiles/Utils.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/CMakeFiles/Utils.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/CMakeFiles/Utils.dir/rule
 .PHONY : F-Prime/Utils/CMakeFiles/Utils.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Utils: F-Prime/Utils/CMakeFiles/Utils.dir/rule
 
 # fast build rule for target.
 Utils/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/build
 .PHONY : Utils/fast
 
 # Convenience name for target.
 F-Prime/Utils/CMakeFiles/Utils_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/CMakeFiles/Utils_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/CMakeFiles/Utils_impl.dir/rule
 .PHONY : F-Prime/Utils/CMakeFiles/Utils_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Utils_impl: F-Prime/Utils/CMakeFiles/Utils_impl.dir/rule
 
 # fast build rule for target.
 Utils_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils_impl.dir/build.make F-Prime/Utils/CMakeFiles/Utils_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils_impl.dir/build.make F-Prime/Utils/CMakeFiles/Utils_impl.dir/build
 .PHONY : Utils_impl/fast
 
 CRCChecker.obj: CRCChecker.cpp.obj
@@ -195,7 +195,7 @@ CRCChecker.obj: CRCChecker.cpp.obj
 
 # target to build an object file
 CRCChecker.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj
 .PHONY : CRCChecker.cpp.obj
 
 CRCChecker.i: CRCChecker.cpp.i
@@ -203,7 +203,7 @@ CRCChecker.i: CRCChecker.cpp.i
 
 # target to preprocess a source file
 CRCChecker.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.i
 .PHONY : CRCChecker.cpp.i
 
 CRCChecker.s: CRCChecker.cpp.s
@@ -211,7 +211,7 @@ CRCChecker.s: CRCChecker.cpp.s
 
 # target to generate assembly for a file
 CRCChecker.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.s
 .PHONY : CRCChecker.cpp.s
 
 LockGuard.obj: LockGuard.cpp.obj
@@ -219,7 +219,7 @@ LockGuard.obj: LockGuard.cpp.obj
 
 # target to build an object file
 LockGuard.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj
 .PHONY : LockGuard.cpp.obj
 
 LockGuard.i: LockGuard.cpp.i
@@ -227,7 +227,7 @@ LockGuard.i: LockGuard.cpp.i
 
 # target to preprocess a source file
 LockGuard.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.i
 .PHONY : LockGuard.cpp.i
 
 LockGuard.s: LockGuard.cpp.s
@@ -235,7 +235,7 @@ LockGuard.s: LockGuard.cpp.s
 
 # target to generate assembly for a file
 LockGuard.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.s
 .PHONY : LockGuard.cpp.s
 
 RateLimiter.obj: RateLimiter.cpp.obj
@@ -243,7 +243,7 @@ RateLimiter.obj: RateLimiter.cpp.obj
 
 # target to build an object file
 RateLimiter.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj
 .PHONY : RateLimiter.cpp.obj
 
 RateLimiter.i: RateLimiter.cpp.i
@@ -251,7 +251,7 @@ RateLimiter.i: RateLimiter.cpp.i
 
 # target to preprocess a source file
 RateLimiter.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.i
 .PHONY : RateLimiter.cpp.i
 
 RateLimiter.s: RateLimiter.cpp.s
@@ -259,7 +259,7 @@ RateLimiter.s: RateLimiter.cpp.s
 
 # target to generate assembly for a file
 RateLimiter.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.s
 .PHONY : RateLimiter.cpp.s
 
 TokenBucket.obj: TokenBucket.cpp.obj
@@ -267,7 +267,7 @@ TokenBucket.obj: TokenBucket.cpp.obj
 
 # target to build an object file
 TokenBucket.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj
 .PHONY : TokenBucket.cpp.obj
 
 TokenBucket.i: TokenBucket.cpp.i
@@ -275,7 +275,7 @@ TokenBucket.i: TokenBucket.cpp.i
 
 # target to preprocess a source file
 TokenBucket.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.i
 .PHONY : TokenBucket.cpp.i
 
 TokenBucket.s: TokenBucket.cpp.s
@@ -283,7 +283,7 @@ TokenBucket.s: TokenBucket.cpp.s
 
 # target to generate assembly for a file
 TokenBucket.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.s
 .PHONY : TokenBucket.cpp.s
 
 # Help Target
@@ -323,7 +323,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

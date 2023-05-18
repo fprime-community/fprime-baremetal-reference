@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/SystemRef/LedBlinker//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/SystemRef/LedBlinker//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/rule
 .PHONY : SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ SystemRef_LedBlinker: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/r
 
 # fast build rule for target.
 SystemRef_LedBlinker/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build
 .PHONY : SystemRef_LedBlinker/fast
 
 # Convenience name for target.
 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/rule
 .PHONY : SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ SystemRef_LedBlinker_impl: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_
 
 # fast build rule for target.
 SystemRef_LedBlinker_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker_impl.dir/build
 .PHONY : SystemRef_LedBlinker_impl/fast
 
 LedBlinker.obj: LedBlinker.cpp.obj
@@ -195,7 +195,7 @@ LedBlinker.obj: LedBlinker.cpp.obj
 
 # target to build an object file
 LedBlinker.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinker.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinker.cpp.obj
 .PHONY : LedBlinker.cpp.obj
 
 LedBlinker.i: LedBlinker.cpp.i
@@ -203,7 +203,7 @@ LedBlinker.i: LedBlinker.cpp.i
 
 # target to preprocess a source file
 LedBlinker.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinker.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinker.cpp.i
 .PHONY : LedBlinker.cpp.i
 
 LedBlinker.s: LedBlinker.cpp.s
@@ -211,7 +211,7 @@ LedBlinker.s: LedBlinker.cpp.s
 
 # target to generate assembly for a file
 LedBlinker.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinker.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinker.cpp.s
 .PHONY : LedBlinker.cpp.s
 
 LedBlinkerComponentAc.obj: LedBlinkerComponentAc.cpp.obj
@@ -219,7 +219,7 @@ LedBlinkerComponentAc.obj: LedBlinkerComponentAc.cpp.obj
 
 # target to build an object file
 LedBlinkerComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinkerComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinkerComponentAc.cpp.obj
 .PHONY : LedBlinkerComponentAc.cpp.obj
 
 LedBlinkerComponentAc.i: LedBlinkerComponentAc.cpp.i
@@ -227,7 +227,7 @@ LedBlinkerComponentAc.i: LedBlinkerComponentAc.cpp.i
 
 # target to preprocess a source file
 LedBlinkerComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinkerComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinkerComponentAc.cpp.i
 .PHONY : LedBlinkerComponentAc.cpp.i
 
 LedBlinkerComponentAc.s: LedBlinkerComponentAc.cpp.s
@@ -235,7 +235,7 @@ LedBlinkerComponentAc.s: LedBlinkerComponentAc.cpp.s
 
 # target to generate assembly for a file
 LedBlinkerComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinkerComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/LedBlinkerComponentAc.cpp.s
 .PHONY : LedBlinkerComponentAc.cpp.s
 
 # Help Target
@@ -269,7 +269,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

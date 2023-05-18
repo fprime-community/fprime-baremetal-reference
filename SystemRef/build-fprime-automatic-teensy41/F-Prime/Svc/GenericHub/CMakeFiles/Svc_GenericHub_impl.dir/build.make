@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_GenericHub_impl.
 
@@ -67,27 +67,27 @@ include F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/compiler_depen
 include F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/progress.make
 
 F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl: F-Prime/Svc/GenericHub/GenericHubComponentAi.xml
-F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template
-F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template
+F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template
+F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template
 
-F-Prime/Svc/GenericHub/GenericHubComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHub.fpp
+F-Prime/Svc/GenericHub/GenericHubComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHub.fpp
 F-Prime/Svc/GenericHub/GenericHubComponentAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/GenericHub/GenericHubComponentAi.xml: lib/teensy41/libOs.a
 F-Prime/Svc/GenericHub/GenericHubComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GenericHubComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHub.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GenericHubComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHub.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template: F-Prime/Svc/GenericHub/GenericHubComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub/GenericHubComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template: F-Prime/Svc/GenericHub/GenericHubComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub/GenericHubComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template
 
 Svc_GenericHub_impl: F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl
 Svc_GenericHub_impl: F-Prime/Svc/GenericHub/GenericHubComponentAi.xml
-Svc_GenericHub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template
-Svc_GenericHub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template
+Svc_GenericHub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.cpp-template
+Svc_GenericHub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub/GenericHubComponentImpl.hpp-template
 Svc_GenericHub_impl: F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/build.make
 .PHONY : Svc_GenericHub_impl
 
@@ -96,10 +96,10 @@ F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/build: Svc_GenericHub_
 .PHONY : F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/build
 
 F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub && $(CMAKE_COMMAND) -P CMakeFiles/Svc_GenericHub_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub && $(CMAKE_COMMAND) -P CMakeFiles/Svc_GenericHub_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/clean
 
 F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/GenericHub /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GenericHub /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub_impl.dir/depend
 

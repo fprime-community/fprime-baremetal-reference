@@ -1,8 +1,8 @@
-# Install script for directory: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/GTest
+# Install script for directory: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/GTest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ethan/jpl/projects/BareMetal/SystemRef/build-artifacts")
+  set(CMAKE_INSTALL_PREFIX "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-artifacts")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,6 +34,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump")
 endif()
 

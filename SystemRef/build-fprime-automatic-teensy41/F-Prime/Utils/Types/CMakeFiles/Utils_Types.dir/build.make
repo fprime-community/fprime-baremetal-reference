@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/depend.make
@@ -70,32 +70,32 @@ include F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/progress.make
 include F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/flags.make
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/flags.make
-F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/CircularBuffer.cpp
+F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/CircularBuffer.cpp
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x24ce4129 -DASSERT_RELATIVE_PATH='"Utils/Types/CircularBuffer.cpp"' -MD -MT F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj -MF CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj.d -o CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/CircularBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x24ce4129 -DASSERT_RELATIVE_PATH='"Utils/Types/CircularBuffer.cpp"' -MD -MT F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj -MF CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj.d -o CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/CircularBuffer.cpp
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x24ce4129 -DASSERT_RELATIVE_PATH='"Utils/Types/CircularBuffer.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/CircularBuffer.cpp > CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x24ce4129 -DASSERT_RELATIVE_PATH='"Utils/Types/CircularBuffer.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/CircularBuffer.cpp > CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.i
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x24ce4129 -DASSERT_RELATIVE_PATH='"Utils/Types/CircularBuffer.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/CircularBuffer.cpp -o CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x24ce4129 -DASSERT_RELATIVE_PATH='"Utils/Types/CircularBuffer.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/CircularBuffer.cpp -o CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.s
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/flags.make
-F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/Queue.cpp
+F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/Queue.cpp
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x09671f84 -DASSERT_RELATIVE_PATH='"Utils/Types/Queue.cpp"' -MD -MT F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj -MF CMakeFiles/Utils_Types.dir/Queue.cpp.obj.d -o CMakeFiles/Utils_Types.dir/Queue.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/Queue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x09671f84 -DASSERT_RELATIVE_PATH='"Utils/Types/Queue.cpp"' -MD -MT F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj -MF CMakeFiles/Utils_Types.dir/Queue.cpp.obj.d -o CMakeFiles/Utils_Types.dir/Queue.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/Queue.cpp
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utils_Types.dir/Queue.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x09671f84 -DASSERT_RELATIVE_PATH='"Utils/Types/Queue.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/Queue.cpp > CMakeFiles/Utils_Types.dir/Queue.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x09671f84 -DASSERT_RELATIVE_PATH='"Utils/Types/Queue.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/Queue.cpp > CMakeFiles/Utils_Types.dir/Queue.cpp.i
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utils_Types.dir/Queue.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x09671f84 -DASSERT_RELATIVE_PATH='"Utils/Types/Queue.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/Queue.cpp -o CMakeFiles/Utils_Types.dir/Queue.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x09671f84 -DASSERT_RELATIVE_PATH='"Utils/Types/Queue.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/Queue.cpp -o CMakeFiles/Utils_Types.dir/Queue.cpp.s
 
 # Object files for target Utils_Types
 Utils_Types_OBJECTS = \
@@ -109,19 +109,19 @@ lib/teensy41/libUtils_Types.a: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Ci
 lib/teensy41/libUtils_Types.a: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/Queue.cpp.obj
 lib/teensy41/libUtils_Types.a: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/build.make
 lib/teensy41/libUtils_Types.a: F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libUtils_Types.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && $(CMAKE_COMMAND) -P CMakeFiles/Utils_Types.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Utils_Types.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libUtils_Types.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && $(CMAKE_COMMAND) -P CMakeFiles/Utils_Types.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Utils_Types.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/build: lib/teensy41/libUtils_Types.a
 .PHONY : F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/build
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && $(CMAKE_COMMAND) -P CMakeFiles/Utils_Types.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types && $(CMAKE_COMMAND) -P CMakeFiles/Utils_Types.dir/cmake_clean.cmake
 .PHONY : F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/clean
 
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Drv_GpioDriverPorts_impl.
 
@@ -73,10 +73,10 @@ F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl: F-Prime/Drv/Gpi
 F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl: F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.cpp
 F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl: F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.hpp
 
-F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
+F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
 F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.cpp: lib/teensy41/libFw_Types.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GpioReadPortAc.cpp, GpioReadPortAc.hpp, GpioWritePortAc.cpp, GpioWritePortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GpioReadPortAc.cpp, GpioReadPortAc.hpp, GpioWritePortAc.cpp, GpioWritePortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.hpp: F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.hpp
@@ -87,10 +87,10 @@ F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.cpp: F-Prime/Drv/GpioDriverPorts/Gpi
 F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.hpp: F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.hpp
 
-F-Prime/Drv/GpioDriverPorts/GpioReadPortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
+F-Prime/Drv/GpioDriverPorts/GpioReadPortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp
 F-Prime/Drv/GpioDriverPorts/GpioReadPortAi.xml: lib/teensy41/libFw_Types.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating GpioReadPortAi.xml, GpioWritePortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating GpioReadPortAi.xml, GpioWritePortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/GpioDriverPorts/GpioDriverPorts.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Drv/GpioDriverPorts/GpioWritePortAi.xml: F-Prime/Drv/GpioDriverPorts/GpioReadPortAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/GpioDriverPorts/GpioWritePortAi.xml
@@ -110,10 +110,10 @@ F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/build: Drv_G
 .PHONY : F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/build
 
 F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts && $(CMAKE_COMMAND) -P CMakeFiles/Drv_GpioDriverPorts_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts && $(CMAKE_COMMAND) -P CMakeFiles/Drv_GpioDriverPorts_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/clean
 
 F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Drv/GpioDriverPorts /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/GpioDriverPorts /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts_impl.dir/depend
 

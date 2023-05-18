@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp-template"
   "CMakeFiles/Svc_StaticMemory_impl"
   "StaticMemoryComponentAi.xml"
 )

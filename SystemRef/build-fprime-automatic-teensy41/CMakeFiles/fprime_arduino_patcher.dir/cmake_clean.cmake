@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fprime_arduino_patcher.dir/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/toolchain/support/sources/extras.cpp.obj"
-  "CMakeFiles/fprime_arduino_patcher.dir/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/toolchain/support/sources/extras.cpp.obj.d"
+  "CMakeFiles/fprime_arduino_patcher.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/toolchain/support/sources/extras.cpp.obj"
+  "CMakeFiles/fprime_arduino_patcher.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/toolchain/support/sources/extras.cpp.obj.d"
   "lib/teensy41/libfprime_arduino_patcher.a"
   "lib/teensy41/libfprime_arduino_patcher.pdb"
 )

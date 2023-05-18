@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComLogger/ComLoggerComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComLogger/ComLoggerComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComLogger/ComLoggerComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComLogger/ComLoggerComponentImpl.hpp-template"
   "CMakeFiles/Svc_ComLogger_impl"
   "ComLoggerComponentAi.xml"
 )

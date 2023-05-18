@@ -4,7 +4,7 @@
   "compiler.optimization_flags": "",
   "customBuildProperties": "",
   "fqbn": "teensy:avr:teensy41",
-  "hardwareFolders": "/home/ethan/.arduino15/packages",
-  "otherLibrariesFolders": "/home/ethan/Arduino/libraries",
-  "sketchLocation": "/tmp/tmpdg3nixzq"
+  "hardwareFolders": "/home/ethanchee/.arduino15/packages",
+  "otherLibrariesFolders": "/home/ethanchee/Arduino/libraries",
+  "sketchLocation": "/tmp/tmp1rbm51at"
 }

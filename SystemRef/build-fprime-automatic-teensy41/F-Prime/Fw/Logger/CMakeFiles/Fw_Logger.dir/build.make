@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/depend.make
@@ -70,32 +70,32 @@ include F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/progress.make
 include F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/flags.make
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/flags.make
-F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/Logger.cpp
+F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/Logger.cpp
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2c35dd08 -DASSERT_RELATIVE_PATH='"Fw/Logger/Logger.cpp"' -MD -MT F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj -MF CMakeFiles/Fw_Logger.dir/Logger.cpp.obj.d -o CMakeFiles/Fw_Logger.dir/Logger.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2c35dd08 -DASSERT_RELATIVE_PATH='"Fw/Logger/Logger.cpp"' -MD -MT F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.obj -MF CMakeFiles/Fw_Logger.dir/Logger.cpp.obj.d -o CMakeFiles/Fw_Logger.dir/Logger.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/Logger.cpp
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Logger.dir/Logger.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2c35dd08 -DASSERT_RELATIVE_PATH='"Fw/Logger/Logger.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/Logger.cpp > CMakeFiles/Fw_Logger.dir/Logger.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2c35dd08 -DASSERT_RELATIVE_PATH='"Fw/Logger/Logger.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/Logger.cpp > CMakeFiles/Fw_Logger.dir/Logger.cpp.i
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Logger.dir/Logger.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2c35dd08 -DASSERT_RELATIVE_PATH='"Fw/Logger/Logger.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/Logger.cpp -o CMakeFiles/Fw_Logger.dir/Logger.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2c35dd08 -DASSERT_RELATIVE_PATH='"Fw/Logger/Logger.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/Logger.cpp -o CMakeFiles/Fw_Logger.dir/Logger.cpp.s
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/flags.make
-F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/LogAssert.cpp
+F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/LogAssert.cpp
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2ad0a22c -DASSERT_RELATIVE_PATH='"Fw/Logger/LogAssert.cpp"' -MD -MT F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj -MF CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj.d -o CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/LogAssert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2ad0a22c -DASSERT_RELATIVE_PATH='"Fw/Logger/LogAssert.cpp"' -MD -MT F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj -MF CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj.d -o CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/LogAssert.cpp
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Logger.dir/LogAssert.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2ad0a22c -DASSERT_RELATIVE_PATH='"Fw/Logger/LogAssert.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/LogAssert.cpp > CMakeFiles/Fw_Logger.dir/LogAssert.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2ad0a22c -DASSERT_RELATIVE_PATH='"Fw/Logger/LogAssert.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/LogAssert.cpp > CMakeFiles/Fw_Logger.dir/LogAssert.cpp.i
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Logger.dir/LogAssert.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2ad0a22c -DASSERT_RELATIVE_PATH='"Fw/Logger/LogAssert.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/LogAssert.cpp -o CMakeFiles/Fw_Logger.dir/LogAssert.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2ad0a22c -DASSERT_RELATIVE_PATH='"Fw/Logger/LogAssert.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/LogAssert.cpp -o CMakeFiles/Fw_Logger.dir/LogAssert.cpp.s
 
 # Object files for target Fw_Logger
 Fw_Logger_OBJECTS = \
@@ -109,19 +109,19 @@ lib/teensy41/libFw_Logger.a: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/Logger.c
 lib/teensy41/libFw_Logger.a: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/LogAssert.cpp.obj
 lib/teensy41/libFw_Logger.a: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/build.make
 lib/teensy41/libFw_Logger.a: F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libFw_Logger.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Logger.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Logger.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libFw_Logger.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Logger.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Logger.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/build: lib/teensy41/libFw_Logger.a
 .PHONY : F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/build
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Logger.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Logger.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/clean
 
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/depend.make
@@ -70,32 +70,32 @@ include F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/progress.make
 include F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/flags.make
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/flags.make
-F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.cpp
+F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.cpp
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xedbbf8ee -DASSERT_RELATIVE_PATH='"Fw/Obj/ObjBase.cpp"' -MD -MT F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj -MF CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj.d -o CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xedbbf8ee -DASSERT_RELATIVE_PATH='"Fw/Obj/ObjBase.cpp"' -MD -MT F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj -MF CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj.d -o CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.cpp
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Obj.dir/ObjBase.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xedbbf8ee -DASSERT_RELATIVE_PATH='"Fw/Obj/ObjBase.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.cpp > CMakeFiles/Fw_Obj.dir/ObjBase.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xedbbf8ee -DASSERT_RELATIVE_PATH='"Fw/Obj/ObjBase.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.cpp > CMakeFiles/Fw_Obj.dir/ObjBase.cpp.i
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Obj.dir/ObjBase.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xedbbf8ee -DASSERT_RELATIVE_PATH='"Fw/Obj/ObjBase.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.cpp -o CMakeFiles/Fw_Obj.dir/ObjBase.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xedbbf8ee -DASSERT_RELATIVE_PATH='"Fw/Obj/ObjBase.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.cpp -o CMakeFiles/Fw_Obj.dir/ObjBase.cpp.s
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/flags.make
-F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/SimpleObjRegistry.cpp
+F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/SimpleObjRegistry.cpp
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2a2af9d9 -DASSERT_RELATIVE_PATH='"Fw/Obj/SimpleObjRegistry.cpp"' -MD -MT F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj -MF CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj.d -o CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/SimpleObjRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2a2af9d9 -DASSERT_RELATIVE_PATH='"Fw/Obj/SimpleObjRegistry.cpp"' -MD -MT F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj -MF CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj.d -o CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/SimpleObjRegistry.cpp
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2a2af9d9 -DASSERT_RELATIVE_PATH='"Fw/Obj/SimpleObjRegistry.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/SimpleObjRegistry.cpp > CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2a2af9d9 -DASSERT_RELATIVE_PATH='"Fw/Obj/SimpleObjRegistry.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/SimpleObjRegistry.cpp > CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.i
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2a2af9d9 -DASSERT_RELATIVE_PATH='"Fw/Obj/SimpleObjRegistry.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/SimpleObjRegistry.cpp -o CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x2a2af9d9 -DASSERT_RELATIVE_PATH='"Fw/Obj/SimpleObjRegistry.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/SimpleObjRegistry.cpp -o CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.s
 
 # Object files for target Fw_Obj
 Fw_Obj_OBJECTS = \
@@ -109,19 +109,19 @@ lib/teensy41/libFw_Obj.a: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/ObjBase.cpp.obj
 lib/teensy41/libFw_Obj.a: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.obj
 lib/teensy41/libFw_Obj.a: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/build.make
 lib/teensy41/libFw_Obj.a: F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libFw_Obj.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Obj.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Obj.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libFw_Obj.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Obj.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Obj.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/build: lib/teensy41/libFw_Obj.a
 .PHONY : F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/build
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Obj.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Obj.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/clean
 
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/depend
 

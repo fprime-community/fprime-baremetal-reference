@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_ComStub_impl.
 
@@ -67,27 +67,27 @@ include F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/compiler_depend.make
 include F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/progress.make
 
 F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl: F-Prime/Svc/ComStub/ComStubComponentAi.xml
-F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template
-F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template
+F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template
+F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template
 
-F-Prime/Svc/ComStub/ComStubComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStub.fpp
+F-Prime/Svc/ComStub/ComStubComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStub.fpp
 F-Prime/Svc/ComStub/ComStubComponentAi.xml: lib/teensy41/libDrv_ByteStreamDriverModel.a
 F-Prime/Svc/ComStub/ComStubComponentAi.xml: lib/teensy41/libFw_Ports_SuccessCondition.a
 F-Prime/Svc/ComStub/ComStubComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ComStubComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub -i /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStub.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ComStubComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStub.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template: F-Prime/Svc/ComStub/ComStubComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub/ComStubComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template: F-Prime/Svc/ComStub/ComStubComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub/ComStubComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template
 
 Svc_ComStub_impl: F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl
 Svc_ComStub_impl: F-Prime/Svc/ComStub/ComStubComponentAi.xml
-Svc_ComStub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template
-Svc_ComStub_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template
+Svc_ComStub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.cpp-template
+Svc_ComStub_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStubComponentImpl.hpp-template
 Svc_ComStub_impl: F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/build.make
 .PHONY : Svc_ComStub_impl
 
@@ -96,10 +96,10 @@ F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/build: Svc_ComStub_impl
 .PHONY : F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/build
 
 F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ComStub_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ComStub_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/clean
 
 F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub_impl.dir/depend
 

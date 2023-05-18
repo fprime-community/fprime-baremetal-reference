@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/FileUplinkComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/FileUplinkComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/FileUplinkComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/FileUplinkComponentImpl.hpp-template"
   "CMakeFiles/Svc_FileUplink_impl"
   "FileUplinkComponentAi.xml"
 )

@@ -1,34 +1,34 @@
 The target system is: ArduinoFw -  - arm
-The host system is: Linux - 5.10.16.3-microsoft-standard-WSL2 - x86_64
+The host system is: Linux - 5.19.0-40-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc 
+Compiler: /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc 
 Build flags: -O2;-g;-Wall;-ffunction-sections;-fdata-sections;-nostdlib;-MMD;-mthumb;-mcpu=cortex-m7;-mfloat-abi=hard;-mfpu=fpv5-d16;-D__IMXRT1062__;-DTEENSYDUINO=158;-DARDUINO=10607;-DARDUINO_TEENSY41;-DF_CPU=600000000;-DUSB_SERIAL;-DLAYOUT_US_ENGLISH
 Id flags:  
 
 The output was:
 0
-/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
+/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a-CMakeCCompilerId.d"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/3.22.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/3.22.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ 
+Compiler: /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ 
 Build flags: -O2;-g;-Wall;-ffunction-sections;-fdata-sections;-nostdlib;-MMD;-std=gnu++14;-fno-exceptions;-fpermissive;-fno-rtti;-fno-threadsafe-statics;-felide-constructors;-Wno-error=narrowing;-mthumb;-mcpu=cortex-m7;-mfloat-abi=hard;-mfpu=fpv5-d16;-D__IMXRT1062__;-DTEENSYDUINO=158;-DARDUINO=10607;-DARDUINO_TEENSY41;-DF_CPU=600000000;-DUSB_SERIAL;-DLAYOUT_US_ENGLISH
 Id flags:  
 
 The output was:
 0
-/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
+/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/../lib/gcc/arm-none-eabi/11.3.1/../../../../arm-none-eabi/bin/ld: warning: cannot find entry symbol _start; defaulting to 0000000000008000
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a-CMakeCXXCompilerId.d"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
 

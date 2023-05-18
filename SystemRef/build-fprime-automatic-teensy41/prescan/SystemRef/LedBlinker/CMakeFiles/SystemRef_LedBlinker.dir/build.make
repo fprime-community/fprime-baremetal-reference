@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan
 
 # Include any dependencies generated for this target.
 include SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/depend.make
@@ -69,43 +69,43 @@ include SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/progress.make
 # Include the compile flags for this target's objects.
 include SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/flags.make
 
-SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/flags.make
-SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp
-SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj -MF CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj.d -o CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp
+SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/flags.make
+SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp
+SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj -MF CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj.d -o CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp
 
-SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp > CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i
+SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp > CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i
 
-SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp -o CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s
+SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp -o CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s
 
 # Object files for target SystemRef_LedBlinker
 SystemRef_LedBlinker_OBJECTS = \
-"CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
+"CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
 
 # External object files for target SystemRef_LedBlinker
 SystemRef_LedBlinker_EXTERNAL_OBJECTS =
 
-lib/teensy41/libSystemRef_LedBlinker.a: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj
+lib/teensy41/libSystemRef_LedBlinker.a: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj
 lib/teensy41/libSystemRef_LedBlinker.a: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make
 lib/teensy41/libSystemRef_LedBlinker.a: SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../lib/teensy41/libSystemRef_LedBlinker.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && $(CMAKE_COMMAND) -P CMakeFiles/SystemRef_LedBlinker.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SystemRef_LedBlinker.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../lib/teensy41/libSystemRef_LedBlinker.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && $(CMAKE_COMMAND) -P CMakeFiles/SystemRef_LedBlinker.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SystemRef_LedBlinker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build: lib/teensy41/libSystemRef_LedBlinker.a
 .PHONY : SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build
 
 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && $(CMAKE_COMMAND) -P CMakeFiles/SystemRef_LedBlinker.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker && $(CMAKE_COMMAND) -P CMakeFiles/SystemRef_LedBlinker.dir/cmake_clean.cmake
 .PHONY : SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/clean
 
 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/SystemRef/LedBlinker /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/LedBlinker /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/depend
 

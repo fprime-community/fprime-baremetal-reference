@@ -1,5 +1,5 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/Events.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp

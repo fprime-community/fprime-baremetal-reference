@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/rule
 .PHONY : F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Drv_I2cDriverPorts: F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir
 
 # fast build rule for target.
 Drv_I2cDriverPorts/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build
 .PHONY : Drv_I2cDriverPorts/fast
 
 # Convenience name for target.
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/rule
 .PHONY : F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Drv_I2cDriverPorts_impl: F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPort
 
 # fast build rule for target.
 Drv_I2cDriverPorts_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/build
 .PHONY : Drv_I2cDriverPorts_impl/fast
 
 I2cPortAc.obj: I2cPortAc.cpp.obj
@@ -195,7 +195,7 @@ I2cPortAc.obj: I2cPortAc.cpp.obj
 
 # target to build an object file
 I2cPortAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cPortAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cPortAc.cpp.obj
 .PHONY : I2cPortAc.cpp.obj
 
 I2cPortAc.i: I2cPortAc.cpp.i
@@ -203,7 +203,7 @@ I2cPortAc.i: I2cPortAc.cpp.i
 
 # target to preprocess a source file
 I2cPortAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cPortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cPortAc.cpp.i
 .PHONY : I2cPortAc.cpp.i
 
 I2cPortAc.s: I2cPortAc.cpp.s
@@ -211,7 +211,7 @@ I2cPortAc.s: I2cPortAc.cpp.s
 
 # target to generate assembly for a file
 I2cPortAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cPortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cPortAc.cpp.s
 .PHONY : I2cPortAc.cpp.s
 
 I2cStatusEnumAc.obj: I2cStatusEnumAc.cpp.obj
@@ -219,7 +219,7 @@ I2cStatusEnumAc.obj: I2cStatusEnumAc.cpp.obj
 
 # target to build an object file
 I2cStatusEnumAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cStatusEnumAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cStatusEnumAc.cpp.obj
 .PHONY : I2cStatusEnumAc.cpp.obj
 
 I2cStatusEnumAc.i: I2cStatusEnumAc.cpp.i
@@ -227,7 +227,7 @@ I2cStatusEnumAc.i: I2cStatusEnumAc.cpp.i
 
 # target to preprocess a source file
 I2cStatusEnumAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cStatusEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cStatusEnumAc.cpp.i
 .PHONY : I2cStatusEnumAc.cpp.i
 
 I2cStatusEnumAc.s: I2cStatusEnumAc.cpp.s
@@ -235,7 +235,7 @@ I2cStatusEnumAc.s: I2cStatusEnumAc.cpp.s
 
 # target to generate assembly for a file
 I2cStatusEnumAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cStatusEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cStatusEnumAc.cpp.s
 .PHONY : I2cStatusEnumAc.cpp.s
 
 I2cWriteReadPortAc.obj: I2cWriteReadPortAc.cpp.obj
@@ -243,7 +243,7 @@ I2cWriteReadPortAc.obj: I2cWriteReadPortAc.cpp.obj
 
 # target to build an object file
 I2cWriteReadPortAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cWriteReadPortAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cWriteReadPortAc.cpp.obj
 .PHONY : I2cWriteReadPortAc.cpp.obj
 
 I2cWriteReadPortAc.i: I2cWriteReadPortAc.cpp.i
@@ -251,7 +251,7 @@ I2cWriteReadPortAc.i: I2cWriteReadPortAc.cpp.i
 
 # target to preprocess a source file
 I2cWriteReadPortAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cWriteReadPortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cWriteReadPortAc.cpp.i
 .PHONY : I2cWriteReadPortAc.cpp.i
 
 I2cWriteReadPortAc.s: I2cWriteReadPortAc.cpp.s
@@ -259,7 +259,7 @@ I2cWriteReadPortAc.s: I2cWriteReadPortAc.cpp.s
 
 # target to generate assembly for a file
 I2cWriteReadPortAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cWriteReadPortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/I2cWriteReadPortAc.cpp.s
 .PHONY : I2cWriteReadPortAc.cpp.s
 
 # Help Target
@@ -296,7 +296,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

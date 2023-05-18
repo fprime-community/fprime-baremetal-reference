@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/depend.make
@@ -69,44 +69,44 @@ include F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/progress.make
 # Include the compile flags for this target's objects.
 include F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/flags.make
 
-F-Prime/Drv/DataTypes/DataBufferPortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataTypes.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating DataBufferPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataTypes.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+F-Prime/Drv/DataTypes/DataBufferPortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataTypes.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating DataBufferPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataTypes.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-F-Prime/Drv/DataTypes/DataBufferPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataTypes.fpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating DataBufferPortAc.cpp, DataBufferPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataTypes.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+F-Prime/Drv/DataTypes/DataBufferPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataTypes.fpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating DataBufferPortAc.cpp, DataBufferPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataTypes.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Drv/DataTypes/DataBufferPortAc.hpp: F-Prime/Drv/DataTypes/DataBufferPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/DataTypes/DataBufferPortAc.hpp
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/flags.make
-F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataBuffer.cpp
+F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataBuffer.cpp
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8b7c083e -DASSERT_RELATIVE_PATH='"Drv/DataTypes/DataBuffer.cpp"' -MD -MT F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj -MF CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj.d -o CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataBuffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8b7c083e -DASSERT_RELATIVE_PATH='"Drv/DataTypes/DataBuffer.cpp"' -MD -MT F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj -MF CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj.d -o CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataBuffer.cpp
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8b7c083e -DASSERT_RELATIVE_PATH='"Drv/DataTypes/DataBuffer.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataBuffer.cpp > CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8b7c083e -DASSERT_RELATIVE_PATH='"Drv/DataTypes/DataBuffer.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataBuffer.cpp > CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.i
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8b7c083e -DASSERT_RELATIVE_PATH='"Drv/DataTypes/DataBuffer.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataBuffer.cpp -o CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x8b7c083e -DASSERT_RELATIVE_PATH='"Drv/DataTypes/DataBuffer.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataBuffer.cpp -o CMakeFiles/Drv_DataTypes.dir/DataBuffer.cpp.s
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/flags.make
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj: F-Prime/Drv/DataTypes/DataBufferPortAc.cpp
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x353f4074 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp"' -MD -MT F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj -MF CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj.d -o CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x353f4074 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp"' -MD -MT F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj -MF CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj.d -o CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x353f4074 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp > CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x353f4074 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp > CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.i
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x353f4074 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp -o CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x353f4074 -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/DataBufferPortAc.cpp -o CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.s
 
 # Object files for target Drv_DataTypes
 Drv_DataTypes_OBJECTS = \
@@ -120,21 +120,21 @@ lib/teensy41/libDrv_DataTypes.a: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.
 lib/teensy41/libDrv_DataTypes.a: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DataBufferPortAc.cpp.obj
 lib/teensy41/libDrv_DataTypes.a: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/build.make
 lib/teensy41/libDrv_DataTypes.a: F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../../lib/teensy41/libDrv_DataTypes.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && $(CMAKE_COMMAND) -P CMakeFiles/Drv_DataTypes.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Drv_DataTypes.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../../lib/teensy41/libDrv_DataTypes.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && $(CMAKE_COMMAND) -P CMakeFiles/Drv_DataTypes.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Drv_DataTypes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/build: lib/teensy41/libDrv_DataTypes.a
 .PHONY : F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/build
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && $(CMAKE_COMMAND) -P CMakeFiles/Drv_DataTypes.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes && $(CMAKE_COMMAND) -P CMakeFiles/Drv_DataTypes.dir/cmake_clean.cmake
 .PHONY : F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/clean
 
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/depend: F-Prime/Drv/DataTypes/DataBufferPortAc.cpp
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/depend: F-Prime/Drv/DataTypes/DataBufferPortAc.hpp
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/depend: F-Prime/Drv/DataTypes/DataBufferPortAi.xml
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/depend
 

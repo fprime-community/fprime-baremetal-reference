@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Fw_Types_impl.
 
@@ -97,10 +97,10 @@ F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl: F-Prime/Fw/Types/SerialStatusEnumAc.h
 F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl: F-Prime/Fw/Types/SuccessEnumAc.cpp
 F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl: F-Prime/Fw/Types/SuccessEnumAc.hpp
 
-F-Prime/Fw/Types/ActiveEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp
+F-Prime/Fw/Types/ActiveEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp
 F-Prime/Fw/Types/ActiveEnumAc.cpp: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ActiveEnumAc.cpp, ActiveEnumAc.hpp, DeserialStatusEnumAc.cpp, DeserialStatusEnumAc.hpp, DirectionEnumAc.cpp, DirectionEnumAc.hpp, EnabledEnumAc.cpp, EnabledEnumAc.hpp, HealthEnumAc.cpp, HealthEnumAc.hpp, LogicEnumAc.cpp, LogicEnumAc.hpp, OnEnumAc.cpp, OnEnumAc.hpp, OpenEnumAc.cpp, OpenEnumAc.hpp, SerialStatusEnumAc.cpp, SerialStatusEnumAc.hpp, SuccessEnumAc.cpp, SuccessEnumAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ActiveEnumAc.cpp, ActiveEnumAc.hpp, DeserialStatusEnumAc.cpp, DeserialStatusEnumAc.hpp, DirectionEnumAc.cpp, DirectionEnumAc.hpp, EnabledEnumAc.cpp, EnabledEnumAc.hpp, HealthEnumAc.cpp, HealthEnumAc.hpp, LogicEnumAc.cpp, LogicEnumAc.hpp, OnEnumAc.cpp, OnEnumAc.hpp, OpenEnumAc.cpp, OpenEnumAc.hpp, SerialStatusEnumAc.cpp, SerialStatusEnumAc.hpp, SuccessEnumAc.cpp, SuccessEnumAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Fw/Types/ActiveEnumAc.hpp: F-Prime/Fw/Types/ActiveEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Types/ActiveEnumAc.hpp
@@ -159,10 +159,10 @@ F-Prime/Fw/Types/SuccessEnumAc.cpp: F-Prime/Fw/Types/ActiveEnumAc.cpp
 F-Prime/Fw/Types/SuccessEnumAc.hpp: F-Prime/Fw/Types/ActiveEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Types/SuccessEnumAc.hpp
 
-F-Prime/Fw/Types/ActiveEnumAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp
+F-Prime/Fw/Types/ActiveEnumAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp
 F-Prime/Fw/Types/ActiveEnumAi.xml: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ActiveEnumAi.xml, DeserialStatusEnumAi.xml, DirectionEnumAi.xml, EnabledEnumAi.xml, HealthEnumAi.xml, LogicEnumAi.xml, OnEnumAi.xml, OpenEnumAi.xml, SerialStatusEnumAi.xml, SuccessEnumAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ActiveEnumAi.xml, DeserialStatusEnumAi.xml, DirectionEnumAi.xml, EnabledEnumAi.xml, HealthEnumAi.xml, LogicEnumAi.xml, OnEnumAi.xml, OpenEnumAi.xml, SerialStatusEnumAi.xml, SuccessEnumAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Fw/Types/DeserialStatusEnumAi.xml: F-Prime/Fw/Types/ActiveEnumAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Types/DeserialStatusEnumAi.xml
@@ -230,10 +230,10 @@ F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/build: Fw_Types_impl
 .PHONY : F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/build
 
 F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Types_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Types_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/clean
 
 F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Types/CMakeFiles/Fw_Types_impl.dir/depend
 

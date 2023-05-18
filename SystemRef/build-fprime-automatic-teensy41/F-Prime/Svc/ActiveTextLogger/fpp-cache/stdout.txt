@@ -1,3 +1,3 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp

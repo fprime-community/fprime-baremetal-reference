@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../../../lib/teensy41/libSvc_Time.a"
   "../../../lib/teensy41/libSvc_Time.pdb"
-  "CMakeFiles/Svc_Time.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
-  "CMakeFiles/Svc_Time.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj.d"
+  "CMakeFiles/Svc_Time.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
+  "CMakeFiles/Svc_Time.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/depend.make
@@ -70,18 +70,18 @@ include F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/progress.make
 include F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/flags.make
 
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj: F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/flags.make
-F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum/Checksum.cpp
+F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum/Checksum.cpp
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj: F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xcd234375 -DASSERT_RELATIVE_PATH='"CFDP/Checksum/Checksum.cpp"' -MD -MT F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj -MF CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj.d -o CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum/Checksum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xcd234375 -DASSERT_RELATIVE_PATH='"CFDP/Checksum/Checksum.cpp"' -MD -MT F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj -MF CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj.d -o CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum/Checksum.cpp
 
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xcd234375 -DASSERT_RELATIVE_PATH='"CFDP/Checksum/Checksum.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum/Checksum.cpp > CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xcd234375 -DASSERT_RELATIVE_PATH='"CFDP/Checksum/Checksum.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum/Checksum.cpp > CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.i
 
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xcd234375 -DASSERT_RELATIVE_PATH='"CFDP/Checksum/Checksum.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum/Checksum.cpp -o CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xcd234375 -DASSERT_RELATIVE_PATH='"CFDP/Checksum/Checksum.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum/Checksum.cpp -o CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.s
 
 # Object files for target CFDP_Checksum
 CFDP_Checksum_OBJECTS = \
@@ -93,19 +93,19 @@ CFDP_Checksum_EXTERNAL_OBJECTS =
 lib/teensy41/libCFDP_Checksum.a: F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/Checksum.cpp.obj
 lib/teensy41/libCFDP_Checksum.a: F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/build.make
 lib/teensy41/libCFDP_Checksum.a: F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/teensy41/libCFDP_Checksum.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -P CMakeFiles/CFDP_Checksum.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CFDP_Checksum.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/teensy41/libCFDP_Checksum.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -P CMakeFiles/CFDP_Checksum.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CFDP_Checksum.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/build: lib/teensy41/libCFDP_Checksum.a
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/build
 
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -P CMakeFiles/CFDP_Checksum.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum && $(CMAKE_COMMAND) -P CMakeFiles/CFDP_Checksum.dir/cmake_clean.cmake
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/clean
 
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/depend
 

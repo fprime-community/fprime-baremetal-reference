@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FatalHandler//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/rule
 .PHONY : F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_FatalHandler: F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/rule
 
 # fast build rule for target.
 Svc_FatalHandler/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build
 .PHONY : Svc_FatalHandler/fast
 
 # Convenience name for target.
 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/rule
 .PHONY : F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_FatalHandler_impl: F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl
 
 # fast build rule for target.
 Svc_FatalHandler_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler_impl.dir/build
 .PHONY : Svc_FatalHandler_impl/fast
 
 FatalHandlerComponentAc.obj: FatalHandlerComponentAc.cpp.obj
@@ -195,7 +195,7 @@ FatalHandlerComponentAc.obj: FatalHandlerComponentAc.cpp.obj
 
 # target to build an object file
 FatalHandlerComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentAc.cpp.obj
 .PHONY : FatalHandlerComponentAc.cpp.obj
 
 FatalHandlerComponentAc.i: FatalHandlerComponentAc.cpp.i
@@ -203,7 +203,7 @@ FatalHandlerComponentAc.i: FatalHandlerComponentAc.cpp.i
 
 # target to preprocess a source file
 FatalHandlerComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentAc.cpp.i
 .PHONY : FatalHandlerComponentAc.cpp.i
 
 FatalHandlerComponentAc.s: FatalHandlerComponentAc.cpp.s
@@ -211,7 +211,7 @@ FatalHandlerComponentAc.s: FatalHandlerComponentAc.cpp.s
 
 # target to generate assembly for a file
 FatalHandlerComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentAc.cpp.s
 .PHONY : FatalHandlerComponentAc.cpp.s
 
 FatalHandlerComponentBaremetalImpl.obj: FatalHandlerComponentBaremetalImpl.cpp.obj
@@ -219,7 +219,7 @@ FatalHandlerComponentBaremetalImpl.obj: FatalHandlerComponentBaremetalImpl.cpp.o
 
 # target to build an object file
 FatalHandlerComponentBaremetalImpl.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentBaremetalImpl.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentBaremetalImpl.cpp.obj
 .PHONY : FatalHandlerComponentBaremetalImpl.cpp.obj
 
 FatalHandlerComponentBaremetalImpl.i: FatalHandlerComponentBaremetalImpl.cpp.i
@@ -227,7 +227,7 @@ FatalHandlerComponentBaremetalImpl.i: FatalHandlerComponentBaremetalImpl.cpp.i
 
 # target to preprocess a source file
 FatalHandlerComponentBaremetalImpl.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentBaremetalImpl.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentBaremetalImpl.cpp.i
 .PHONY : FatalHandlerComponentBaremetalImpl.cpp.i
 
 FatalHandlerComponentBaremetalImpl.s: FatalHandlerComponentBaremetalImpl.cpp.s
@@ -235,7 +235,7 @@ FatalHandlerComponentBaremetalImpl.s: FatalHandlerComponentBaremetalImpl.cpp.s
 
 # target to generate assembly for a file
 FatalHandlerComponentBaremetalImpl.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentBaremetalImpl.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentBaremetalImpl.cpp.s
 .PHONY : FatalHandlerComponentBaremetalImpl.cpp.s
 
 FatalHandlerComponentCommonImpl.obj: FatalHandlerComponentCommonImpl.cpp.obj
@@ -243,7 +243,7 @@ FatalHandlerComponentCommonImpl.obj: FatalHandlerComponentCommonImpl.cpp.obj
 
 # target to build an object file
 FatalHandlerComponentCommonImpl.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentCommonImpl.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentCommonImpl.cpp.obj
 .PHONY : FatalHandlerComponentCommonImpl.cpp.obj
 
 FatalHandlerComponentCommonImpl.i: FatalHandlerComponentCommonImpl.cpp.i
@@ -251,7 +251,7 @@ FatalHandlerComponentCommonImpl.i: FatalHandlerComponentCommonImpl.cpp.i
 
 # target to preprocess a source file
 FatalHandlerComponentCommonImpl.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentCommonImpl.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentCommonImpl.cpp.i
 .PHONY : FatalHandlerComponentCommonImpl.cpp.i
 
 FatalHandlerComponentCommonImpl.s: FatalHandlerComponentCommonImpl.cpp.s
@@ -259,7 +259,7 @@ FatalHandlerComponentCommonImpl.s: FatalHandlerComponentCommonImpl.cpp.s
 
 # target to generate assembly for a file
 FatalHandlerComponentCommonImpl.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentCommonImpl.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentCommonImpl.cpp.s
 .PHONY : FatalHandlerComponentCommonImpl.cpp.s
 
 # Help Target
@@ -296,7 +296,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

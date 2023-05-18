@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Arduino_Drv_SerialDriver_impl.
 
@@ -67,28 +67,28 @@ include Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/co
 include Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/progress.make
 
 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl: Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml
-Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template
-Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template
+Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template
+Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template
 
-Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.fpp
+Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.fpp
 Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml: lib/teensy41/libDrv_ByteStreamDriverModel.a
 Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml: lib/teensy41/libSvc_Sched.a
 Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml: lib/teensy41/libOs.a
 Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SerialDriverComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver -i /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating SerialDriverComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template: Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template: Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template
 
 Arduino_Drv_SerialDriver_impl: Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl
 Arduino_Drv_SerialDriver_impl: Arduino/Drv/SerialDriver/SerialDriverComponentAi.xml
-Arduino_Drv_SerialDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template
-Arduino_Drv_SerialDriver_impl: /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template
+Arduino_Drv_SerialDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.cpp-template
+Arduino_Drv_SerialDriver_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriverComponentImpl.hpp-template
 Arduino_Drv_SerialDriver_impl: Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/build.make
 .PHONY : Arduino_Drv_SerialDriver_impl
 
@@ -97,10 +97,10 @@ Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/build: Ard
 .PHONY : Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/build
 
 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver && $(CMAKE_COMMAND) -P CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver && $(CMAKE_COMMAND) -P CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/cmake_clean.cmake
 .PHONY : Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/clean
 
 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver_impl.dir/depend
 

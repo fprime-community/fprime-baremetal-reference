@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SystemRef.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
-  "CMakeFiles/SystemRef.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj.d"
+  "CMakeFiles/SystemRef.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
+  "CMakeFiles/SystemRef.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj.d"
   "bin/teensy41/SystemRef"
   "bin/teensy41/SystemRef.pdb"
 )

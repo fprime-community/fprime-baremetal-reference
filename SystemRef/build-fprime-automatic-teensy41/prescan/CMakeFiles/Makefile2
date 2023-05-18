@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -1765,14 +1765,14 @@ CMakeFiles/SystemRef.dir/all: CMakeFiles/core.dir/all
 CMakeFiles/SystemRef.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SystemRef.dir/build.make CMakeFiles/SystemRef.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=84 "Built target SystemRef"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=84 "Built target SystemRef"
 .PHONY : CMakeFiles/SystemRef.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SystemRef.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SystemRef.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : CMakeFiles/SystemRef.dir/rule
 
 # Convenience name for target.
@@ -1791,14 +1791,14 @@ CMakeFiles/SystemRef.dir/clean:
 CMakeFiles/IntervalTimer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IntervalTimer.dir/build.make CMakeFiles/IntervalTimer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/IntervalTimer.dir/build.make CMakeFiles/IntervalTimer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target IntervalTimer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target IntervalTimer"
 .PHONY : CMakeFiles/IntervalTimer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/IntervalTimer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/IntervalTimer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : CMakeFiles/IntervalTimer.dir/rule
 
 # Convenience name for target.
@@ -1817,14 +1817,14 @@ CMakeFiles/IntervalTimer.dir/clean:
 CMakeFiles/fprime-arduino-patcher.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fprime-arduino-patcher.dir/build.make CMakeFiles/fprime-arduino-patcher.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fprime-arduino-patcher.dir/build.make CMakeFiles/fprime-arduino-patcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target fprime-arduino-patcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target fprime-arduino-patcher"
 .PHONY : CMakeFiles/fprime-arduino-patcher.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/fprime-arduino-patcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fprime-arduino-patcher.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : CMakeFiles/fprime-arduino-patcher.dir/rule
 
 # Convenience name for target.
@@ -1843,14 +1843,14 @@ CMakeFiles/fprime-arduino-patcher.dir/clean:
 CMakeFiles/core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target core"
 .PHONY : CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : CMakeFiles/core.dir/rule
 
 # Convenience name for target.
@@ -1869,14 +1869,14 @@ CMakeFiles/core.dir/clean:
 CMakeFiles/fprime_arduino_loose_object_library.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fprime_arduino_loose_object_library.dir/build.make CMakeFiles/fprime_arduino_loose_object_library.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fprime_arduino_loose_object_library.dir/build.make CMakeFiles/fprime_arduino_loose_object_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target fprime_arduino_loose_object_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num= "Built target fprime_arduino_loose_object_library"
 .PHONY : CMakeFiles/fprime_arduino_loose_object_library.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/fprime_arduino_loose_object_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fprime_arduino_loose_object_library.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : CMakeFiles/fprime_arduino_loose_object_library.dir/rule
 
 # Convenience name for target.
@@ -1895,14 +1895,14 @@ CMakeFiles/fprime_arduino_loose_object_library.dir/clean:
 F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/all:
 	$(MAKE) $(MAKESILENT) -f F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/build.make F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/build.make F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=91,92,93,94,95,96,97,98 "Built target codegen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=91,92,93,94,95,96,97,98 "Built target codegen"
 .PHONY : F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Autocoders/Python/src/fprime_ac/generators/templates/CMakeFiles/codegen.dir/rule
 
 # Convenience name for target.
@@ -1922,14 +1922,14 @@ config/CMakeFiles/config.dir/all: CMakeFiles/core.dir/all
 config/CMakeFiles/config.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f config/CMakeFiles/config.dir/build.make config/CMakeFiles/config.dir/depend
 	$(MAKE) $(MAKESILENT) -f config/CMakeFiles/config.dir/build.make config/CMakeFiles/config.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=99,100 "Built target config"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=99,100 "Built target config"
 .PHONY : config/CMakeFiles/config.dir/all
 
 # Build rule for subdir invocation for target.
 config/CMakeFiles/config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 config/CMakeFiles/config.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : config/CMakeFiles/config.dir/rule
 
 # Convenience name for target.
@@ -1949,14 +1949,14 @@ F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/build.make F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/build.make F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=14 "Built target Fw_Buffer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=14 "Built target Fw_Buffer"
 .PHONY : F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Buffer/CMakeFiles/Fw_Buffer.dir/rule
 
 # Convenience name for target.
@@ -1976,14 +1976,14 @@ F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/build.make F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/build.make F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=18 "Built target Fw_Com"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=18 "Built target Fw_Com"
 .PHONY : F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Com/CMakeFiles/Fw_Com.dir/rule
 
 # Convenience name for target.
@@ -2003,14 +2003,14 @@ F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/build.make F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/build.make F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=17 "Built target Fw_Cmd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=17 "Built target Fw_Cmd"
 .PHONY : F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Cmd/CMakeFiles/Fw_Cmd.dir/rule
 
 # Convenience name for target.
@@ -2030,14 +2030,14 @@ F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/build.make F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/build.make F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=22 "Built target Fw_Log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=22 "Built target Fw_Log"
 .PHONY : F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Log/CMakeFiles/Fw_Log.dir/rule
 
 # Convenience name for target.
@@ -2057,14 +2057,14 @@ F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/build.make F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/build.make F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=23,24 "Built target Fw_Logger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=23,24 "Built target Fw_Logger"
 .PHONY : F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Logger/CMakeFiles/Fw_Logger.dir/rule
 
 # Convenience name for target.
@@ -2084,14 +2084,14 @@ F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/build.make F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/build.make F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=31,32 "Built target Fw_Time"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=31,32 "Built target Fw_Time"
 .PHONY : F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/rule
 
 # Convenience name for target.
@@ -2111,14 +2111,14 @@ F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/build.make F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/build.make F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=33 "Built target Fw_Tlm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=33 "Built target Fw_Tlm"
 .PHONY : F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Tlm/CMakeFiles/Fw_Tlm.dir/rule
 
 # Convenience name for target.
@@ -2138,14 +2138,14 @@ F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/build.make F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/build.make F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=28 "Built target Fw_Prm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=28 "Built target Fw_Prm"
 .PHONY : F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Prm/CMakeFiles/Fw_Prm.dir/rule
 
 # Convenience name for target.
@@ -2165,14 +2165,14 @@ F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/build.make F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/build.make F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=15,16 "Built target Fw_Cfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=15,16 "Built target Fw_Cfg"
 .PHONY : F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Cfg/CMakeFiles/Fw_Cfg.dir/rule
 
 # Convenience name for target.
@@ -2192,14 +2192,14 @@ F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/build.make F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/build.make F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=19 "Built target Fw_Comp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=19 "Built target Fw_Comp"
 .PHONY : F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Comp/CMakeFiles/Fw_Comp.dir/rule
 
 # Convenience name for target.
@@ -2219,14 +2219,14 @@ F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/build.make F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/build.make F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=20 "Built target Fw_CompQueued"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=20 "Built target Fw_CompQueued"
 .PHONY : F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Comp/CMakeFiles/Fw_CompQueued.dir/rule
 
 # Convenience name for target.
@@ -2246,14 +2246,14 @@ F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/build.make F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/build.make F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=25 "Built target Fw_Obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=25 "Built target Fw_Obj"
 .PHONY : F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Obj/CMakeFiles/Fw_Obj.dir/rule
 
 # Convenience name for target.
@@ -2273,14 +2273,14 @@ F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/build.make F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/build.make F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=26 "Built target Fw_Port"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=26 "Built target Fw_Port"
 .PHONY : F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Port/CMakeFiles/Fw_Port.dir/rule
 
 # Convenience name for target.
@@ -2300,14 +2300,14 @@ F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/all: 
 F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/build.make F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/build.make F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=27 "Built target Fw_Ports_SuccessCondition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=27 "Built target Fw_Ports_SuccessCondition"
 .PHONY : F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Ports/SuccessCondition/CMakeFiles/Fw_Ports_SuccessCondition.dir/rule
 
 # Convenience name for target.
@@ -2327,14 +2327,14 @@ F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/build.make F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/build.make F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=34 "Built target Fw_Types"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=34 "Built target Fw_Types"
 .PHONY : F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Types/CMakeFiles/Fw_Types.dir/rule
 
 # Convenience name for target.
@@ -2354,14 +2354,14 @@ F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/build.make F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/build.make F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=21 "Built target Fw_FilePacket"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=21 "Built target Fw_FilePacket"
 .PHONY : F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/FilePacket/CMakeFiles/Fw_FilePacket.dir/rule
 
 # Convenience name for target.
@@ -2381,14 +2381,14 @@ F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/all: CMakeFiles/c
 F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/build.make F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/build.make F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=29 "Built target Fw_SerializableFile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=29 "Built target Fw_SerializableFile"
 .PHONY : F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/SerializableFile/CMakeFiles/Fw_SerializableFile.dir/rule
 
 # Convenience name for target.
@@ -2408,14 +2408,14 @@ F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/all: CMakeFiles/core.dir/all
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/build.make F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/build.make F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=30 "Built target Fw_Test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=30 "Built target Fw_Test"
 .PHONY : F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/rule
 
 # Convenience name for target.
@@ -2435,14 +2435,14 @@ F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/build.make F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/build.make F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=53 "Built target Svc_Cycle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=53 "Built target Svc_Cycle"
 .PHONY : F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Cycle/CMakeFiles/Svc_Cycle.dir/rule
 
 # Convenience name for target.
@@ -2462,14 +2462,14 @@ F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/build.make F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/build.make F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=55,56 "Built target Svc_Fatal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=55,56 "Built target Svc_Fatal"
 .PHONY : F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Fatal/CMakeFiles/Svc_Fatal.dir/rule
 
 # Convenience name for target.
@@ -2489,14 +2489,14 @@ F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/build.make F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/build.make F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=69 "Built target Svc_Ping"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=69 "Built target Svc_Ping"
 .PHONY : F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Ping/CMakeFiles/Svc_Ping.dir/rule
 
 # Convenience name for target.
@@ -2516,14 +2516,14 @@ F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/build.make F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/build.make F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=71,72 "Built target Svc_PolyIf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=71,72 "Built target Svc_PolyIf"
 .PHONY : F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/PolyIf/CMakeFiles/Svc_PolyIf.dir/rule
 
 # Convenience name for target.
@@ -2543,14 +2543,14 @@ F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/build.make F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/build.make F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=75 "Built target Svc_Sched"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=75 "Built target Svc_Sched"
 .PHONY : F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Sched/CMakeFiles/Svc_Sched.dir/rule
 
 # Convenience name for target.
@@ -2570,14 +2570,14 @@ F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/build.make F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/build.make F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=76 "Built target Svc_Seq"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=76 "Built target Svc_Seq"
 .PHONY : F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/rule
 
 # Convenience name for target.
@@ -2597,14 +2597,14 @@ F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/build.make F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/build.make F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=83 "Built target Svc_WatchDog"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=83 "Built target Svc_WatchDog"
 .PHONY : F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/WatchDog/CMakeFiles/Svc_WatchDog.dir/rule
 
 # Convenience name for target.
@@ -2624,14 +2624,14 @@ F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/all: CMakeFiles/core.di
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/build.make F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/build.make F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=37 "Built target Svc_ActiveLogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=37 "Built target Svc_ActiveLogger"
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/rule
 
 # Convenience name for target.
@@ -2651,14 +2651,14 @@ F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/all: CMakeFiles/c
 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build.make F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=38 "Built target Svc_ActiveRateGroup"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=38 "Built target Svc_ActiveRateGroup"
 .PHONY : F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/ActiveRateGroup/CMakeFiles/Svc_ActiveRateGroup.dir/rule
 
 # Convenience name for target.
@@ -2678,14 +2678,14 @@ F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/all: CMakeF
 F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/build.make F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/build.make F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=41 "Built target Svc_AssertFatalAdapter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=41 "Built target Svc_AssertFatalAdapter"
 .PHONY : F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/AssertFatalAdapter/CMakeFiles/Svc_AssertFatalAdapter.dir/rule
 
 # Convenience name for target.
@@ -2705,14 +2705,14 @@ F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/all: CMakeFil
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build.make F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=42 "Built target Svc_BufferAccumulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=42 "Built target Svc_BufferAccumulator"
 .PHONY : F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator.dir/rule
 
 # Convenience name for target.
@@ -2732,14 +2732,14 @@ F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/all: CMakeFiles/core.
 F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/build.make F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/build.make F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=44 "Built target Svc_BufferManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=44 "Built target Svc_BufferManager"
 .PHONY : F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/BufferManager/CMakeFiles/Svc_BufferManager.dir/rule
 
 # Convenience name for target.
@@ -2759,14 +2759,14 @@ F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/all: CMakeFiles/core.di
 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=43 "Built target Svc_BufferLogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=43 "Built target Svc_BufferLogger"
 .PHONY : F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/rule
 
 # Convenience name for target.
@@ -2786,14 +2786,14 @@ F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/all: CMakeFiles/cor
 F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/build.make F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/build.make F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=45 "Built target Svc_BufferRepeater"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=45 "Built target Svc_BufferRepeater"
 .PHONY : F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/BufferRepeater/CMakeFiles/Svc_BufferRepeater.dir/rule
 
 # Convenience name for target.
@@ -2813,14 +2813,14 @@ F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/build.make F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/build.make F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=49 "Built target Svc_ComLogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=49 "Built target Svc_ComLogger"
 .PHONY : F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/ComLogger/CMakeFiles/Svc_ComLogger.dir/rule
 
 # Convenience name for target.
@@ -2840,14 +2840,14 @@ F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/build.make F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/build.make F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=50 "Built target Svc_ComQueue"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=50 "Built target Svc_ComQueue"
 .PHONY : F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/ComQueue/CMakeFiles/Svc_ComQueue.dir/rule
 
 # Convenience name for target.
@@ -2867,14 +2867,14 @@ F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/all: CMakeFiles/core.dir/
 F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/build.make F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/build.make F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=51 "Built target Svc_ComSplitter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=51 "Built target Svc_ComSplitter"
 .PHONY : F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/ComSplitter/CMakeFiles/Svc_ComSplitter.dir/rule
 
 # Convenience name for target.
@@ -2894,14 +2894,14 @@ F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/build.make F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/build.make F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=52 "Built target Svc_ComStub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=52 "Built target Svc_ComStub"
 .PHONY : F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/ComStub/CMakeFiles/Svc_ComStub.dir/rule
 
 # Convenience name for target.
@@ -2921,14 +2921,14 @@ F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/all: CMakeFiles/core.
 F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/build.make F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/build.make F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=46 "Built target Svc_CmdDispatcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=46 "Built target Svc_CmdDispatcher"
 .PHONY : F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/CmdDispatcher/CMakeFiles/Svc_CmdDispatcher.dir/rule
 
 # Convenience name for target.
@@ -2948,14 +2948,14 @@ F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/all: CMakeFiles/core.di
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=47,48 "Built target Svc_CmdSequencer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=47,48 "Built target Svc_CmdSequencer"
 .PHONY : F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/rule
 
 # Convenience name for target.
@@ -2975,14 +2975,14 @@ F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/build.make F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/build.make F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=54 "Built target Svc_Deframer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=54 "Built target Svc_Deframer"
 .PHONY : F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Deframer/CMakeFiles/Svc_Deframer.dir/rule
 
 # Convenience name for target.
@@ -3002,14 +3002,14 @@ F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/all: CMakeFiles/core.di
 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build.make F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=57 "Built target Svc_FatalHandler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=57 "Built target Svc_FatalHandler"
 .PHONY : F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/FatalHandler/CMakeFiles/Svc_FatalHandler.dir/rule
 
 # Convenience name for target.
@@ -3029,14 +3029,14 @@ F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/all: CMakeFil
 F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/build.make F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/build.make F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=59 "Built target Svc_FileDownlinkPorts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=59 "Built target Svc_FileDownlinkPorts"
 .PHONY : F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/FileDownlinkPorts/CMakeFiles/Svc_FileDownlinkPorts.dir/rule
 
 # Convenience name for target.
@@ -3056,14 +3056,14 @@ F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/all: CMakeFiles/core.di
 F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/build.make F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/build.make F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=58 "Built target Svc_FileDownlink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=58 "Built target Svc_FileDownlink"
 .PHONY : F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink.dir/rule
 
 # Convenience name for target.
@@ -3083,14 +3083,14 @@ F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/all: CMakeFiles/core.dir/
 F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/build.make F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/build.make F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=60 "Built target Svc_FileManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=60 "Built target Svc_FileManager"
 .PHONY : F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/FileManager/CMakeFiles/Svc_FileManager.dir/rule
 
 # Convenience name for target.
@@ -3110,14 +3110,14 @@ F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/all: CMakeFiles/core.dir/al
 F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/build.make F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/build.make F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=61 "Built target Svc_FileUplink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=61 "Built target Svc_FileUplink"
 .PHONY : F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/FileUplink/CMakeFiles/Svc_FileUplink.dir/rule
 
 # Convenience name for target.
@@ -3137,14 +3137,14 @@ F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/all: CMakeFiles/core.dir/al
 F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/build.make F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/build.make F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=65 "Built target Svc_GenericHub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=65 "Built target Svc_GenericHub"
 .PHONY : F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/GenericHub/CMakeFiles/Svc_GenericHub.dir/rule
 
 # Convenience name for target.
@@ -3164,14 +3164,14 @@ F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/all: CMakeFiles/c
 F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/build.make F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/build.make F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=66 "Built target Svc_GroundInterface"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=66 "Built target Svc_GroundInterface"
 .PHONY : F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface.dir/rule
 
 # Convenience name for target.
@@ -3191,14 +3191,14 @@ F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/build.make F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/build.make F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=62 "Built target Svc_Framer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=62 "Built target Svc_Framer"
 .PHONY : F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Framer/CMakeFiles/Svc_Framer.dir/rule
 
 # Convenience name for target.
@@ -3218,14 +3218,14 @@ F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/all: CMakeFiles/c
 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=63,64 "Built target Svc_FramingProtocol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=63,64 "Built target Svc_FramingProtocol"
 .PHONY : F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/rule
 
 # Convenience name for target.
@@ -3245,14 +3245,14 @@ F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build.make F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=67 "Built target Svc_Health"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=67 "Built target Svc_Health"
 .PHONY : F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Health/CMakeFiles/Svc_Health.dir/rule
 
 # Convenience name for target.
@@ -3272,14 +3272,14 @@ F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build.make F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=70 "Built target Svc_PolyDb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=70 "Built target Svc_PolyDb"
 .PHONY : F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/PolyDb/CMakeFiles/Svc_PolyDb.dir/rule
 
 # Convenience name for target.
@@ -3299,14 +3299,14 @@ F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/build.make F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/build.make F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=73 "Built target Svc_PrmDb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=73 "Built target Svc_PrmDb"
 .PHONY : F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/PrmDb/CMakeFiles/Svc_PrmDb.dir/rule
 
 # Convenience name for target.
@@ -3326,14 +3326,14 @@ F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/all: CMakeFiles/c
 F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/build.make F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/build.make F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=74 "Built target Svc_RateGroupDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=74 "Built target Svc_RateGroupDriver"
 .PHONY : F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/RateGroupDriver/CMakeFiles/Svc_RateGroupDriver.dir/rule
 
 # Convenience name for target.
@@ -3353,14 +3353,14 @@ F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/all: CMakeFiles/core.di
 F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/build.make F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/build.make F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=77 "Built target Svc_StaticMemory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=77 "Built target Svc_StaticMemory"
 .PHONY : F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/StaticMemory/CMakeFiles/Svc_StaticMemory.dir/rule
 
 # Convenience name for target.
@@ -3380,14 +3380,14 @@ F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/build.make F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/build.make F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=79,80 "Built target Svc_Time"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=79,80 "Built target Svc_Time"
 .PHONY : F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/Time/CMakeFiles/Svc_Time.dir/rule
 
 # Convenience name for target.
@@ -3407,14 +3407,14 @@ F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/all: CMakeFiles/core.dir/all
 F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/build.make F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/build.make F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=81 "Built target Svc_TlmChan"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=81 "Built target Svc_TlmChan"
 .PHONY : F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/rule
 
 # Convenience name for target.
@@ -3434,14 +3434,14 @@ F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/all: CMakeFiles/core.
 F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/build.make F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/build.make F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=82 "Built target Svc_TlmPacketizer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=82 "Built target Svc_TlmPacketizer"
 .PHONY : F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/TlmPacketizer/CMakeFiles/Svc_TlmPacketizer.dir/rule
 
 # Convenience name for target.
@@ -3461,14 +3461,14 @@ F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/all: CMakeFiles/c
 F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/build.make F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/build.make F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=78 "Built target Svc_SystemResources"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=78 "Built target Svc_SystemResources"
 .PHONY : F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/SystemResources/CMakeFiles/Svc_SystemResources.dir/rule
 
 # Convenience name for target.
@@ -3488,14 +3488,14 @@ F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir
 F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/build.make F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/build.make F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=68 "Built target Svc_PassiveConsoleTextLogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=68 "Built target Svc_PassiveConsoleTextLogger"
 .PHONY : F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/PassiveConsoleTextLogger/CMakeFiles/Svc_PassiveConsoleTextLogger.dir/rule
 
 # Convenience name for target.
@@ -3515,14 +3515,14 @@ F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/all: CMakeFiles
 F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/build.make F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/build.make F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=39,40 "Built target Svc_ActiveTextLogger"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=39,40 "Built target Svc_ActiveTextLogger"
 .PHONY : F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/rule
 
 # Convenience name for target.
@@ -3541,14 +3541,14 @@ F-Prime/Svc/ActiveTextLogger/CMakeFiles/Svc_ActiveTextLogger.dir/clean:
 F-Prime/Os/CMakeFiles/Os.dir/all: Arduino/Os/CMakeFiles/Arduino_Os.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=35 "Built target Os"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=35 "Built target Os"
 .PHONY : F-Prime/Os/CMakeFiles/Os.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Os/CMakeFiles/Os.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/CMakeFiles/Os.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Os/CMakeFiles/Os.dir/rule
 
 # Convenience name for target.
@@ -3568,14 +3568,14 @@ F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/all: CMak
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/build.make F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/build.make F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=36 "Built target Os_Baremetal_TaskRunner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=36 "Built target Os_Baremetal_TaskRunner"
 .PHONY : F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Os/Baremetal/TaskRunner/CMakeFiles/Os_Baremetal_TaskRunner.dir/rule
 
 # Convenience name for target.
@@ -3595,14 +3595,14 @@ F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/all: CMakeFiles/core.dir/all
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/build.make F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/build.make F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=10 "Built target Drv_DataTypes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=10 "Built target Drv_DataTypes"
 .PHONY : F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Drv/DataTypes/CMakeFiles/Drv_DataTypes.dir/rule
 
 # Convenience name for target.
@@ -3622,14 +3622,14 @@ F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/all: CMakeFiles/c
 F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/build.make F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/build.make F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=11 "Built target Drv_GpioDriverPorts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=11 "Built target Drv_GpioDriverPorts"
 .PHONY : F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Drv/GpioDriverPorts/CMakeFiles/Drv_GpioDriverPorts.dir/rule
 
 # Convenience name for target.
@@ -3649,14 +3649,14 @@ F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/all: CMakeFiles/cor
 F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/build.make F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/build.make F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=13 "Built target Drv_SpiDriverPorts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=13 "Built target Drv_SpiDriverPorts"
 .PHONY : F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Drv/SpiDriverPorts/CMakeFiles/Drv_SpiDriverPorts.dir/rule
 
 # Convenience name for target.
@@ -3676,14 +3676,14 @@ F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/all: CMakeFiles/cor
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build.make F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=12 "Built target Drv_I2cDriverPorts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=12 "Built target Drv_I2cDriverPorts"
 .PHONY : F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts.dir/rule
 
 # Convenience name for target.
@@ -3703,14 +3703,14 @@ F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/all: CMakeFiles/core.dir/
 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=7,8 "Built target Drv_BlockDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=7,8 "Built target Drv_BlockDriver"
 .PHONY : F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/rule
 
 # Convenience name for target.
@@ -3730,14 +3730,14 @@ F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/all: 
 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/build.make F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/build.make F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=9 "Built target Drv_ByteStreamDriverModel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=9 "Built target Drv_ByteStreamDriverModel"
 .PHONY : F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Drv/ByteStreamDriverModel/CMakeFiles/Drv_ByteStreamDriverModel.dir/rule
 
 # Convenience name for target.
@@ -3757,14 +3757,14 @@ F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/all: CMakeFiles/core.dir/all
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/build.make F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/build.make F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=6 "Built target CFDP_Checksum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=6 "Built target CFDP_Checksum"
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/CFDP/Checksum/CMakeFiles/CFDP_Checksum.dir/rule
 
 # Convenience name for target.
@@ -3784,14 +3784,14 @@ F-Prime/Utils/CMakeFiles/Utils.dir/all: CMakeFiles/core.dir/all
 F-Prime/Utils/CMakeFiles/Utils.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Utils/CMakeFiles/Utils.dir/build.make F-Prime/Utils/CMakeFiles/Utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=87,88 "Built target Utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=87,88 "Built target Utils"
 .PHONY : F-Prime/Utils/CMakeFiles/Utils.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Utils/CMakeFiles/Utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/CMakeFiles/Utils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Utils/CMakeFiles/Utils.dir/rule
 
 # Convenience name for target.
@@ -3811,14 +3811,14 @@ F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/all: CMakeFiles/core.dir/all
 F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/build.make F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/build.make F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=89 "Built target Utils_Hash"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=89 "Built target Utils_Hash"
 .PHONY : F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Utils/Hash/CMakeFiles/Utils_Hash.dir/rule
 
 # Convenience name for target.
@@ -3838,14 +3838,14 @@ F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/all: CMakeFiles/core.dir/all
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/build.make F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/depend
 	$(MAKE) $(MAKESILENT) -f F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/build.make F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=90 "Built target Utils_Types"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=90 "Built target Utils_Types"
 .PHONY : F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/all
 
 # Build rule for subdir invocation for target.
 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : F-Prime/Utils/Types/CMakeFiles/Utils_Types.dir/rule
 
 # Convenience name for target.
@@ -3865,14 +3865,14 @@ Arduino/Os/CMakeFiles/Arduino_Os.dir/all: CMakeFiles/core.dir/all
 Arduino/Os/CMakeFiles/Arduino_Os.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/depend
 	$(MAKE) $(MAKESILENT) -f Arduino/Os/CMakeFiles/Arduino_Os.dir/build.make Arduino/Os/CMakeFiles/Arduino_Os.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=5 "Built target Arduino_Os"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=5 "Built target Arduino_Os"
 .PHONY : Arduino/Os/CMakeFiles/Arduino_Os.dir/all
 
 # Build rule for subdir invocation for target.
 Arduino/Os/CMakeFiles/Arduino_Os.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Os/CMakeFiles/Arduino_Os.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : Arduino/Os/CMakeFiles/Arduino_Os.dir/rule
 
 # Convenience name for target.
@@ -3892,14 +3892,14 @@ Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/all: CMakeFiles/core.dir/
 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/depend
 	$(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=1 "Built target Arduino_ArduinoTime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=1 "Built target Arduino_ArduinoTime"
 .PHONY : Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/all
 
 # Build rule for subdir invocation for target.
 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/rule
 
 # Convenience name for target.
@@ -3919,14 +3919,14 @@ Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/all: CMakeFiles/cor
 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/depend
 	$(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=2 "Built target Arduino_Drv_GpioDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=2 "Built target Arduino_Drv_GpioDriver"
 .PHONY : Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/all
 
 # Build rule for subdir invocation for target.
 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/rule
 
 # Convenience name for target.
@@ -3946,14 +3946,14 @@ Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/all: CMakeFiles
 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/depend
 	$(MAKE) $(MAKESILENT) -f Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build.make Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=4 "Built target Arduino_Drv_SerialDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=4 "Built target Arduino_Drv_SerialDriver"
 .PHONY : Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/all
 
 # Build rule for subdir invocation for target.
 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : Arduino/Drv/SerialDriver/CMakeFiles/Arduino_Drv_SerialDriver.dir/rule
 
 # Convenience name for target.
@@ -3973,14 +3973,14 @@ Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/all
 Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/build.make Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/depend
 	$(MAKE) $(MAKESILENT) -f Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/build.make Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=3 "Built target Arduino_Drv_HardwareRateDriver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=3 "Built target Arduino_Drv_HardwareRateDriver"
 .PHONY : Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/all
 
 # Build rule for subdir invocation for target.
 Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : Arduino/Drv/HardwareRateDriver/CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/rule
 
 # Convenience name for target.
@@ -4000,14 +4000,14 @@ SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/all: CMakeFiles/core.di
 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/depend
 	$(MAKE) $(MAKESILENT) -f SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build.make SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=85 "Built target SystemRef_LedBlinker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=85 "Built target SystemRef_LedBlinker"
 .PHONY : SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/all
 
 # Build rule for subdir invocation for target.
 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : SystemRef/LedBlinker/CMakeFiles/SystemRef_LedBlinker.dir/rule
 
 # Convenience name for target.
@@ -4027,14 +4027,14 @@ SystemRef/Top/CMakeFiles/SystemRef_Top.dir/all: CMakeFiles/core.dir/all
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/all: CMakeFiles/fprime_arduino_loose_object_library.dir/all
 	$(MAKE) $(MAKESILENT) -f SystemRef/Top/CMakeFiles/SystemRef_Top.dir/build.make SystemRef/Top/CMakeFiles/SystemRef_Top.dir/depend
 	$(MAKE) $(MAKESILENT) -f SystemRef/Top/CMakeFiles/SystemRef_Top.dir/build.make SystemRef/Top/CMakeFiles/SystemRef_Top.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=86 "Built target SystemRef_Top"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=86 "Built target SystemRef_Top"
 .PHONY : SystemRef/Top/CMakeFiles/SystemRef_Top.dir/all
 
 # Build rule for subdir invocation for target.
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles 0
 .PHONY : SystemRef/Top/CMakeFiles/SystemRef_Top.dir/rule
 
 # Convenience name for target.
@@ -4053,7 +4053,7 @@ SystemRef/Top/CMakeFiles/SystemRef_Top.dir/clean:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriverComponentImpl.hpp-template"
   "CMakeFiles/Svc_RateGroupDriver_impl"
   "RateGroupDriverComponentAi.xml"
 )

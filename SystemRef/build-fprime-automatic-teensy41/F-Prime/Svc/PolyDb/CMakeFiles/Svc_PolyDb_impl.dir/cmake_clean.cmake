@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/PolyDb/PolyDbComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/PolyDb/PolyDbComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PolyDb/PolyDbComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PolyDb/PolyDbComponentImpl.hpp-template"
   "CMakeFiles/Svc_PolyDb_impl"
   "PolyDbComponentAi.xml"
 )

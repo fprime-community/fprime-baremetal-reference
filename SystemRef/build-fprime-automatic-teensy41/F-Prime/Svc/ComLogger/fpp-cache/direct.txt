@@ -1,6 +1,6 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComLogger/Commands.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComLogger/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComLogger/Commands.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComLogger/Events.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp

@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libPortSelector.a CMakeFiles/PortSelector.dir/test/ut/PortSelector.cpp.o CMakeFiles/PortSelector.dir/test/ut/SocketTestHelper.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libPortSelector.a

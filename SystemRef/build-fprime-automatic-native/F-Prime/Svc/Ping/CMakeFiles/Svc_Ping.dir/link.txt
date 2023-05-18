@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libSvc_Ping.a CMakeFiles/Svc_Ping.dir/PingPortAc.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libSvc_Ping.a

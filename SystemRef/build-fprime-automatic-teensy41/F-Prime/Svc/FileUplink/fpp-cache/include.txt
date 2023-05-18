@@ -1,2 +1,2 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/Telemetry.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/Events.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/Telemetry.fppi

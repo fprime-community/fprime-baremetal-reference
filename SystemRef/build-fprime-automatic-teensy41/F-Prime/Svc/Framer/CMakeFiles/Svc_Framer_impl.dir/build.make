@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_Framer_impl.
 
@@ -67,30 +67,30 @@ include F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/compiler_depend.make
 include F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/progress.make
 
 F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl: F-Prime/Svc/Framer/FramerComponentAi.xml
-F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template
-F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template
+F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template
+F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template
 
-F-Prime/Svc/Framer/FramerComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/Framer.fpp
+F-Prime/Svc/Framer/FramerComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/Framer.fpp
 F-Prime/Svc/Framer/FramerComponentAi.xml: lib/teensy41/libDrv_ByteStreamDriverModel.a
 F-Prime/Svc/Framer/FramerComponentAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/Framer/FramerComponentAi.xml: lib/teensy41/libFw_Com.a
 F-Prime/Svc/Framer/FramerComponentAi.xml: lib/teensy41/libFw_Ports_SuccessCondition.a
 F-Prime/Svc/Framer/FramerComponentAi.xml: lib/teensy41/libOs.a
 F-Prime/Svc/Framer/FramerComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FramerComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer -i /home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Types.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/Framer.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FramerComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Ports/SuccessCondition/SuccessCondition.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Types.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/Framer.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template: F-Prime/Svc/Framer/FramerComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer/FramerComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template: F-Prime/Svc/Framer/FramerComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer/FramerComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template
 
 Svc_Framer_impl: F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl
 Svc_Framer_impl: F-Prime/Svc/Framer/FramerComponentAi.xml
-Svc_Framer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template
-Svc_Framer_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template
+Svc_Framer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.cpp-template
+Svc_Framer_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/FramerComponentImpl.hpp-template
 Svc_Framer_impl: F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/build.make
 .PHONY : Svc_Framer_impl
 
@@ -99,10 +99,10 @@ F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/build: Svc_Framer_impl
 .PHONY : F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/build
 
 F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Framer_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer && $(CMAKE_COMMAND) -P CMakeFiles/Svc_Framer_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/clean
 
 F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/Framer/CMakeFiles/Svc_Framer_impl.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/BlockDriver//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/BlockDriver//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/rule
 .PHONY : F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Drv_BlockDriver: F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/rule
 
 # fast build rule for target.
 Drv_BlockDriver/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build
 .PHONY : Drv_BlockDriver/fast
 
 # Convenience name for target.
 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/rule
 .PHONY : F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Drv_BlockDriver_impl: F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.di
 
 # fast build rule for target.
 Drv_BlockDriver_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver_impl.dir/build
 .PHONY : Drv_BlockDriver_impl/fast
 
 BlockDriverComponentAc.obj: BlockDriverComponentAc.cpp.obj
@@ -195,7 +195,7 @@ BlockDriverComponentAc.obj: BlockDriverComponentAc.cpp.obj
 
 # target to build an object file
 BlockDriverComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverComponentAc.cpp.obj
 .PHONY : BlockDriverComponentAc.cpp.obj
 
 BlockDriverComponentAc.i: BlockDriverComponentAc.cpp.i
@@ -203,7 +203,7 @@ BlockDriverComponentAc.i: BlockDriverComponentAc.cpp.i
 
 # target to preprocess a source file
 BlockDriverComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverComponentAc.cpp.i
 .PHONY : BlockDriverComponentAc.cpp.i
 
 BlockDriverComponentAc.s: BlockDriverComponentAc.cpp.s
@@ -211,7 +211,7 @@ BlockDriverComponentAc.s: BlockDriverComponentAc.cpp.s
 
 # target to generate assembly for a file
 BlockDriverComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverComponentAc.cpp.s
 .PHONY : BlockDriverComponentAc.cpp.s
 
 BlockDriverImpl.obj: BlockDriverImpl.cpp.obj
@@ -219,7 +219,7 @@ BlockDriverImpl.obj: BlockDriverImpl.cpp.obj
 
 # target to build an object file
 BlockDriverImpl.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverImpl.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverImpl.cpp.obj
 .PHONY : BlockDriverImpl.cpp.obj
 
 BlockDriverImpl.i: BlockDriverImpl.cpp.i
@@ -227,7 +227,7 @@ BlockDriverImpl.i: BlockDriverImpl.cpp.i
 
 # target to preprocess a source file
 BlockDriverImpl.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverImpl.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverImpl.cpp.i
 .PHONY : BlockDriverImpl.cpp.i
 
 BlockDriverImpl.s: BlockDriverImpl.cpp.s
@@ -235,7 +235,7 @@ BlockDriverImpl.s: BlockDriverImpl.cpp.s
 
 # target to generate assembly for a file
 BlockDriverImpl.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverImpl.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/build.make F-Prime/Drv/BlockDriver/CMakeFiles/Drv_BlockDriver.dir/BlockDriverImpl.cpp.s
 .PHONY : BlockDriverImpl.cpp.s
 
 # Help Target
@@ -269,7 +269,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

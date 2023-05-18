@@ -1,2 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/LinuxUartDriver/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/LinuxUartDriver/Telemetry.fppi

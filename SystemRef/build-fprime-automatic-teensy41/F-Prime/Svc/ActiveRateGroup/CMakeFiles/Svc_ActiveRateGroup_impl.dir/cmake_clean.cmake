@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveRateGroup/ActiveRateGroupComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveRateGroup/ActiveRateGroupComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveRateGroup/ActiveRateGroupComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveRateGroup/ActiveRateGroupComponentImpl.hpp-template"
   "ActiveRateGroupComponentAi.xml"
   "CMakeFiles/Svc_ActiveRateGroup_impl"
 )

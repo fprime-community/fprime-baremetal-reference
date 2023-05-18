@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/depend.make
@@ -70,32 +70,32 @@ include F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/progress.make
 include F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/flags.make
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/flags.make
-F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/String.cpp
+F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/String.cpp
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xf1b26abf -DASSERT_RELATIVE_PATH='"Fw/Test/String.cpp"' -MD -MT F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj -MF CMakeFiles/Fw_Test.dir/String.cpp.obj.d -o CMakeFiles/Fw_Test.dir/String.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/String.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xf1b26abf -DASSERT_RELATIVE_PATH='"Fw/Test/String.cpp"' -MD -MT F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj -MF CMakeFiles/Fw_Test.dir/String.cpp.obj.d -o CMakeFiles/Fw_Test.dir/String.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/String.cpp
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Test.dir/String.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xf1b26abf -DASSERT_RELATIVE_PATH='"Fw/Test/String.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/String.cpp > CMakeFiles/Fw_Test.dir/String.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xf1b26abf -DASSERT_RELATIVE_PATH='"Fw/Test/String.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/String.cpp > CMakeFiles/Fw_Test.dir/String.cpp.i
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Test.dir/String.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xf1b26abf -DASSERT_RELATIVE_PATH='"Fw/Test/String.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/String.cpp -o CMakeFiles/Fw_Test.dir/String.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xf1b26abf -DASSERT_RELATIVE_PATH='"Fw/Test/String.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/String.cpp -o CMakeFiles/Fw_Test.dir/String.cpp.s
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/flags.make
-F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/UnitTestAssert.cpp
+F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/UnitTestAssert.cpp
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x444d7ee1 -DASSERT_RELATIVE_PATH='"Fw/Test/UnitTestAssert.cpp"' -MD -MT F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj -MF CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj.d -o CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/UnitTestAssert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x444d7ee1 -DASSERT_RELATIVE_PATH='"Fw/Test/UnitTestAssert.cpp"' -MD -MT F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj -MF CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj.d -o CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/UnitTestAssert.cpp
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x444d7ee1 -DASSERT_RELATIVE_PATH='"Fw/Test/UnitTestAssert.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/UnitTestAssert.cpp > CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x444d7ee1 -DASSERT_RELATIVE_PATH='"Fw/Test/UnitTestAssert.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/UnitTestAssert.cpp > CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.i
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x444d7ee1 -DASSERT_RELATIVE_PATH='"Fw/Test/UnitTestAssert.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test/UnitTestAssert.cpp -o CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x444d7ee1 -DASSERT_RELATIVE_PATH='"Fw/Test/UnitTestAssert.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test/UnitTestAssert.cpp -o CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.s
 
 # Object files for target Fw_Test
 Fw_Test_OBJECTS = \
@@ -109,19 +109,19 @@ lib/teensy41/libFw_Test.a: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/String.cpp.obj
 lib/teensy41/libFw_Test.a: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/UnitTestAssert.cpp.obj
 lib/teensy41/libFw_Test.a: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/build.make
 lib/teensy41/libFw_Test.a: F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libFw_Test.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Test.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library ../../../lib/teensy41/libFw_Test.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Test.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/build: lib/teensy41/libFw_Test.a
 .PHONY : F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/build
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Test.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Test.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/clean
 
 F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Test /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Test /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Test/CMakeFiles/Fw_Test.dir/depend
 

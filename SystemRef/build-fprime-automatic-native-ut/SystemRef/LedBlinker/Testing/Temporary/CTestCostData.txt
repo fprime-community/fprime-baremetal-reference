@@ -1,3 +1,0 @@
-SystemRef_LedBlinker_ut_exe 3 0
----
-SystemRef_LedBlinker_ut_exe

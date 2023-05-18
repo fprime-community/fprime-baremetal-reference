@@ -1,1 +1,1 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/Events.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/Events.fppi

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Os//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Os/CMakeFiles/Os.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/CMakeFiles/Os.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/CMakeFiles/Os.dir/rule
 .PHONY : F-Prime/Os/CMakeFiles/Os.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Os: F-Prime/Os/CMakeFiles/Os.dir/rule
 
 # fast build rule for target.
 Os/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/build
 .PHONY : Os/fast
 
 # Convenience name for target.
 F-Prime/Os/CMakeFiles/Os_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/CMakeFiles/Os_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Os/CMakeFiles/Os_impl.dir/rule
 .PHONY : F-Prime/Os/CMakeFiles/Os_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Os_impl: F-Prime/Os/CMakeFiles/Os_impl.dir/rule
 
 # fast build rule for target.
 Os_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os_impl.dir/build.make F-Prime/Os/CMakeFiles/Os_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os_impl.dir/build.make F-Prime/Os/CMakeFiles/Os_impl.dir/build
 .PHONY : Os_impl/fast
 
 Baremetal/File.obj: Baremetal/File.cpp.obj
@@ -195,7 +195,7 @@ Baremetal/File.obj: Baremetal/File.cpp.obj
 
 # target to build an object file
 Baremetal/File.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/File.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/File.cpp.obj
 .PHONY : Baremetal/File.cpp.obj
 
 Baremetal/File.i: Baremetal/File.cpp.i
@@ -203,7 +203,7 @@ Baremetal/File.i: Baremetal/File.cpp.i
 
 # target to preprocess a source file
 Baremetal/File.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/File.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/File.cpp.i
 .PHONY : Baremetal/File.cpp.i
 
 Baremetal/File.s: Baremetal/File.cpp.s
@@ -211,7 +211,7 @@ Baremetal/File.s: Baremetal/File.cpp.s
 
 # target to generate assembly for a file
 Baremetal/File.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/File.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/File.cpp.s
 .PHONY : Baremetal/File.cpp.s
 
 Baremetal/FileSystem.obj: Baremetal/FileSystem.cpp.obj
@@ -219,7 +219,7 @@ Baremetal/FileSystem.obj: Baremetal/FileSystem.cpp.obj
 
 # target to build an object file
 Baremetal/FileSystem.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/FileSystem.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/FileSystem.cpp.obj
 .PHONY : Baremetal/FileSystem.cpp.obj
 
 Baremetal/FileSystem.i: Baremetal/FileSystem.cpp.i
@@ -227,7 +227,7 @@ Baremetal/FileSystem.i: Baremetal/FileSystem.cpp.i
 
 # target to preprocess a source file
 Baremetal/FileSystem.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/FileSystem.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/FileSystem.cpp.i
 .PHONY : Baremetal/FileSystem.cpp.i
 
 Baremetal/FileSystem.s: Baremetal/FileSystem.cpp.s
@@ -235,7 +235,7 @@ Baremetal/FileSystem.s: Baremetal/FileSystem.cpp.s
 
 # target to generate assembly for a file
 Baremetal/FileSystem.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/FileSystem.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/FileSystem.cpp.s
 .PHONY : Baremetal/FileSystem.cpp.s
 
 Baremetal/IntervalTimer.obj: Baremetal/IntervalTimer.cpp.obj
@@ -243,7 +243,7 @@ Baremetal/IntervalTimer.obj: Baremetal/IntervalTimer.cpp.obj
 
 # target to build an object file
 Baremetal/IntervalTimer.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/IntervalTimer.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/IntervalTimer.cpp.obj
 .PHONY : Baremetal/IntervalTimer.cpp.obj
 
 Baremetal/IntervalTimer.i: Baremetal/IntervalTimer.cpp.i
@@ -251,7 +251,7 @@ Baremetal/IntervalTimer.i: Baremetal/IntervalTimer.cpp.i
 
 # target to preprocess a source file
 Baremetal/IntervalTimer.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/IntervalTimer.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/IntervalTimer.cpp.i
 .PHONY : Baremetal/IntervalTimer.cpp.i
 
 Baremetal/IntervalTimer.s: Baremetal/IntervalTimer.cpp.s
@@ -259,7 +259,7 @@ Baremetal/IntervalTimer.s: Baremetal/IntervalTimer.cpp.s
 
 # target to generate assembly for a file
 Baremetal/IntervalTimer.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/IntervalTimer.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/IntervalTimer.cpp.s
 .PHONY : Baremetal/IntervalTimer.cpp.s
 
 Baremetal/Mutex.obj: Baremetal/Mutex.cpp.obj
@@ -267,7 +267,7 @@ Baremetal/Mutex.obj: Baremetal/Mutex.cpp.obj
 
 # target to build an object file
 Baremetal/Mutex.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Mutex.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Mutex.cpp.obj
 .PHONY : Baremetal/Mutex.cpp.obj
 
 Baremetal/Mutex.i: Baremetal/Mutex.cpp.i
@@ -275,7 +275,7 @@ Baremetal/Mutex.i: Baremetal/Mutex.cpp.i
 
 # target to preprocess a source file
 Baremetal/Mutex.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Mutex.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Mutex.cpp.i
 .PHONY : Baremetal/Mutex.cpp.i
 
 Baremetal/Mutex.s: Baremetal/Mutex.cpp.s
@@ -283,7 +283,7 @@ Baremetal/Mutex.s: Baremetal/Mutex.cpp.s
 
 # target to generate assembly for a file
 Baremetal/Mutex.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Mutex.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Mutex.cpp.s
 .PHONY : Baremetal/Mutex.cpp.s
 
 Baremetal/Queue.obj: Baremetal/Queue.cpp.obj
@@ -291,7 +291,7 @@ Baremetal/Queue.obj: Baremetal/Queue.cpp.obj
 
 # target to build an object file
 Baremetal/Queue.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Queue.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Queue.cpp.obj
 .PHONY : Baremetal/Queue.cpp.obj
 
 Baremetal/Queue.i: Baremetal/Queue.cpp.i
@@ -299,7 +299,7 @@ Baremetal/Queue.i: Baremetal/Queue.cpp.i
 
 # target to preprocess a source file
 Baremetal/Queue.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Queue.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Queue.cpp.i
 .PHONY : Baremetal/Queue.cpp.i
 
 Baremetal/Queue.s: Baremetal/Queue.cpp.s
@@ -307,7 +307,7 @@ Baremetal/Queue.s: Baremetal/Queue.cpp.s
 
 # target to generate assembly for a file
 Baremetal/Queue.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Queue.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Queue.cpp.s
 .PHONY : Baremetal/Queue.cpp.s
 
 Baremetal/SystemResources.obj: Baremetal/SystemResources.cpp.obj
@@ -315,7 +315,7 @@ Baremetal/SystemResources.obj: Baremetal/SystemResources.cpp.obj
 
 # target to build an object file
 Baremetal/SystemResources.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/SystemResources.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/SystemResources.cpp.obj
 .PHONY : Baremetal/SystemResources.cpp.obj
 
 Baremetal/SystemResources.i: Baremetal/SystemResources.cpp.i
@@ -323,7 +323,7 @@ Baremetal/SystemResources.i: Baremetal/SystemResources.cpp.i
 
 # target to preprocess a source file
 Baremetal/SystemResources.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/SystemResources.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/SystemResources.cpp.i
 .PHONY : Baremetal/SystemResources.cpp.i
 
 Baremetal/SystemResources.s: Baremetal/SystemResources.cpp.s
@@ -331,7 +331,7 @@ Baremetal/SystemResources.s: Baremetal/SystemResources.cpp.s
 
 # target to generate assembly for a file
 Baremetal/SystemResources.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/SystemResources.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/SystemResources.cpp.s
 .PHONY : Baremetal/SystemResources.cpp.s
 
 Baremetal/Task.obj: Baremetal/Task.cpp.obj
@@ -339,7 +339,7 @@ Baremetal/Task.obj: Baremetal/Task.cpp.obj
 
 # target to build an object file
 Baremetal/Task.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Task.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Task.cpp.obj
 .PHONY : Baremetal/Task.cpp.obj
 
 Baremetal/Task.i: Baremetal/Task.cpp.i
@@ -347,7 +347,7 @@ Baremetal/Task.i: Baremetal/Task.cpp.i
 
 # target to preprocess a source file
 Baremetal/Task.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Task.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Task.cpp.i
 .PHONY : Baremetal/Task.cpp.i
 
 Baremetal/Task.s: Baremetal/Task.cpp.s
@@ -355,7 +355,7 @@ Baremetal/Task.s: Baremetal/Task.cpp.s
 
 # target to generate assembly for a file
 Baremetal/Task.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Task.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/Baremetal/Task.cpp.s
 .PHONY : Baremetal/Task.cpp.s
 
 FileCommon.obj: FileCommon.cpp.obj
@@ -363,7 +363,7 @@ FileCommon.obj: FileCommon.cpp.obj
 
 # target to build an object file
 FileCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/FileCommon.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/FileCommon.cpp.obj
 .PHONY : FileCommon.cpp.obj
 
 FileCommon.i: FileCommon.cpp.i
@@ -371,7 +371,7 @@ FileCommon.i: FileCommon.cpp.i
 
 # target to preprocess a source file
 FileCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/FileCommon.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/FileCommon.cpp.i
 .PHONY : FileCommon.cpp.i
 
 FileCommon.s: FileCommon.cpp.s
@@ -379,7 +379,7 @@ FileCommon.s: FileCommon.cpp.s
 
 # target to generate assembly for a file
 FileCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/FileCommon.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/FileCommon.cpp.s
 .PHONY : FileCommon.cpp.s
 
 IPCQueueCommon.obj: IPCQueueCommon.cpp.obj
@@ -387,7 +387,7 @@ IPCQueueCommon.obj: IPCQueueCommon.cpp.obj
 
 # target to build an object file
 IPCQueueCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IPCQueueCommon.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IPCQueueCommon.cpp.obj
 .PHONY : IPCQueueCommon.cpp.obj
 
 IPCQueueCommon.i: IPCQueueCommon.cpp.i
@@ -395,7 +395,7 @@ IPCQueueCommon.i: IPCQueueCommon.cpp.i
 
 # target to preprocess a source file
 IPCQueueCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IPCQueueCommon.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IPCQueueCommon.cpp.i
 .PHONY : IPCQueueCommon.cpp.i
 
 IPCQueueCommon.s: IPCQueueCommon.cpp.s
@@ -403,7 +403,7 @@ IPCQueueCommon.s: IPCQueueCommon.cpp.s
 
 # target to generate assembly for a file
 IPCQueueCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IPCQueueCommon.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IPCQueueCommon.cpp.s
 .PHONY : IPCQueueCommon.cpp.s
 
 IntervalTimerCommon.obj: IntervalTimerCommon.cpp.obj
@@ -411,7 +411,7 @@ IntervalTimerCommon.obj: IntervalTimerCommon.cpp.obj
 
 # target to build an object file
 IntervalTimerCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IntervalTimerCommon.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IntervalTimerCommon.cpp.obj
 .PHONY : IntervalTimerCommon.cpp.obj
 
 IntervalTimerCommon.i: IntervalTimerCommon.cpp.i
@@ -419,7 +419,7 @@ IntervalTimerCommon.i: IntervalTimerCommon.cpp.i
 
 # target to preprocess a source file
 IntervalTimerCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IntervalTimerCommon.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IntervalTimerCommon.cpp.i
 .PHONY : IntervalTimerCommon.cpp.i
 
 IntervalTimerCommon.s: IntervalTimerCommon.cpp.s
@@ -427,7 +427,7 @@ IntervalTimerCommon.s: IntervalTimerCommon.cpp.s
 
 # target to generate assembly for a file
 IntervalTimerCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IntervalTimerCommon.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/IntervalTimerCommon.cpp.s
 .PHONY : IntervalTimerCommon.cpp.s
 
 LogDefault.obj: LogDefault.cpp.obj
@@ -435,7 +435,7 @@ LogDefault.obj: LogDefault.cpp.obj
 
 # target to build an object file
 LogDefault.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/LogDefault.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/LogDefault.cpp.obj
 .PHONY : LogDefault.cpp.obj
 
 LogDefault.i: LogDefault.cpp.i
@@ -443,7 +443,7 @@ LogDefault.i: LogDefault.cpp.i
 
 # target to preprocess a source file
 LogDefault.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/LogDefault.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/LogDefault.cpp.i
 .PHONY : LogDefault.cpp.i
 
 LogDefault.s: LogDefault.cpp.s
@@ -451,7 +451,7 @@ LogDefault.s: LogDefault.cpp.s
 
 # target to generate assembly for a file
 LogDefault.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/LogDefault.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/LogDefault.cpp.s
 .PHONY : LogDefault.cpp.s
 
 MemCommon.obj: MemCommon.cpp.obj
@@ -459,7 +459,7 @@ MemCommon.obj: MemCommon.cpp.obj
 
 # target to build an object file
 MemCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/MemCommon.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/MemCommon.cpp.obj
 .PHONY : MemCommon.cpp.obj
 
 MemCommon.i: MemCommon.cpp.i
@@ -467,7 +467,7 @@ MemCommon.i: MemCommon.cpp.i
 
 # target to preprocess a source file
 MemCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/MemCommon.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/MemCommon.cpp.i
 .PHONY : MemCommon.cpp.i
 
 MemCommon.s: MemCommon.cpp.s
@@ -475,7 +475,7 @@ MemCommon.s: MemCommon.cpp.s
 
 # target to generate assembly for a file
 MemCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/MemCommon.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/MemCommon.cpp.s
 .PHONY : MemCommon.cpp.s
 
 QueueCommon.obj: QueueCommon.cpp.obj
@@ -483,7 +483,7 @@ QueueCommon.obj: QueueCommon.cpp.obj
 
 # target to build an object file
 QueueCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueCommon.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueCommon.cpp.obj
 .PHONY : QueueCommon.cpp.obj
 
 QueueCommon.i: QueueCommon.cpp.i
@@ -491,7 +491,7 @@ QueueCommon.i: QueueCommon.cpp.i
 
 # target to preprocess a source file
 QueueCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueCommon.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueCommon.cpp.i
 .PHONY : QueueCommon.cpp.i
 
 QueueCommon.s: QueueCommon.cpp.s
@@ -499,7 +499,7 @@ QueueCommon.s: QueueCommon.cpp.s
 
 # target to generate assembly for a file
 QueueCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueCommon.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueCommon.cpp.s
 .PHONY : QueueCommon.cpp.s
 
 QueueString.obj: QueueString.cpp.obj
@@ -507,7 +507,7 @@ QueueString.obj: QueueString.cpp.obj
 
 # target to build an object file
 QueueString.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueString.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueString.cpp.obj
 .PHONY : QueueString.cpp.obj
 
 QueueString.i: QueueString.cpp.i
@@ -515,7 +515,7 @@ QueueString.i: QueueString.cpp.i
 
 # target to preprocess a source file
 QueueString.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueString.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueString.cpp.i
 .PHONY : QueueString.cpp.i
 
 QueueString.s: QueueString.cpp.s
@@ -523,7 +523,7 @@ QueueString.s: QueueString.cpp.s
 
 # target to generate assembly for a file
 QueueString.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueString.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/QueueString.cpp.s
 .PHONY : QueueString.cpp.s
 
 SimpleQueueRegistry.obj: SimpleQueueRegistry.cpp.obj
@@ -531,7 +531,7 @@ SimpleQueueRegistry.obj: SimpleQueueRegistry.cpp.obj
 
 # target to build an object file
 SimpleQueueRegistry.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/SimpleQueueRegistry.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/SimpleQueueRegistry.cpp.obj
 .PHONY : SimpleQueueRegistry.cpp.obj
 
 SimpleQueueRegistry.i: SimpleQueueRegistry.cpp.i
@@ -539,7 +539,7 @@ SimpleQueueRegistry.i: SimpleQueueRegistry.cpp.i
 
 # target to preprocess a source file
 SimpleQueueRegistry.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/SimpleQueueRegistry.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/SimpleQueueRegistry.cpp.i
 .PHONY : SimpleQueueRegistry.cpp.i
 
 SimpleQueueRegistry.s: SimpleQueueRegistry.cpp.s
@@ -547,7 +547,7 @@ SimpleQueueRegistry.s: SimpleQueueRegistry.cpp.s
 
 # target to generate assembly for a file
 SimpleQueueRegistry.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/SimpleQueueRegistry.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/SimpleQueueRegistry.cpp.s
 .PHONY : SimpleQueueRegistry.cpp.s
 
 TaskCommon.obj: TaskCommon.cpp.obj
@@ -555,7 +555,7 @@ TaskCommon.obj: TaskCommon.cpp.obj
 
 # target to build an object file
 TaskCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskCommon.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskCommon.cpp.obj
 .PHONY : TaskCommon.cpp.obj
 
 TaskCommon.i: TaskCommon.cpp.i
@@ -563,7 +563,7 @@ TaskCommon.i: TaskCommon.cpp.i
 
 # target to preprocess a source file
 TaskCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskCommon.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskCommon.cpp.i
 .PHONY : TaskCommon.cpp.i
 
 TaskCommon.s: TaskCommon.cpp.s
@@ -571,7 +571,7 @@ TaskCommon.s: TaskCommon.cpp.s
 
 # target to generate assembly for a file
 TaskCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskCommon.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskCommon.cpp.s
 .PHONY : TaskCommon.cpp.s
 
 TaskString.obj: TaskString.cpp.obj
@@ -579,7 +579,7 @@ TaskString.obj: TaskString.cpp.obj
 
 # target to build an object file
 TaskString.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskString.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskString.cpp.obj
 .PHONY : TaskString.cpp.obj
 
 TaskString.i: TaskString.cpp.i
@@ -587,7 +587,7 @@ TaskString.i: TaskString.cpp.i
 
 # target to preprocess a source file
 TaskString.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskString.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskString.cpp.i
 .PHONY : TaskString.cpp.i
 
 TaskString.s: TaskString.cpp.s
@@ -595,7 +595,7 @@ TaskString.s: TaskString.cpp.s
 
 # target to generate assembly for a file
 TaskString.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskString.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/TaskString.cpp.s
 .PHONY : TaskString.cpp.s
 
 ValidateFileCommon.obj: ValidateFileCommon.cpp.obj
@@ -603,7 +603,7 @@ ValidateFileCommon.obj: ValidateFileCommon.cpp.obj
 
 # target to build an object file
 ValidateFileCommon.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidateFileCommon.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidateFileCommon.cpp.obj
 .PHONY : ValidateFileCommon.cpp.obj
 
 ValidateFileCommon.i: ValidateFileCommon.cpp.i
@@ -611,7 +611,7 @@ ValidateFileCommon.i: ValidateFileCommon.cpp.i
 
 # target to preprocess a source file
 ValidateFileCommon.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidateFileCommon.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidateFileCommon.cpp.i
 .PHONY : ValidateFileCommon.cpp.i
 
 ValidateFileCommon.s: ValidateFileCommon.cpp.s
@@ -619,7 +619,7 @@ ValidateFileCommon.s: ValidateFileCommon.cpp.s
 
 # target to generate assembly for a file
 ValidateFileCommon.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidateFileCommon.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidateFileCommon.cpp.s
 .PHONY : ValidateFileCommon.cpp.s
 
 ValidatedFile.obj: ValidatedFile.cpp.obj
@@ -627,7 +627,7 @@ ValidatedFile.obj: ValidatedFile.cpp.obj
 
 # target to build an object file
 ValidatedFile.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidatedFile.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidatedFile.cpp.obj
 .PHONY : ValidatedFile.cpp.obj
 
 ValidatedFile.i: ValidatedFile.cpp.i
@@ -635,7 +635,7 @@ ValidatedFile.i: ValidatedFile.cpp.i
 
 # target to preprocess a source file
 ValidatedFile.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidatedFile.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidatedFile.cpp.i
 .PHONY : ValidatedFile.cpp.i
 
 ValidatedFile.s: ValidatedFile.cpp.s
@@ -643,7 +643,7 @@ ValidatedFile.s: ValidatedFile.cpp.s
 
 # target to generate assembly for a file
 ValidatedFile.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidatedFile.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Os/CMakeFiles/Os.dir/build.make F-Prime/Os/CMakeFiles/Os.dir/ValidatedFile.cpp.s
 .PHONY : ValidatedFile.cpp.s
 
 # Help Target
@@ -728,7 +728,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

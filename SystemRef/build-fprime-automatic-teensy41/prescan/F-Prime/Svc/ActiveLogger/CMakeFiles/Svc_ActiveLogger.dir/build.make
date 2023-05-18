@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan
 
 # Include any dependencies generated for this target.
 include F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/depend.make
@@ -69,43 +69,43 @@ include F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/progress.make
 # Include the compile flags for this target's objects.
 include F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/flags.make
 
-F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/flags.make
-F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp
-F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj -MF CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj.d -o CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp
+F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/flags.make
+F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp
+F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj -MF CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj.d -o CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp
 
-F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp > CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i
+F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp > CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i
 
-F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp -o CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s
+F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp -o CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s
 
 # Object files for target Svc_ActiveLogger
 Svc_ActiveLogger_OBJECTS = \
-"CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
+"CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
 
 # External object files for target Svc_ActiveLogger
 Svc_ActiveLogger_EXTERNAL_OBJECTS =
 
-lib/teensy41/libSvc_ActiveLogger.a: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj
+lib/teensy41/libSvc_ActiveLogger.a: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj
 lib/teensy41/libSvc_ActiveLogger.a: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/build.make
 lib/teensy41/libSvc_ActiveLogger.a: F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/teensy41/libSvc_ActiveLogger.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ActiveLogger.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_ActiveLogger.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/teensy41/libSvc_ActiveLogger.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ActiveLogger.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_ActiveLogger.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/build: lib/teensy41/libSvc_ActiveLogger.a
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/build
 
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ActiveLogger.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger && $(CMAKE_COMMAND) -P CMakeFiles/Svc_ActiveLogger.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/clean
 
 F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/ActiveLogger/CMakeFiles/Svc_ActiveLogger.dir/depend
 

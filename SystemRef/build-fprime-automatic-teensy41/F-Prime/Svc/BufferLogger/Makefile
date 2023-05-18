@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferLogger//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferLogger//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/rule
 .PHONY : F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_BufferLogger: F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/rule
 
 # fast build rule for target.
 Svc_BufferLogger/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build
 .PHONY : Svc_BufferLogger/fast
 
 # Convenience name for target.
 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/rule
 .PHONY : F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_BufferLogger_impl: F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl
 
 # fast build rule for target.
 Svc_BufferLogger_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger_impl.dir/build
 .PHONY : Svc_BufferLogger_impl/fast
 
 BufferLogger.obj: BufferLogger.cpp.obj
@@ -195,7 +195,7 @@ BufferLogger.obj: BufferLogger.cpp.obj
 
 # target to build an object file
 BufferLogger.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.obj
 .PHONY : BufferLogger.cpp.obj
 
 BufferLogger.i: BufferLogger.cpp.i
@@ -203,7 +203,7 @@ BufferLogger.i: BufferLogger.cpp.i
 
 # target to preprocess a source file
 BufferLogger.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.i
 .PHONY : BufferLogger.cpp.i
 
 BufferLogger.s: BufferLogger.cpp.s
@@ -211,7 +211,7 @@ BufferLogger.s: BufferLogger.cpp.s
 
 # target to generate assembly for a file
 BufferLogger.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.s
 .PHONY : BufferLogger.cpp.s
 
 BufferLoggerComponentAc.obj: BufferLoggerComponentAc.cpp.obj
@@ -219,7 +219,7 @@ BufferLoggerComponentAc.obj: BufferLoggerComponentAc.cpp.obj
 
 # target to build an object file
 BufferLoggerComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.obj
 .PHONY : BufferLoggerComponentAc.cpp.obj
 
 BufferLoggerComponentAc.i: BufferLoggerComponentAc.cpp.i
@@ -227,7 +227,7 @@ BufferLoggerComponentAc.i: BufferLoggerComponentAc.cpp.i
 
 # target to preprocess a source file
 BufferLoggerComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.i
 .PHONY : BufferLoggerComponentAc.cpp.i
 
 BufferLoggerComponentAc.s: BufferLoggerComponentAc.cpp.s
@@ -235,7 +235,7 @@ BufferLoggerComponentAc.s: BufferLoggerComponentAc.cpp.s
 
 # target to generate assembly for a file
 BufferLoggerComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.s
 .PHONY : BufferLoggerComponentAc.cpp.s
 
 BufferLoggerFile.obj: BufferLoggerFile.cpp.obj
@@ -243,7 +243,7 @@ BufferLoggerFile.obj: BufferLoggerFile.cpp.obj
 
 # target to build an object file
 BufferLoggerFile.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.obj
 .PHONY : BufferLoggerFile.cpp.obj
 
 BufferLoggerFile.i: BufferLoggerFile.cpp.i
@@ -251,7 +251,7 @@ BufferLoggerFile.i: BufferLoggerFile.cpp.i
 
 # target to preprocess a source file
 BufferLoggerFile.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.i
 .PHONY : BufferLoggerFile.cpp.i
 
 BufferLoggerFile.s: BufferLoggerFile.cpp.s
@@ -259,7 +259,7 @@ BufferLoggerFile.s: BufferLoggerFile.cpp.s
 
 # target to generate assembly for a file
 BufferLoggerFile.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.s
 .PHONY : BufferLoggerFile.cpp.s
 
 BufferLogger_LogStateEnumAc.obj: BufferLogger_LogStateEnumAc.cpp.obj
@@ -267,7 +267,7 @@ BufferLogger_LogStateEnumAc.obj: BufferLogger_LogStateEnumAc.cpp.obj
 
 # target to build an object file
 BufferLogger_LogStateEnumAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.obj
 .PHONY : BufferLogger_LogStateEnumAc.cpp.obj
 
 BufferLogger_LogStateEnumAc.i: BufferLogger_LogStateEnumAc.cpp.i
@@ -275,7 +275,7 @@ BufferLogger_LogStateEnumAc.i: BufferLogger_LogStateEnumAc.cpp.i
 
 # target to preprocess a source file
 BufferLogger_LogStateEnumAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.i
 .PHONY : BufferLogger_LogStateEnumAc.cpp.i
 
 BufferLogger_LogStateEnumAc.s: BufferLogger_LogStateEnumAc.cpp.s
@@ -283,7 +283,7 @@ BufferLogger_LogStateEnumAc.s: BufferLogger_LogStateEnumAc.cpp.s
 
 # target to generate assembly for a file
 BufferLogger_LogStateEnumAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/build.make F-Prime/Svc/BufferLogger/CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.s
 .PHONY : BufferLogger_LogStateEnumAc.cpp.s
 
 # Help Target
@@ -323,7 +323,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

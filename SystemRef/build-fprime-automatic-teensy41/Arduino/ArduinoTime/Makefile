@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/ArduinoTime//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/rule
 .PHONY : Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Arduino_ArduinoTime: Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/rule
 
 # fast build rule for target.
 Arduino_ArduinoTime/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build
 .PHONY : Arduino_ArduinoTime/fast
 
 # Convenience name for target.
 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/rule
 .PHONY : Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Arduino_ArduinoTime_impl: Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_imp
 
 # fast build rule for target.
 Arduino_ArduinoTime_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime_impl.dir/build
 .PHONY : Arduino_ArduinoTime_impl/fast
 
 ArduinoTimeImpl.obj: ArduinoTimeImpl.cpp.obj
@@ -195,7 +195,7 @@ ArduinoTimeImpl.obj: ArduinoTimeImpl.cpp.obj
 
 # target to build an object file
 ArduinoTimeImpl.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/ArduinoTimeImpl.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/ArduinoTimeImpl.cpp.obj
 .PHONY : ArduinoTimeImpl.cpp.obj
 
 ArduinoTimeImpl.i: ArduinoTimeImpl.cpp.i
@@ -203,7 +203,7 @@ ArduinoTimeImpl.i: ArduinoTimeImpl.cpp.i
 
 # target to preprocess a source file
 ArduinoTimeImpl.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/ArduinoTimeImpl.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/ArduinoTimeImpl.cpp.i
 .PHONY : ArduinoTimeImpl.cpp.i
 
 ArduinoTimeImpl.s: ArduinoTimeImpl.cpp.s
@@ -211,7 +211,7 @@ ArduinoTimeImpl.s: ArduinoTimeImpl.cpp.s
 
 # target to generate assembly for a file
 ArduinoTimeImpl.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/ArduinoTimeImpl.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/build.make Arduino/ArduinoTime/CMakeFiles/Arduino_ArduinoTime.dir/ArduinoTimeImpl.cpp.s
 .PHONY : ArduinoTimeImpl.cpp.s
 
 # Help Target
@@ -242,7 +242,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

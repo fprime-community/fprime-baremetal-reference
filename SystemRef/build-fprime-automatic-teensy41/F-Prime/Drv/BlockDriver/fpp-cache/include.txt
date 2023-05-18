@@ -1,1 +1,1 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/Tlm.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/Tlm.fppi

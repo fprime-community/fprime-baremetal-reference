@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmChan/TlmChanComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmChan/TlmChanComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmChan/TlmChanComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmChan/TlmChanComponentImpl.hpp-template"
   "CMakeFiles/Svc_TlmChan_impl"
   "TlmChanComponentAi.xml"
 )

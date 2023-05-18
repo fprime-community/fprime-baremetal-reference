@@ -3,79 +3,79 @@
 
 F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/CmdSeqCancelPortAc.cpp.obj: F-Prime/Svc/Seq/CmdSeqCancelPortAc.cpp \
   F-Prime/Svc/Seq/CmdSeqCancelPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/PortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringUtils.hpp
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/PortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringUtils.hpp
 
 F-Prime/Svc/Seq/CMakeFiles/Svc_Seq.dir/CmdSeqInPortAc.cpp.obj: F-Prime/Svc/Seq/CmdSeqInPortAc.cpp \
   F-Prime/Svc/Seq/CmdSeqInPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/PortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/String.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cfg/SerIds.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringUtils.hpp
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/PortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/String.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cfg/SerIds.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringUtils.hpp
 
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/String.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cfg/SerIds.hpp:
 
-F-Prime/Svc/Seq/CmdSeqInPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringUtils.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cfg/SerIds.hpp:
-
-F-Prime/Svc/Seq/CmdSeqCancelPortAc.cpp:
-
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h:
-
-F-Prime/Svc/Seq/CmdSeqCancelPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/PassiveComponentBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/PortBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputPortBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/String.hpp:
 
 F-Prime/Svc/Seq/CmdSeqInPortAc.cpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputPortBase.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp:
+F-Prime/Svc/Seq/CmdSeqCancelPortAc.cpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp:
+F-Prime/Svc/Seq/CmdSeqCancelPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/PassiveComponentBase.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringUtils.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputPortBase.hpp:
+
+F-Prime/Svc/Seq/CmdSeqInPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/PortBase.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputPortBase.hpp:

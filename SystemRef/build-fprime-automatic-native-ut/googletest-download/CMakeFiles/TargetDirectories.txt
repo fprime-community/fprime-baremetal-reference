@@ -1,3 +1,0 @@
-/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-native-ut/googletest-download/CMakeFiles/googletest.dir
-/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-native-ut/googletest-download/CMakeFiles/edit_cache.dir
-/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-native-ut/googletest-download/CMakeFiles/rebuild_cache.dir

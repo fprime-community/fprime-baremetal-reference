@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_GroundInterface_impl.
 
@@ -67,31 +67,31 @@ include F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/comp
 include F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/progress.make
 
 F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl: F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml
-F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template
-F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template
+F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template
+F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template
 
-F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterface.fpp
-F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/Events.fppi
+F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterface.fpp
+F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/Events.fppi
 F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: lib/teensy41/libFw_Com.a
 F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: lib/teensy41/libFw_Log.a
 F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: lib/teensy41/libSvc_Sched.a
 F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: lib/teensy41/libOs.a
 F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml: lib/teensy41/libFw_Comp.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GroundInterfaceComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/Com.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterface.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating GroundInterfaceComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/Com.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterface.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template: F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template: F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template
 
 Svc_GroundInterface_impl: F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl
 Svc_GroundInterface_impl: F-Prime/Svc/GroundInterface/GroundInterfaceComponentAi.xml
-Svc_GroundInterface_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template
-Svc_GroundInterface_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template
+Svc_GroundInterface_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.cpp-template
+Svc_GroundInterface_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface/GroundInterfaceComponentImpl.hpp-template
 Svc_GroundInterface_impl: F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/build.make
 .PHONY : Svc_GroundInterface_impl
 
@@ -100,10 +100,10 @@ F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/build: Svc_G
 .PHONY : F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/build
 
 F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface && $(CMAKE_COMMAND) -P CMakeFiles/Svc_GroundInterface_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface && $(CMAKE_COMMAND) -P CMakeFiles/Svc_GroundInterface_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/clean
 
 F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/GroundInterface /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/GroundInterface /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/GroundInterface/CMakeFiles/Svc_GroundInterface_impl.dir/depend
 

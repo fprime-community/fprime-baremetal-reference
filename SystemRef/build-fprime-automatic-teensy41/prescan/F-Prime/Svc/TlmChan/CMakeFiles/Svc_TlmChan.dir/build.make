@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan
 
 # Include any dependencies generated for this target.
 include F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/depend.make
@@ -69,43 +69,43 @@ include F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/progress.make
 # Include the compile flags for this target's objects.
 include F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/flags.make
 
-F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/flags.make
-F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp
-F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj -MF CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj.d -o CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp
+F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/flags.make
+F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp
+F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj -MF CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj.d -o CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp
 
-F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp > CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.i
+F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp > CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.i
 
-F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp -o CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.s
+F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp -o CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.s
 
 # Object files for target Svc_TlmChan
 Svc_TlmChan_OBJECTS = \
-"CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj"
+"CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj"
 
 # External object files for target Svc_TlmChan
 Svc_TlmChan_EXTERNAL_OBJECTS =
 
-lib/teensy41/libSvc_TlmChan.a: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.obj
+lib/teensy41/libSvc_TlmChan.a: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/cmake/empty.cpp.obj
 lib/teensy41/libSvc_TlmChan.a: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/build.make
 lib/teensy41/libSvc_TlmChan.a: F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/teensy41/libSvc_TlmChan.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && $(CMAKE_COMMAND) -P CMakeFiles/Svc_TlmChan.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_TlmChan.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../lib/teensy41/libSvc_TlmChan.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && $(CMAKE_COMMAND) -P CMakeFiles/Svc_TlmChan.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Svc_TlmChan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/build: lib/teensy41/libSvc_TlmChan.a
 .PHONY : F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/build
 
 F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && $(CMAKE_COMMAND) -P CMakeFiles/Svc_TlmChan.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan && $(CMAKE_COMMAND) -P CMakeFiles/Svc_TlmChan.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/clean
 
 F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmChan /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmChan /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/prescan/F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/TlmChan/CMakeFiles/Svc_TlmChan.dir/depend
 

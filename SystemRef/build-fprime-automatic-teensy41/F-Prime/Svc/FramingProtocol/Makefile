@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FramingProtocol//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FramingProtocol//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/rule
 .PHONY : F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_FramingProtocol: F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.
 
 # fast build rule for target.
 Svc_FramingProtocol/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build
 .PHONY : Svc_FramingProtocol/fast
 
 # Convenience name for target.
 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/rule
 .PHONY : F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_FramingProtocol_impl: F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProt
 
 # fast build rule for target.
 Svc_FramingProtocol_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol_impl.dir/build
 .PHONY : Svc_FramingProtocol_impl/fast
 
 DeframingProtocol.obj: DeframingProtocol.cpp.obj
@@ -195,7 +195,7 @@ DeframingProtocol.obj: DeframingProtocol.cpp.obj
 
 # target to build an object file
 DeframingProtocol.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/DeframingProtocol.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/DeframingProtocol.cpp.obj
 .PHONY : DeframingProtocol.cpp.obj
 
 DeframingProtocol.i: DeframingProtocol.cpp.i
@@ -203,7 +203,7 @@ DeframingProtocol.i: DeframingProtocol.cpp.i
 
 # target to preprocess a source file
 DeframingProtocol.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/DeframingProtocol.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/DeframingProtocol.cpp.i
 .PHONY : DeframingProtocol.cpp.i
 
 DeframingProtocol.s: DeframingProtocol.cpp.s
@@ -211,7 +211,7 @@ DeframingProtocol.s: DeframingProtocol.cpp.s
 
 # target to generate assembly for a file
 DeframingProtocol.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/DeframingProtocol.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/DeframingProtocol.cpp.s
 .PHONY : DeframingProtocol.cpp.s
 
 FprimeProtocol.obj: FprimeProtocol.cpp.obj
@@ -219,7 +219,7 @@ FprimeProtocol.obj: FprimeProtocol.cpp.obj
 
 # target to build an object file
 FprimeProtocol.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FprimeProtocol.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FprimeProtocol.cpp.obj
 .PHONY : FprimeProtocol.cpp.obj
 
 FprimeProtocol.i: FprimeProtocol.cpp.i
@@ -227,7 +227,7 @@ FprimeProtocol.i: FprimeProtocol.cpp.i
 
 # target to preprocess a source file
 FprimeProtocol.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FprimeProtocol.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FprimeProtocol.cpp.i
 .PHONY : FprimeProtocol.cpp.i
 
 FprimeProtocol.s: FprimeProtocol.cpp.s
@@ -235,7 +235,7 @@ FprimeProtocol.s: FprimeProtocol.cpp.s
 
 # target to generate assembly for a file
 FprimeProtocol.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FprimeProtocol.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FprimeProtocol.cpp.s
 .PHONY : FprimeProtocol.cpp.s
 
 FramingProtocol.obj: FramingProtocol.cpp.obj
@@ -243,7 +243,7 @@ FramingProtocol.obj: FramingProtocol.cpp.obj
 
 # target to build an object file
 FramingProtocol.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FramingProtocol.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FramingProtocol.cpp.obj
 .PHONY : FramingProtocol.cpp.obj
 
 FramingProtocol.i: FramingProtocol.cpp.i
@@ -251,7 +251,7 @@ FramingProtocol.i: FramingProtocol.cpp.i
 
 # target to preprocess a source file
 FramingProtocol.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FramingProtocol.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FramingProtocol.cpp.i
 .PHONY : FramingProtocol.cpp.i
 
 FramingProtocol.s: FramingProtocol.cpp.s
@@ -259,7 +259,7 @@ FramingProtocol.s: FramingProtocol.cpp.s
 
 # target to generate assembly for a file
 FramingProtocol.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FramingProtocol.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/build.make F-Prime/Svc/FramingProtocol/CMakeFiles/Svc_FramingProtocol.dir/FramingProtocol.cpp.s
 .PHONY : FramingProtocol.cpp.s
 
 # Help Target
@@ -296,7 +296,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

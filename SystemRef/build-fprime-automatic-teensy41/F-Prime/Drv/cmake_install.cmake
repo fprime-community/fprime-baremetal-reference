@@ -1,8 +1,8 @@
-# Install script for directory: /home/ethan/jpl/projects/BareMetal/fprime/Drv
+# Install script for directory: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ethan/jpl/projects/BareMetal/SystemRef/build-artifacts")
+  set(CMAKE_INSTALL_PREFIX "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-artifacts")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,21 +34,21 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump")
+  set(CMAKE_OBJDUMP "/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/BlockDriver/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxGpioDriver/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxUartDriver/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxSpiDriver/cmake_install.cmake")
-  include("/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxI2cDriver/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/DataTypes/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/GpioDriverPorts/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/SpiDriverPorts/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/BlockDriver/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/ByteStreamDriverModel/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxGpioDriver/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxUartDriver/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxSpiDriver/cmake_install.cmake")
+  include("/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/LinuxI2cDriver/cmake_install.cmake")
 
 endif()
 

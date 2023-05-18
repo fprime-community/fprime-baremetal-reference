@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../lib/Linux/libFw_Log.a CMakeFiles/Fw_Log.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
-/usr/bin/ranlib ../../../lib/Linux/libFw_Log.a

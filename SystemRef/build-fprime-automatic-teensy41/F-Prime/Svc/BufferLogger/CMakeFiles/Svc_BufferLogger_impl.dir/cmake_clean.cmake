@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferLogger/BufferLoggerComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferLogger/BufferLoggerComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferLogger/BufferLoggerComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferLogger/BufferLoggerComponentImpl.hpp-template"
   "BufferLoggerComponentAi.xml"
   "BufferLogger_LogStateEnumAc.cpp"
   "BufferLogger_LogStateEnumAc.hpp"

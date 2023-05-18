@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_FileDownlink_impl.
 
@@ -67,13 +67,13 @@ include F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/compiler_d
 include F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/progress.make
 
 F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl: F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml
-F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template
-F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template
+F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template
+F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template
 
-F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlink.fpp
-F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Commands.fppi
-F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Events.fppi
-F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Telemetry.fppi
+F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlink.fpp
+F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/Commands.fppi
+F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/Events.fppi
+F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/Telemetry.fppi
 F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: lib/teensy41/libFw_Log.a
@@ -84,20 +84,20 @@ F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: lib/teensy41/libSvc_Ping.a
 F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: lib/teensy41/libSvc_Sched.a
 F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FileDownlinkComponentAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlinkPorts/FileDownlinkPorts.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Sched/Sched.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlink.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating FileDownlinkComponentAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlinkPorts/FileDownlinkPorts.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Sched/Sched.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlink.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template: F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template: F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template
 
 Svc_FileDownlink_impl: F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl
 Svc_FileDownlink_impl: F-Prime/Svc/FileDownlink/FileDownlinkComponentAi.xml
-Svc_FileDownlink_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template
-Svc_FileDownlink_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template
+Svc_FileDownlink_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.cpp-template
+Svc_FileDownlink_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlinkComponentImpl.hpp-template
 Svc_FileDownlink_impl: F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/build.make
 .PHONY : Svc_FileDownlink_impl
 
@@ -106,10 +106,10 @@ F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/build: Svc_FileDow
 .PHONY : F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/build
 
 F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink && $(CMAKE_COMMAND) -P CMakeFiles/Svc_FileDownlink_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink && $(CMAKE_COMMAND) -P CMakeFiles/Svc_FileDownlink_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/clean
 
 F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/FileDownlink/CMakeFiles/Svc_FileDownlink_impl.dir/depend
 

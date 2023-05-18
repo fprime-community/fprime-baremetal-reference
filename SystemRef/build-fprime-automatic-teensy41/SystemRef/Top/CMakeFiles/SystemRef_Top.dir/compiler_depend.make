@@ -3,133 +3,133 @@
 
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/FppConstantsAc.cpp.obj: SystemRef/Top/FppConstantsAc.cpp \
   SystemRef/Top/FppConstantsAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h
 
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/Ports_RateGroupsEnumAc.cpp.obj: SystemRef/Top/Ports_RateGroupsEnumAc.cpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
   SystemRef/Top/Ports_RateGroupsEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/String.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cfg/SerIds.hpp
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/String.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cfg/SerIds.hpp
 
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/Ports_StaticMemoryEnumAc.cpp.obj: SystemRef/Top/Ports_StaticMemoryEnumAc.cpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
   SystemRef/Top/Ports_StaticMemoryEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/String.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cfg/SerIds.hpp
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/String.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cfg/SerIds.hpp
 
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/SystemRefPacketsAc.cpp.obj: SystemRef/Top/SystemRefPacketsAc.cpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmPacketizer/TlmPacketizerTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/TlmPacketizerCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmPacketizer/TlmPacketizerTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/TlmPacketizerCfg.hpp \
   SystemRef/Top/SystemRefPacketsAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp
 
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/SystemRefTopology.cpp.obj: ../Top/SystemRefTopology.cpp \
   SystemRef/Top/SystemRefTopologyAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp \
   F-Prime/Svc/Time/TimeComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputSerializePort.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/PortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputSerializePort.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/ActiveComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/QueuedComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/Queue.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/Task.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/TaskId.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/TaskIdRepr.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Deprecate.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputSerializePort.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/PortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputSerializePort.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/ActiveComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/QueuedComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Queue.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Task.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskId.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskIdRepr.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Deprecate.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp \
   F-Prime/Fw/Time/TimePortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.hpp \
   Arduino/Drv/GpioDriver/GpioDriverComponentAc.hpp \
   F-Prime/Fw/Types/LogicEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/String.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cfg/SerIds.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/String.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cfg/SerIds.hpp \
   F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.hpp \
   F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriver.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/TimerVal.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/IntervalTimer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/TimerVal.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/IntervalTimer.hpp \
   Arduino/Drv/HardwareRateDriver/HardwareRateDriverComponentAc.hpp \
   F-Prime/Svc/Cycle/CyclePortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.hpp \
   Arduino/Drv/SerialDriver/SerialDriverComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/Mutex.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Mutex.hpp \
   F-Prime/Drv/ByteStreamDriverModel/RecvStatusEnumAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamReadyPortAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamRecvPortAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamSendPortAc.hpp \
   F-Prime/Fw/Buffer/BufferGetPortAc.hpp \
   F-Prime/Fw/Buffer/BufferSendPortAc.hpp \
   F-Prime/Svc/Sched/SchedPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriver.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriverImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriverImpl.hpp \
   F-Prime/Drv/BlockDriver/BlockDriverComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/InternalInterfaceString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/InternalInterfaceString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmBuffer.hpp \
   F-Prime/Drv/DataTypes/DataBufferPortAc.hpp \
   F-Prime/Fw/Tlm/TlmPortAc.hpp \
   F-Prime/Svc/Ping/PingPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLogger.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLogger.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerImpl.hpp \
   F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/CmdString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/CmdString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogString.hpp \
   F-Prime/Fw/Log/LogSeverityEnumAc.hpp \
   F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.hpp \
   F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp \
   F-Prime/Fw/Cmd/CmdResponseEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/CmdArgBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/TextLogString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/ComBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/CmdArgBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/TextLogString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/ComBuffer.hpp \
   F-Prime/Fw/Cmd/CmdPortAc.hpp \
   F-Prime/Fw/Cmd/CmdRegPortAc.hpp \
   F-Prime/Fw/Cmd/CmdResponsePortAc.hpp \
@@ -137,193 +137,188 @@ SystemRef/Top/CMakeFiles/SystemRef_Top.dir/SystemRefTopology.cpp.obj: ../Top/Sys
   F-Prime/Fw/Log/LogPortAc.hpp \
   F-Prime/Fw/Log/LogTextPortAc.hpp \
   F-Prime/Svc/Fatal/FatalEventPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogPacket.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/ComPacket.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/ActiveLoggerImplCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveRateGroup/ActiveRateGroup.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogPacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/ComPacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/ActiveLoggerImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveRateGroup/ActiveRateGroup.hpp \
   F-Prime/Svc/ActiveRateGroup/ActiveRateGroupComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapter.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapter.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp \
   F-Prime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManager.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManager.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp \
   F-Prime/Svc/BufferManager/BufferManagerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/MemAllocator.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/BufferManagerComponentImplCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdDispatcher/CommandDispatcher.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdDispatcher/CommandDispatcherImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/MemAllocator.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/BufferManagerComponentImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdDispatcher/CommandDispatcher.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdDispatcher/CommandDispatcherImpl.hpp \
   F-Prime/Svc/CmdDispatcher/CommandDispatcherComponentAc.hpp \
   F-Prime/Fw/Types/DeserialStatusEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/CommandDispatcherImplCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerImpl.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/File.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/ValidateFile.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/HashBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/HashConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/libcrc/CRC32.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/libcrc/lib_crc.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/CommandDispatcherImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/File.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/ValidateFile.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/HashBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/HashConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/libcrc/CRC32.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/libcrc/lib_crc.h \
   F-Prime/Svc/CmdSequencer/CmdSequencerComponentAc.hpp \
   F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.hpp \
   F-Prime/Svc/CmdSequencer/CmdSequencer_FileReadStageEnumAc.hpp \
   F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp \
   F-Prime/Svc/Seq/CmdSeqCancelPortAc.hpp \
   F-Prime/Svc/Seq/CmdSeqInPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStub.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStub.hpp \
   F-Prime/Svc/ComStub/ComStubComponentAc.hpp \
   F-Prime/Fw/Types/SuccessEnumAc.hpp \
   F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/Deframer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/Deframer.hpp \
   F-Prime/Svc/Deframer/DeframerComponentAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/PollStatusEnumAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/DeframingProtocol.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/DeframingProtocolInterface.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/CircularBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/DeframerCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandler.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/DeframingProtocol.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/DeframingProtocolInterface.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/CircularBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/DeframerCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandler.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp \
   F-Prime/Svc/FatalHandler/FatalHandlerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlink.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FileDownlinkCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlink.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FileDownlinkCfg.hpp \
   F-Prime/Svc/FileDownlink/FileDownlinkComponentAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileStatusEnumAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileCompletePortAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileResponseSerializableAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileRequestPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/FilePacket/FilePacket.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum/Checksum.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/SerialBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/FileManager.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/FilePacket/FilePacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum/Checksum.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/SerialBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileManager/FileManager.hpp \
   F-Prime/Svc/FileManager/FileManagerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/FileSystem.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/FileUplink.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/FileSystem.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/FileUplink.hpp \
   F-Prime/Svc/FileUplink/FileUplinkComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/Framer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/Framer.hpp \
   F-Prime/Svc/Framer/FramerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FramingProtocol.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FramingProtocolInterface.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/PassiveConsoleTextLogger/PassiveTextLogger.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/PassiveConsoleTextLogger/ConsoleTextLoggerImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FramingProtocol.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FramingProtocolInterface.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PassiveConsoleTextLogger/PassiveTextLogger.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PassiveConsoleTextLogger/ConsoleTextLoggerImpl.hpp \
   F-Prime/Svc/PassiveConsoleTextLogger/PassiveTextLoggerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriver.hpp \
   F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemory.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/StaticMemoryConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemory.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/StaticMemoryConfig.hpp \
   F-Prime/Svc/StaticMemory/StaticMemoryComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/SystemResources/SystemResources.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/SystemResources/SystemResources.hpp \
   F-Prime/Svc/SystemResources/SystemResourcesComponentAc.hpp \
   F-Prime/Svc/SystemResources/SystemResourceEnabledEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/SystemResources.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmChan/TlmChan.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmPacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/SystemResources.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmChan/TlmChan.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmPacket.hpp \
   F-Prime/Svc/TlmChan/TlmChanComponentAc.hpp \
   F-Prime/Fw/Tlm/TlmGetPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/TlmChanImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/TlmChanImplCfg.hpp \
   ../LedBlinker/LedBlinker.hpp \
   SystemRef/LedBlinker/LedBlinkerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmString.hpp \
   F-Prime/Fw/Types/OnEnumAc.hpp \
   F-Prime/Fw/Prm/ParamValidEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/ParamBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/ParamBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmBuffer.hpp \
   F-Prime/Fw/Prm/PrmGetPortAc.hpp \
   F-Prime/Fw/Prm/PrmSetPortAc.hpp \
   ../Top/SystemRefTopologyDefs.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/MallocAllocator.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/MallocAllocator.hpp \
   SystemRef/Top/FppConstantsAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FprimeProtocol.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Health/Health.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Health/HealthComponentImpl.hpp \
-  F-Prime/Svc/Health/HealthComponentAc.hpp \
-  F-Prime/Fw/Types/EnabledEnumAc.hpp \
-  F-Prime/Svc/WatchDog/WatchDogPortAc.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FprimeProtocol.hpp \
   SystemRef/Top/SystemRefPacketsAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmPacketizer/TlmPacketizerTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/TlmPacketizerCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/Log.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/Logger.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/FprimeArduino.hpp
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmPacketizer/TlmPacketizerTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/TlmPacketizerCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Log.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/Logger.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/FprimeArduino.hpp
 
 SystemRef/Top/CMakeFiles/SystemRef_Top.dir/SystemRefTopologyAc.cpp.obj: SystemRef/Top/SystemRefTopologyAc.cpp \
   SystemRef/Top/SystemRefTopologyAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp \
   F-Prime/Svc/Time/TimeComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputSerializePort.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/PortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputSerializePort.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputPortBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/ActiveComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/QueuedComponentBase.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/Queue.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/Task.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/TaskId.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/TaskIdRepr.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Deprecate.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputSerializePort.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/PassiveComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/PortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputSerializePort.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputPortBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/ActiveComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/QueuedComponentBase.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Queue.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Task.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskId.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskIdRepr.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Deprecate.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp \
   F-Prime/Fw/Time/TimePortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.hpp \
   Arduino/Drv/GpioDriver/GpioDriverComponentAc.hpp \
   F-Prime/Fw/Types/LogicEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/String.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cfg/SerIds.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/String.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cfg/SerIds.hpp \
   F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.hpp \
   F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriver.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/TimerVal.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/IntervalTimer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/TimerVal.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/IntervalTimer.hpp \
   Arduino/Drv/HardwareRateDriver/HardwareRateDriverComponentAc.hpp \
   F-Prime/Svc/Cycle/CyclePortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.hpp \
   Arduino/Drv/SerialDriver/SerialDriverComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/Mutex.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Mutex.hpp \
   F-Prime/Drv/ByteStreamDriverModel/RecvStatusEnumAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamReadyPortAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamRecvPortAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamSendPortAc.hpp \
   F-Prime/Fw/Buffer/BufferGetPortAc.hpp \
   F-Prime/Fw/Buffer/BufferSendPortAc.hpp \
   F-Prime/Svc/Sched/SchedPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriver.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriverImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriverImpl.hpp \
   F-Prime/Drv/BlockDriver/BlockDriverComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/InternalInterfaceString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/InternalInterfaceString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmBuffer.hpp \
   F-Prime/Drv/DataTypes/DataBufferPortAc.hpp \
   F-Prime/Fw/Tlm/TlmPortAc.hpp \
   F-Prime/Svc/Ping/PingPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLogger.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLogger.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerImpl.hpp \
   F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/CmdString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/CmdString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogString.hpp \
   F-Prime/Fw/Log/LogSeverityEnumAc.hpp \
   F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.hpp \
   F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp \
   F-Prime/Fw/Cmd/CmdResponseEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/CmdArgBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/TextLogString.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/ComBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/CmdArgBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/TextLogString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/ComBuffer.hpp \
   F-Prime/Fw/Cmd/CmdPortAc.hpp \
   F-Prime/Fw/Cmd/CmdRegPortAc.hpp \
   F-Prime/Fw/Cmd/CmdResponsePortAc.hpp \
@@ -331,249 +326,320 @@ SystemRef/Top/CMakeFiles/SystemRef_Top.dir/SystemRefTopologyAc.cpp.obj: SystemRe
   F-Prime/Fw/Log/LogPortAc.hpp \
   F-Prime/Fw/Log/LogTextPortAc.hpp \
   F-Prime/Svc/Fatal/FatalEventPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogPacket.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/ComPacket.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/ActiveLoggerImplCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveRateGroup/ActiveRateGroup.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogPacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/ComPacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/ActiveLoggerImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveRateGroup/ActiveRateGroup.hpp \
   F-Prime/Svc/ActiveRateGroup/ActiveRateGroupComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapter.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapter.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp \
   F-Prime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManager.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManager.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp \
   F-Prime/Svc/BufferManager/BufferManagerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/MemAllocator.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/BufferManagerComponentImplCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdDispatcher/CommandDispatcher.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdDispatcher/CommandDispatcherImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/MemAllocator.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/BufferManagerComponentImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdDispatcher/CommandDispatcher.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdDispatcher/CommandDispatcherImpl.hpp \
   F-Prime/Svc/CmdDispatcher/CommandDispatcherComponentAc.hpp \
   F-Prime/Fw/Types/DeserialStatusEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/CommandDispatcherImplCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerImpl.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/File.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/ValidateFile.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/HashBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/HashConfig.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/libcrc/CRC32.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/libcrc/lib_crc.h \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/CommandDispatcherImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/File.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/ValidateFile.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/HashBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/HashConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/libcrc/CRC32.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/libcrc/lib_crc.h \
   F-Prime/Svc/CmdSequencer/CmdSequencerComponentAc.hpp \
   F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.hpp \
   F-Prime/Svc/CmdSequencer/CmdSequencer_FileReadStageEnumAc.hpp \
   F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp \
   F-Prime/Svc/Seq/CmdSeqCancelPortAc.hpp \
   F-Prime/Svc/Seq/CmdSeqInPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStub.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStub.hpp \
   F-Prime/Svc/ComStub/ComStubComponentAc.hpp \
   F-Prime/Fw/Types/SuccessEnumAc.hpp \
   F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/Deframer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/Deframer.hpp \
   F-Prime/Svc/Deframer/DeframerComponentAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/PollStatusEnumAc.hpp \
   F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/DeframingProtocol.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/DeframingProtocolInterface.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/CircularBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/DeframerCfg.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandler.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/DeframingProtocol.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/DeframingProtocolInterface.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/CircularBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/DeframerCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandler.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp \
   F-Prime/Svc/FatalHandler/FatalHandlerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlink.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/FileDownlinkCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlink.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FileDownlinkCfg.hpp \
   F-Prime/Svc/FileDownlink/FileDownlinkComponentAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileStatusEnumAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileCompletePortAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileResponseSerializableAc.hpp \
   F-Prime/Svc/FileDownlinkPorts/SendFileRequestPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/FilePacket/FilePacket.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum/Checksum.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/SerialBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/FileManager.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/FilePacket/FilePacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum/Checksum.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/SerialBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileManager/FileManager.hpp \
   F-Prime/Svc/FileManager/FileManagerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/FileSystem.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/FileUplink.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/FileSystem.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/FileUplink.hpp \
   F-Prime/Svc/FileUplink/FileUplinkComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/Framer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/Framer.hpp \
   F-Prime/Svc/Framer/FramerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FramingProtocol.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FramingProtocolInterface.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/PassiveConsoleTextLogger/PassiveTextLogger.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/PassiveConsoleTextLogger/ConsoleTextLoggerImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FramingProtocol.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FramingProtocolInterface.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PassiveConsoleTextLogger/PassiveTextLogger.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PassiveConsoleTextLogger/ConsoleTextLoggerImpl.hpp \
   F-Prime/Svc/PassiveConsoleTextLogger/PassiveTextLoggerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriver.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriver.hpp \
   F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemory.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/StaticMemoryConfig.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemory.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/StaticMemoryConfig.hpp \
   F-Prime/Svc/StaticMemory/StaticMemoryComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/SystemResources/SystemResources.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/SystemResources/SystemResources.hpp \
   F-Prime/Svc/SystemResources/SystemResourcesComponentAc.hpp \
   F-Prime/Svc/SystemResources/SystemResourceEnabledEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Os/SystemResources.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmChan/TlmChan.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmPacket.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/SystemResources.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmChan/TlmChan.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmPacket.hpp \
   F-Prime/Svc/TlmChan/TlmChanComponentAc.hpp \
   F-Prime/Fw/Tlm/TlmGetPortAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/config/TlmChanImplCfg.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/TlmChanImplCfg.hpp \
   ../LedBlinker/LedBlinker.hpp \
   SystemRef/LedBlinker/LedBlinkerComponentAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmString.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmString.hpp \
   F-Prime/Fw/Types/OnEnumAc.hpp \
   F-Prime/Fw/Prm/ParamValidEnumAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/ParamBuffer.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/ParamBuffer.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmBuffer.hpp \
   F-Prime/Fw/Prm/PrmGetPortAc.hpp \
   F-Prime/Fw/Prm/PrmSetPortAc.hpp \
   ../Top/SystemRefTopologyDefs.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/MallocAllocator.hpp \
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/MallocAllocator.hpp \
   SystemRef/Top/FppConstantsAc.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FprimeProtocol.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Health/Health.hpp \
-  /home/ethan/jpl/projects/BareMetal/fprime/Svc/Health/HealthComponentImpl.hpp \
-  F-Prime/Svc/Health/HealthComponentAc.hpp \
-  F-Prime/Fw/Types/EnabledEnumAc.hpp \
-  F-Prime/Svc/WatchDog/WatchDogPortAc.hpp
+  /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FprimeProtocol.hpp
 
 
-/home/ethan/jpl/projects/BareMetal/fprime/Os/Log.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Logger/Logger.hpp:
 
-F-Prime/Svc/WatchDog/WatchDogPortAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FprimeProtocol.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Health/Health.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/MallocAllocator.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/MallocAllocator.hpp:
 
 ../Top/SystemRefTopologyDefs.hpp:
 
-F-Prime/Fw/Prm/PrmSetPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmBuffer.hpp:
-
-../LedBlinker/LedBlinker.hpp:
-
-F-Prime/Fw/Tlm/TlmGetPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/SystemResources.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/ParamBuffer.hpp:
-
-F-Prime/Svc/SystemResources/SystemResourcesComponentAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/SystemResources/SystemResources.hpp:
-
-F-Prime/Svc/StaticMemory/StaticMemoryComponentAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/StaticMemoryConfig.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp:
-
-F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAc.hpp:
-
-F-Prime/Svc/PassiveConsoleTextLogger/PassiveTextLoggerComponentAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FramingProtocolInterface.hpp:
-
-F-Prime/Svc/FileUplink/FileUplinkComponentAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/FileUplink.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/FileSystem.hpp:
-
-F-Prime/Svc/FileManager/FileManagerComponentAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmBuffer.hpp:
 
 F-Prime/Fw/Types/OnEnumAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/SerialBuffer.hpp:
+SystemRef/LedBlinker/LedBlinkerComponentAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/FilePacket/FilePacket.hpp:
+../LedBlinker/LedBlinker.hpp:
 
-F-Prime/Svc/FileDownlinkPorts/SendFileCompletePortAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/TlmChanImplCfg.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/FileDownlink.hpp:
+F-Prime/Svc/SystemResources/SystemResourcesComponentAc.hpp:
 
-F-Prime/Svc/FatalHandler/FatalHandlerComponentAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/SystemResources/SystemResources.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/StaticMemoryConfig.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FatalHandler/FatalHandler.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemoryComponentImpl.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/StaticMemory/StaticMemory.hpp:
+
+F-Prime/Svc/RateGroupDriver/RateGroupDriverComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/FprimeArduino.hpp:
+
+F-Prime/Svc/PassiveConsoleTextLogger/PassiveTextLoggerComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/ParamBuffer.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PassiveConsoleTextLogger/ConsoleTextLoggerImpl.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PassiveConsoleTextLogger/PassiveTextLogger.hpp:
+
+F-Prime/Fw/Prm/PrmSetPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FramingProtocol.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Framer/Framer.hpp:
+
+F-Prime/Svc/FileUplink/FileUplinkComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/FileUplink.hpp:
 
 SystemRef/Top/SystemRefTopologyAc.cpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/config/DeframerCfg.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/FileSystem.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Utils/Types/CircularBuffer.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmPacket.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/DeframingProtocol.hpp:
+F-Prime/Svc/FileManager/FileManagerComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/CFDP/Checksum/Checksum.hpp:
+
+F-Prime/Svc/FileDownlinkPorts/SendFileResponseSerializableAc.hpp:
+
+F-Prime/Svc/FileDownlinkPorts/SendFileCompletePortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/FileDownlink.hpp:
+
+F-Prime/Svc/FatalHandler/FatalHandlerComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandlerComponentImpl.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FatalHandler/FatalHandler.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/DeframerCfg.hpp:
 
 F-Prime/Drv/ByteStreamDriverModel/PollStatusEnumAc.hpp:
 
 F-Prime/Svc/Deframer/DeframerComponentAc.hpp:
 
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Deframer/Deframer.hpp:
+
 F-Prime/Fw/Ports/SuccessCondition/SuccessConditionPortAc.hpp:
 
 F-Prime/Svc/ComStub/ComStubComponentAc.hpp:
 
-F-Prime/Fw/Cmd/CmdResponseEnumAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/HashConfig.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.hpp:
 
 F-Prime/Drv/GpioDriverPorts/GpioWritePortAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FprimeProtocol.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/SerialBuffer.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Os/Mutex.hpp:
+F-Prime/Svc/FileDownlink/FileDownlinkComponentAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencer.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/DeframingProtocolInterface.hpp:
 
-Arduino/Drv/SerialDriver/SerialDriverComponentAc.hpp:
+F-Prime/Drv/ByteStreamDriverModel/RecvStatusEnumAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cfg/SerIds.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriver.hpp:
 
 F-Prime/Fw/Types/LogicEnumAc.hpp:
 
-F-Prime/Svc/Seq/CmdSeqInPortAc.hpp:
+Arduino/Drv/SerialDriver/SerialDriverComponentAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/InternalInterfaceString.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/MemAllocator.hpp:
 
-Arduino/Drv/GpioDriver/GpioDriverComponentAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Cycle/TimerVal.hpp:
+F-Prime/Fw/Time/TimePortAc.hpp:
 
 F-Prime/Fw/Cmd/CmdPortAc.hpp:
 
+F-Prime/Fw/Prm/PrmGetPortAc.hpp:
+
+F-Prime/Svc/TlmChan/TlmChanComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Deprecate.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmString.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/TextLogString.hpp:
+
+F-Prime/Svc/SystemResources/SystemResourceEnabledEnumAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskId.hpp:
+
+F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.hpp:
+
+F-Prime/Drv/ByteStreamDriverModel/ByteStreamRecvPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h:
+
+F-Prime/Svc/Ping/PingPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Log.hpp:
+
+F-Prime/Fw/Buffer/BufferSendPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/File.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/String.hpp:
+
 F-Prime/Svc/CmdSequencer/CmdSequencer_BlockStateEnumAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Os/IntervalTimer.hpp:
-
-F-Prime/Fw/Tlm/TlmPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskString.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/PassiveConsoleTextLogger/PassiveTextLogger.hpp:
-
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/HardwareRateDriver/HardwareRateDriver.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Prm/PrmString.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Deprecate.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/RateGroupDriver/RateGroupDriver.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskIdRepr.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/Queue.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/BasicTypes.h:
 
 F-Prime/Svc/FileDownlinkPorts/SendFileStatusEnumAc.hpp:
 
 SystemRef/Top/Ports_RateGroupsEnumAc.hpp:
 
-F-Prime/Drv/ByteStreamDriverModel/ByteStreamReadyPortAc.hpp:
+F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp:
 
-F-Prime/Fw/Buffer/BufferSendPortAc.hpp:
+SystemRef/Top/Ports_StaticMemoryEnumAc.cpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/QueuedComponentBase.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Serializable.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogString.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/ComPacket.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/ComBuffer.hpp:
+F-Prime/Fw/Types/SuccessEnumAc.hpp:
+
+F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Queue.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/RateGroupDriver/RateGroupDriver.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/libcrc/lib_crc.h:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmChan/TlmChan.hpp:
+
+SystemRef/Top/Ports_RateGroupsEnumAc.cpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Mutex.hpp:
+
+Arduino/Drv/GpioDriver/GpioDriverComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/QueueString.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencer.hpp:
+
+F-Prime/Svc/Seq/CmdSeqInPortAc.hpp:
+
+F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskString.hpp:
+
+F-Prime/Fw/Log/LogTextPortAc.hpp:
+
+SystemRef/Top/SystemRefPacketsAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/SystemResources.hpp:
+
+F-Prime/Svc/BufferManager/BufferManagerComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.h:
+
+SystemRef/Top/FppConstantsAc.cpp:
+
+F-Prime/Svc/StaticMemory/StaticMemoryComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/StringType.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/PortBase.hpp:
+
+SystemRef/Top/Ports_StaticMemoryEnumAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/CmdArgBuffer.hpp:
+
+SystemRef/Top/SystemRefPacketsAc.cpp:
 
 Arduino/Drv/HardwareRateDriver/HardwareRateDriverComponentAc.hpp:
 
@@ -581,254 +647,168 @@ F-Prime/Drv/GpioDriverPorts/GpioReadPortAc.hpp:
 
 F-Prime/Fw/Buffer/BufferGetPortAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputPortBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/CmdString.hpp:
-
-SystemRef/Top/Ports_RateGroupsEnumAc.cpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogPacket.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ComStub/ComStub.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/BasicTypes.h:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Com/ComPacket.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/FileManager.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapter.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/StringType.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.hpp:
-
-F-Prime/Svc/Health/HealthComponentAc.hpp:
-
-F-Prime/Fw/Cmd/CmdRegPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Assert.hpp:
-
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/SerialDriver/SerialDriver.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Logger/Logger.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerImpl.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/HashBuffer.hpp:
-
-F-Prime/Svc/FileDownlinkPorts/SendFileRequestPortAc.hpp:
-
-SystemRef/Top/FppConstantsAc.hpp:
-
-SystemRef/Top/FppConstantsAc.cpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Health/HealthComponentImpl.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/DeframingProtocolInterface.hpp:
-
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/types/teensy/PlatformTypes.h:
-
-F-Prime/Svc/CmdSequencer/CmdSequencerComponentAc.hpp:
-
-F-Prime/Svc/Time/TimeComponentAc.hpp:
-
-F-Prime/Svc/ActiveRateGroup/ActiveRateGroupComponentAc.hpp:
-
-F-Prime/Fw/Log/LogPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/FileDownlinkCfg.hpp:
-
-F-Prime/Drv/ByteStreamDriverModel/SendStatusEnumAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/OutputSerializePort.hpp:
-
-F-Prime/Svc/Fatal/FatalEventPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/TlmChanImplCfg.hpp:
-
-SystemRef/Top/Ports_StaticMemoryEnumAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveRateGroup/ActiveRateGroup.hpp:
-
-SystemRef/Top/SystemRefPacketsAc.cpp:
-
 F-Prime/Svc/Framer/FramerComponentAc.hpp:
 
 F-Prime/Svc/Cycle/CyclePortAc.hpp:
 
 SystemRef/Top/SystemRefTopologyAc.hpp:
 
-F-Prime/Svc/SystemResources/SystemResourceEnabledEnumAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/TlmPacketizer/TlmPacketizerTypes.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/Serializable.hpp:
+F-Prime/Svc/FileDownlinkPorts/SendFileRequestPortAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/config/TlmPacketizerCfg.hpp:
-
-SystemRef/Top/SystemRefPacketsAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/FramingProtocol/FramingProtocol.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputSerializePort.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/Task.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.hpp:
-
-F-Prime/Drv/DataTypes/DataBufferPortAc.hpp:
-
-F-Prime/Svc/CmdSequencer/CmdSequencer_FileReadStageEnumAc.hpp:
-
-SystemRef/LedBlinker/LedBlinkerComponentAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Obj/ObjBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManager.hpp:
-
-F-Prime/Svc/FileDownlinkPorts/SendFileResponseSerializableAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/BufferManagerComponentImplCfg.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/PassiveComponentBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/CFDP/Checksum/Checksum.hpp:
-
-F-Prime/Drv/ByteStreamDriverModel/ByteStreamPollPortAc.hpp:
-
-F-Prime/Drv/ByteStreamDriverModel/ByteStreamRecvPortAc.hpp:
-
-F-Prime/Svc/BufferManager/BufferManagerComponentAc.hpp:
-
-F-Prime/Drv/ByteStreamDriverModel/ByteStreamSendPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.hpp:
-
-F-Prime/Svc/Sched/SchedPortAc.hpp:
-
-F-Prime/Fw/Types/EnabledEnumAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/DataTypes/DataBuffer.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriver.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmChan/TlmChan.hpp:
-
-F-Prime/Fw/Log/LogTextPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmPacket.hpp:
-
-F-Prime/Fw/Time/TimePortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/Drv/GpioDriver/GpioDriver.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/MemAllocator.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/InputPortBase.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/BlockDriverImpl.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Comp/ActiveComponentBase.hpp:
-
-F-Prime/Drv/BlockDriver/BlockDriverComponentAc.hpp:
-
-F-Prime/Fw/Log/LogSeverityEnumAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmString.hpp:
-
-F-Prime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentAc.hpp:
-
-F-Prime/Svc/FileDownlink/FileDownlinkComponentAc.hpp:
-
-F-Prime/Drv/ByteStreamDriverModel/RecvStatusEnumAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/QueueString.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/TlmBuffer.hpp:
-
-F-Prime/Svc/Ping/PingPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLogger.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerImpl.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdDispatcher/CommandDispatcher.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Deframer/Deframer.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/libcrc/CRC32.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/StaticMemory/StaticMemory.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/TlmPacketizer/TlmPacketizerTypes.hpp:
-
-F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Os/ValidateFile.hpp:
+SystemRef/Top/FppConstantsAc.hpp:
 
 F-Prime/Svc/ActiveLogger/ActiveLogger_EnabledEnumAc.hpp:
 
-F-Prime/Svc/ActiveLogger/ActiveLogger_FilterSeverityEnumAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/ActiveLoggerImplCfg.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/CmdArgBuffer.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Os/TaskId.hpp:
+F-Prime/Svc/CmdSequencer/CmdSequencer_FileReadStageEnumAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/LogBuffer.hpp:
+F-Prime/Svc/Time/TimeComponentAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/PassiveConsoleTextLogger/ConsoleTextLoggerImpl.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/QueuedComponentBase.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/TextLogString.hpp:
+F-Prime/Svc/ActiveRateGroup/ActiveRateGroupComponentAc.hpp:
+
+F-Prime/Fw/Log/LogPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/IntervalTimer.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Obj/ObjBase.hpp:
+
+F-Prime/Drv/BlockDriver/BlockDriverComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/ActiveComponentBase.hpp:
+
+F-Prime/Svc/ActiveLogger/ActiveLoggerComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FileDownlinkCfg.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Cycle/TimerVal.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Comp/PassiveComponentBase.hpp:
+
+F-Prime/Svc/Sched/SchedPortAc.hpp:
+
+F-Prime/Drv/ByteStreamDriverModel/ByteStreamReadyPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriver.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Types/CircularBuffer.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputPortBase.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogBuffer.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/BlockDriver/BlockDriverImpl.hpp:
+
+F-Prime/Svc/CmdDispatcher/CommandDispatcherComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/InternalInterfaceString.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/DataTypes/DataBuffer.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/DeframingProtocol.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputSerializePort.hpp:
+
+F-Prime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FramingProtocol/FramingProtocolInterface.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/TlmBuffer.hpp:
+
+F-Prime/Drv/DataTypes/DataBufferPortAc.hpp:
+
+F-Prime/Fw/Tlm/TlmPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLogger.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ComStub/ComStub.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerImpl.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/CmdString.hpp:
+
+F-Prime/Fw/Tlm/TlmGetPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Com/ComBuffer.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogString.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdDispatcher/CommandDispatcher.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/HashConfig.hpp:
+
+F-Prime/Fw/Log/LogSeverityEnumAc.hpp:
+
+F-Prime/Fw/Cmd/CmdRegPortAc.hpp:
 
 F-Prime/Fw/Cmd/CmdResponsePortAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/Framer/Framer.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Prm/PrmString.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp:
 
 ../Top/SystemRefTopology.cpp:
 
 F-Prime/Fw/Com/ComPortAc.hpp:
 
-SystemRef/Top/Ports_StaticMemoryEnumAc.cpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileManager/FileManager.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/config/ActiveLoggerImplCfg.hpp:
+F-Prime/Svc/Fatal/FatalEventPortAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/TaskIdRepr.hpp:
 
-F-Prime/Fw/Prm/PrmGetPortAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/LogPacket.hpp:
 
-F-Prime/Svc/TlmChan/TlmChanComponentAc.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/OutputPortBase.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/BufferManagerComponentImpl.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveRateGroup/ActiveRateGroup.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdDispatcher/CommandDispatcherImpl.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/Task.hpp:
 
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/platform/FprimeArduino.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/TlmPacketizerCfg.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Types/String.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapter.hpp:
 
-F-Prime/Svc/CmdDispatcher/CommandDispatcherComponentAc.hpp:
+F-Prime/Drv/ByteStreamDriverModel/ByteStreamSendPortAc.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferManager/BufferManager.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/FilePacket/FilePacket.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Types/Assert.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/BufferManagerComponentImplCfg.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdDispatcher/CommandDispatcherImpl.hpp:
 
 F-Prime/Fw/Types/DeserialStatusEnumAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/config/CommandDispatcherImplCfg.hpp:
+F-Prime/Fw/Cmd/CmdResponseEnumAc.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Port/PortBase.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/CommandDispatcherImplCfg.hpp:
 
-/home/ethan/jpl/projects/BareMetal/fprime/Os/File.hpp:
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerImpl.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Port/InputSerializePort.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Os/ValidateFile.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/HashBuffer.hpp:
+
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/Hash/libcrc/CRC32.hpp:
+
+F-Prime/Svc/CmdSequencer/CmdSequencerComponentAc.hpp:
 
 F-Prime/Fw/Prm/ParamValidEnumAc.hpp:
 
 F-Prime/Svc/Seq/CmdSeqCancelPortAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Utils/Hash/libcrc/lib_crc.h:
-
-F-Prime/Fw/Types/SuccessEnumAc.hpp:
-
-/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.h:
-
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cfg/SerIds.hpp:
-
-/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp:
-
-F-Prime/Svc/CmdSequencer/CmdSequencer_SeqModeEnumAc.hpp:

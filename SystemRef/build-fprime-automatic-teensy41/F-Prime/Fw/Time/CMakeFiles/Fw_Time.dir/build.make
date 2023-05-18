@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/depend.make
@@ -69,50 +69,50 @@ include F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/progress.make
 # Include the compile flags for this target's objects.
 include F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/flags.make
 
-F-Prime/Fw/Time/TimePortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp
+F-Prime/Fw/Time/TimePortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp
 F-Prime/Fw/Time/TimePortAi.xml: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Time/TimePortAi.xml: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Time/TimePortAi.xml: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating TimePortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating TimePortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
-F-Prime/Fw/Time/TimePortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp
+F-Prime/Fw/Time/TimePortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp
 F-Prime/Fw/Time/TimePortAc.cpp: lib/teensy41/libFw_Port.a
 F-Prime/Fw/Time/TimePortAc.cpp: lib/teensy41/libFw_Types.a
 F-Prime/Fw/Time/TimePortAc.cpp: lib/teensy41/libFw_Cfg.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating TimePortAc.cpp, TimePortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating TimePortAc.cpp, TimePortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Fw/Time/TimePortAc.hpp: F-Prime/Fw/Time/TimePortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Fw/Time/TimePortAc.hpp
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/flags.make
-F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.cpp
+F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.cpp
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x365b8329 -DASSERT_RELATIVE_PATH='"Fw/Time/Time.cpp"' -MD -MT F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj -MF CMakeFiles/Fw_Time.dir/Time.cpp.obj.d -o CMakeFiles/Fw_Time.dir/Time.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x365b8329 -DASSERT_RELATIVE_PATH='"Fw/Time/Time.cpp"' -MD -MT F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj -MF CMakeFiles/Fw_Time.dir/Time.cpp.obj.d -o CMakeFiles/Fw_Time.dir/Time.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.cpp
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Time.dir/Time.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x365b8329 -DASSERT_RELATIVE_PATH='"Fw/Time/Time.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.cpp > CMakeFiles/Fw_Time.dir/Time.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x365b8329 -DASSERT_RELATIVE_PATH='"Fw/Time/Time.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.cpp > CMakeFiles/Fw_Time.dir/Time.cpp.i
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Time.dir/Time.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x365b8329 -DASSERT_RELATIVE_PATH='"Fw/Time/Time.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.cpp -o CMakeFiles/Fw_Time.dir/Time.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x365b8329 -DASSERT_RELATIVE_PATH='"Fw/Time/Time.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.cpp -o CMakeFiles/Fw_Time.dir/Time.cpp.s
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/flags.make
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj: F-Prime/Fw/Time/TimePortAc.cpp
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x31cccebd -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp"' -MD -MT F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj -MF CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj.d -o CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj -c /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x31cccebd -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp"' -MD -MT F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj -MF CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj.d -o CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Fw_Time.dir/TimePortAc.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x31cccebd -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp"' -E /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp > CMakeFiles/Fw_Time.dir/TimePortAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x31cccebd -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp > CMakeFiles/Fw_Time.dir/TimePortAc.cpp.i
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Fw_Time.dir/TimePortAc.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x31cccebd -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp"' -S /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp -o CMakeFiles/Fw_Time.dir/TimePortAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x31cccebd -DASSERT_RELATIVE_PATH='"SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/TimePortAc.cpp -o CMakeFiles/Fw_Time.dir/TimePortAc.cpp.s
 
 # Object files for target Fw_Time
 Fw_Time_OBJECTS = \
@@ -126,21 +126,21 @@ lib/teensy41/libFw_Time.a: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/Time.cpp.obj
 lib/teensy41/libFw_Time.a: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/TimePortAc.cpp.obj
 lib/teensy41/libFw_Time.a: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/build.make
 lib/teensy41/libFw_Time.a: F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../../lib/teensy41/libFw_Time.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Time.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Time.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../../lib/teensy41/libFw_Time.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Time.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fw_Time.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/build: lib/teensy41/libFw_Time.a
 .PHONY : F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/build
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Time.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time && $(CMAKE_COMMAND) -P CMakeFiles/Fw_Time.dir/cmake_clean.cmake
 .PHONY : F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/clean
 
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/depend: F-Prime/Fw/Time/TimePortAc.cpp
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/depend: F-Prime/Fw/Time/TimePortAc.hpp
 F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/depend: F-Prime/Fw/Time/TimePortAi.xml
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Fw/Time /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Fw/Time/CMakeFiles/Fw_Time.dir/depend
 

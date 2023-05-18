@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/Arduino/Drv/GpioDriver//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/rule
 .PHONY : Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Arduino_Drv_GpioDriver: Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver
 
 # fast build rule for target.
 Arduino_Drv_GpioDriver/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build
 .PHONY : Arduino_Drv_GpioDriver/fast
 
 # Convenience name for target.
 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/rule
 .PHONY : Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Arduino_Drv_GpioDriver_impl: Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioD
 
 # fast build rule for target.
 Arduino_Drv_GpioDriver_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver_impl.dir/build
 .PHONY : Arduino_Drv_GpioDriver_impl/fast
 
 GpioDriver.obj: GpioDriver.cpp.obj
@@ -195,7 +195,7 @@ GpioDriver.obj: GpioDriver.cpp.obj
 
 # target to build an object file
 GpioDriver.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriver.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriver.cpp.obj
 .PHONY : GpioDriver.cpp.obj
 
 GpioDriver.i: GpioDriver.cpp.i
@@ -203,7 +203,7 @@ GpioDriver.i: GpioDriver.cpp.i
 
 # target to preprocess a source file
 GpioDriver.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriver.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriver.cpp.i
 .PHONY : GpioDriver.cpp.i
 
 GpioDriver.s: GpioDriver.cpp.s
@@ -211,7 +211,7 @@ GpioDriver.s: GpioDriver.cpp.s
 
 # target to generate assembly for a file
 GpioDriver.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriver.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriver.cpp.s
 .PHONY : GpioDriver.cpp.s
 
 GpioDriverArduino.obj: GpioDriverArduino.cpp.obj
@@ -219,7 +219,7 @@ GpioDriverArduino.obj: GpioDriverArduino.cpp.obj
 
 # target to build an object file
 GpioDriverArduino.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverArduino.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverArduino.cpp.obj
 .PHONY : GpioDriverArduino.cpp.obj
 
 GpioDriverArduino.i: GpioDriverArduino.cpp.i
@@ -227,7 +227,7 @@ GpioDriverArduino.i: GpioDriverArduino.cpp.i
 
 # target to preprocess a source file
 GpioDriverArduino.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverArduino.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverArduino.cpp.i
 .PHONY : GpioDriverArduino.cpp.i
 
 GpioDriverArduino.s: GpioDriverArduino.cpp.s
@@ -235,7 +235,7 @@ GpioDriverArduino.s: GpioDriverArduino.cpp.s
 
 # target to generate assembly for a file
 GpioDriverArduino.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverArduino.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverArduino.cpp.s
 .PHONY : GpioDriverArduino.cpp.s
 
 GpioDriverComponentAc.obj: GpioDriverComponentAc.cpp.obj
@@ -243,7 +243,7 @@ GpioDriverComponentAc.obj: GpioDriverComponentAc.cpp.obj
 
 # target to build an object file
 GpioDriverComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverComponentAc.cpp.obj
 .PHONY : GpioDriverComponentAc.cpp.obj
 
 GpioDriverComponentAc.i: GpioDriverComponentAc.cpp.i
@@ -251,7 +251,7 @@ GpioDriverComponentAc.i: GpioDriverComponentAc.cpp.i
 
 # target to preprocess a source file
 GpioDriverComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverComponentAc.cpp.i
 .PHONY : GpioDriverComponentAc.cpp.i
 
 GpioDriverComponentAc.s: GpioDriverComponentAc.cpp.s
@@ -259,7 +259,7 @@ GpioDriverComponentAc.s: GpioDriverComponentAc.cpp.s
 
 # target to generate assembly for a file
 GpioDriverComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/build.make Arduino/Drv/GpioDriver/CMakeFiles/Arduino_Drv_GpioDriver.dir/GpioDriverComponentAc.cpp.s
 .PHONY : GpioDriverComponentAc.cpp.s
 
 # Help Target
@@ -296,7 +296,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

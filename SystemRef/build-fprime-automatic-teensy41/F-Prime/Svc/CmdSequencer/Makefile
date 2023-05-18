@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer//CMakeFiles/progress.marks
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/CmdSequencer//CMakeFiles/progress.marks
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/clean
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,23 +148,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: cmake_check_build_system
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/preinstall
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/rule
 .PHONY : F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/rule
 
 # Convenience name for target.
@@ -173,12 +173,12 @@ Svc_CmdSequencer: F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/rule
 
 # fast build rule for target.
 Svc_CmdSequencer/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build
 .PHONY : Svc_CmdSequencer/fast
 
 # Convenience name for target.
 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/rule:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/rule
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/rule
 .PHONY : F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ Svc_CmdSequencer_impl: F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl
 
 # fast build rule for target.
 Svc_CmdSequencer_impl/fast:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/build
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer_impl.dir/build
 .PHONY : Svc_CmdSequencer_impl/fast
 
 CmdSequencerComponentAc.obj: CmdSequencerComponentAc.cpp.obj
@@ -195,7 +195,7 @@ CmdSequencerComponentAc.obj: CmdSequencerComponentAc.cpp.obj
 
 # target to build an object file
 CmdSequencerComponentAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerComponentAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerComponentAc.cpp.obj
 .PHONY : CmdSequencerComponentAc.cpp.obj
 
 CmdSequencerComponentAc.i: CmdSequencerComponentAc.cpp.i
@@ -203,7 +203,7 @@ CmdSequencerComponentAc.i: CmdSequencerComponentAc.cpp.i
 
 # target to preprocess a source file
 CmdSequencerComponentAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerComponentAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerComponentAc.cpp.i
 .PHONY : CmdSequencerComponentAc.cpp.i
 
 CmdSequencerComponentAc.s: CmdSequencerComponentAc.cpp.s
@@ -211,7 +211,7 @@ CmdSequencerComponentAc.s: CmdSequencerComponentAc.cpp.s
 
 # target to generate assembly for a file
 CmdSequencerComponentAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerComponentAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerComponentAc.cpp.s
 .PHONY : CmdSequencerComponentAc.cpp.s
 
 CmdSequencerImpl.obj: CmdSequencerImpl.cpp.obj
@@ -219,7 +219,7 @@ CmdSequencerImpl.obj: CmdSequencerImpl.cpp.obj
 
 # target to build an object file
 CmdSequencerImpl.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerImpl.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerImpl.cpp.obj
 .PHONY : CmdSequencerImpl.cpp.obj
 
 CmdSequencerImpl.i: CmdSequencerImpl.cpp.i
@@ -227,7 +227,7 @@ CmdSequencerImpl.i: CmdSequencerImpl.cpp.i
 
 # target to preprocess a source file
 CmdSequencerImpl.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerImpl.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerImpl.cpp.i
 .PHONY : CmdSequencerImpl.cpp.i
 
 CmdSequencerImpl.s: CmdSequencerImpl.cpp.s
@@ -235,7 +235,7 @@ CmdSequencerImpl.s: CmdSequencerImpl.cpp.s
 
 # target to generate assembly for a file
 CmdSequencerImpl.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerImpl.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencerImpl.cpp.s
 .PHONY : CmdSequencerImpl.cpp.s
 
 CmdSequencer_BlockStateEnumAc.obj: CmdSequencer_BlockStateEnumAc.cpp.obj
@@ -243,7 +243,7 @@ CmdSequencer_BlockStateEnumAc.obj: CmdSequencer_BlockStateEnumAc.cpp.obj
 
 # target to build an object file
 CmdSequencer_BlockStateEnumAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_BlockStateEnumAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_BlockStateEnumAc.cpp.obj
 .PHONY : CmdSequencer_BlockStateEnumAc.cpp.obj
 
 CmdSequencer_BlockStateEnumAc.i: CmdSequencer_BlockStateEnumAc.cpp.i
@@ -251,7 +251,7 @@ CmdSequencer_BlockStateEnumAc.i: CmdSequencer_BlockStateEnumAc.cpp.i
 
 # target to preprocess a source file
 CmdSequencer_BlockStateEnumAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_BlockStateEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_BlockStateEnumAc.cpp.i
 .PHONY : CmdSequencer_BlockStateEnumAc.cpp.i
 
 CmdSequencer_BlockStateEnumAc.s: CmdSequencer_BlockStateEnumAc.cpp.s
@@ -259,7 +259,7 @@ CmdSequencer_BlockStateEnumAc.s: CmdSequencer_BlockStateEnumAc.cpp.s
 
 # target to generate assembly for a file
 CmdSequencer_BlockStateEnumAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_BlockStateEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_BlockStateEnumAc.cpp.s
 .PHONY : CmdSequencer_BlockStateEnumAc.cpp.s
 
 CmdSequencer_FileReadStageEnumAc.obj: CmdSequencer_FileReadStageEnumAc.cpp.obj
@@ -267,7 +267,7 @@ CmdSequencer_FileReadStageEnumAc.obj: CmdSequencer_FileReadStageEnumAc.cpp.obj
 
 # target to build an object file
 CmdSequencer_FileReadStageEnumAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_FileReadStageEnumAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_FileReadStageEnumAc.cpp.obj
 .PHONY : CmdSequencer_FileReadStageEnumAc.cpp.obj
 
 CmdSequencer_FileReadStageEnumAc.i: CmdSequencer_FileReadStageEnumAc.cpp.i
@@ -275,7 +275,7 @@ CmdSequencer_FileReadStageEnumAc.i: CmdSequencer_FileReadStageEnumAc.cpp.i
 
 # target to preprocess a source file
 CmdSequencer_FileReadStageEnumAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_FileReadStageEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_FileReadStageEnumAc.cpp.i
 .PHONY : CmdSequencer_FileReadStageEnumAc.cpp.i
 
 CmdSequencer_FileReadStageEnumAc.s: CmdSequencer_FileReadStageEnumAc.cpp.s
@@ -283,7 +283,7 @@ CmdSequencer_FileReadStageEnumAc.s: CmdSequencer_FileReadStageEnumAc.cpp.s
 
 # target to generate assembly for a file
 CmdSequencer_FileReadStageEnumAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_FileReadStageEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_FileReadStageEnumAc.cpp.s
 .PHONY : CmdSequencer_FileReadStageEnumAc.cpp.s
 
 CmdSequencer_SeqModeEnumAc.obj: CmdSequencer_SeqModeEnumAc.cpp.obj
@@ -291,7 +291,7 @@ CmdSequencer_SeqModeEnumAc.obj: CmdSequencer_SeqModeEnumAc.cpp.obj
 
 # target to build an object file
 CmdSequencer_SeqModeEnumAc.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_SeqModeEnumAc.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_SeqModeEnumAc.cpp.obj
 .PHONY : CmdSequencer_SeqModeEnumAc.cpp.obj
 
 CmdSequencer_SeqModeEnumAc.i: CmdSequencer_SeqModeEnumAc.cpp.i
@@ -299,7 +299,7 @@ CmdSequencer_SeqModeEnumAc.i: CmdSequencer_SeqModeEnumAc.cpp.i
 
 # target to preprocess a source file
 CmdSequencer_SeqModeEnumAc.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_SeqModeEnumAc.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_SeqModeEnumAc.cpp.i
 .PHONY : CmdSequencer_SeqModeEnumAc.cpp.i
 
 CmdSequencer_SeqModeEnumAc.s: CmdSequencer_SeqModeEnumAc.cpp.s
@@ -307,7 +307,7 @@ CmdSequencer_SeqModeEnumAc.s: CmdSequencer_SeqModeEnumAc.cpp.s
 
 # target to generate assembly for a file
 CmdSequencer_SeqModeEnumAc.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_SeqModeEnumAc.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/CmdSequencer_SeqModeEnumAc.cpp.s
 .PHONY : CmdSequencer_SeqModeEnumAc.cpp.s
 
 Events.obj: Events.cpp.obj
@@ -315,7 +315,7 @@ Events.obj: Events.cpp.obj
 
 # target to build an object file
 Events.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Events.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Events.cpp.obj
 .PHONY : Events.cpp.obj
 
 Events.i: Events.cpp.i
@@ -323,7 +323,7 @@ Events.i: Events.cpp.i
 
 # target to preprocess a source file
 Events.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Events.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Events.cpp.i
 .PHONY : Events.cpp.i
 
 Events.s: Events.cpp.s
@@ -331,7 +331,7 @@ Events.s: Events.cpp.s
 
 # target to generate assembly for a file
 Events.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Events.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Events.cpp.s
 .PHONY : Events.cpp.s
 
 FPrimeSequence.obj: FPrimeSequence.cpp.obj
@@ -339,7 +339,7 @@ FPrimeSequence.obj: FPrimeSequence.cpp.obj
 
 # target to build an object file
 FPrimeSequence.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/FPrimeSequence.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/FPrimeSequence.cpp.obj
 .PHONY : FPrimeSequence.cpp.obj
 
 FPrimeSequence.i: FPrimeSequence.cpp.i
@@ -347,7 +347,7 @@ FPrimeSequence.i: FPrimeSequence.cpp.i
 
 # target to preprocess a source file
 FPrimeSequence.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/FPrimeSequence.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/FPrimeSequence.cpp.i
 .PHONY : FPrimeSequence.cpp.i
 
 FPrimeSequence.s: FPrimeSequence.cpp.s
@@ -355,7 +355,7 @@ FPrimeSequence.s: FPrimeSequence.cpp.s
 
 # target to generate assembly for a file
 FPrimeSequence.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/FPrimeSequence.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/FPrimeSequence.cpp.s
 .PHONY : FPrimeSequence.cpp.s
 
 Sequence.obj: Sequence.cpp.obj
@@ -363,7 +363,7 @@ Sequence.obj: Sequence.cpp.obj
 
 # target to build an object file
 Sequence.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Sequence.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Sequence.cpp.obj
 .PHONY : Sequence.cpp.obj
 
 Sequence.i: Sequence.cpp.i
@@ -371,7 +371,7 @@ Sequence.i: Sequence.cpp.i
 
 # target to preprocess a source file
 Sequence.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Sequence.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Sequence.cpp.i
 .PHONY : Sequence.cpp.i
 
 Sequence.s: Sequence.cpp.s
@@ -379,7 +379,7 @@ Sequence.s: Sequence.cpp.s
 
 # target to generate assembly for a file
 Sequence.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Sequence.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/Sequence.cpp.s
 .PHONY : Sequence.cpp.s
 
 formats/AMPCSSequence.obj: formats/AMPCSSequence.cpp.obj
@@ -387,7 +387,7 @@ formats/AMPCSSequence.obj: formats/AMPCSSequence.cpp.obj
 
 # target to build an object file
 formats/AMPCSSequence.cpp.obj:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/formats/AMPCSSequence.cpp.obj
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/formats/AMPCSSequence.cpp.obj
 .PHONY : formats/AMPCSSequence.cpp.obj
 
 formats/AMPCSSequence.i: formats/AMPCSSequence.cpp.i
@@ -395,7 +395,7 @@ formats/AMPCSSequence.i: formats/AMPCSSequence.cpp.i
 
 # target to preprocess a source file
 formats/AMPCSSequence.cpp.i:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/formats/AMPCSSequence.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/formats/AMPCSSequence.cpp.i
 .PHONY : formats/AMPCSSequence.cpp.i
 
 formats/AMPCSSequence.s: formats/AMPCSSequence.cpp.s
@@ -403,7 +403,7 @@ formats/AMPCSSequence.s: formats/AMPCSSequence.cpp.s
 
 # target to generate assembly for a file
 formats/AMPCSSequence.cpp.s:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/formats/AMPCSSequence.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(MAKE) $(MAKESILENT) -f F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/build.make F-Prime/Svc/CmdSequencer/CMakeFiles/Svc_CmdSequencer.dir/formats/AMPCSSequence.cpp.s
 .PHONY : formats/AMPCSSequence.cpp.s
 
 # Help Target
@@ -458,7 +458,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -P /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles/VerifyGlobs.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

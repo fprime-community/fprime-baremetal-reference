@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/AssertFatalAdapter/AssertFatalAdapterComponentImpl.hpp-template"
   "AssertFatalAdapterComponentAi.xml"
   "CMakeFiles/Svc_AssertFatalAdapter_impl"
 )

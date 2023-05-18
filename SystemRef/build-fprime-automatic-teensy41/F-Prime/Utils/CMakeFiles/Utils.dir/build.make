@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Include any dependencies generated for this target.
 include F-Prime/Utils/CMakeFiles/Utils.dir/depend.make
@@ -70,60 +70,60 @@ include F-Prime/Utils/CMakeFiles/Utils.dir/progress.make
 include F-Prime/Utils/CMakeFiles/Utils.dir/flags.make
 
 F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/flags.make
-F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Utils/RateLimiter.cpp
+F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/RateLimiter.cpp
 F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xd680284b -DASSERT_RELATIVE_PATH='"Utils/RateLimiter.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj -MF CMakeFiles/Utils.dir/RateLimiter.cpp.obj.d -o CMakeFiles/Utils.dir/RateLimiter.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Utils/RateLimiter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xd680284b -DASSERT_RELATIVE_PATH='"Utils/RateLimiter.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.obj -MF CMakeFiles/Utils.dir/RateLimiter.cpp.obj.d -o CMakeFiles/Utils.dir/RateLimiter.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/RateLimiter.cpp
 
 F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utils.dir/RateLimiter.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xd680284b -DASSERT_RELATIVE_PATH='"Utils/RateLimiter.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Utils/RateLimiter.cpp > CMakeFiles/Utils.dir/RateLimiter.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xd680284b -DASSERT_RELATIVE_PATH='"Utils/RateLimiter.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/RateLimiter.cpp > CMakeFiles/Utils.dir/RateLimiter.cpp.i
 
 F-Prime/Utils/CMakeFiles/Utils.dir/RateLimiter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utils.dir/RateLimiter.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xd680284b -DASSERT_RELATIVE_PATH='"Utils/RateLimiter.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Utils/RateLimiter.cpp -o CMakeFiles/Utils.dir/RateLimiter.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xd680284b -DASSERT_RELATIVE_PATH='"Utils/RateLimiter.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/RateLimiter.cpp -o CMakeFiles/Utils.dir/RateLimiter.cpp.s
 
 F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/flags.make
-F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Utils/TokenBucket.cpp
+F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/TokenBucket.cpp
 F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xee6ac8cb -DASSERT_RELATIVE_PATH='"Utils/TokenBucket.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj -MF CMakeFiles/Utils.dir/TokenBucket.cpp.obj.d -o CMakeFiles/Utils.dir/TokenBucket.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Utils/TokenBucket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xee6ac8cb -DASSERT_RELATIVE_PATH='"Utils/TokenBucket.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.obj -MF CMakeFiles/Utils.dir/TokenBucket.cpp.obj.d -o CMakeFiles/Utils.dir/TokenBucket.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/TokenBucket.cpp
 
 F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utils.dir/TokenBucket.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xee6ac8cb -DASSERT_RELATIVE_PATH='"Utils/TokenBucket.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Utils/TokenBucket.cpp > CMakeFiles/Utils.dir/TokenBucket.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xee6ac8cb -DASSERT_RELATIVE_PATH='"Utils/TokenBucket.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/TokenBucket.cpp > CMakeFiles/Utils.dir/TokenBucket.cpp.i
 
 F-Prime/Utils/CMakeFiles/Utils.dir/TokenBucket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utils.dir/TokenBucket.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xee6ac8cb -DASSERT_RELATIVE_PATH='"Utils/TokenBucket.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Utils/TokenBucket.cpp -o CMakeFiles/Utils.dir/TokenBucket.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0xee6ac8cb -DASSERT_RELATIVE_PATH='"Utils/TokenBucket.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/TokenBucket.cpp -o CMakeFiles/Utils.dir/TokenBucket.cpp.s
 
 F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/flags.make
-F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Utils/LockGuard.cpp
+F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/LockGuard.cpp
 F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x3896a9a6 -DASSERT_RELATIVE_PATH='"Utils/LockGuard.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj -MF CMakeFiles/Utils.dir/LockGuard.cpp.obj.d -o CMakeFiles/Utils.dir/LockGuard.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Utils/LockGuard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x3896a9a6 -DASSERT_RELATIVE_PATH='"Utils/LockGuard.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj -MF CMakeFiles/Utils.dir/LockGuard.cpp.obj.d -o CMakeFiles/Utils.dir/LockGuard.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/LockGuard.cpp
 
 F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utils.dir/LockGuard.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x3896a9a6 -DASSERT_RELATIVE_PATH='"Utils/LockGuard.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Utils/LockGuard.cpp > CMakeFiles/Utils.dir/LockGuard.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x3896a9a6 -DASSERT_RELATIVE_PATH='"Utils/LockGuard.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/LockGuard.cpp > CMakeFiles/Utils.dir/LockGuard.cpp.i
 
 F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utils.dir/LockGuard.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x3896a9a6 -DASSERT_RELATIVE_PATH='"Utils/LockGuard.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Utils/LockGuard.cpp -o CMakeFiles/Utils.dir/LockGuard.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x3896a9a6 -DASSERT_RELATIVE_PATH='"Utils/LockGuard.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/LockGuard.cpp -o CMakeFiles/Utils.dir/LockGuard.cpp.s
 
 F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/flags.make
-F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj: /home/ethan/jpl/projects/BareMetal/fprime/Utils/CRCChecker.cpp
+F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/CRCChecker.cpp
 F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj: F-Prime/Utils/CMakeFiles/Utils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x54c247ab -DASSERT_RELATIVE_PATH='"Utils/CRCChecker.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj -MF CMakeFiles/Utils.dir/CRCChecker.cpp.obj.d -o CMakeFiles/Utils.dir/CRCChecker.cpp.obj -c /home/ethan/jpl/projects/BareMetal/fprime/Utils/CRCChecker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x54c247ab -DASSERT_RELATIVE_PATH='"Utils/CRCChecker.cpp"' -MD -MT F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj -MF CMakeFiles/Utils.dir/CRCChecker.cpp.obj.d -o CMakeFiles/Utils.dir/CRCChecker.cpp.obj -c /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/CRCChecker.cpp
 
 F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Utils.dir/CRCChecker.cpp.i"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x54c247ab -DASSERT_RELATIVE_PATH='"Utils/CRCChecker.cpp"' -E /home/ethan/jpl/projects/BareMetal/fprime/Utils/CRCChecker.cpp > CMakeFiles/Utils.dir/CRCChecker.cpp.i
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x54c247ab -DASSERT_RELATIVE_PATH='"Utils/CRCChecker.cpp"' -E /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/CRCChecker.cpp > CMakeFiles/Utils.dir/CRCChecker.cpp.i
 
 F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Utils.dir/CRCChecker.cpp.s"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x54c247ab -DASSERT_RELATIVE_PATH='"Utils/CRCChecker.cpp"' -S /home/ethan/jpl/projects/BareMetal/fprime/Utils/CRCChecker.cpp -o CMakeFiles/Utils.dir/CRCChecker.cpp.s
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && /home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -DASSERT_FILE_ID=0x54c247ab -DASSERT_RELATIVE_PATH='"Utils/CRCChecker.cpp"' -S /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils/CRCChecker.cpp -o CMakeFiles/Utils.dir/CRCChecker.cpp.s
 
 # Object files for target Utils
 Utils_OBJECTS = \
@@ -141,19 +141,19 @@ lib/teensy41/libUtils.a: F-Prime/Utils/CMakeFiles/Utils.dir/LockGuard.cpp.obj
 lib/teensy41/libUtils.a: F-Prime/Utils/CMakeFiles/Utils.dir/CRCChecker.cpp.obj
 lib/teensy41/libUtils.a: F-Prime/Utils/CMakeFiles/Utils.dir/build.make
 lib/teensy41/libUtils.a: F-Prime/Utils/CMakeFiles/Utils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/teensy41/libUtils.a"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && $(CMAKE_COMMAND) -P CMakeFiles/Utils.dir/cmake_clean_target.cmake
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Utils.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library ../../lib/teensy41/libUtils.a"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && $(CMAKE_COMMAND) -P CMakeFiles/Utils.dir/cmake_clean_target.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Utils.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 F-Prime/Utils/CMakeFiles/Utils.dir/build: lib/teensy41/libUtils.a
 .PHONY : F-Prime/Utils/CMakeFiles/Utils.dir/build
 
 F-Prime/Utils/CMakeFiles/Utils.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && $(CMAKE_COMMAND) -P CMakeFiles/Utils.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils && $(CMAKE_COMMAND) -P CMakeFiles/Utils.dir/cmake_clean.cmake
 .PHONY : F-Prime/Utils/CMakeFiles/Utils.dir/clean
 
 F-Prime/Utils/CMakeFiles/Utils.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Utils /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/CMakeFiles/Utils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Utils /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Utils/CMakeFiles/Utils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Utils/CMakeFiles/Utils.dir/depend
 

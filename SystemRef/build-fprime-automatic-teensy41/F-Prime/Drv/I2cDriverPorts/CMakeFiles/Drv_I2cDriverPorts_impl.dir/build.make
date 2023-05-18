@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Drv_I2cDriverPorts_impl.
 
@@ -76,10 +76,10 @@ F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl: F-Prime/Drv/I2cDr
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl: F-Prime/Drv/I2cDriverPorts/I2cWriteReadPortAc.cpp
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl: F-Prime/Drv/I2cDriverPorts/I2cWriteReadPortAc.hpp
 
-F-Prime/Drv/I2cDriverPorts/I2cPortAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
+F-Prime/Drv/I2cDriverPorts/I2cPortAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
 F-Prime/Drv/I2cDriverPorts/I2cPortAc.cpp: lib/teensy41/libFw_Buffer.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating I2cPortAc.cpp, I2cPortAc.hpp, I2cStatusEnumAc.cpp, I2cStatusEnumAc.hpp, I2cWriteReadPortAc.cpp, I2cWriteReadPortAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating I2cPortAc.cpp, I2cPortAc.hpp, I2cStatusEnumAc.cpp, I2cStatusEnumAc.hpp, I2cWriteReadPortAc.cpp, I2cWriteReadPortAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Drv/I2cDriverPorts/I2cPortAc.hpp: F-Prime/Drv/I2cDriverPorts/I2cPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/I2cDriverPorts/I2cPortAc.hpp
@@ -96,10 +96,10 @@ F-Prime/Drv/I2cDriverPorts/I2cWriteReadPortAc.cpp: F-Prime/Drv/I2cDriverPorts/I2
 F-Prime/Drv/I2cDriverPorts/I2cWriteReadPortAc.hpp: F-Prime/Drv/I2cDriverPorts/I2cPortAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/I2cDriverPorts/I2cWriteReadPortAc.hpp
 
-F-Prime/Drv/I2cDriverPorts/I2cPortAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
+F-Prime/Drv/I2cDriverPorts/I2cPortAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
 F-Prime/Drv/I2cDriverPorts/I2cPortAi.xml: lib/teensy41/libFw_Buffer.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating I2cPortAi.xml, I2cStatusEnumAi.xml, I2cWriteReadPortAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp /home/ethan/jpl/projects/BareMetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating I2cPortAi.xml, I2cStatusEnumAi.xml, I2cWriteReadPortAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Drv/I2cDriverPorts/I2cStatusEnumAi.xml: F-Prime/Drv/I2cDriverPorts/I2cPortAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Drv/I2cDriverPorts/I2cStatusEnumAi.xml
@@ -125,10 +125,10 @@ F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/build: Drv_I2c
 .PHONY : F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/build
 
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts && $(CMAKE_COMMAND) -P CMakeFiles/Drv_I2cDriverPorts_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts && $(CMAKE_COMMAND) -P CMakeFiles/Drv_I2cDriverPorts_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/clean
 
 F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Drv/I2cDriverPorts /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Drv/I2cDriverPorts /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Drv/I2cDriverPorts/CMakeFiles/Drv_I2cDriverPorts_impl.dir/depend
 

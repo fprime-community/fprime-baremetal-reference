@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef
+CMAKE_SOURCE_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+CMAKE_BINARY_DIR = /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 # Utility rule file for Svc_BufferAccumulator_impl.
 
@@ -73,13 +73,13 @@ F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: F-Prime/Svc
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.hpp
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAc.cpp
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAc.hpp
-F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template
-F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template
+F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template
+F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template
 
-F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp
-F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Commands.fppi
-F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Events.fppi
-F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Telemetry.fppi
+F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp
+F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Commands.fppi
+F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Events.fppi
+F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Telemetry.fppi
 F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: lib/teensy41/libFw_Log.a
@@ -87,8 +87,8 @@ F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: lib/teensy41/lib
 F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: lib/teensy41/libSvc_Ping.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating BufferAccumulatorComponentAi.xml, BufferAccumulator_BlockModeEnumAi.xml, BufferAccumulator_OpStateEnumAi.xml"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && /home/ethan/.local/bin/fpp-to-xml -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating BufferAccumulatorComponentAi.xml, BufferAccumulator_BlockModeEnumAi.xml, BufferAccumulator_OpStateEnumAi.xml"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && /home/ethanchee/.local/bin/fpp-to-xml -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal
 
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAi.xml: F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAi.xml
@@ -96,10 +96,10 @@ F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAi.xml: F-Prime/Svc
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAi.xml: F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAi.xml
 
-F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp
-F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Commands.fppi
-F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Events.fppi
-F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/Telemetry.fppi
+F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp
+F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Commands.fppi
+F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Events.fppi
+F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Telemetry.fppi
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: lib/teensy41/libFw_Buffer.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: lib/teensy41/libFw_Cmd.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: lib/teensy41/libFw_Log.a
@@ -107,8 +107,8 @@ F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: lib/teensy4
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: lib/teensy41/libSvc_Ping.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: lib/teensy41/libFw_CompQueued.a
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp: lib/teensy41/libOs.a
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating BufferAccumulator_BlockModeEnumAc.cpp, BufferAccumulator_BlockModeEnumAc.hpp, BufferAccumulator_OpStateEnumAc.cpp, BufferAccumulator_OpStateEnumAc.hpp"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && /home/ethan/.local/bin/fpp-to-cpp -d /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator -i /home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Time/Time.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp,/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp -p /home/ethan/jpl/projects/BareMetal/fprime,/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino,/home/ethan/jpl/projects/BareMetal,/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating BufferAccumulator_BlockModeEnumAc.cpp, BufferAccumulator_BlockModeEnumAc.hpp, BufferAccumulator_OpStateEnumAc.cpp, BufferAccumulator_OpStateEnumAc.hpp"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && /home/ethanchee/.local/bin/fpp-to-cpp -d /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator -i /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Time/Time.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/FpConfig.fpp /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulator.fpp -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino,/home/ethanchee/Documents/fprime-projects/fprime-baremetal,/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41
 
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.hpp: F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.hpp
@@ -119,12 +119,12 @@ F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAc.cpp: F-Prime/Svc/B
 F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAc.hpp: F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAc.hpp
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template: F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template, /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template"
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && /usr/bin/cmake -E env PYTHONPATH=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/src:/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethan/jpl/projects/BareMetal/fprime:/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino:/home/ethan/jpl/projects/BareMetal:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41:/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethan/jpl/projects/BareMetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethan/jpl/projects/BareMetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator --build_root -t /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template: F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template, /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template"
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && /usr/bin/cmake -E env PYTHONPATH=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/src:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/utils BUILD_ROOT=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/arduino/fprime-arduino:/home/ethanchee/Documents/fprime-projects/fprime-baremetal:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41:/home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime FPRIME_AC_CONSTANTS_FILE=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/config/AcConstants.ini PYTHON_AUTOCODER_DIR=/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python /usr/bin/python3 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Autocoders/Python/bin/codegen.py -p /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator --build_root -t /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml
 
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template
 
 Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulatorComponentAi.xml
 Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulator_BlockModeEnumAc.cpp
@@ -134,8 +134,8 @@ Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpSt
 Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAc.hpp
 Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/BufferAccumulator_OpStateEnumAi.xml
 Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl
-Svc_BufferAccumulator_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template
-Svc_BufferAccumulator_impl: /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template
+Svc_BufferAccumulator_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template
+Svc_BufferAccumulator_impl: /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template
 Svc_BufferAccumulator_impl: F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/build.make
 .PHONY : Svc_BufferAccumulator_impl
 
@@ -144,10 +144,10 @@ F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/build: S
 .PHONY : F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/build
 
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/clean:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && $(CMAKE_COMMAND) -P CMakeFiles/Svc_BufferAccumulator_impl.dir/cmake_clean.cmake
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator && $(CMAKE_COMMAND) -P CMakeFiles/Svc_BufferAccumulator_impl.dir/cmake_clean.cmake
 .PHONY : F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/clean
 
 F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/depend:
-	cd /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethan/jpl/projects/BareMetal/SystemRef /home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41 /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator /home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef /home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41 /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator /home/ethanchee/Documents/fprime-projects/fprime-baremetal/SystemRef/build-fprime-automatic-teensy41/F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : F-Prime/Svc/BufferAccumulator/CMakeFiles/Svc_BufferAccumulator_impl.dir/depend
 

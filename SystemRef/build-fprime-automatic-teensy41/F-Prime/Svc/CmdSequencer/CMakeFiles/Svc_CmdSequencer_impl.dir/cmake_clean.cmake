@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/CmdSequencerComponentImpl.hpp-template"
   "CMakeFiles/Svc_CmdSequencer_impl"
   "CmdSequencerComponentAi.xml"
   "CmdSequencer_BlockStateEnumAc.cpp"

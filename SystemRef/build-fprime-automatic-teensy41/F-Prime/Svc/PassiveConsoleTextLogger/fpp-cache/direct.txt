@@ -1,1 +1,1 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp

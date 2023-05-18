@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../../../lib/Linux/libFw_FilePacket_GTest.a CMakeFiles/Fw_FilePacket_GTest.dir/CancelPacket.cpp.o CMakeFiles/Fw_FilePacket_GTest.dir/DataPacket.cpp.o CMakeFiles/Fw_FilePacket_GTest.dir/EndPacket.cpp.o CMakeFiles/Fw_FilePacket_GTest.dir/Header.cpp.o CMakeFiles/Fw_FilePacket_GTest.dir/PathName.cpp.o CMakeFiles/Fw_FilePacket_GTest.dir/StartPacket.cpp.o
-/usr/bin/ranlib ../../../../lib/Linux/libFw_FilePacket_GTest.a

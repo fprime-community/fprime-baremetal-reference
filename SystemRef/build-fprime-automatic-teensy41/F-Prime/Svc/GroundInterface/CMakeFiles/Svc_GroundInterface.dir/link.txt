@@ -1,2 +1,2 @@
-/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libSvc_GroundInterface.a CMakeFiles/Svc_GroundInterface.dir/GroundInterface.cpp.obj CMakeFiles/Svc_GroundInterface.dir/GroundInterfaceComponentAc.cpp.obj
-/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libSvc_GroundInterface.a
+/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libSvc_GroundInterface.a CMakeFiles/Svc_GroundInterface.dir/GroundInterface.cpp.obj CMakeFiles/Svc_GroundInterface.dir/GroundInterfaceComponentAc.cpp.obj
+/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libSvc_GroundInterface.a

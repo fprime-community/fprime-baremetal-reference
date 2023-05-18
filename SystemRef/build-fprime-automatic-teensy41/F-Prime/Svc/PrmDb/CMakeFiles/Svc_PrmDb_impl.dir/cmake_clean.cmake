@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/PrmDb/PrmDbComponentImpl.hpp-template"
   "CMakeFiles/Svc_PrmDb_impl"
   "PrmDbComponentAi.xml"
   "PrmDb_PrmReadErrorEnumAc.cpp"

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/BufferAccumulatorComponentImpl.hpp-template"
   "BufferAccumulatorComponentAi.xml"
   "BufferAccumulator_BlockModeEnumAc.cpp"
   "BufferAccumulator_BlockModeEnumAc.hpp"

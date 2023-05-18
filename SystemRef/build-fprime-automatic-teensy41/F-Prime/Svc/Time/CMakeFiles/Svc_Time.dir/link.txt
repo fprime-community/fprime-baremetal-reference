@@ -1,2 +1,2 @@
-/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libSvc_Time.a CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj
-/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libSvc_Time.a
+/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libSvc_Time.a CMakeFiles/Svc_Time.dir/TimeComponentAc.cpp.obj
+/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libSvc_Time.a

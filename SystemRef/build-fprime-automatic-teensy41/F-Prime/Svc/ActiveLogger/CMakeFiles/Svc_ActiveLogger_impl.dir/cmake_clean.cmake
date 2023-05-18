@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template"
-  "/home/ethan/jpl/projects/BareMetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.cpp-template"
+  "/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/ActiveLogger/ActiveLoggerComponentImpl.hpp-template"
   "ActiveLoggerComponentAi.xml"
   "ActiveLogger_EnabledEnumAc.cpp"
   "ActiveLogger_EnabledEnumAc.hpp"

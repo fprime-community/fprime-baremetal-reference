@@ -1,3 +1,3 @@
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Commands.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Events.fppi
-/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Telemetry.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Commands.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Events.fppi
+/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/CmdSequencer/Telemetry.fppi
