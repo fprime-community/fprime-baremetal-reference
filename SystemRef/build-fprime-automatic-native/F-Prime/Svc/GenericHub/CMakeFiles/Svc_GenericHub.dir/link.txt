@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_GenericHub.a CMakeFiles/Svc_GenericHub.dir/GenericHubComponentImpl.cpp.o CMakeFiles/Svc_GenericHub.dir/GenericHubComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_GenericHub.a

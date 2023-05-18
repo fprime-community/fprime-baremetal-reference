@@ -1,0 +1,463 @@
+<!--
+index.html:
+
+This HTML document sets up the most basic of UIs for the F prime webified GUI layer. This GUI layer is built with the
+Bootstrap CSS, but without the paired JavaScript packages as they conflict with the Vue.js display layer being used.
+
+
+This GUI provides the following items:
+
+1. Events panel showing events in the system
+2. Channels panel showing latest channel readings
+3. Commands panel allowing for commanding of the system
+4. uplink and downlink panels for uploading and downloading files from the spacecraft
+5. Logs file to display in the GDS layer
+
+Note: Bootstrap is used, as it can be run as a CSS framework without many node and JavaScript packages.
+Note: Vue.js annotations are used, as Vue is the data-to-view framework of choice.  It can be run with a single JS
+      dependency, without need for WebPack or other module loaders.
+-->
+<!doctype html>
+<html>
+    <head>
+        <!--link rel="stylesheet" href="third-party/css/bootstrap.min.css"-->
+        <link rel="stylesheet" href="third-party/css/vue-select.css">
+        <link rel="stylesheet" href="third-party/css/all.min.css">
+        <link rel="stylesheet" href="css/fprime.css">
+        <link rel="stylesheet" href="css/fpstyle.css">
+
+        <!-- Development mode -Vue- should it be needed for debug purposes -->
+        <!--script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script-->
+
+        <!-- Third-party JavaScript files, hosted locally to remove internet dependence -->
+        <script src="third-party/js/vue.min.js"></script>
+        <script src="third-party/js/sorttable.js"></script>
+        <script src="third-party/js/luxon.min.js"></script>
+        <!-- JavaScript GDS files -->
+        <script type="module" src="js/gds.js"></script>
+    </head>
+    <body>
+        <!--
+        GDS:
+
+        The primary vue of the GDS is a tabbed view that is composed of separate components for each view. This is
+        where Vue JS is allowed to display its items.
+        -->
+        <div id="tabetc" class="fp-flex-repeater fp-full-height">
+            <tabbed-etc></tabbed-etc>
+        </div>
+        <!--
+        Templates:
+
+        The rest of this document is a hidden list of templates representing each of the components used in this web
+        layer.
+        -->
+        <div hidden>
+            <!--
+            TabETC Component:
+
+            The tabbed component has to primary sections:
+
+            1. Navigation, allowing for the changing of tabs in the system
+            2. Tab components only one visible at a time.
+            -->
+            <template id="tabetc-template">
+                <div class="fp-flex-repeater">
+                    <div class="fp-flex-header">
+                        <nav class="navbar navbar-expand-sm navbar-dark bg-secondary navbar-custom-style-x">
+                            <span class="navbar-brand">
+                                <img v-bind:src="config.logo" width="50" height="50"
+                                     v-bind:alt="config.projectName"
+                                     v-bind:title="config.projectName">
+                            </span>
+                            <button class="navbar-toggler d-block d-sm-none d-md-none d-lg-none mr-2" type="button" v-on:click="navbar_toggle(event)">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <li v-for="tab in tabs"
+                                        :class="['nav-item', 'nav-link', 'click-able-item', { active: currentTab == tab[0] }]"
+                                        :key="tab[0]"
+                                        v-on:click="route(tab[0])">
+                                        <span class="d-none d-sm-none d-md-none d-lg-block" v-bind:id="tab[0]">{{ tab[0] }}</span>
+                                        <span class="d-none d-sm-block d-md-block d-lg-none">{{ tab[1] }}</span>
+                                    </li>
+                                    <form class="form-inline my-1 d-none d-sm-block d-md-block d-lg-block">
+                                        <div class="btn btn-primary btn-sm ml-2" v-on:click="spawn">
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </div>
+                                    </form>
+                                </ul>
+                            <span class="navbar-brand">
+                                    <img v-bind:src="orb ? config.dataSuccessIcon : config.dataErrorIcon"
+                                         width="30" height="30">
+                            </span>
+                            <div class="btn-group-sm btn-group-vertical">
+                                <button v-for="(display_class, counter) in config.summaryFields"
+                                        :class="['btn', 'btn-sm', 'btn-' + display_class]">
+                                    {{ counter.replace("_", " ") }}: {{ (counts[counter] >= 99) ? "99+" : counts[counter] }}
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                    <div v-if="flags.loaded" class="container-fluid fp-flex-repeater">
+                        <!-- NOTE: on v-show is used in place of v-if to ensure that state is maintained -->
+                        <command-input v-show="currentTab == 'Commanding'" :compact="settings.compact_commanding">
+                        </command-input>
+                        <channel-table v-show="currentTab == 'Channels'"></channel-table>
+                        <event-list    v-show="currentTab == 'Events'"></event-list>
+                        <uplink        v-show="currentTab == 'Uplink'"></uplink>
+                        <downlink      v-show="currentTab == 'Downlink'"></downlink>
+                        <chart-wrapper v-show="currentTab == 'Charts'"></chart-wrapper>
+                        <dictionary    v-show="currentTab == 'Dictionaries'"></dictionary>
+                        <logging       v-show="currentTab == 'Logs'"></logging>
+                        <sequencer     v-show="currentTab == 'Sequences'"></sequencer>
+                        <dashboard     v-show="currentTab == 'Dashboard'"></dashboard>
+                        <advanced-settings v-show="currentTab == 'Advanced'"></advanced-settings>
+                        <dictionary-version></dictionary-version>
+                    </div>
+                    <div v-if="!flags.loaded" class="container">
+                        <div class="align-middle">
+                            <div class="row">
+                                <div class="col col-3">
+                                    <img v-bind:src="config.logo" width="100%" height="100%"
+                                         v-bind:alt="config.projectName" v-bind:title="config.projectName">
+                                </div>
+                                <div class="col col-8 card">
+                                    <div class="card-header">
+                                        <h3>{{ config.projectName }} is loading...</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>{{ config.projectName }} is loading project software dictionaries,
+                                            configuration, and other necessary data. This may take a moment.</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Charts: 
+            Display telemetry time series charts. User has option to select which telemetry channels should be plotted.
+            -->
+            <chart-wrapper></chart-wrapper>
+            
+            <!--
+            Dashboard:
+
+            The dashboard template displays a user-configurable collection of other utilities from the GUI; by default, asks the user to upload a configuration file specifying the dashboard setup.
+            -->
+            <template id="dashboard-template">
+                <div class="fp-flex-repeater">
+                    <div class="fp-flex-header">
+                        <div class="col-md-5 mt-2">
+                            <div class="form-group">
+                                <input type="file" name="config-file" 
+                                    id="config-file" 
+                                    accept="application/xml" 
+                                    v-on:change="configureDashboardFromFile($event.target.files[0])"
+                                    style="display: none;"/>
+                                <label for="config-file" class="btn btn-secondary mr-1 mb-1 col-md-5">
+                                    <i class="fas fa-upload"></i>
+                                    <span class="d-md-none d-lg-inline">Upload Dashboard File</span>
+                                </label>
+                            </div>
+                        </div>
+                        <v-runtime-template v-bind:template="userTemplate">
+                            <!-- User-specified components go here -->
+                        </v-runtime-template>
+                    </div>
+                </div>
+            </template>
+
+            <!--
+            Event Templates:
+
+            These templates provide for event listing items. Events use the FPTable component to configure a nice list
+            of events for display.
+            -->
+            <template id="event-list-template">
+                <div class="fp-flex-repeater">
+                    <div class="fp-flex-header">
+                        <h2>Events</h2>
+                    </div>
+                    <fp-table :header-columns="['Event Time', 'Event Id', 'Event Name', 'Event Severity', 'Event Description']"
+                        :items-key="'events'"
+                        :item-to-columns="columnify"
+                        :row-style="style"
+                        :item-to-unique="keyify"
+                        :item-hide="isItemHidden"
+                        :clear-rows="clearEvents"
+                        :initial-fields="fields"
+                        :filter-text="filterText"
+                        :initial-views="itemsShown"
+                        :compact="compact"
+                    ></fp-table>
+                </div>
+            </template>
+            <!--
+            Channel Templates:
+
+            These templates display a channel table.  It takes all channels supplied in a list, and prints a row for
+            each channel. If this list contains duplicates, then the display will contain duplicates. This can be fixed
+            -->
+            <template id="channel-table-template">
+                <div class="fp-flex-repeater">
+                    <div class="fp-flex-header">
+                        <h2>Channels</h2>
+                    </div>
+                    <fp-table :display-template="'channel-row'"
+                         :header-columns="['Last Sample Time', 'Channel Id', 'Channel Name', 'Channel Value']"
+                         :items-key="'channels'"
+                         :item-to-columns="columnify"
+                         :item-to-unique="keyify"
+                         :support-views="true"
+                         :item-to-view-name="itemToName"
+                         :item-hide="channelHider"
+                         :initial-fields="fields"
+                         :filter-text="filterText"
+                         :initial-views="itemsShown"
+                         :compact="compact"
+                    ></fp-table>
+                </div>
+            </template>
+            <!-- Uplink;
+
+            Uplink template defines a control form used to upload files to a given destination.
+
+            Uses FP table to display the rows of the uplink table. This specifically chooses the file-row template for
+            the rows, as it is customized for use with uplink.
+            -->
+            <template id="uplink-template">
+                <div class="fp-flex-repeater">
+                    <div class="fp-flex-header">
+                        <h2>File Uplink</h2>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4 mt-2">
+                            <input class="form-control" type="text" v-model.trim="destination" pattern="/.*" />
+                            <label>Destination Folder</label>
+                        </div>
+                        <div class="form-group col-md-4 mt-2">
+                            <div class="form-row">
+                                <div class="col-md-5">
+                                    <button type="button" class="btn btn-primary btn-block" v-on:click="uplinkFiles">
+                                        <i class="fas fa-satellite-dish"></i> 
+                                        <span class="d-md-none d-lg-inline">Uplink</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 mt-2">
+                            <div class="form-row">
+                                <div class="col-md-4 mb-1"></div>
+                                <div class="col-md-4 mb-1">
+                                    <input type="file" id="chooseUplinkFile" v-bind:files="selected" multiple
+                                        v-on:change="handleFiles" style="display: none;">
+                                    <label for="chooseUplinkFile" class="btn btn-secondary btn-block">
+                                        <i class="fas fa-upload"></i> 
+                                        <span class="d-md-none d-lg-inline">Upload</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-4 mb-1" v-if="flags.uploading">
+                                    <button type="button" class="btn btn-secondary btn-block"
+                                    v-on:click="pauseUplink">
+                                        <i class="fas fa-pause"></i>
+                                        <span class="d-md-none d-lg-inline">Pause</span>
+                                    </button>
+                                </div>
+                                <div class="col-md-4 mb-1" v-if="!flags.uploading">
+                                    <button type="button" class="btn btn-secondary btn-block"
+                                    v-on:click="unpauseUplink">
+                                        <i class="fas fa-play"></i>
+                                        <span class="d-md-none d-lg-inline">Unpause</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-if="error != null" class="alert alert-danger" role="alert">
+                        {{ this.error }}
+                        <button type="button" class="close" data-dismiss="alert" v-on:click="dismiss_alert()">
+                            <li class="fas fa-times" style="font-size: 0.75em"></li>
+                        </button>
+                    </div>
+                    <fp-table :header-columns="['Start Time', 'End Time', 'Source', 'Destination', 'State', 'Control', 'Progress']"
+                        :items="elements" :item-to-unique="keyify" :display-template="'file-row'" :item-to-columns="columnify">
+                    </fp-table>
+                </div>
+            </template>
+            <!-- Downlink;
+
+            Uses FP table to display the rows of the downlink table. This specifically chooses the file-row template for
+            the rows, as it is customized for use with downlink.
+            -->
+            <template id="downlink-template">
+                <div class="fp-flex-repeater">
+                    <div class="fp-flex-header">
+                        <h2>File Downlink</h2>
+                    </div>
+                    <fp-table :header-columns="['Start Time', 'End Time', 'Source', 'Destination', 'State', 'Control', 'Progress']"
+                              :items="elements"
+                              :item-to-unique="keyify"
+                              :display-template="'file-row'"
+                              :item-to-columns="columnify"
+                    ></fp-table>
+                </div>
+            </template>
+
+            <!-- FP Table Templates:
+
+            FP Table is designed to create a common look-and-feel across all the table displays used in F´. This
+            provides for a common filtering box, view loading box, and table with header information. It is used for the
+            following table types:
+
+            1. Command History
+            2. Event History
+            3. Active Telemetry
+
+            This section consists of two templates, the row template, and the table template.
+            -->
+            <template id="fp-row-template">
+                <tr :class="calculateStyle">
+                    <th v-if="editing" v-on:input="onInput"><input type="checkbox" :checked="inView"></th>
+                    <td v-for="(column, index) in calculatedColumns" v-on:dblclick="clickAction(item)" v-html="column"></td>
+                </tr>
+            </template>
+
+            <!-- File Row:
+
+            This is an alternate display for the row in an FP table that can show a file list item including commanding
+            and progress. It is used by Uplink and downlink
+            -->
+            <template id="file-row-template">
+                <tr>
+                    <td>{{ item.start }}</td>
+                    <td>{{ item.end }}</td>
+                    <td>{{ item.source }}</td>
+                    <td>{{ item.destination }}</td>
+                    <td>{{ item.state }}</td>
+                    <td v-if="item.uplink">
+                        <button v-if="item.state != 'FINISHED' && item.state != 'CANCELED' && item.state != 'TIMEOUT'" class="btn btn-secondary" v-on:click="fileAction">
+                            {{ (item.state == "TRANSMITTING" ) ? "Cancel" : "Remove" }}
+                        </button>
+                    </td>
+                    <td v-if="!item.uplink">
+                        <a v-if="item.state == 'FINISHED'" class="btn btn-secondary"
+                           :href="'/download/files/' + basename" :download="basename">
+                            Download
+                        </a>
+                    </td>
+                    <td>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" :aria-valuenow="item.percent"
+                                 aria-valuemin="0" aria-valuemax="100" :style="{width: item.percent + '%'}">
+                                {{ item.percent }}%
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </template>
+
+            <!--
+            FP Table:
+
+            FP table supports the features of a sortable, filterable, table. It allows for the ability to specify views
+            that reduce what is seen and specify custom row templates for non-standard data. It is used for each of the
+            following data type displays:
+
+            1. Command history
+            2. Event log
+            3. Active channel view
+            4. File uplink curation and progress (uses file-row template)
+            5. File downlink progress and download (uses file-row template)
+            -->
+            <template id="fp-table-template">
+                <div class="fp-flex-repeater mt-2">
+                    <div class="row justify-content-end no-gutters" v-if="!compact">
+                        <div class="col-lg-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Filters:</span>
+                                </div>
+                                <input class="form-control" type="text" v-model="matching" @input="onFilterInput" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4" v-if="scroller != null">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-secondary" type="button" v-on:click="scroller.first()">First</button>
+                                    <button class="btn btn-secondary" type="button" v-on:click="scroller.prev()" v-bind:class="{ 'disabled': !scrollerData.status }">&lt;</button>
+                                    <span class="input-group-text" v-bind:class="{ 'fp-auto-increment': scrollerData.updating }">
+                                        {{ scrollerData.offset }} - {{ Math.min(scrollerData.offset + scrollerData.count, scrollerData.total)  }}
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" v-model="scrollerData.total" disabled>
+                                <div class="input-group-append">
+                                    <button class="btn btn-secondary" type="button" v-on:click="scroller.next()" v-bind:class="{ 'disabled': !scrollerData.status }">&gt;</button>
+                                    <button class="btn btn-secondary" type="button" v-on:click="scroller.last()">Last</button>
+                                    <button class="btn btn-secondary" v-bind:class="{ 'btn-warning': scrollerData.locked }" type="button" v-on:click="scroller.toggleLock()">
+                                        <i class="fas fa-lock-open" v-if="!scrollerData.locked"></i>
+                                        <i class="fas fa-lock" v-if="scrollerData.locked"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fp-scroll-container">
+                        <div class="fp-scrollable" id="fp-scrollable-id">
+                            <table  class="sortable table table-bordered table-hover">
+                                <thead>
+                                    <tr v-if="!compact">
+                                        <th v-if="editing" class="sorttable_nosort">
+                                            <input type="checkbox" v-on:input="checkAll" ref="allbox"
+                                                :checked="view.length == itemsLength.length">
+                                        </th>
+                                        <th v-for="column in calculatedHeaderColumns">{{ column }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr :is="displayTemplate" v-for="item in postFiltered" :item="item"
+                                        :item-to-columns="itemToColumns"
+                                        :row-style="rowStyle"
+                                        :key="itemToUnique(item)"
+                                        :editing="editing"
+                                        :in-view="inView(item)"
+                                        v-on:row-checked="checkedChild"
+                                        :click-action="clickAction"
+                                        :visible="visibleIndices"
+                                    >
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- If the table supports editing views, these features support the edit context of the view -->
+                    <div class="row fp-flex-header" v-if="editing && !compact">
+                        <div class="col-4"></div>
+                        <div class="btn-group col-8 mb-1 mt-1 btn-group-sm">
+                            <div type="button" class="btn btn-secondary" v-on:click="clearView">Clear</div>
+                            <a :href="viewHref" download="current-view.txt" class="btn btn-info">
+                                <i class="fa fa-save"></i><span class="d-md-none d-lg-inline">Save</span>
+                            </a>
+                            <label class="btn btn-info btn-file">
+                                <i class="fa fa-folder-open"></i>
+                                <span class="d-md-none d-lg-inline">Load</span>
+                                <input type="file" v-on:input="readFile" style="display: none;">
+                            </label>
+                            <div type="button" class="btn btn-primary" v-on:click="saveView">Done</div>
+                        </div>
+                    </div>
+                    <div class="row fp-flex-header no-gutters justify-content-end mb-1" v-if="!editing && !compact">
+                        <button type="button" class="col-3 btn btn-primary" v-if="supportViews && !editing"
+                                v-on:click="editViews">Edit View</button>
+                    </div>
+                    <div class="row fp-flex-header no-gutters justify-content-end mb-1" v-if="!editing && !compact">
+                        <button class="col-3 btn btn-secondary" v-if="clearRows != null" v-on:click="clearRows">Clear All</button>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </body>
+</html>

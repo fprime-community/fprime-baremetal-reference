@@ -1,0 +1,3 @@
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferLogger/Commands.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferLogger/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferLogger/Telemetry.fppi

@@ -1,0 +1,4 @@
+systemResources.MEMORY_TOTAL
+systemResources.MEMORY_USED
+systemResources.NON_VOLATILE_TOTAL
+systemResources.NON_VOLATILE_FREE

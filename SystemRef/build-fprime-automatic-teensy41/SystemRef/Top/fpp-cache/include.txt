@@ -1,0 +1,15 @@
+/home/ethan/jpl/projects/BareMetal/fprime/Drv/BlockDriver/Tlm.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/AssertFatalAdapter/AssertFatalEvents.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/BufferManager/Telemetry.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Commands.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/CmdSequencer/Telemetry.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Commands.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileDownlink/Telemetry.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/Commands.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/Telemetry.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileUplink/Telemetry.fppi

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_GenericHub.a CMakeFiles/Svc_GenericHub.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_GenericHub.a

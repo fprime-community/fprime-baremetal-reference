@@ -1,0 +1,2 @@
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../../lib/teensy41/libOs_Baremetal_TaskRunner.a CMakeFiles/Os_Baremetal_TaskRunner.dir/TaskRunner.cpp.obj
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../../lib/teensy41/libOs_Baremetal_TaskRunner.a

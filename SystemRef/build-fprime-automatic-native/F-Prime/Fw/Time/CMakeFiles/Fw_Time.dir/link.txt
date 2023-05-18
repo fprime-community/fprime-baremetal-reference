@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Time.a CMakeFiles/Fw_Time.dir/Time.cpp.o CMakeFiles/Fw_Time.dir/TimePortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Time.a

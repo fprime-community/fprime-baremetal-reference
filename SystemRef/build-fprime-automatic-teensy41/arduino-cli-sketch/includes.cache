@@ -1,0 +1,27 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "/home/ethan/.arduino15/packages/teensy/hardware/avr/1.58.1/cores/teensy4"
+  },
+  {
+    "Sourcefile": "/tmp/arduino/sketches/863A132365FA48B2FF6607CCB60ED4CB/sketch/tmpdg3nixzq.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/tmp/arduino/sketches/863A132365FA48B2FF6607CCB60ED4CB/sketch/tmpdg3nixzq.S",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/tmp/arduino/sketches/863A132365FA48B2FF6607CCB60ED4CB/sketch/tmpdg3nixzq.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "/tmp/arduino/sketches/863A132365FA48B2FF6607CCB60ED4CB/sketch/tmpdg3nixzq.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

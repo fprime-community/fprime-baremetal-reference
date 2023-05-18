@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Logger.a CMakeFiles/Fw_Logger.dir/Logger.cpp.o CMakeFiles/Fw_Logger.dir/LogAssert.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Logger.a

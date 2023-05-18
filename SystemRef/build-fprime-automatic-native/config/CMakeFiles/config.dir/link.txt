@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/Linux/libconfig.a CMakeFiles/config.dir/FppConstantsAc.cpp.o
+/usr/bin/ranlib ../lib/Linux/libconfig.a

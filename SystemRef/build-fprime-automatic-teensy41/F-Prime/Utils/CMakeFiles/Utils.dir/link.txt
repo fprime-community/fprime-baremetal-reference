@@ -1,0 +1,2 @@
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../lib/teensy41/libUtils.a CMakeFiles/Utils.dir/RateLimiter.cpp.obj CMakeFiles/Utils.dir/TokenBucket.cpp.obj CMakeFiles/Utils.dir/LockGuard.cpp.obj CMakeFiles/Utils.dir/CRCChecker.cpp.obj
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../lib/teensy41/libUtils.a

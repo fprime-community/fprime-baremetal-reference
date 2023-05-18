@@ -1,0 +1,2 @@
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libSvc_FatalHandler.a CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentCommonImpl.cpp.obj CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentBaremetalImpl.cpp.obj CMakeFiles/Svc_FatalHandler.dir/FatalHandlerComponentAc.cpp.obj
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libSvc_FatalHandler.a

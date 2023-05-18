@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_TlmPacketizer.a CMakeFiles/Svc_TlmPacketizer.dir/TlmPacketizer.cpp.o CMakeFiles/Svc_TlmPacketizer.dir/TlmPacketizerComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_TlmPacketizer.a

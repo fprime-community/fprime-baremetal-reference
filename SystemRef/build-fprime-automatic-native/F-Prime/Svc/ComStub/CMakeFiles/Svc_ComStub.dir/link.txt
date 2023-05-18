@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_ComStub.a CMakeFiles/Svc_ComStub.dir/ComStub.cpp.o CMakeFiles/Svc_ComStub.dir/ComStubComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_ComStub.a

@@ -1,0 +1,1 @@
+/home/ethan/jpl/projects/BareMetal/fprime/config/FpConfig.fpp

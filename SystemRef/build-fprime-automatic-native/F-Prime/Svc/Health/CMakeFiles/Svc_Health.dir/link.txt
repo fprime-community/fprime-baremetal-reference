@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_Health.a CMakeFiles/Svc_Health.dir/HealthComponentImpl.cpp.o CMakeFiles/Svc_Health.dir/Stub/HealthComponentStubChecks.cpp.o CMakeFiles/Svc_Health.dir/HealthComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_Health.a

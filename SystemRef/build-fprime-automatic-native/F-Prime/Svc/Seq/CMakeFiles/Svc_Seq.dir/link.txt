@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_Seq.a CMakeFiles/Svc_Seq.dir/CmdSeqCancelPortAc.cpp.o CMakeFiles/Svc_Seq.dir/CmdSeqInPortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_Seq.a

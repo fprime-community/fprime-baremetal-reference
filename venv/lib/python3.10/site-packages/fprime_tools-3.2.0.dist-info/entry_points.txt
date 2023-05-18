@@ -1,0 +1,3 @@
+[console_scripts]
+fprime-util = fprime.util.__main__:main
+fprime-version-check = fprime.util.versioning:main

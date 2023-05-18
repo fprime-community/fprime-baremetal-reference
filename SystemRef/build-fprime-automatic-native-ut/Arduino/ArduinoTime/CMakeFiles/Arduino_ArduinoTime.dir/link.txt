@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/Linux/libArduino_ArduinoTime.a CMakeFiles/Arduino_ArduinoTime.dir/LinuxTimeImpl.cpp.o
+/usr/bin/ranlib ../../lib/Linux/libArduino_ArduinoTime.a

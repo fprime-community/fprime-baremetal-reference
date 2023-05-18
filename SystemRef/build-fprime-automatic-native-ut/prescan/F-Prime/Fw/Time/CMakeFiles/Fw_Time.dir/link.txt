@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Time.a CMakeFiles/Fw_Time.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Time.a

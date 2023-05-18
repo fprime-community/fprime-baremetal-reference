@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_LinuxTimer.a CMakeFiles/Svc_LinuxTimer.dir/LinuxTimerComponentImplTimerFd.cpp.o CMakeFiles/Svc_LinuxTimer.dir/LinuxTimerComponentImplCommon.cpp.o CMakeFiles/Svc_LinuxTimer.dir/LinuxTimerComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_LinuxTimer.a

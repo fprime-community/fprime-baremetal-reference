@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libDrv_GpioDriverPorts.a CMakeFiles/Drv_GpioDriverPorts.dir/GpioReadPortAc.cpp.o CMakeFiles/Drv_GpioDriverPorts.dir/GpioWritePortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libDrv_GpioDriverPorts.a

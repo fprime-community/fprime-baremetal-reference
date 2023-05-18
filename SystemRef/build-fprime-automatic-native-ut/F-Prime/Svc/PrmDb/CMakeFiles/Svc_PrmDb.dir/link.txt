@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_PrmDb.a CMakeFiles/Svc_PrmDb.dir/PrmDbImpl.cpp.o CMakeFiles/Svc_PrmDb.dir/PrmDb_PrmReadErrorEnumAc.cpp.o CMakeFiles/Svc_PrmDb.dir/PrmDb_PrmWriteErrorEnumAc.cpp.o CMakeFiles/Svc_PrmDb.dir/PrmDbComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_PrmDb.a

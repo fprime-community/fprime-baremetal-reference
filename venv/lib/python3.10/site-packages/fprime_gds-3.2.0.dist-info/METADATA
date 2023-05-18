@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: fprime-gds
+Version: 3.2.0
+Summary: F Prime Flight Software Ground Data System layer.
+Home-page: https://github.com/nasa/fprime
+Author: Michael Starch
+Author-email: Michael.D.Starch@jpl.nasa.gov
+License: Apache 2.0 License
+Project-URL: Issue Tracker, https://github.com/nasa/fprime/issues
+Keywords: fprime,gds,embedded,nasa
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+Requires-Dist: flask (>=1.1.2)
+Requires-Dist: flask-compress (>=1.11)
+Requires-Dist: pyzmq (>=24.0.1)
+Requires-Dist: pexpect (>=4.8.0)
+Requires-Dist: pytest (>=6.2.4)
+Requires-Dist: flask-restful (>=0.3.8)
+Requires-Dist: fprime-tools (>=3.1.2a1)
+Requires-Dist: argcomplete (>=1.12.3)
+Requires-Dist: Jinja2 (>=2.11.3)
+Requires-Dist: openpyxl (>=3.0.10)
+Provides-Extra: uart-adapter
+Requires-Dist: pyserial ; extra == 'uart-adapter'
+
+
+This package contains the Python files used to run the F prime Ground Data System and Test API.
+It is intended to supply the user with the ability to test F prime flight software in an
+integrated configuration with ground in-the-loop.
+    

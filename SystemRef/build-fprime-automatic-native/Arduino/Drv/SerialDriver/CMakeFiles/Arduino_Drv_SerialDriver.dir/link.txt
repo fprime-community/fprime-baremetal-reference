@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libArduino_Drv_SerialDriver.a CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriver.cpp.o CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverLinux.cpp.o CMakeFiles/Arduino_Drv_SerialDriver.dir/SerialDriverComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libArduino_Drv_SerialDriver.a

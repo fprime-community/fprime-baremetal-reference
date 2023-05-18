@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_BufferManager.a CMakeFiles/Svc_BufferManager.dir/BufferManagerComponentImpl.cpp.o CMakeFiles/Svc_BufferManager.dir/BufferManagerComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_BufferManager.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_LinuxTime.a CMakeFiles/Svc_LinuxTime.dir/LinuxTimeImpl.cpp.o CMakeFiles/Svc_LinuxTime.dir/TimeComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_LinuxTime.a

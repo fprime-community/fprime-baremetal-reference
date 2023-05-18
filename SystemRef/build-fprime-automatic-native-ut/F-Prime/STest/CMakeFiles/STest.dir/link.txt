@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/Linux/libSTest.a CMakeFiles/STest.dir/STest/Random/bsd_random.c.o CMakeFiles/STest.dir/STest/Random/Random.cpp.o CMakeFiles/STest.dir/STest/Pick/Pick_default.cpp.o CMakeFiles/STest.dir/STest/Pick/Pick.cpp.o
+/usr/bin/ranlib ../../lib/Linux/libSTest.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_SerializableFile.a CMakeFiles/Fw_SerializableFile.dir/SerializableFile.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_SerializableFile.a

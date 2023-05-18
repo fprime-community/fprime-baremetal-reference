@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Tlm.a CMakeFiles/Fw_Tlm.dir/TlmBuffer.cpp.o CMakeFiles/Fw_Tlm.dir/TlmPacket.cpp.o CMakeFiles/Fw_Tlm.dir/TlmString.cpp.o CMakeFiles/Fw_Tlm.dir/TlmGetPortAc.cpp.o CMakeFiles/Fw_Tlm.dir/TlmPortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Tlm.a

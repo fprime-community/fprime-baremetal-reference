@@ -1,0 +1,7 @@
+/home/ethan/jpl/projects/BareMetal/fprime/Fw/Cmd/Cmd.fpp
+/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
+/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/Commands.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/FileManager/Telemetry.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Svc/Ping/Ping.fpp

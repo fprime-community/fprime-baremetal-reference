@@ -1,0 +1,1 @@
+FPP_TOOLS_VERSION="v1.2.0"

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_FramingProtocol.a CMakeFiles/Svc_FramingProtocol.dir/DeframingProtocol.cpp.o CMakeFiles/Svc_FramingProtocol.dir/FramingProtocol.cpp.o CMakeFiles/Svc_FramingProtocol.dir/FprimeProtocol.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_FramingProtocol.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libDrv_I2cDriverPorts.a CMakeFiles/Drv_I2cDriverPorts.dir/I2cPortAc.cpp.o CMakeFiles/Drv_I2cDriverPorts.dir/I2cStatusEnumAc.cpp.o CMakeFiles/Drv_I2cDriverPorts.dir/I2cWriteReadPortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libDrv_I2cDriverPorts.a

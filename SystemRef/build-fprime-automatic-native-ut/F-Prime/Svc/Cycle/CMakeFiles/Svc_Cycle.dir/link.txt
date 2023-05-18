@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_Cycle.a CMakeFiles/Svc_Cycle.dir/TimerVal.cpp.o CMakeFiles/Svc_Cycle.dir/CyclePortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_Cycle.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libDrv_SpiDriverPorts.a CMakeFiles/Drv_SpiDriverPorts.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libDrv_SpiDriverPorts.a

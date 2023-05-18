@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libUtils_Types.a CMakeFiles/Utils_Types.dir/CircularBuffer.cpp.o CMakeFiles/Utils_Types.dir/Queue.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libUtils_Types.a

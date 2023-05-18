@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_Sched.a CMakeFiles/Svc_Sched.dir/SchedPortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_Sched.a

@@ -1,0 +1,2 @@
+/home/ethan/jpl/projects/BareMetal/fprime/Drv/I2cDriverPorts/I2cDriverPorts.fpp
+/home/ethan/jpl/projects/BareMetal/fprime/Fw/Buffer/Buffer.fpp

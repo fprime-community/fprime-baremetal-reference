@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_SystemResources.a CMakeFiles/Svc_SystemResources.dir/SystemResources.cpp.o CMakeFiles/Svc_SystemResources.dir/SystemResourceEnabledEnumAc.cpp.o CMakeFiles/Svc_SystemResources.dir/SystemResourcesComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_SystemResources.a

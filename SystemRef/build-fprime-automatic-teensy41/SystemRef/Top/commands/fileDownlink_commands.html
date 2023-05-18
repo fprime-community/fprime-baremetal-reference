@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fileDownlink:FileDownlink Component Dictionary</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+html {
+    font-family: Arial, sans-serif ;
+    font-size: 90% ;
+}
+</style>
+
+
+<h1><b>Command: fileDownlink:FileDownlink</b></h1>
+
+
+
+<table>
+	<thead>
+		<tr style = "border-right: 2px solid black; border-left: 2px solid black; border-top: 2px solid black;">
+			<th rowspan = "2">Mnemonic</th>
+			<th rowspan = "2">ID</th>
+			<th rowspan = "2">Description</th>
+			<th rowspan = "1" colspan = "3">Arguments</th>
+		</tr>
+		<tr style = "border-right: 2px solid black; ">
+			<th>Argument</th>
+			<th>Type</th>
+			<th>Description</th>
+		<tr>
+	</thead>
+	<tbody>
+
+		<tr style = "border: 2px solid black;">
+			<td rowspan="3">SendFile</td>
+			<td rowspan="3">1792 (0x700)</td>
+			<td rowspan="3">Read a named file off the disk. Divide it into packets and send the packets for transmission to the ground.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>Fw::CmdStringArg</td>
+						<td>
+          The name of the on-board file to send
+          </td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>destFileName</td>
+						<td>Fw::CmdStringArg</td>
+						<td>
+          The name of the destination file on the ground
+          </td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="1">Cancel</td>
+			<td rowspan="1">1793 (0x701)</td>
+			<td rowspan="1">Cancel the downlink in progress, if any</td>
+				<td></td>
+				<td></td>
+				<td></td>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="5">SendPartial</td>
+			<td rowspan="5">1794 (0x702)</td>
+			<td rowspan="5">Read a named file off the disk from a starting position. Divide it into packets and send the packets for transmission to the ground.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>Fw::CmdStringArg</td>
+						<td>
+          The name of the on-board file to send
+          </td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>destFileName</td>
+						<td>Fw::CmdStringArg</td>
+						<td>
+          The name of the destination file on the ground
+          </td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>startOffset</td>
+						<td>U32</td>
+						<td>
+          Starting offset of the source file
+          </td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>length</td>
+						<td>U32</td>
+						<td>
+          Number of bytes to send from starting offset. Length of 0 implies until the end of the file
+          </td>
+					</tr>
+		</tr>
+	</tbody>
+</table>
+
+
+</body>
+</html>

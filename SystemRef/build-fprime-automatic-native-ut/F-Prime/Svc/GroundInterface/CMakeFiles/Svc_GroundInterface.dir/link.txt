@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_GroundInterface.a CMakeFiles/Svc_GroundInterface.dir/GroundInterface.cpp.o CMakeFiles/Svc_GroundInterface.dir/GroundInterfaceComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_GroundInterface.a

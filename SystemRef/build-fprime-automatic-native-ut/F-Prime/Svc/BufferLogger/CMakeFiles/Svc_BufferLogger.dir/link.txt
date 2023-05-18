@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_BufferLogger.a CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.o CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.o CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.o CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_BufferLogger.a

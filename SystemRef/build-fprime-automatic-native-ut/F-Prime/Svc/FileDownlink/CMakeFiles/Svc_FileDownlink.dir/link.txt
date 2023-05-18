@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_FileDownlink.a CMakeFiles/Svc_FileDownlink.dir/FileDownlink.cpp.o CMakeFiles/Svc_FileDownlink.dir/File.cpp.o CMakeFiles/Svc_FileDownlink.dir/Warnings.cpp.o CMakeFiles/Svc_FileDownlink.dir/FileDownlinkComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_FileDownlink.a

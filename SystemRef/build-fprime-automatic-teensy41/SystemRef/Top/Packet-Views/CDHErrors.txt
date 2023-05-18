@@ -1,0 +1,8 @@
+rateGroup1.RgCycleSlips
+cmdSeq.CS_Errors
+fileUplink.Warnings
+fileDownlink.Warnings
+fileManager.Errors
+fileUplinkBufferManager.NoBuffs
+fileUplinkBufferManager.EmptyBuffs
+fileManager.Errors

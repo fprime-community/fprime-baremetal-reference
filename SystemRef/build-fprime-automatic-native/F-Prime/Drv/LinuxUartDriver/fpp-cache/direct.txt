@@ -1,0 +1,5 @@
+/home/ethan/jpl/projects/BareMetal/fprime/Drv/ByteStreamDriverModel/ByteStreamDriverModel.fpp
+/home/ethan/jpl/projects/BareMetal/fprime/Drv/LinuxUartDriver/Events.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Drv/LinuxUartDriver/Telemetry.fppi
+/home/ethan/jpl/projects/BareMetal/fprime/Fw/Log/Log.fpp
+/home/ethan/jpl/projects/BareMetal/fprime/Fw/Tlm/Tlm.fpp

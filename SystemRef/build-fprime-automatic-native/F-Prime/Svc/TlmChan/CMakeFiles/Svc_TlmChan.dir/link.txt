@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_TlmChan.a CMakeFiles/Svc_TlmChan.dir/TlmChan.cpp.o CMakeFiles/Svc_TlmChan.dir/TlmChanComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_TlmChan.a

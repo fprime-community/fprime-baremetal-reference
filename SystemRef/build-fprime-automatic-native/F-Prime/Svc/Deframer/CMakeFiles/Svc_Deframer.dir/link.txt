@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_Deframer.a CMakeFiles/Svc_Deframer.dir/Deframer.cpp.o CMakeFiles/Svc_Deframer.dir/DeframerComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_Deframer.a

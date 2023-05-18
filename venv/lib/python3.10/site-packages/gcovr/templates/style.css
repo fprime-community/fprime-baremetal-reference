@@ -1,0 +1,65 @@
+:root {
+    font-family: sans-serif;
+    --unknown_color: {{unknown_color}};
+    --low_color: {{low_color}};
+    --medium_color: {{medium_color}};
+    --high_color: {{high_color}};
+    --covered_color: {{covered_color}};
+    --uncovered_color: {{uncovered_color}};
+    --excluded_color: {{excluded_color}};
+    --warning_color: {{warning_color}};
+    --takenBranch_color: {{takenBranch_color}};
+    --notTakenBranch_color: {{notTakenBranch_color}};
+    --takenDecision_color: {{takenDecision_color}};
+    --uncheckedDecision_color: {{uncheckedDecision_color}};
+    --notTakenDecision_color: {{notTakenDecision_color}}
+
+}
+
+body
+{
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+h1
+{
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+hr
+{
+    background-color: navy;
+    height: 2px;
+    border: 0;
+}
+
+/* Link formats: use maroon w/underlines */
+a:link
+{
+    color: navy;
+    text-decoration: underline;
+}
+a:visited
+{
+    color: maroon;
+    text-decoration: underline;
+}
+
+{% include "style.summary.css" %}
+
+{% include "style.meter.css" %}
+
+{% include "style.filelist.css" %}
+
+{% include "style.details.css" %}
+
+footer
+{
+    text-align: center;
+    padding-top: 3px;
+}

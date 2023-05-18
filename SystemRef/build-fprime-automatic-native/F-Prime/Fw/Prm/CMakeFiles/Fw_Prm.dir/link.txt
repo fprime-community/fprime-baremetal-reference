@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Prm.a CMakeFiles/Fw_Prm.dir/PrmBuffer.cpp.o CMakeFiles/Fw_Prm.dir/PrmString.cpp.o CMakeFiles/Fw_Prm.dir/ParamValidEnumAc.cpp.o CMakeFiles/Fw_Prm.dir/PrmGetPortAc.cpp.o CMakeFiles/Fw_Prm.dir/PrmSetPortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Prm.a

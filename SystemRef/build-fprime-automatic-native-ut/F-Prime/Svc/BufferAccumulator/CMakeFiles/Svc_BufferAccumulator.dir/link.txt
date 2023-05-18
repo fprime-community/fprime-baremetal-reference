@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_BufferAccumulator.a CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator.cpp.o CMakeFiles/Svc_BufferAccumulator.dir/ArrayFIFOBuffer.cpp.o CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_BlockModeEnumAc.cpp.o CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulator_OpStateEnumAc.cpp.o CMakeFiles/Svc_BufferAccumulator.dir/BufferAccumulatorComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_BufferAccumulator.a

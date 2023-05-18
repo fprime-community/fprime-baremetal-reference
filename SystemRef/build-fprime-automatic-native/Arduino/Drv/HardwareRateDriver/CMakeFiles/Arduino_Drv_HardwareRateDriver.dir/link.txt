@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libArduino_Drv_HardwareRateDriver.a CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/HardwareRateDriver.cpp.o CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/HardwareRateDriverLinux.cpp.o CMakeFiles/Arduino_Drv_HardwareRateDriver.dir/HardwareRateDriverComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libArduino_Drv_HardwareRateDriver.a

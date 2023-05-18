@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fileDownlink:FileDownlink Component Dictionary</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+html {
+    font-family: Arial, sans-serif ;
+    font-size: 90% ;
+}
+</style>
+
+<h1><b>Events: fileDownlink:FileDownlink</b></h1>
+
+<table>
+	<thead>
+		<tr style = "border-right: 2px solid black; border-left: 2px solid black; border-top: 2px solid black;">
+			<th rowspan = "2">Event Name</th>
+			<th rowspan = "2">ID</th>
+			<th rowspan = "2">Description</th>
+			<th rowspan = "1" colspan = "4">Arguments</th>
+		</tr>
+		<tr style = "border-right: 2px solid black; ">
+			<th>Argument</th>
+			<th>Type</th>
+			<th>Size</th>
+			<th>Description</th>
+		<tr>
+	</thead>
+	<tbody>
+
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">FileOpenError</td>
+			<td rowspan="2">1792 (0x700)</td>
+			<td rowspan="2">An error occurred opening a file</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>fileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The name of the file</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="3">FileReadError</td>
+			<td rowspan="3">1793 (0x701)</td>
+			<td rowspan="3">An error occurred reading a file</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>fileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The name of the file</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>status</td>
+						<td>I32</td>
+						<td></td>
+						<td>The file status of read</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="3">FileSent</td>
+			<td rowspan="3">1794 (0x702)</td>
+			<td rowspan="3">The File Downlink component successfully sent a file</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The source file name</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>destFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The destination file name</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="3">DownlinkCanceled</td>
+			<td rowspan="3">1795 (0x703)</td>
+			<td rowspan="3">The File Downlink component canceled downlink of a file</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The source file name</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>destFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The destination file name</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="3">DownlinkTimeout</td>
+			<td rowspan="3">1796 (0x704)</td>
+			<td rowspan="3">The File Downlink component has detected a timeout. Downlink has been canceled.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The source filename</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>destFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The destination file name</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="6">DownlinkPartialWarning</td>
+			<td rowspan="6">1797 (0x705)</td>
+			<td rowspan="6">The File Downlink component has detected a timeout. Downlink has been canceled.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>startOffset</td>
+						<td>U32</td>
+						<td></td>
+						<td>Starting file offset in bytes</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>length</td>
+						<td>U32</td>
+						<td></td>
+						<td>Number of bytes to downlink</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>filesize</td>
+						<td>U32</td>
+						<td></td>
+						<td>Size of source file</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The source filename</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>destFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The destination file name</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="5">DownlinkPartialFail</td>
+			<td rowspan="5">1798 (0x706)</td>
+			<td rowspan="5">The File Downlink component has detected a timeout. Downlink has been canceled.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The source filename</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>destFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The destination file name</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>startOffset</td>
+						<td>U32</td>
+						<td></td>
+						<td>Starting file offset in bytes</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>filesize</td>
+						<td>U32</td>
+						<td></td>
+						<td>Size of source file</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="3">SendDataFail</td>
+			<td rowspan="3">1799 (0x707)</td>
+			<td rowspan="3">The File Downlink component generated an error when trying to send a data packet.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The source filename</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>byteOffset</td>
+						<td>U32</td>
+						<td></td>
+						<td>Byte offset</td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="4">SendStarted</td>
+			<td rowspan="4">1800 (0x708)</td>
+			<td rowspan="4">The File Downlink component started a file download.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;">
+						<td>fileSize</td>
+						<td>U32</td>
+						<td></td>
+						<td>The source file size</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;">
+						<td>sourceFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The source filename</td>
+					</tr>
+					<tr style = "border-right: 2px solid black;border-bottom: 2px solid black;">
+						<td>destFileName</td>
+						<td>const Fw::LogStringArg&</td>
+						<td>100</td>
+						<td>The destination filename</td>
+					</tr>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

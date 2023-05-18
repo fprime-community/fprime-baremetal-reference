@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_FileUplink.a CMakeFiles/Svc_FileUplink.dir/FileUplink.cpp.o CMakeFiles/Svc_FileUplink.dir/File.cpp.o CMakeFiles/Svc_FileUplink.dir/Warnings.cpp.o CMakeFiles/Svc_FileUplink.dir/FileUplinkComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_FileUplink.a

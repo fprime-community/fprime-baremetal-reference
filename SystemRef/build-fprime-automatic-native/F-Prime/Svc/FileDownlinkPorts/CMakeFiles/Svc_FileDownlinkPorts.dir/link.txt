@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_FileDownlinkPorts.a CMakeFiles/Svc_FileDownlinkPorts.dir/SendFileCompletePortAc.cpp.o CMakeFiles/Svc_FileDownlinkPorts.dir/SendFileRequestPortAc.cpp.o CMakeFiles/Svc_FileDownlinkPorts.dir/SendFileResponseSerializableAc.cpp.o CMakeFiles/Svc_FileDownlinkPorts.dir/SendFileStatusEnumAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_FileDownlinkPorts.a

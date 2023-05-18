@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libDrv_LinuxI2cDriver.a CMakeFiles/Drv_LinuxI2cDriver.dir/LinuxI2cDriver.cpp.o CMakeFiles/Drv_LinuxI2cDriver.dir/LinuxI2cDriverComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libDrv_LinuxI2cDriver.a

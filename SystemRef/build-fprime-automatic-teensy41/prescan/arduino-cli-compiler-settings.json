@@ -1,0 +1,165 @@
+{
+    "tools": {
+        "C": "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc",
+        "CXX": "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++",
+        "ASM": "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc",
+        "INO": "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-g++",
+        "LINKER": "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc",
+        "AR": "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar"
+    },
+    "flags": {
+        "C": [
+            "-O2",
+            "-g",
+            "-Wall",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-nostdlib",
+            "-MMD",
+            "-mthumb",
+            "-mcpu=cortex-m7",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv5-d16",
+            "-D__IMXRT1062__",
+            "-DTEENSYDUINO=158",
+            "-DARDUINO=10607",
+            "-DARDUINO_TEENSY41",
+            "-DF_CPU=600000000",
+            "-DUSB_SERIAL",
+            "-DLAYOUT_US_ENGLISH"
+        ],
+        "CXX": [
+            "-O2",
+            "-g",
+            "-Wall",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-nostdlib",
+            "-MMD",
+            "-std=gnu++14",
+            "-fno-exceptions",
+            "-fpermissive",
+            "-fno-rtti",
+            "-fno-threadsafe-statics",
+            "-felide-constructors",
+            "-Wno-error=narrowing",
+            "-mthumb",
+            "-mcpu=cortex-m7",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv5-d16",
+            "-D__IMXRT1062__",
+            "-DTEENSYDUINO=158",
+            "-DARDUINO=10607",
+            "-DARDUINO_TEENSY41",
+            "-DF_CPU=600000000",
+            "-DUSB_SERIAL",
+            "-DLAYOUT_US_ENGLISH"
+        ],
+        "ASM": [
+            "-O2",
+            "-g",
+            "-Wall",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-nostdlib",
+            "-MMD",
+            "-x",
+            "assembler-with-cpp",
+            "-mthumb",
+            "-mcpu=cortex-m7",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv5-d16",
+            "-D__IMXRT1062__",
+            "-DTEENSYDUINO=158",
+            "-DARDUINO=10607",
+            "-DARDUINO_TEENSY41",
+            "-DF_CPU=600000000",
+            "-DUSB_SERIAL",
+            "-DLAYOUT_US_ENGLISH"
+        ],
+        "INO": [
+            "-O2",
+            "-g",
+            "-Wall",
+            "-ffunction-sections",
+            "-fdata-sections",
+            "-nostdlib",
+            "-MMD",
+            "-std=gnu++14",
+            "-fno-exceptions",
+            "-fpermissive",
+            "-fno-rtti",
+            "-fno-threadsafe-statics",
+            "-felide-constructors",
+            "-Wno-error=narrowing",
+            "-mthumb",
+            "-mcpu=cortex-m7",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv5-d16",
+            "-D__IMXRT1062__",
+            "-DTEENSYDUINO=158",
+            "-DARDUINO=10607",
+            "-DARDUINO_TEENSY41",
+            "-DF_CPU=600000000",
+            "-DUSB_SERIAL",
+            "-DLAYOUT_US_ENGLISH"
+        ],
+        "LINKER_EXE": [
+            "-O2",
+            "-Wl,--gc-sections,--relax",
+            "-T/home/ethan/.arduino15/packages/teensy/hardware/avr/1.58.1/cores/teensy4/imxrt1062_t41.ld",
+            "-mthumb",
+            "-mcpu=cortex-m7",
+            "-mfloat-abi=hard",
+            "-mfpu=fpv5-d16",
+            "-L/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/arduino-cli-sketch",
+            "-larm_cortexM7lfsp_math",
+            "-lm",
+            "-lstdc++"
+        ],
+        "AR": [
+            "rcs"
+        ]
+    },
+    "objects": [],
+    "libraries": [
+        "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/arduino-cli-sketch/core/core.a"
+    ],
+    "includes": {
+        "C": [
+            "/home/ethan/.arduino15/packages/teensy/hardware/avr/1.58.1/cores/teensy4"
+        ],
+        "CXX": [
+            "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/arduino-cli-sketch/pch",
+            "/home/ethan/.arduino15/packages/teensy/hardware/avr/1.58.1/cores/teensy4"
+        ],
+        "ASM": [
+            "/home/ethan/.arduino15/packages/teensy/hardware/avr/1.58.1/cores/teensy4"
+        ],
+        "INO": [
+            "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/arduino-cli-sketch/pch",
+            "/home/ethan/.arduino15/packages/teensy/hardware/avr/1.58.1/cores/teensy4"
+        ]
+    },
+    "post": [
+        "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objcopy -O ihex -j .eeprom --set-section-flags=.eeprom=alloc,load --no-change-warnings --change-section-lma .eeprom=0 <TARGET_PATH> <TARGET_PATH>.eep",
+        "/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objcopy -O ihex -R .eeprom <TARGET_PATH> <TARGET_PATH>.hex",
+        "/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_secure encrypthex TEENSY41 <TARGET_PATH>.hex",
+        "/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_post_compile -file=<TARGET_NAME> -path=<TARGET_DIRECTORY> -tools=/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/ -board=TEENSY41",
+        "/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/stdout_redirect <TARGET_PATH>.sym /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump -t -C <TARGET_PATH>",
+        "/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/teensy_size <TARGET_PATH>",
+        "/home/ethan/.arduino15/packages/teensy/tools/teensy-tools/1.58.0/stdout_redirect <TARGET_PATH>.lst /home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-objdump -d -S -C <TARGET_PATH>"
+    ],
+    "arguments": [
+        "-b",
+        "teensy:avr:teensy41",
+        "--properties",
+        "-j",
+        "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/arduino-cli-compiler-settings.json",
+        "--includes",
+        "--detect-settings",
+        "--post-link",
+        "-o",
+        "/home/ethan/jpl/projects/BareMetal/SystemRef/build-fprime-automatic-teensy41/prescan/arduino-cli-sketch"
+    ]
+}

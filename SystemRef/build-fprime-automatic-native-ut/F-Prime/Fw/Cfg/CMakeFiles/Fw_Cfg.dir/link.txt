@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Cfg.a CMakeFiles/Fw_Cfg.dir/ConfigCheck.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Cfg.a

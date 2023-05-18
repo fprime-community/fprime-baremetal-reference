@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Obj.a CMakeFiles/Fw_Obj.dir/ObjBase.cpp.o CMakeFiles/Fw_Obj.dir/SimpleObjRegistry.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Obj.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_PolyDb.a CMakeFiles/Svc_PolyDb.dir/PolyDbImpl.cpp.o CMakeFiles/Svc_PolyDb.dir/PolyDbComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_PolyDb.a

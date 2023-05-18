@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>blinker:LedBlinker Component Dictionary</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th {
+    text-align: left;
+}
+html {
+    font-family: Arial, sans-serif ;
+    font-size: 90% ;
+}
+</style>
+
+<h1><b>Events: blinker:LedBlinker</b></h1>
+
+<table>
+	<thead>
+		<tr style = "border-right: 2px solid black; border-left: 2px solid black; border-top: 2px solid black;">
+			<th rowspan = "2">Event Name</th>
+			<th rowspan = "2">ID</th>
+			<th rowspan = "2">Description</th>
+			<th rowspan = "1" colspan = "4">Arguments</th>
+		</tr>
+		<tr style = "border-right: 2px solid black; ">
+			<th>Argument</th>
+			<th>Type</th>
+			<th>Size</th>
+			<th>Description</th>
+		<tr>
+	</thead>
+	<tbody>
+
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">InvalidBlinkArgument</td>
+			<td rowspan="2">3840 (0xf00)</td>
+			<td rowspan="2">Indicates we received an invalid argument.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>badArgument</td>
+						<td>Fw::On</td>
+						<td></td>
+						<td></td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">SetBlinkingState</td>
+			<td rowspan="2">3841 (0xf01)</td>
+			<td rowspan="2">Reports the state we set to blinking.</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>state</td>
+						<td>Fw::On</td>
+						<td></td>
+						<td></td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">LedState</td>
+			<td rowspan="2">3842 (0xf02)</td>
+			<td rowspan="2">Event logged when the LED turns on or off</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>on_off</td>
+						<td>Fw::On</td>
+						<td></td>
+						<td></td>
+					</tr>
+		</tr>
+		<tr style = "border: 2px solid black;">
+			<td rowspan="2">BlinkIntervalSet</td>
+			<td rowspan="2">3843 (0xf03)</td>
+			<td rowspan="2">Event logged when the LED blink interval is updated</td>
+					<tr style = "border-right: 2px solid black;border-top: 2px solid black;border-bottom: 2px solid black;">
+						<td>interval</td>
+						<td>U32</td>
+						<td></td>
+						<td></td>
+					</tr>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

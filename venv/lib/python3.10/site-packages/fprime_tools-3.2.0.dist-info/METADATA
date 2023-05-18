@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: fprime-tools
+Version: 3.2.0
+Summary: F Prime Flight Software core data types
+Home-page: https://github.com/nasa/fprime
+Author: Michael Starch
+Author-email: Michael.D.Starch@jpl.nasa.gov
+License: Apache 2.0 License
+Project-URL: Issue Tracker, https://github.com/nasa/fprime/issues
+Keywords: fprime,embedded,nasa
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+Requires-Dist: lxml (>=4.6.3)
+Requires-Dist: Markdown (>=3.3.4)
+Requires-Dist: pexpect (>=4.8.0)
+Requires-Dist: pytest (>=6.2.4)
+Requires-Dist: Cheetah3 (>=3.2.6)
+Requires-Dist: cookiecutter (>=1.7.2)
+Requires-Dist: gcovr (>=5.0)
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pylama ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinxcontrib.mermaid ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinx-autoapi ; extra == 'dev'
+Requires-Dist: recommonmark ; extra == 'dev'
+
+
+This package contains the necessary core data types used by F prime. Users who seek to develop tools,
+utilities, and other libraries used to interact with F prime framework code can use these data types
+to interact with the data coming from the FSW.
+    

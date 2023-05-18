@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_StaticMemory.a CMakeFiles/Svc_StaticMemory.dir/StaticMemoryComponentImpl.cpp.o CMakeFiles/Svc_StaticMemory.dir/StaticMemoryComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_StaticMemory.a

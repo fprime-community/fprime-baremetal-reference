@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../../lib/Linux/libCFDP_Checksum_GTest.a CMakeFiles/CFDP_Checksum_GTest.dir/Checksums.cpp.o
+/usr/bin/ranlib ../../../../lib/Linux/libCFDP_Checksum_GTest.a

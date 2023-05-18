@@ -1,0 +1,2 @@
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs lib/teensy41/libfprime_arduino_patcher.a CMakeFiles/fprime_arduino_patcher.dir/home/ethan/jpl/projects/BareMetal/arduino/fprime-arduino/cmake/toolchain/support/sources/extras.cpp.obj
+/home/ethan/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib lib/teensy41/libfprime_arduino_patcher.a

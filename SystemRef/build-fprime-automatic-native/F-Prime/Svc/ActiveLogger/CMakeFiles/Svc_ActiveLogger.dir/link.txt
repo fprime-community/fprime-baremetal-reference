@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_ActiveLogger.a CMakeFiles/Svc_ActiveLogger.dir/ActiveLoggerImpl.cpp.o CMakeFiles/Svc_ActiveLogger.dir/ActiveLogger_EnabledEnumAc.cpp.o CMakeFiles/Svc_ActiveLogger.dir/ActiveLogger_FilterSeverityEnumAc.cpp.o CMakeFiles/Svc_ActiveLogger.dir/ActiveLoggerComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_ActiveLogger.a

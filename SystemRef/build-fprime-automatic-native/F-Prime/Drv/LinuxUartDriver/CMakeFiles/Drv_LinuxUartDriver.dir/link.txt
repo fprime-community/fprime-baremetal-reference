@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libDrv_LinuxUartDriver.a CMakeFiles/Drv_LinuxUartDriver.dir/LinuxUartDriver.cpp.o CMakeFiles/Drv_LinuxUartDriver.dir/LinuxUartDriverComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libDrv_LinuxUartDriver.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Log.a CMakeFiles/Fw_Log.dir/LogBuffer.cpp.o CMakeFiles/Fw_Log.dir/LogPacket.cpp.o CMakeFiles/Fw_Log.dir/LogString.cpp.o CMakeFiles/Fw_Log.dir/TextLogString.cpp.o CMakeFiles/Fw_Log.dir/LogPortAc.cpp.o CMakeFiles/Fw_Log.dir/LogSeverityEnumAc.cpp.o CMakeFiles/Fw_Log.dir/LogTextPortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Log.a

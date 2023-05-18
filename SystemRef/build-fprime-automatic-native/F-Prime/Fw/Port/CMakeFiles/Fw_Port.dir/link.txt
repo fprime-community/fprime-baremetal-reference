@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libFw_Port.a CMakeFiles/Fw_Port.dir/InputPortBase.cpp.o CMakeFiles/Fw_Port.dir/InputSerializePort.cpp.o CMakeFiles/Fw_Port.dir/OutputPortBase.cpp.o CMakeFiles/Fw_Port.dir/OutputSerializePort.cpp.o CMakeFiles/Fw_Port.dir/PortBase.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libFw_Port.a

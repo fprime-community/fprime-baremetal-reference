@@ -1,0 +1,17 @@
+systemResources.CPU
+systemResources.CPU_00
+systemResources.CPU_01
+systemResources.CPU_02
+systemResources.CPU_03
+systemResources.CPU_04
+systemResources.CPU_05
+systemResources.CPU_06
+systemResources.CPU_07
+systemResources.CPU_08
+systemResources.CPU_09
+systemResources.CPU_10
+systemResources.CPU_11
+systemResources.CPU_12
+systemResources.CPU_13
+systemResources.CPU_14
+systemResources.CPU_15

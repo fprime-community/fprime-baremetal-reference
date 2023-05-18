@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_BufferRepeater.a CMakeFiles/Svc_BufferRepeater.dir/BufferRepeater.cpp.o CMakeFiles/Svc_BufferRepeater.dir/BufferRepeaterComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_BufferRepeater.a

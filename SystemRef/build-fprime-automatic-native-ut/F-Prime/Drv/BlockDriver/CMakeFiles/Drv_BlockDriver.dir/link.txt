@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libDrv_BlockDriver.a CMakeFiles/Drv_BlockDriver.dir/BlockDriverImpl.cpp.o CMakeFiles/Drv_BlockDriver.dir/BlockDriverComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libDrv_BlockDriver.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSTest.a CMakeFiles/STest.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
+/usr/bin/ranlib libSTest.a

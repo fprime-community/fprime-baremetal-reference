@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libDrv_BlockDriver.a CMakeFiles/Drv_BlockDriver.dir/home/ethan/jpl/projects/BareMetal/fprime/cmake/empty.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libDrv_BlockDriver.a

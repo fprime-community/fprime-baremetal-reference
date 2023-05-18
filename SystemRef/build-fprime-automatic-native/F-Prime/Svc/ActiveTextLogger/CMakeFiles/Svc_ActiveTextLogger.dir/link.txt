@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_ActiveTextLogger.a CMakeFiles/Svc_ActiveTextLogger.dir/ActiveTextLoggerImpl.cpp.o CMakeFiles/Svc_ActiveTextLogger.dir/LogFile.cpp.o CMakeFiles/Svc_ActiveTextLogger.dir/ActiveTextLoggerComponentAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_ActiveTextLogger.a

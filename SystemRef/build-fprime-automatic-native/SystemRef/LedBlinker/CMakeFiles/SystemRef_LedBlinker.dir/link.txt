@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/Linux/libSystemRef_LedBlinker.a CMakeFiles/SystemRef_LedBlinker.dir/LedBlinker.cpp.o CMakeFiles/SystemRef_LedBlinker.dir/LedBlinkerComponentAc.cpp.o
+/usr/bin/ranlib ../../lib/Linux/libSystemRef_LedBlinker.a

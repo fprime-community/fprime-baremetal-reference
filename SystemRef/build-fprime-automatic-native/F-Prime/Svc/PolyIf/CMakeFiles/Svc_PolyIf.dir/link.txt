@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/Linux/libSvc_PolyIf.a CMakeFiles/Svc_PolyIf.dir/MeasurementStatusEnumAc.cpp.o CMakeFiles/Svc_PolyIf.dir/PolyPortAc.cpp.o
+/usr/bin/ranlib ../../../lib/Linux/libSvc_PolyIf.a
