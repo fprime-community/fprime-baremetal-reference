@@ -1,3 +1,0 @@
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Commands.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Events.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Telemetry.fppi

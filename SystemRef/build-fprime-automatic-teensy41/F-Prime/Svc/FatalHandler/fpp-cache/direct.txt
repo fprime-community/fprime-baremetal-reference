@@ -1,1 +1,0 @@
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Fatal/Fatal.fpp

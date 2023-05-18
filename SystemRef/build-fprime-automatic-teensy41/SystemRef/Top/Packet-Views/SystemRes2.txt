@@ -1,2 +1,0 @@
-systemResources.FRAMEWORK_VERSION
-systemResources.PROJECT_VERSION

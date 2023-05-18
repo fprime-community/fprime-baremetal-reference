@@ -1,2 +1,0 @@
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/Events.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileUplink/Telemetry.fppi

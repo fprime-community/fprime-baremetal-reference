@@ -1,2 +1,0 @@
-/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libSvc_BufferLogger.a CMakeFiles/Svc_BufferLogger.dir/BufferLogger.cpp.obj CMakeFiles/Svc_BufferLogger.dir/BufferLoggerFile.cpp.obj CMakeFiles/Svc_BufferLogger.dir/BufferLogger_LogStateEnumAc.cpp.obj CMakeFiles/Svc_BufferLogger.dir/BufferLoggerComponentAc.cpp.obj
-/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libSvc_BufferLogger.a

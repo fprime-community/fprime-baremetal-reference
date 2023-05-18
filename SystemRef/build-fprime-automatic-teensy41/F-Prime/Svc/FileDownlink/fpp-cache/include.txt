@@ -1,3 +1,0 @@
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/Commands.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/Events.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/FileDownlink/Telemetry.fppi

@@ -1,2 +1,0 @@
-/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libFw_Cfg.a CMakeFiles/Fw_Cfg.dir/ConfigCheck.cpp.obj
-/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libFw_Cfg.a

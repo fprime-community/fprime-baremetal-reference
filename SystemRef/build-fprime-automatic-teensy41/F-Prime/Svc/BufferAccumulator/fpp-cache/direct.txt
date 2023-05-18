@@ -1,8 +1,0 @@
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Buffer/Buffer.fpp
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Cmd/Cmd.fpp
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Log/Log.fpp
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Fw/Tlm/Tlm.fpp
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Commands.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Events.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferAccumulator/Telemetry.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/Ping/Ping.fpp

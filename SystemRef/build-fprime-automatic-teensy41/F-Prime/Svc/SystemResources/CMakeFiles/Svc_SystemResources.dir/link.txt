@@ -1,2 +1,0 @@
-/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-gcc-ar rcs ../../../lib/teensy41/libSvc_SystemResources.a CMakeFiles/Svc_SystemResources.dir/SystemResources.cpp.obj CMakeFiles/Svc_SystemResources.dir/SystemResourceEnabledEnumAc.cpp.obj CMakeFiles/Svc_SystemResources.dir/SystemResourcesComponentAc.cpp.obj
-/home/ethanchee/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi-ranlib ../../../lib/teensy41/libSvc_SystemResources.a

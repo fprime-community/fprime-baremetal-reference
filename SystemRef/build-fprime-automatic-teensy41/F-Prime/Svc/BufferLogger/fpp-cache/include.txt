@@ -1,3 +1,0 @@
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferLogger/Commands.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferLogger/Events.fppi
-/home/ethanchee/Documents/fprime-projects/fprime-baremetal/fprime/Svc/BufferLogger/Telemetry.fppi
