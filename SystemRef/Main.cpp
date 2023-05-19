@@ -11,7 +11,6 @@
 #include <getopt.h>
 // Used for printf functions
 #include <cstdlib>
-#include <FprimeArduino.hpp>
 
 #include <Os/Log.hpp>
 #include <Arduino/Os/StreamLog.hpp>
@@ -56,7 +55,6 @@ static void signalHandler(int signum)
  */
 int main(int argc, char *argv[])
 {
-    Serial.begin(9600);
     Os::setArduinoStreamLogHandler(&Serial);
 
     U32 port_number = 0;

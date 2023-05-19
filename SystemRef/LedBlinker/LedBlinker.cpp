@@ -6,8 +6,6 @@
 
 #include <SystemRef/LedBlinker/LedBlinker.hpp>
 #include <FpConfig.hpp>
-#include <FprimeArduino.hpp>
-
 
 namespace SystemRef
 {
@@ -20,7 +18,7 @@ namespace SystemRef
       LedBlinker(
           const char *const compName) : LedBlinkerComponentBase(compName)
   {
-    
+
   }
 
   LedBlinker ::
@@ -53,7 +51,6 @@ namespace SystemRef
           const NATIVE_INT_TYPE portNum,
           NATIVE_UINT_TYPE context)
   {
-    Serial.println("test2");
     // Read back the parameter value
     Fw::ParamValid isValid;
     U32 interval = this->paramGet_BLINK_INTERVAL(isValid);
