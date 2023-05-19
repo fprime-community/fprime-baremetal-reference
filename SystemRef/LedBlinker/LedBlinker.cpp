@@ -20,7 +20,7 @@ namespace SystemRef
       LedBlinker(
           const char *const compName) : LedBlinkerComponentBase(compName)
   {
-    Serial.println("dhuajnskd");
+    
   }
 
   LedBlinker ::

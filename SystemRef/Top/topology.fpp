@@ -20,7 +20,6 @@ module SystemRef {
     # ----------------------------------------------------------------------
 
     instance blinker
-    instance blockDrv
     instance tlmSend
     instance cmdDisp
     instance cmdSeq
@@ -85,12 +84,12 @@ module SystemRef {
 
     connections RateGroups {
       # Block driver
-      blockDrv.CycleOut -> rateGroupDriver.CycleIn
+      rateDriver.CycleOut -> rateGroupDriver.CycleIn
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
-      rateGroup1.RateGroupMemberOut[1] -> blinker.run
+      rateGroup1.RateGroupMemberOut[0] -> blinker.run
+      rateGroup1.RateGroupMemberOut[1] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[2] -> tlmSend.Run
       rateGroup1.RateGroupMemberOut[3] -> systemResources.run
       rateGroup1.RateGroupMemberOut[4] -> cmdSeq.schedIn

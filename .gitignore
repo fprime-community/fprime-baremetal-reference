@@ -1,3 +1,5 @@
 .vscode/
+logs/
+venv/
 build-*
 SystemRef/build-*

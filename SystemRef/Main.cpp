@@ -13,6 +13,12 @@
 #include <cstdlib>
 #include <FprimeArduino.hpp>
 
+#include <Os/Log.hpp>
+#include <Arduino/Os/StreamLog.hpp>
+
+// Instantiate a system logger that will handle Fw::Logger::logMsg calls
+Os::Log logger;
+
 /**
  * \brief print command line help message
  *
@@ -51,6 +57,7 @@ static void signalHandler(int signum)
 int main(int argc, char *argv[])
 {
     Serial.begin(9600);
+    Os::setArduinoStreamLogHandler(&Serial);
 
     U32 port_number = 0;
     I32 option = 0;

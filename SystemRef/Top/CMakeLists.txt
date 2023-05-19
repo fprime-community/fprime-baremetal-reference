@@ -15,6 +15,7 @@ set(MOD_DEPS
   Fw/Logger
   Arduino/ArduinoTime
   Arduino/Drv/SerialDriver
+  Os/Baremetal/TaskRunner
 )
 
 register_fprime_module()

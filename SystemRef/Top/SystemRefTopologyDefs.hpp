@@ -6,11 +6,9 @@
 #ifndef SYSTEMREF_SYSTEMREFTOPOLOGYDEFS_HPP
 #define SYSTEMREF_SYSTEMREFTOPOLOGYDEFS_HPP
 
-#include "Drv/BlockDriver/BlockDriver.hpp"
 #include "Fw/Types/MallocAllocator.hpp"
 #include "SystemRef/Top/FppConstantsAc.hpp"
 #include "Svc/FramingProtocol/FprimeProtocol.hpp"
-// #include "Svc/Health/Health.hpp"
 
 // Definitions are placed within a namespace named after the deployment
 namespace SystemRef {
@@ -48,9 +46,6 @@ struct TopologyState {
  * ```
  */
 namespace PingEntries {
-namespace blockDrv {
-enum { WARN = 3, FATAL = 5 };
-}
 namespace tlmSend {
 enum { WARN = 3, FATAL = 5 };
 }
@@ -76,12 +71,6 @@ namespace prmDb {
 enum { WARN = 3, FATAL = 5 };
 }
 namespace rateGroup1 {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace rateGroup2 {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace rateGroup3 {
 enum { WARN = 3, FATAL = 5 };
 }
 }  // namespace PingEntries

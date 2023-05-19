@@ -16,13 +16,13 @@
 #include <Os/Mutex.hpp>
 
 #include <FprimeArduino.hpp>
+#include <Os/Baremetal/TaskRunner/TaskRunner.hpp>
 
 
 // Allows easy reference to objects in FPP/autocoder required namespaces
 using namespace SystemRef;
 
-// Instantiate a system logger that will handle Fw::Logger::logMsg calls
-Os::Log logger;
+Os::TaskRunner taskrunner;
 
 // The reference topology uses a malloc-based allocator for components that need to allocate memory during the
 // initialization phase.
@@ -104,32 +104,25 @@ void configureTopology() {
 // Public functions for use in main program are namespaced with deployment name SystemRef
 namespace SystemRef {
 void setupTopology(const TopologyState& state) {
-    Serial.println("0");
     // Autocoded initialization. Function provided by autocoder.
     initComponents(state);
-    Serial.println("1");
     // Autocoded id setup. Function provided by autocoder.
     setBaseIds();
-    Serial.println("2");
     // Autocoded connection wiring. Function provided by autocoder.
     connectComponents();
-    Serial.println("3");
     // Autocoded command registration. Function provided by autocoder.
     regCommands();
-    Serial.println("4");
     // Project-specific component configuration. Function provided above. May be inlined, if desired.
     configureTopology();
-    Serial.println("5");
     // Autocoded parameter loading. Function provided by autocoder.
     // loadParameters();
-    Serial.println("6");
     // Autocoded task kick-off (active components). Function provided by autocoder.
     startTasks(state);
-    Serial.println("7");
     
-    rateDriver.configure(1000);
+    rateDriver.configure(10);
+    commDriver.configure(0, 9600);
+    gpioDriver.open(13, Arduino::GpioDriver::GpioDirection::OUT);
     rateDriver.start();
-    Serial.println("8");
 }
 
 // Variables used for cycle simulation
@@ -137,22 +130,13 @@ Os::Mutex cycleLock;
 volatile bool cycleFlag = true;
 
 void startSimulatedCycle(U32 milliseconds) {
-    Serial.println("start cycle");
     cycleLock.lock();
     bool cycling = cycleFlag;
     cycleLock.unLock();
 
-    pinMode(13, 1);
-
     // Main loop
     while (cycling) {
-        SystemRef::blockDrv.callIsr();
-        // Serial.println(milliseconds);
-        digitalWrite(13, 1);
-        // Os::Task::delay(milliseconds);   
-        delay(milliseconds);  
-        digitalWrite(13, 0);  
-        delay(milliseconds);  
+        taskrunner.run();
 
         cycleLock.lock();
         cycling = cycleFlag;

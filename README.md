@@ -55,3 +55,8 @@ Download the new board package:
 $ arduino-cli core update-index
 $ arduino-cli core install teensy:avr
 ```
+
+### Using GDS for Teensy over serial
+```
+$ fprime-gds -n --dictionary ./build-artifacts/teensy41/SystemRef/dict/SystemRefTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 9600
+```
