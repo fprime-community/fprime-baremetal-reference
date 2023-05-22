@@ -12,6 +12,7 @@
 // Used for printf functions
 #include <cstdlib>
 
+// Used for logging
 #include <Os/Log.hpp>
 #include <Arduino/Os/StreamLog.hpp>
 
@@ -53,37 +54,13 @@ static void signalHandler(int signum)
  * @param argv: argument values supplied to program
  * @return: 0 on success, something else on failure
  */
-int main(int argc, char *argv[])
+int main(void)
 {
     Os::setArduinoStreamLogHandler(&Serial);
 
     U32 port_number = 0;
-    I32 option = 0;
     char *hostname = nullptr;
 
-    // Loop while reading the getopt supplied options
-    while ((option = getopt(argc, argv, "hp:a:")) != -1)
-    {
-        switch (option)
-        {
-        // Handle the -a argument for address/hostname
-        case 'a':
-            hostname = optarg;
-            break;
-        // Handle the -p port number argument
-        case 'p':
-            port_number = static_cast<U32>(atoi(optarg));
-            break;
-        // Cascade intended: help output
-        case 'h':
-        // Cascade intended: help output
-        case '?':
-        // Default case: output help and exit
-        default:
-            print_usage(argv[0]);
-            return (option == 'h') ? 0 : 1;
-        }
-    }
     // Object for communicating state to the reference topology
     SystemRef::TopologyState inputs;
     inputs.hostname = hostname;

@@ -91,8 +91,8 @@ module SystemRef {
       rateGroup1.RateGroupMemberOut[0] -> blinker.run
       rateGroup1.RateGroupMemberOut[1] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[2] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[3] -> systemResources.run
-      rateGroup1.RateGroupMemberOut[4] -> cmdSeq.schedIn
+      rateGroup1.RateGroupMemberOut[3] -> cmdSeq.schedIn
+      rateGroup1.RateGroupMemberOut[4] -> systemResources.run
     }
 
     connections Sequencer {

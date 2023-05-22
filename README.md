@@ -47,14 +47,27 @@ $ sudo nano ~/.arduino15/arduino-cli.yaml
 Add the following URL to the `board_manager` section:
 ```
 board_manager:
-  additional_urls: [https://www.pjrc.com/teensy/package_teensy_index.json]
+  additional_urls:
+    - https://www.pjrc.com/teensy/package_teensy_index.json
+    - https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
 Download the new board package:
 ```
 $ arduino-cli core update-index
 $ arduino-cli core install teensy:avr
+$ arduino-cli core install adafruit:samd
 ```
+
+### Install library dependencies
+
+#### For Adafruit Feather M0 (SAMD chips)
+```
+$ arduino-cli lib install Adafruit\ ZeroTimer\ Library
+```
+
+### Using the Teensy loader on Linux
+Add udev rules. Save the file located [here](https://www.pjrc.com/teensy/00-teensy.rules) into `/etc/udev/rules.d/`.
 
 ### Using GDS for Teensy over serial
 ```

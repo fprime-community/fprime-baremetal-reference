@@ -1,5 +1,6 @@
-.vscode/
-logs/
-venv/
-build-*
-SystemRef/build-*
+.vscode
+.idea
+venv
+**/logs
+**/build-artifacts
+**/build-fprime-*

@@ -33,6 +33,7 @@ set(MOD_DEPS ${PROJECT_NAME}/Top)
 register_fprime_deployment()
 
 starts_with(IS_TEENSY "${ARDUINO_FQBN}" "teensy")
-if (IS_TEENSY)
+starts_with(IS_FEATHER "${ARDUINO_FQBN}" "adafruit:samd")
+if (IS_TEENSY OR IS_FEATHER)
     finalize_arduino_executable("${PROJECT_NAME}")
 endif()
