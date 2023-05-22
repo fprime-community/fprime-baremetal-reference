@@ -60,18 +60,6 @@ enum { WARN = 3, FATAL = 5 };
 namespace eventLogger {
 enum { WARN = 3, FATAL = 5 };
 }
-namespace fileDownlink {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace fileManager {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace fileUplink {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace prmDb {
-enum { WARN = 3, FATAL = 5 };
-}
 namespace rateGroup1 {
 enum { WARN = 3, FATAL = 5 };
 }

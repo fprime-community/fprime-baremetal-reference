@@ -18,10 +18,10 @@ namespace SystemRef
       LedBlinker(
           const char *const compName
       ) : LedBlinkerComponentBase(compName),
-          state(Fw::On::ON),
+          state(Fw::On::OFF),
           transitions(0),
           count(0),
-          blinking(false)
+          blinking(true)
   {
 
   }
