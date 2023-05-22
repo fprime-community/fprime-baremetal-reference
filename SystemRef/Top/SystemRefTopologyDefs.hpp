@@ -24,6 +24,8 @@ namespace SystemRef {
 struct TopologyState {
     const char* hostname;
     U32 port;
+    FwIndexType uartNumber;
+    PlatformIntType uartBaud;
 };
 
 /**

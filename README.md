@@ -71,5 +71,5 @@ Add udev rules. Save the file located [here](https://www.pjrc.com/teensy/00-teen
 
 ### Using GDS for Teensy over serial
 ```
-$ fprime-gds -n --dictionary ./build-artifacts/teensy41/SystemRef/dict/SystemRefTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 9600
+$ fprime-gds -n --dictionary ./build-artifacts/teensy41/SystemRef/dict/SystemRefTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
 ```

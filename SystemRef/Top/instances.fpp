@@ -114,8 +114,6 @@ module SystemRef {
 
   instance commDriver: Arduino.SerialDriver base id 0x4000
 
-  instance comm: Svc.ComStub base id 0x5000
-
   instance gpioDriver: Arduino.GpioDriver base id 0x4D00
 
 }

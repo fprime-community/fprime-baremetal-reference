@@ -32,8 +32,7 @@ set(MOD_DEPS ${PROJECT_NAME}/Top)
 
 register_fprime_deployment()
 
-starts_with(IS_TEENSY "${ARDUINO_FQBN}" "teensy")
-starts_with(IS_FEATHER "${ARDUINO_FQBN}" "adafruit:samd")
-if (IS_TEENSY OR IS_FEATHER)
+include("${CMAKE_CURRENT_LIST_DIR}/../project.cmake")
+if (CMAKE_SYSTEM_NAME STREQUAL ArduinoFw)
     finalize_arduino_executable("${PROJECT_NAME}")
 endif()

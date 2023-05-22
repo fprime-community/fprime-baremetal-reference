@@ -23,7 +23,6 @@ module SystemRef {
     instance tlmSend
     instance cmdDisp
     instance cmdSeq
-    instance comm
     instance commDriver
     instance downlink
     instance eventLogger

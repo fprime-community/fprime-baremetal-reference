@@ -22,8 +22,6 @@
 // Allows easy reference to objects in FPP/autocoder required namespaces
 using namespace SystemRef;
 
-Os::TaskRunner taskrunner;
-
 // The reference topology uses a malloc-based allocator for components that need to allocate memory during the
 // initialization phase.
 Fw::MallocAllocator mallocator;
@@ -72,8 +70,6 @@ void configureTopology() {
 
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
-    // rateGroup2.configure(rateGroup2Context, FW_NUM_ARRAY_ELEMENTS(rateGroup2Context));
-    // rateGroup3.configure(rateGroup3Context, FW_NUM_ARRAY_ELEMENTS(rateGroup3Context));
 
     // File downlink requires some project-derived properties.
     fileDownlink.configure(FILE_DOWNLINK_TIMEOUT, FILE_DOWNLINK_COOLDOWN, FILE_DOWNLINK_CYCLE_TIME,
@@ -120,34 +116,9 @@ void setupTopology(const TopologyState& state) {
     startTasks(state);
     
     rateDriver.configure(10);
-    commDriver.configure(0, 9600);
+    commDriver.configure(state.uartNumber, state.uartBaud);
     gpioDriver.open(13, Arduino::GpioDriver::GpioDirection::OUT);
     rateDriver.start();
-}
-
-// Variables used for cycle simulation
-Os::Mutex cycleLock;
-volatile bool cycleFlag = true;
-
-void startSimulatedCycle(U32 milliseconds) {
-    cycleLock.lock();
-    bool cycling = cycleFlag;
-    cycleLock.unLock();
-
-    // Main loop
-    while (cycling) {
-        taskrunner.run();
-
-        cycleLock.lock();
-        cycling = cycleFlag;
-        cycleLock.unLock();
-    }
-}
-
-void stopSimulatedCycle() {
-    cycleLock.lock();
-    cycleFlag = false;
-    cycleLock.unLock();
 }
 
 void teardownTopology(const TopologyState& state) {
@@ -155,12 +126,8 @@ void teardownTopology(const TopologyState& state) {
     stopTasks(state);
     freeThreads(state);
 
-    // Other task clean-up.
-    // comm.stopSocketTask();
-    // (void)comm.joinSocketTask(nullptr);
-
     // Resource deallocation
     cmdSeq.deallocateBuffer(mallocator);
-    // fileUplinkBufferManager.cleanup();
+    fileUplinkBufferManager.cleanup();
 }
 };  // namespace SystemRef

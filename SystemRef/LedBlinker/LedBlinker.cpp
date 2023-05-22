@@ -16,7 +16,12 @@ namespace SystemRef
 
   LedBlinker ::
       LedBlinker(
-          const char *const compName) : LedBlinkerComponentBase(compName)
+          const char *const compName
+      ) : LedBlinkerComponentBase(compName),
+          state(Fw::On::ON),
+          transitions(0),
+          count(0),
+          blinking(false)
   {
 
   }
@@ -31,7 +36,7 @@ namespace SystemRef
     // Read back the parameter value
     Fw::ParamValid isValid;
     U32 interval = this->paramGet_BLINK_INTERVAL(isValid);
-    // NOTE: isValid is always
+    // NOTE: isValid is always VALID
     FW_ASSERT(isValid == Fw::ParamValid::VALID, isValid);
 
     // Check the parameter ID is expected
@@ -59,10 +64,7 @@ namespace SystemRef
     interval = ((Fw::ParamValid::INVALID == isValid) || (Fw::ParamValid::UNINIT == isValid)) ? 0 : interval;
 
     // Only perform actions when set to blinking
-    this->lock.lock();
-    bool is_blinking = this->blinking;
-    this->lock.unlock();
-    if (is_blinking)
+    if (this->blinking)
     {
       Fw::On new_state = this->state;
       // Check for transitions
@@ -112,7 +114,6 @@ namespace SystemRef
     // Note: isValid is an autogenerate helper function for enums defined in fpp.
     if (!on_off.isValid())
     {
-      // NOTE: Add this event after going through the "Events" exercise.
       this->log_WARNING_LO_InvalidBlinkArgument(on_off);
 
       // Update command response with a validation error
@@ -121,12 +122,9 @@ namespace SystemRef
     else
     {
       this->count = 0; // Reset count on any successful command
-      this->lock.lock();
       this->blinking = Fw::On::ON == on_off; // Update blinking state
-      this->lock.unlock();
-      // NOTE: This event will be added during the "Events" exercise.
-      this->log_ACTIVITY_HI_SetBlinkingState(on_off);
 
+      this->log_ACTIVITY_HI_SetBlinkingState(on_off);
       this->tlmWrite_BlinkingState(on_off);
     }
 
