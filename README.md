@@ -66,8 +66,11 @@ $ arduino-cli core install adafruit:samd
 $ arduino-cli lib install Adafruit\ ZeroTimer\ Library
 ```
 
-### Using the Teensy loader on Linux
-Add udev rules. Save the file located [here](https://www.pjrc.com/teensy/00-teensy.rules) into `/etc/udev/rules.d/`.
+### Adding udev rules for Linux only
+Add udev rules. Save the `.rules` files located in `./arduino/rules` into `/etc/udev/rules.d/`.
+```
+$ sudo cp arduino/rules/* /etc/udev/rules.d/
+```
 
 ### Using GDS for Teensy over serial
 ```

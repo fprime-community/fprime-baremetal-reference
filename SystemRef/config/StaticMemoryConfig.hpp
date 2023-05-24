@@ -9,7 +9,7 @@
 
 namespace Svc {
     enum StaticMemoryConfig {
-        STATIC_MEMORY_ALLOCATION_SIZE = 512
+        STATIC_MEMORY_ALLOCATION_SIZE = 256
     };
 }
 

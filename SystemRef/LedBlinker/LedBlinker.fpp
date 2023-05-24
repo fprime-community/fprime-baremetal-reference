@@ -11,7 +11,7 @@ module SystemRef {
         telemetry BlinkingState: Fw.On
 
         @ Telemetry channel counting LED transitions
-        telemetry LedTransitions: U64
+        telemetry LedTransitions: U32
 
         @ Indicates we received an invalid argument.
         event InvalidBlinkArgument(badArgument: Fw.On) \
@@ -29,12 +29,12 @@ module SystemRef {
             format "LED is {}"
 
         @ Event logged when the LED blink interval is updated
-        event BlinkIntervalSet(interval: U32) \
+        event BlinkIntervalSet(interval: U16) \
             severity activity high \
             format "LED blink interval set to {}"
 
         @ Blinking interval in rate group ticks
-        param BLINK_INTERVAL: U32
+        param BLINK_INTERVAL: U16
 
         @ Port receiving calls from the rate group
         sync input port run: Svc.Sched

@@ -22,8 +22,6 @@ namespace SystemRef {
  * fields, which are derived by command line inputs.
  */
 struct TopologyState {
-    const char* hostname;
-    U32 port;
     FwIndexType uartNumber;
     PlatformIntType uartBaud;
 };
@@ -52,9 +50,6 @@ namespace tlmSend {
 enum { WARN = 3, FATAL = 5 };
 }
 namespace cmdDisp {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace cmdSeq {
 enum { WARN = 3, FATAL = 5 };
 }
 namespace eventLogger {

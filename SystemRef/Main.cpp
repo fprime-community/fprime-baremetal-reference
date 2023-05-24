@@ -4,11 +4,8 @@
 //
 // ======================================================================
 // Used to access topology functions
+#include <SystemRef/Top/SystemRefTopologyAc.hpp>
 #include <SystemRef/Top/SystemRefTopology.hpp>
-// Used for command line argument processing
-#include <getopt.h>
-// Used for printf functions
-#include <cstdlib>
 // Used for Task Runner
 #include <Os/Baremetal/TaskRunner/TaskRunner.hpp>
 
@@ -30,9 +27,12 @@ Os::TaskRunner taskrunner;
  *
  * @return: 0 on success, something else on failure
  */
-int main(void)
+void setup()
 {
+    Serial.begin(115200);
     Os::setArduinoStreamLogHandler(&Serial);
+    delay(1000);
+    Fw::Logger::logMsg("Program Started\n");
 
     // Object for communicating state to the reference topology
     SystemRef::TopologyState inputs;
@@ -41,10 +41,11 @@ int main(void)
 
     // Setup, cycle, and teardown topology
     SystemRef::setupTopology(inputs);
-    while(true)
-    {
-        taskrunner.run();
-    }
-    SystemRef::teardownTopology(inputs);
-    return 0;
+    // SystemRef::teardownTopology(inputs);
+}
+
+void loop()
+{
+    // rateDriver.cycle();
+    taskrunner.run();
 }
