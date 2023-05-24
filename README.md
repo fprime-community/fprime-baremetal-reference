@@ -59,17 +59,20 @@ $ arduino-cli core install teensy:avr
 $ arduino-cli core install adafruit:samd
 ```
 
-### Install library dependencies
+### Adding udev rules for Linux only
+Add udev rules. Save the `.rules` files located in `./arduino/rules` into `/etc/udev/rules.d/`.
+```
+$ sudo cp arduino/rules/* /etc/udev/rules.d/
+```
 
-#### For Adafruit Feather M0 (SAMD chips)
+### Uploading binary for Feather M0
 ```
-$ arduino-cli lib install Adafruit\ ZeroTimer\ Library
+$ ~/.arduino15/packages/adafruit/tools/bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM0 -U -i --offset=0x2000 -w -v ./build-fprime-automatic-featherM0/bin/featherM0/SystemRef.bin -R
 ```
+Note: If you have more than one device connected, `ttyACM0` may change.
 
-### Using the Teensy loader on Linux
-Add udev rules. Save the file located [here](https://www.pjrc.com/teensy/00-teensy.rules) into `/etc/udev/rules.d/`.
-
-### Using GDS for Teensy over serial
+### Using GDS over serial
 ```
-$ fprime-gds -n --dictionary ./build-artifacts/teensy41/SystemRef/dict/SystemRefTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
+$ fprime-gds -n --dictionary ./build-artifacts/YOUR_BUILD/SystemRef/dict/SystemRefTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
 ```
+Note: Change `YOUR BUILD` to either `teensy41` or `featherM0`. Also, if you have more than one device connected, `/dev/ttyACM0` may change.

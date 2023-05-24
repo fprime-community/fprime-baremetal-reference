@@ -58,7 +58,7 @@ namespace SystemRef
   {
     // Read back the parameter value
     Fw::ParamValid isValid;
-    U32 interval = this->paramGet_BLINK_INTERVAL(isValid);
+    U16 interval = this->paramGet_BLINK_INTERVAL(isValid);
 
     // Force interval to be 0 when invalid or not set
     interval = ((Fw::ParamValid::INVALID == isValid) || (Fw::ParamValid::UNINIT == isValid)) ? 0 : interval;

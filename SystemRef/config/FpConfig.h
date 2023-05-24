@@ -80,7 +80,7 @@ typedef U16 FwTlmPacketizeIdType;
 // Allow objects to have names. Allocates storage for each instance
 #ifndef FW_OBJECT_NAMES
 #define FW_OBJECT_NAMES \
-    1  //!< Indicates whether or not object names are stored (more memory, can be used for tracking objects)
+    0  //!< Indicates whether or not object names are stored (more memory, can be used for tracking objects)
 #endif
 
 // To reduce binary size, FW_OPTIONAL_NAME(<string>) can be used to substitute strings with an empty string
@@ -106,11 +106,11 @@ typedef U16 FwTlmPacketizeIdType;
 // centrally.
 #ifndef FW_OBJECT_REGISTRATION
 #define FW_OBJECT_REGISTRATION \
-    1  //!< Indicates whether or not objects can register themselves (more code, more object tracking)
+    0  //!< Indicates whether or not objects can register themselves (more code, more object tracking)
 #endif
 
 #ifndef FW_QUEUE_REGISTRATION
-#define FW_QUEUE_REGISTRATION 1  //!< Indicates whether or not queue registration is used
+#define FW_QUEUE_REGISTRATION 0  //!< Indicates whether or not queue registration is used
 #endif
 
 #ifndef FW_BAREMETAL_SCHEDULER
@@ -122,13 +122,13 @@ typedef U16 FwTlmPacketizeIdType;
 
 // This allows tracing calls through ports for debugging
 #ifndef FW_PORT_TRACING
-#define FW_PORT_TRACING 1  //!< Indicates whether port calls are traced (more code, more visibility into execution)
+#define FW_PORT_TRACING 0  //!< Indicates whether port calls are traced (more code, more visibility into execution)
 #endif
 
 // This generates code to connect to serialized ports
 #ifndef FW_PORT_SERIALIZATION
 #define FW_PORT_SERIALIZATION \
-    1  //!< Indicates whether there is code in ports to serialize the call (more code, but ability to serialize calls
+    0  //!< Indicates whether there is code in ports to serialize the call (more code, but ability to serialize calls
        //!< for multi-note systems)
 #endif
 
@@ -158,14 +158,14 @@ typedef U16 FwTlmPacketizeIdType;
 //   2. FW_FILEID_ASSERT: asserts report a file CRC and line number
 //   3. FW_FILENAME_ASSERT: asserts report a file path (__FILE__) and line number
 //   4. FW_RELATIVE_PATH_ASSERT: asserts report a relative path within F´ or F´ library and line number
-#define FW_ASSERT_DFL_MSG_LEN 256  //!< Maximum assert message length when using the default assert handler
+#define FW_ASSERT_DFL_MSG_LEN 128  //!< Maximum assert message length when using the default assert handler
 #ifndef FW_ASSERT_LEVEL
 #define FW_ASSERT_LEVEL FW_FILENAME_ASSERT  //!< Defines the type of assert used
 #endif
 
 // Define max length of assert string
 #ifndef FW_ASSERT_TEXT_SIZE
-#define FW_ASSERT_TEXT_SIZE 120  //!< Size of string used to store assert description
+#define FW_ASSERT_TEXT_SIZE 60  //!< Size of string used to store assert description
 #endif
 
 // Adjust various configuration parameters in the architecture. Some of the above enables may disable some of the values
@@ -207,12 +207,12 @@ typedef U16 FwTlmPacketizeIdType;
 
 // Specifies the size of the string holding the queue name for queues
 #ifndef FW_QUEUE_NAME_MAX_SIZE
-#define FW_QUEUE_NAME_MAX_SIZE 80  //!< Max size of message queue name
+#define FW_QUEUE_NAME_MAX_SIZE 1  //!< Max size of message queue name
 #endif
 
 // Specifies the size of the string holding the task name for active components and tasks
 #ifndef FW_TASK_NAME_MAX_SIZE
-#define FW_TASK_NAME_MAX_SIZE 80  //!< Max size of task name
+#define FW_TASK_NAME_MAX_SIZE 1  //!< Max size of task name
 #endif
 
 // Specifies the size of the buffer that contains a communications packet.
@@ -238,7 +238,7 @@ typedef U16 FwTlmPacketizeIdType;
 // Setting the below to zero will disable the check at the cost of not detecting commands that
 // are too large.
 #ifndef FW_CMD_CHECK_RESIDUAL
-#define FW_CMD_CHECK_RESIDUAL 1  //!< Check for leftover command bytes
+#define FW_CMD_CHECK_RESIDUAL 0  //!< Check for leftover command bytes
 #endif
 
 // Specifies the size of the buffer that contains the serialized log arguments.
@@ -248,7 +248,7 @@ typedef U16 FwTlmPacketizeIdType;
 
 // Specifies the maximum size of a string in a log event
 #ifndef FW_LOG_STRING_MAX_SIZE
-#define FW_LOG_STRING_MAX_SIZE 100  //!< Max size of log string parameter type
+#define FW_LOG_STRING_MAX_SIZE 10  //!< Max size of log string parameter type
 #endif
 
 // Specifies the size of the buffer that contains the serialized telemetry value.
@@ -258,7 +258,7 @@ typedef U16 FwTlmPacketizeIdType;
 
 // Specifies the maximum size of a string in a telemetry channel
 #ifndef FW_TLM_STRING_MAX_SIZE
-#define FW_TLM_STRING_MAX_SIZE 40  //!< Max size of channelized telemetry string type
+#define FW_TLM_STRING_MAX_SIZE 10  //!< Max size of channelized telemetry string type
 #endif
 
 // Specifies the size of the buffer that contains the serialized parameter value.
@@ -278,7 +278,7 @@ typedef U16 FwTlmPacketizeIdType;
 
 // Specifies the maximum size of a string in an interface call
 #ifndef FW_INTERNAL_INTERFACE_STRING_MAX_SIZE
-#define FW_INTERNAL_INTERFACE_STRING_MAX_SIZE 256  //!< Max size of interface string parameter type
+#define FW_INTERNAL_INTERFACE_STRING_MAX_SIZE 64  //!< Max size of interface string parameter type
 #endif
 
 // enables text logging of events as well as data logging. Adds a second logging port for text output.
@@ -288,7 +288,7 @@ typedef U16 FwTlmPacketizeIdType;
 
 // Define the size of the text log string buffer. Should be large enough for format string and arguments
 #ifndef FW_LOG_TEXT_BUFFER_SIZE
-#define FW_LOG_TEXT_BUFFER_SIZE 256  //!< Max size of string for text log message
+#define FW_LOG_TEXT_BUFFER_SIZE 50  //!< Max size of string for text log message
 #endif
 
 // Define if serializables have toString() method. Turning off will save code space and
@@ -299,13 +299,13 @@ typedef U16 FwTlmPacketizeIdType;
 
 #if FW_SERIALIZABLE_TO_STRING
 #ifndef FW_SERIALIZABLE_TO_STRING_BUFFER_SIZE
-#define FW_SERIALIZABLE_TO_STRING_BUFFER_SIZE 255  //!< Size of string to store toString() string output
+#define FW_SERIALIZABLE_TO_STRING_BUFFER_SIZE 10  //!< Size of string to store toString() string output
 #endif
 #endif
 
 // Define if arrays have toString() method.
 #ifndef FW_ARRAY_TO_STRING
-#define FW_ARRAY_TO_STRING 1  //!< Indicates if autocoded arrays have toString() methods
+#define FW_ARRAY_TO_STRING 0  //!< Indicates if autocoded arrays have toString() methods
 #endif
 
 #if FW_ARRAY_TO_STRING
@@ -333,7 +333,7 @@ typedef U16 FwTlmPacketizeIdType;
 // These defines used for the FilepathCharString type
 
 #ifndef FW_FIXED_LENGTH_STRING_SIZE
-#define FW_FIXED_LENGTH_STRING_SIZE 256  //!< Character array size for the filepath character type
+#define FW_FIXED_LENGTH_STRING_SIZE 10  //!< Character array size for the filepath character type
 #endif
 
 // *** NOTE configuration checks are in Fw/Cfg/ConfigCheck.cpp in order to have
