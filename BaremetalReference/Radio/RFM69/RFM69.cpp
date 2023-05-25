@@ -65,6 +65,7 @@ namespace Radio {
         pkt_count++;
         this->tlmWrite_NumPacketsReceived(pkt_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
+        this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload.data()));
       }
     }
   }

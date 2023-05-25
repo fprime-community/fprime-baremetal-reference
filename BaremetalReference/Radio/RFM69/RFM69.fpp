@@ -19,6 +19,11 @@ module Radio {
         @ Telemetry channel for radio RSSI
         telemetry RSSI: I16
 
+        @ Prints received packet payload
+        event PayloadMessage(msg: string size 60) \
+            severity warning low \
+            format "Payload: {}"
+
         @ Port receiving calls from the rate group
         sync input port run: Svc.Sched
 
