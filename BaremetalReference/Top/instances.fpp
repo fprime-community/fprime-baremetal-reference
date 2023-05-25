@@ -5,8 +5,8 @@ module BaremetalReference {
   # ----------------------------------------------------------------------
 
   module Default {
-    constant QUEUE_SIZE = 10
-    constant STACK_SIZE = 32 * 1024
+    constant QUEUE_SIZE = 5
+    constant STACK_SIZE = 64 * 1024
   }
 
   # ----------------------------------------------------------------------
@@ -34,6 +34,11 @@ module BaremetalReference {
     priority 97
 
   instance blinker: BaremetalReference.LedBlinker base id 0x0F00 \
+    queue size Default.QUEUE_SIZE \
+    stack size Default.STACK_SIZE \
+    priority 95
+
+  instance rfm69: Radio.RFM69 base id 0x1000 \
     queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 95

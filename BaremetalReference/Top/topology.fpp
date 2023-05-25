@@ -32,6 +32,7 @@ module BaremetalReference {
     instance rateDriver
     instance rateGroup1
     instance rateGroupDriver
+    instance rfm69
     instance staticMemory
     instance systemResources
     instance systemTime
@@ -82,6 +83,7 @@ module BaremetalReference {
       rateGroup1.RateGroupMemberOut[1] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[2] -> tlmSend.Run
       rateGroup1.RateGroupMemberOut[3] -> systemResources.run
+      rateGroup1.RateGroupMemberOut[4] -> rfm69.run
     }
 
     connections Uplink {
