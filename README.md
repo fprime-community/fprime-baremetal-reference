@@ -67,12 +67,12 @@ $ sudo cp arduino/rules/* /etc/udev/rules.d/
 
 ### Uploading binary for Feather M0
 ```
-$ ~/.arduino15/packages/adafruit/tools/bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM0 -U -i --offset=0x2000 -w -v ./build-fprime-automatic-featherM0/bin/featherM0/SystemRef.bin -R
+$ ~/.arduino15/packages/adafruit/tools/bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM0 -U -i --offset=0x2000 -w -v ./build-fprime-automatic-featherM0/bin/featherM0/BaremetalReference.bin -R
 ```
 Note: If you have more than one device connected, `ttyACM0` may change.
 
 ### Using GDS over serial
 ```
-$ fprime-gds -n --dictionary ./build-artifacts/YOUR_BUILD/SystemRef/dict/SystemRefTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
+$ fprime-gds -n --dictionary ./build-artifacts/YOUR_BUILD/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
 ```
 Note: Change `YOUR BUILD` to either `teensy41` or `featherM0`. Also, if you have more than one device connected, `/dev/ttyACM0` may change.

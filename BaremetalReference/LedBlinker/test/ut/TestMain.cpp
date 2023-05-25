@@ -5,12 +5,12 @@
 #include "Tester.hpp"
 
 TEST(Nominal, ToDo) {
-    SystemRef::Tester tester;
+    BaremetalReference::Tester tester;
     tester.toDo();
 }
 
 TEST(Nominal, TestBlinking) {
-    SystemRef::Tester tester;
+    BaremetalReference::Tester tester;
     tester.testBlinking();
 }
 

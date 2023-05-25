@@ -1,17 +1,17 @@
 // ======================================================================
-// \title  SystemRefTopology.hpp
+// \title  BaremetalReferenceTopology.hpp
 // \brief header file containing the topology instantiation definitions
 //
 // ======================================================================
-#ifndef SYSTEMREF_SYSTEMREFTOPOLOGY_HPP
-#define SYSTEMREF_SYSTEMREFTOPOLOGY_HPP
-// Included for access to SystemRef::TopologyState and SystemRef::ConfigObjects::pingEntries. These definitions are required by the
+#ifndef BaremetalReference_BaremetalReferenceTOPOLOGY_HPP
+#define BaremetalReference_BaremetalReferenceTOPOLOGY_HPP
+// Included for access to BaremetalReference::TopologyState and BaremetalReference::ConfigObjects::pingEntries. These definitions are required by the
 // autocoder, but are also used in this hand-coded topology.
-#include <SystemRef/Top/SystemRefTopologyDefs.hpp>
+#include <BaremetalReference/Top/BaremetalReferenceTopologyDefs.hpp>
 
-// Remove unnecessary SystemRef:: qualifications
-using namespace SystemRef;
-namespace SystemRef {
+// Remove unnecessary BaremetalReference:: qualifications
+using namespace BaremetalReference;
+namespace BaremetalReference {
 /**
  * \brief initialize and run the F´ topology
  *
@@ -32,7 +32,7 @@ namespace SystemRef {
  * custom tasks often start radio communication it is convenient to start them last.
  *
  * The state argument carries command line inputs used to setup the topology. For an explanation of the required type
- * SystemRef::TopologyState see: SystemRefTopologyDefs.hpp.
+ * BaremetalReference::TopologyState see: BaremetalReferenceTopologyDefs.hpp.
  *
  * \param state: object shuttling CLI arguments (hostname, port) needed to construct the topology
  */
@@ -53,11 +53,11 @@ void setupTopology(const TopologyState& state);
  * Step 1, 2, 3, and 4 must occur in-order as the tasks must be stopped before being joined. These tasks must be stopped
  * and joined before any active resources may be deallocated.
  *
- * For an explanation of the required type SystemRef::TopologyState see: SystemRefTopologyDefs.hpp.
+ * For an explanation of the required type BaremetalReference::TopologyState see: BaremetalReferenceTopologyDefs.hpp.
  *
  * \param state: state object provided to setupTopology
  */
 void teardownTopology(const TopologyState& state);
 
-} // namespace SystemRef
+} // namespace BaremetalReference
 #endif

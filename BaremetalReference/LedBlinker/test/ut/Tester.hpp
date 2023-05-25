@@ -8,9 +8,9 @@
 #define TESTER_HPP
 
 #include "GTestBase.hpp"
-#include "SystemRef/LedBlinker/LedBlinker.hpp"
+#include "BaremetalReference/LedBlinker/LedBlinker.hpp"
 
-namespace SystemRef {
+namespace BaremetalReference {
 
   class Tester :
     public LedBlinkerGTestBase
@@ -87,6 +87,6 @@ namespace SystemRef {
 
   };
 
-} // end namespace SystemRef
+} // end namespace BaremetalReference
 
 #endif

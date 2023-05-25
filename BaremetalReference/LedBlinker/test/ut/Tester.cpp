@@ -6,7 +6,7 @@
 
 #include "Tester.hpp"
 
-namespace SystemRef {
+namespace BaremetalReference {
 
   // ----------------------------------------------------------------------
   // Construction and destruction
@@ -60,4 +60,4 @@ namespace SystemRef {
   }
 
 
-} // end namespace SystemRef
+} // end namespace BaremetalReference

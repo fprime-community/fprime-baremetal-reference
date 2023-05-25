@@ -7,9 +7,9 @@
 #ifndef LedBlinker_HPP
 #define LedBlinker_HPP
 
-#include "SystemRef/LedBlinker/LedBlinkerComponentAc.hpp"
+#include "BaremetalReference/LedBlinker/LedBlinkerComponentAc.hpp"
 
-namespace SystemRef {
+namespace BaremetalReference {
 
   class LedBlinker :
     public LedBlinkerComponentBase
@@ -74,6 +74,6 @@ namespace SystemRef {
       bool blinking;    //! Flag: if true then LED blinking will occur else no blinking will happen
     };
 
-} // end namespace SystemRef
+} // end namespace BaremetalReference
 
 #endif

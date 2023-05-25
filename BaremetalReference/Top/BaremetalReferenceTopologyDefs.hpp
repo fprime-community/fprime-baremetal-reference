@@ -1,22 +1,22 @@
 // ======================================================================
-// \title  SystemRefTopologyDefs.hpp
+// \title  BaremetalReferenceTopologyDefs.hpp
 // \brief required header file containing the required definitions for the topology autocoder
 //
 // ======================================================================
-#ifndef SYSTEMREF_SYSTEMREFTOPOLOGYDEFS_HPP
-#define SYSTEMREF_SYSTEMREFTOPOLOGYDEFS_HPP
+#ifndef BaremetalReference_BaremetalReferenceTOPOLOGYDEFS_HPP
+#define BaremetalReference_BaremetalReferenceTOPOLOGYDEFS_HPP
 
 #include "Fw/Types/MallocAllocator.hpp"
-#include "SystemRef/Top/FppConstantsAc.hpp"
+#include "BaremetalReference/Top/FppConstantsAc.hpp"
 #include "Svc/FramingProtocol/FprimeProtocol.hpp"
 
 // Definitions are placed within a namespace named after the deployment
-namespace SystemRef {
+namespace BaremetalReference {
 
 /**
  * \brief required type definition to carry state
  *
- * The topology autocoder requires an object that carries state with the name `SystemRef::TopologyState`. Only the type
+ * The topology autocoder requires an object that carries state with the name `BaremetalReference::TopologyState`. Only the type
  * definition is required by the autocoder and the contents of this object are otherwise opaque to the autocoder. The
  * contents are entirely up to the definition of the project. This reference application specifies hostname and port
  * fields, which are derived by command line inputs.
@@ -59,5 +59,5 @@ namespace rateGroup1 {
 enum { WARN = 3, FATAL = 5 };
 }
 }  // namespace PingEntries
-}  // namespace SystemRef
+}  // namespace BaremetalReference
 #endif

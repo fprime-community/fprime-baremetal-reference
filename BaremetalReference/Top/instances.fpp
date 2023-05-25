@@ -1,4 +1,4 @@
-module SystemRef {
+module BaremetalReference {
 
   # ----------------------------------------------------------------------
   # Defaults
@@ -23,56 +23,17 @@ module SystemRef {
     stack size Default.STACK_SIZE \
     priority 101
 
-  #instance cmdSeq: Svc.CmdSequencer base id 0x0600 \
-  #  queue size Default.QUEUE_SIZE \
-  #  stack size Default.STACK_SIZE \
-  #  priority 100
-
   instance eventLogger: Svc.ActiveLogger base id 0x0B00 \
     queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 98
-
-  #instance fileDownlink: Svc.FileDownlink base id 0x0700 \
-  #  queue size Default.QUEUE_SIZE \
-  #  stack size Default.STACK_SIZE \
-  #  priority 100
-
-  #instance fileManager: Svc.FileManager base id 0x0800 \
-  #  queue size 30 \
-  #  stack size Default.STACK_SIZE \
-  #  priority 100
-
-  #instance fileUplink: Svc.FileUplink base id 0x0900 \
-  #  queue size Default.QUEUE_SIZE \
-  #  stack size Default.STACK_SIZE \
-  #  priority 100
-
-  # comment in Svc.TlmChan or Svc.TlmPacketizer
-  # depending on which form of telemetry downlink
-  # you wish to use
 
   instance tlmSend: Svc.TlmChan base id 0x0C00 \
     queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 97
 
-  #instance tlmSend: Svc.TlmPacketizer base id 0x0C00 \
-  #    queue size Default.QUEUE_SIZE \
-  #    stack size Default.STACK_SIZE \
-  #    priority 97
-
-  #instance prmDb: Svc.PrmDb base id 0x0D00 \
-  #  queue size Default.QUEUE_SIZE \
-  #  stack size Default.STACK_SIZE \
-  #  priority 96
-
-  #instance commQueue: Svc.ComQueue base id 0x0E00 \
-  #    queue size Default.QUEUE_SIZE \
-  #    stack size Default.STACK_SIZE \
-  #    priority 100
-
-  instance blinker: SystemRef.LedBlinker base id 0x0F00 \
+  instance blinker: BaremetalReference.LedBlinker base id 0x0F00 \
     queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 95
@@ -80,9 +41,6 @@ module SystemRef {
   # ----------------------------------------------------------------------
   # Queued component instances
   # ----------------------------------------------------------------------
-
-  #instance $health: Svc.Health base id 0x2000 \
-  #  queue size 25
 
   # ----------------------------------------------------------------------
   # Passive component instances
@@ -93,8 +51,6 @@ module SystemRef {
   instance fatalAdapter: Svc.AssertFatalAdapter base id 0x4200
 
   instance fatalHandler: Svc.FatalHandler base id 0x4300
-
-  #instance fileUplinkBufferManager: Svc.BufferManager base id 0x4400
 
   instance systemTime: Svc.Time base id 0x4500 \
     type "Svc::ArduinoTimeImpl" \
@@ -108,7 +64,7 @@ module SystemRef {
 
   instance uplink: Svc.Deframer base id 0x4900
 
-  #instance systemResources: Svc.SystemResources base id 0x4A00
+  instance systemResources: Svc.SystemResources base id 0x4A00
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4B00
 

@@ -4,10 +4,10 @@
 // \brief  cpp file for LedBlinker component implementation class
 // ======================================================================
 
-#include <SystemRef/LedBlinker/LedBlinker.hpp>
+#include <BaremetalReference/LedBlinker/LedBlinker.hpp>
 #include <FpConfig.hpp>
 
-namespace SystemRef
+namespace BaremetalReference
 {
 
   // ----------------------------------------------------------------------
@@ -132,4 +132,4 @@ namespace SystemRef
     this->cmdResponse_out(opCode, cmdSeq, cmdResp);
   }
 
-} // end namespace SystemRef
+} // end namespace BaremetalReference

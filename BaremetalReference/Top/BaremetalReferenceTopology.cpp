@@ -1,18 +1,18 @@
 // ======================================================================
-// \title  SystemRefTopology.cpp
+// \title  BaremetalReferenceTopology.cpp
 // \brief cpp file containing the topology instantiation code
 //
 // ======================================================================
 // Provides access to autocoded functions
-#include <SystemRef/Top/SystemRefTopologyAc.hpp>
-#include <SystemRef/Top/SystemRefPacketsAc.hpp>
+#include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
+#include <BaremetalReference/Top/BaremetalReferencePacketsAc.hpp>
 
 // Necessary project-specified types
 #include <Fw/Types/MallocAllocator.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
 // Allows easy reference to objects in FPP/autocoder required namespaces
-using namespace SystemRef;
+using namespace BaremetalReference;
 
 // The reference topology uses a malloc-based allocator for components that need to allocate memory during the
 // initialization phase.
@@ -24,7 +24,7 @@ Svc::FprimeFraming framing;
 Svc::FprimeDeframing deframing;
 
 // The reference topology divides the incoming clock signal (1Hz) into sub-signals: 1Hz, 1/2Hz, and 1/4Hz
-NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {1};
+NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100};
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
@@ -54,8 +54,6 @@ enum TopologyConstants {
  * desired, but is extracted here for clarity.
  */
 void configureTopology() {
-    // Command sequencer needs to allocate memory to hold contents of command sequences
-    // cmdSeq.allocateBuffer(0, mallocator, CMD_SEQ_BUFFER_SIZE);
 
     // Rate group driver needs a divisor list
     rateGroupDriver.configure(rateGroupDivisors, FW_NUM_ARRAY_ELEMENTS(rateGroupDivisors));
@@ -63,34 +61,14 @@ void configureTopology() {
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
 
-    // File downlink requires some project-derived properties.
-    // fileDownlink.configure(FILE_DOWNLINK_TIMEOUT, FILE_DOWNLINK_COOLDOWN, FILE_DOWNLINK_CYCLE_TIME,
-    //                        FILE_DOWNLINK_FILE_QUEUE_DEPTH);
-
-    // Parameter database is configured with a database file name, and that file must be initially read.
-    // prmDb.configure("PrmDb.dat");
-    // prmDb.readParamFile();
-
-    // Health is supplied a set of ping entires.
-    // health.setPingEntries(pingEntries, FW_NUM_ARRAY_ELEMENTS(pingEntries), HEALTH_WATCHDOG_CODE);
-
-    // Buffer managers need a configured set of buckets and an allocator used to allocate memory for those buckets.
-    // Svc::BufferManager::BufferBins upBuffMgrBins;
-    // memset(&upBuffMgrBins, 0, sizeof(upBuffMgrBins));
-    // upBuffMgrBins.bins[0].bufferSize = UPLINK_BUFFER_MANAGER_STORE_SIZE;
-    // upBuffMgrBins.bins[0].numBuffers = UPLINK_BUFFER_MANAGER_QUEUE_SIZE;
-    // fileUplinkBufferManager.setup(UPLINK_BUFFER_MANAGER_ID, 0, mallocator, upBuffMgrBins);
-
     // Framer and Deframer components need to be passed a protocol handler
     downlink.setup(framing);
     uplink.setup(deframing);
 
-    // Note: Uncomment when using Svc:TlmPacketizer
-    //tlmSend.setPacketList(SystemRefPacketsPkts, SystemRefPacketsIgnore, 1);
 }
 
-// Public functions for use in main program are namespaced with deployment name SystemRef
-namespace SystemRef {
+// Public functions for use in main program are namespaced with deployment name BaremetalReference
+namespace BaremetalReference {
 void setupTopology(const TopologyState& state) {
     // Autocoded initialization. Function provided by autocoder.
     initComponents(state);
@@ -107,7 +85,7 @@ void setupTopology(const TopologyState& state) {
     // Autocoded task kick-off (active components). Function provided by autocoder.
     startTasks(state);
     
-    rateDriver.configure(1000);
+    rateDriver.configure(1);
     commDriver.configure(state.uartNumber, state.uartBaud);
     gpioDriver.open(13, Arduino::GpioDriver::GpioDirection::OUT);
     rateDriver.start();
@@ -118,8 +96,5 @@ void teardownTopology(const TopologyState& state) {
     stopTasks(state);
     freeThreads(state);
 
-    // Resource deallocation
-    // cmdSeq.deallocateBuffer(mallocator);
-    // fileUplinkBufferManager.cleanup();
 }
-};  // namespace SystemRef
+};  // namespace BaremetalReference

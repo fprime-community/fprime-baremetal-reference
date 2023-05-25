@@ -1,4 +1,4 @@
-# SystemRef::LedBlinker
+# BaremetalReference::LedBlinker
 
 Component to blink an LED driven by a rate group
 

@@ -4,8 +4,8 @@
 //
 // ======================================================================
 // Used to access topology functions
-#include <SystemRef/Top/SystemRefTopologyAc.hpp>
-#include <SystemRef/Top/SystemRefTopology.hpp>
+#include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
+#include <BaremetalReference/Top/BaremetalReferenceTopology.hpp>
 // Used for Task Runner
 #include <Os/Baremetal/TaskRunner/TaskRunner.hpp>
 
@@ -35,13 +35,13 @@ void setup()
     Fw::Logger::logMsg("Program Started\n");
 
     // Object for communicating state to the reference topology
-    SystemRef::TopologyState inputs;
+    BaremetalReference::TopologyState inputs;
     inputs.uartNumber = 0;
     inputs.uartBaud = 115200;
 
     // Setup, cycle, and teardown topology
-    SystemRef::setupTopology(inputs);
-    // SystemRef::teardownTopology(inputs);
+    BaremetalReference::setupTopology(inputs);
+    // BaremetalReference::teardownTopology(inputs);
 }
 
 void loop()
