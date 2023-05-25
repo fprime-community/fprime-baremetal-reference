@@ -85,9 +85,16 @@ void setupTopology(const TopologyState& state) {
     // Autocoded task kick-off (active components). Function provided by autocoder.
     startTasks(state);
     
+    // Configure hardware rate driver
     rateDriver.configure(1);
+
+    // Configure Serial
     commDriver.configure(state.uartNumber, state.uartBaud);
-    gpioDriver.open(13, Arduino::GpioDriver::GpioDirection::OUT);
+
+    // Configure GPIO pins
+    gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
+
+    // Start hardware rate driver
     rateDriver.start();
 }
 

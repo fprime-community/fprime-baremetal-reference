@@ -1,8 +1,9 @@
 ###
 # Components and Topology
 ###
-add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/LedBlinker/")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Top/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/LedBlinker/")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Radio/")
 
 set(SOURCE_FILES "${CMAKE_CURRENT_LIST_DIR}/Main.cpp")
 set(MOD_DEPS ${FPRIME_CURRENT_MODULE}/Top)

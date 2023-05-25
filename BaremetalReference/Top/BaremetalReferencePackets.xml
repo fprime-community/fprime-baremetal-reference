@@ -50,6 +50,13 @@
         <channel name="blinker.BlinkingState"/>
     </packet>
 
+    <packet name="RadioChannels" id="7" level="1">
+        <channel name="rfm69.Status"/>
+        <channel name="rfm69.NumPacketsReceived"/>
+        <channel name="rfm69.NumPacketsSent"/>
+        <channel name="rfm69.RSSI"/>
+    </packet>
+
     <!-- Ignored packets -->
 
     <ignore>

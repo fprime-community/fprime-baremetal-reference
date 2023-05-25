@@ -122,13 +122,13 @@ typedef U16 FwTlmPacketizeIdType;
 
 // This allows tracing calls through ports for debugging
 #ifndef FW_PORT_TRACING
-#define FW_PORT_TRACING 0  //!< Indicates whether port calls are traced (more code, more visibility into execution)
+#define FW_PORT_TRACING 1  //!< Indicates whether port calls are traced (more code, more visibility into execution)
 #endif
 
 // This generates code to connect to serialized ports
 #ifndef FW_PORT_SERIALIZATION
 #define FW_PORT_SERIALIZATION \
-    0  //!< Indicates whether there is code in ports to serialize the call (more code, but ability to serialize calls
+    1  //!< Indicates whether there is code in ports to serialize the call (more code, but ability to serialize calls
        //!< for multi-note systems)
 #endif
 
@@ -248,7 +248,7 @@ typedef U16 FwTlmPacketizeIdType;
 
 // Specifies the maximum size of a string in a log event
 #ifndef FW_LOG_STRING_MAX_SIZE
-#define FW_LOG_STRING_MAX_SIZE 10  //!< Max size of log string parameter type
+#define FW_LOG_STRING_MAX_SIZE 64  //!< Max size of log string parameter type
 #endif
 
 // Specifies the size of the buffer that contains the serialized telemetry value.

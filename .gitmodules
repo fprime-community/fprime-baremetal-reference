@@ -6,3 +6,6 @@
 	path = arduino/fprime-arduino
 	url = https://github.com/SterlingPeet/fprime-arduino
 	branch = mbed-work
+[submodule "arduino/RadioHead"]
+	path = arduino/RadioHead
+	url = https://github.com/PaulStoffregen/RadioHead.git
