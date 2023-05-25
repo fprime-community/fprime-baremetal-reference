@@ -63,10 +63,4 @@ namespace PingEntries {
     }  // namespace PingEntries
 }  // namespace BaremetalReference
 
-namespace Radio {
-    #define RFM69_FREQ 915.0
-    #define RFM69_CS    8
-    #define RFM69_INT   3
-    #define RFM69_RST   4
-}
 #endif

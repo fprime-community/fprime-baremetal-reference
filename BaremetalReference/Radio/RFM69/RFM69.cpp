@@ -6,7 +6,6 @@
 
 #include <vector>
 
-#include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
 #include <BaremetalReference/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
 
