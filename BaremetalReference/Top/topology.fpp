@@ -79,10 +79,10 @@ module BaremetalReference {
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      rateGroup1.RateGroupMemberOut[0] -> blinker.run
-      rateGroup1.RateGroupMemberOut[1] -> commDriver.schedIn
-      rateGroup1.RateGroupMemberOut[2] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[3] -> systemResources.run
+      rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
+      rateGroup1.RateGroupMemberOut[1] -> tlmSend.Run
+      rateGroup1.RateGroupMemberOut[2] -> systemResources.run
+      rateGroup1.RateGroupMemberOut[3] -> blinker.run
       rateGroup1.RateGroupMemberOut[4] -> rfm69.run
     }
 
@@ -103,6 +103,7 @@ module BaremetalReference {
     connections BaremetalReference {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
+      rfm69.gpioSet -> gpioDriver.gpioWrite
     }
 
   }

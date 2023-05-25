@@ -32,8 +32,6 @@ namespace Radio {
       //!
       ~RFM69();
 
-      void reset();
-      void send();
       void recv();
 
     PRIVATE:
@@ -62,13 +60,14 @@ namespace Radio {
       void SEND_PACKET_cmdHandler(
           const FwOpcodeType opCode, /*!< The opcode*/
           const U32 cmdSeq, /*!< The command sequence number*/
-          U32 packet 
+          const Fw::CmdStringArg& payload 
       );
 
       RH_RF69 rfm69;
       bool is_in_reset;
       Fw::On radio_state;
-      U16 pkt_count;
+      U16 pkt_rx_count;
+      U16 pkt_tx_count;
     };
 
 } // end namespace Radio

@@ -10,6 +10,8 @@
 #include "BaremetalReference/Top/FppConstantsAc.hpp"
 #include "Svc/FramingProtocol/FprimeProtocol.hpp"
 
+#include <FprimeArduino.hpp>
+
 // Definitions are placed within a namespace named after the deployment
 namespace BaremetalReference {
 
@@ -46,18 +48,25 @@ struct TopologyState {
  * ```
  */
 namespace PingEntries {
-namespace tlmSend {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace cmdDisp {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace eventLogger {
-enum { WARN = 3, FATAL = 5 };
-}
-namespace rateGroup1 {
-enum { WARN = 3, FATAL = 5 };
-}
-}  // namespace PingEntries
+    namespace tlmSend {
+        enum { WARN = 3, FATAL = 5 };
+        }
+        namespace cmdDisp {
+        enum { WARN = 3, FATAL = 5 };
+        }
+        namespace eventLogger {
+        enum { WARN = 3, FATAL = 5 };
+        }
+        namespace rateGroup1 {
+        enum { WARN = 3, FATAL = 5 };
+        }
+    }  // namespace PingEntries
 }  // namespace BaremetalReference
+
+namespace Radio {
+    #define RFM69_FREQ 915.0
+    #define RFM69_CS    8
+    #define RFM69_INT   3
+    #define RFM69_RST   4
+}
 #endif

@@ -4,7 +4,7 @@ module Radio {
 
         @ Command to send packet
         async command SEND_PACKET(
-                packet: U32 @< TODO
+                payload: string size 60
         )
 
         @ Telemetry channel for radio status

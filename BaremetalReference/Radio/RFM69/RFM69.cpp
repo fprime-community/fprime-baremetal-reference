@@ -6,6 +6,7 @@
 
 #include <vector>
 
+#include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
 #include <BaremetalReference/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
 
@@ -14,11 +15,6 @@
 #include <Arduino/Os/StreamLog.hpp>
 
 namespace Radio {
-
-  #define RFM69_FREQ 915.0
-  #define RFM69_CS    8
-  #define RFM69_INT   3
-  #define RFM69_RST   4
 
   // ----------------------------------------------------------------------
   // Construction, initialization, and destruction
@@ -29,7 +25,8 @@ namespace Radio {
         const char *const compName
     ) : RFM69ComponentBase(compName),
         radio_state(Fw::On::OFF),
-        pkt_count(0),
+        pkt_rx_count(0),
+        pkt_tx_count(0),
         rfm69(RFM69_CS, RFM69_INT)
   {
     
@@ -37,18 +34,6 @@ namespace Radio {
 
   RFM69 ::
     ~RFM69()
-  {
-
-  }
-
-  void RFM69 ::
-    reset()
-  {
-    
-  }
-
-  void RFM69 ::
-    send()
   {
 
   }
@@ -62,8 +47,8 @@ namespace Radio {
       U8 bytes_recv = payload.size();
 
       if (rfm69.recv(payload.data(), &bytes_recv)) {
-        pkt_count++;
-        this->tlmWrite_NumPacketsReceived(pkt_count);
+        pkt_rx_count++;
+        this->tlmWrite_NumPacketsReceived(pkt_rx_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
         this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload.data()));
       }
@@ -109,11 +94,22 @@ namespace Radio {
     SEND_PACKET_cmdHandler(
         const FwOpcodeType opCode,
         const U32 cmdSeq,
-        U32 packet
+        const Fw::CmdStringArg& payload
     )
   {
-    // TODO
-    this->cmdResponse_out(opCode,cmdSeq,Fw::CmdResponse::OK);
+    auto cmdResp = Fw::CmdResponse::OK;
+    rfm69.send(reinterpret_cast<const U8*>(payload.toChar()), payload.length());
+    if(!rfm69.waitPacketSent(1000))
+    {
+      cmdResp = Fw::CmdResponse::VALIDATION_ERROR;
+    } 
+    else
+    {
+      pkt_tx_count++;
+      this->tlmWrite_NumPacketsSent(pkt_tx_count);
+    }
+
+    this->cmdResponse_out(opCode, cmdSeq, cmdResp);
   }
 
 } // end namespace Radio
