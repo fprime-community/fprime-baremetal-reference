@@ -9,10 +9,6 @@
 #include <BaremetalReference/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
 
-// Used for logging
-#include <Os/Log.hpp>
-#include <Arduino/Os/StreamLog.hpp>
-
 namespace Radio {
 
   // ----------------------------------------------------------------------
@@ -26,7 +22,9 @@ namespace Radio {
         radio_state(Fw::On::OFF),
         pkt_rx_count(0),
         pkt_tx_count(0),
-        rfm69(RFM69_CS, RFM69_INT)
+        rfm69(RFM69_CS, RFM69_INT),
+        m_circular(m_data, sizeof m_data),
+        m_reinit(true)
   {
     
   }
@@ -58,31 +56,77 @@ namespace Radio {
   // Handler implementations for user-defined typed input ports
   // ----------------------------------------------------------------------
 
+  Drv::SendStatus RFM69 ::
+    comDataIn_handler(
+        const NATIVE_INT_TYPE portNum,
+        Fw::Buffer &sendBuffer
+    )
+  {
+    Fw::Success radioReady = Fw::Success::SUCCESS;
+
+    Drv::SendStatus driverStatus = drvDataOut_out(0, const_cast<Fw::Buffer&>(sendBuffer));
+    radioReady = (driverStatus.e == Drv::SendStatus::SEND_OK) ? Fw::Success::SUCCESS : Fw::Success::FAILURE;
+
+    if (isConnected_comStatus_OutputPort(0)) {
+        comStatus_out(0, radioReady);
+    }
+    return Drv::SendStatus::SEND_OK;
+  }
+
+  void RFM69 ::
+    drvConnected_handler(
+        const NATIVE_INT_TYPE portNum
+    )
+  {
+    if (m_reinit) {
+        Fw::Success radioReady = Fw::Success::SUCCESS;
+        if (isConnected_comStatus_OutputPort(0)) {
+            comStatus_out(0, radioReady);
+        }
+        m_reinit = false;
+    }
+  }
+
+  void RFM69 ::
+    drvDataIn_handler(
+        const NATIVE_INT_TYPE portNum,
+        Fw::Buffer &recvBuffer,
+        const Drv::RecvStatus &recvStatus
+    )
+  {
+    if (recvStatus == Drv::RecvStatus::RECV_OK) {
+        m_circular.serialize(recvBuffer.getData(), recvBuffer.getSize());
+        deallocate_out(0, recvBuffer);
+    } else {
+      comDataOut_out(0, recvBuffer, recvStatus);
+    }
+  }
+
   void RFM69 ::
     run_handler(
         const NATIVE_INT_TYPE portNum,
         NATIVE_UINT_TYPE context
     )
   {
-    this->tlmWrite_Status(radio_state);
+    // this->tlmWrite_Status(radio_state);
 
-    if(radio_state == Fw::On::OFF)
-    {
-      if(!rfm69.init())
-      {
-        FW_ASSERT(0);
-      }
+    // if(radio_state == Fw::On::OFF)
+    // {
+    //   if(!rfm69.init())
+    //   {
+    //     FW_ASSERT(0);
+    //   }
 
-      if (!rfm69.setFrequency(RFM69_FREQ)) {
-        FW_ASSERT(0);
-      }
+    //   if (!rfm69.setFrequency(RFM69_FREQ)) {
+    //     FW_ASSERT(0);
+    //   }
 
-      rfm69.setTxPower(14, true);
+    //   rfm69.setTxPower(14, true);
 
-      radio_state = Fw::On::ON;
-    }
+    //   radio_state = Fw::On::ON;
+    // }
     
-    this->recv();
+    // this->recv();
   }
 
   // ----------------------------------------------------------------------

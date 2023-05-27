@@ -60,9 +60,9 @@ $ arduino-cli core install adafruit:samd
 ```
 
 ### Adding udev rules for Linux only
-Add udev rules. Save the `.rules` files located in `./arduino/rules` into `/etc/udev/rules.d/`.
+Add udev rules. Save the `.rules` files located in `./docs/rules` into `/etc/udev/rules.d/`.
 ```
-$ sudo cp arduino/rules/* /etc/udev/rules.d/
+$ sudo cp docs/rules/* /etc/udev/rules.d/
 ```
 
 ### Uploading binary for Feather M0

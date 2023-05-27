@@ -5,7 +5,7 @@ module BaremetalReference {
   # ----------------------------------------------------------------------
 
   module Default {
-    constant QUEUE_SIZE = 5
+    constant QUEUE_SIZE = 3
     constant STACK_SIZE = 64 * 1024
   }
 
@@ -19,9 +19,14 @@ module BaremetalReference {
     priority 120
 
   instance cmdDisp: Svc.CommandDispatcher base id 0x0500 \
-    queue size 5 \
+    queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 101
+
+  instance commQueue: Svc.ComQueue base id 0x0600 \
+      queue size 5 \
+      stack size Default.STACK_SIZE \
+      priority 100 \
 
   instance eventLogger: Svc.ActiveLogger base id 0x0B00 \
     queue size Default.QUEUE_SIZE \
@@ -59,7 +64,7 @@ module BaremetalReference {
 
   instance systemTime: Svc.Time base id 0x4500 \
     type "Svc::ArduinoTimeImpl" \
-    at "../../arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp"
+    at "../../lib/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp"
 
   instance rateGroupDriver: Svc.RateGroupDriver base id 0x4600
 
@@ -75,6 +80,8 @@ module BaremetalReference {
 
   instance commDriver: Arduino.SerialDriver base id 0x4000
 
-  instance gpioDriver: Arduino.GpioDriver base id 0x4C00
+  instance commBufferManager: Svc.BufferManager base id 0x4C00
+
+  instance gpioDriver: Arduino.GpioDriver base id 0x4D00
 
 }

@@ -8,6 +8,7 @@
 #define RFM69_HPP
 
 #include "BaremetalReference/Radio/RFM69/RFM69ComponentAc.hpp"
+#include "Utils/Types/CircularBuffer.hpp"
 #include "RH_RF69.h"
 
 namespace Radio {
@@ -45,6 +46,27 @@ namespace Radio {
       // Handler implementations for user-defined typed input ports
       // ----------------------------------------------------------------------
 
+      //! Handler implementation for comDataIn
+      //!
+      Drv::SendStatus comDataIn_handler(
+          const NATIVE_INT_TYPE portNum, /*!< The port number*/
+          Fw::Buffer &sendBuffer 
+      );
+
+      //! Handler implementation for drvConnected
+      //!
+      void drvConnected_handler(
+          const NATIVE_INT_TYPE portNum /*!< The port number*/
+      );
+
+      //! Handler implementation for drvDataIn
+      //!
+      void drvDataIn_handler(
+          const NATIVE_INT_TYPE portNum, /*!< The port number*/
+          Fw::Buffer &recvBuffer, 
+          const Drv::RecvStatus &recvStatus 
+      );
+
       //! Handler implementation for run
       //!
       void run_handler(
@@ -73,6 +95,10 @@ namespace Radio {
       Fw::On radio_state;
       U16 pkt_rx_count;
       U16 pkt_tx_count;
+
+      Types::CircularBuffer m_circular;
+      U8 m_data[RH_RF69_MAX_MESSAGE_LEN + 1];
+      bool m_reinit;
     };
 
 } // end namespace Radio

@@ -34,16 +34,9 @@ NATIVE_INT_TYPE rateGroup1Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = 
 
 // A number of constants are needed for construction of the topology. These are specified here.
 enum TopologyConstants {
-    CMD_SEQ_BUFFER_SIZE = 3 * 1024,
-    FILE_DOWNLINK_TIMEOUT = 1000,
-    FILE_DOWNLINK_COOLDOWN = 1000,
-    FILE_DOWNLINK_CYCLE_TIME = 1000,
-    FILE_DOWNLINK_FILE_QUEUE_DEPTH = 10,
-    HEALTH_WATCHDOG_CODE = 0x123,
-    COMM_PRIORITY = 100,
-    UPLINK_BUFFER_MANAGER_STORE_SIZE = 1000,
-    UPLINK_BUFFER_MANAGER_QUEUE_SIZE = 10,
-    UPLINK_BUFFER_MANAGER_ID = 200
+    COM_BUFFER_SIZE          = 512,
+    COM_BUFFER_COUNT         = 5,
+    BUFFER_MANAGER_ID = 200
 };
 
 /**
@@ -60,6 +53,23 @@ void configureTopology() {
 
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
+    // Set up ComQueue
+    Svc::ComQueue::QueueConfigurationTable configurationTable;
+    // Channels, deep queue, low priority
+    configurationTable.entries[0] = {.depth = 5, .priority = 1};
+    // Events , highest-priority
+    configurationTable.entries[1] = {.depth = 10, .priority = 0};
+    // ???
+    configurationTable.entries[2] = {.depth = 1, .priority = 2};
+    // Allocation identifier is 0 as the MallocAllocator discards it
+    commQueue.configure(configurationTable, 0, mallocator);
+
+    // Buffer managers need a configured set of buckets and an allocator used to allocate memory for those buckets.
+    Svc::BufferManager::BufferBins upBuffMgrBins;
+    memset(&upBuffMgrBins, 0, sizeof(upBuffMgrBins));
+    upBuffMgrBins.bins[0].bufferSize = COM_BUFFER_SIZE;
+    upBuffMgrBins.bins[0].numBuffers = COM_BUFFER_COUNT;
+    commBufferManager.setup(BUFFER_MANAGER_ID, 0, mallocator, upBuffMgrBins);
 
     // Framer and Deframer components need to be passed a protocol handler
     downlink.setup(framing);
@@ -103,5 +113,6 @@ void teardownTopology(const TopologyState& state) {
     stopTasks(state);
     freeThreads(state);
 
+    commBufferManager.cleanup();
 }
 };  // namespace BaremetalReference
