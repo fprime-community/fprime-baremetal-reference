@@ -23,7 +23,6 @@ module BaremetalReference {
     instance blinker
     instance tlmSend
     instance cmdDisp
-    # instance commBufferManager
     instance commDriver
     instance commQueue
     instance downlink
@@ -89,7 +88,6 @@ module BaremetalReference {
       rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[1] -> tlmSend.Run
       rateGroup1.RateGroupMemberOut[2] -> systemResources.run
-      # rateGroup1.RateGroupMemberOut[3] -> commBufferManager.schedIn
       rateGroup1.RateGroupMemberOut[3] -> blinker.run
       rateGroup1.RateGroupMemberOut[4] -> rfm69.run
     }

@@ -80,8 +80,6 @@ module BaremetalReference {
 
   instance commDriver: Arduino.SerialDriver base id 0x4B00
 
-  instance commBufferManager: Svc.BufferManager base id 0x4C00
-
-  instance gpioDriver: Arduino.GpioDriver base id 0x4D00
+  instance gpioDriver: Arduino.GpioDriver base id 0x4C00
 
 }

@@ -65,13 +65,6 @@ void configureTopology() {
     // Allocation identifier is 0 as the MallocAllocator discards it
     commQueue.configure(configurationTable, 0, mallocator);
 
-    // Buffer managers need a configured set of buckets and an allocator used to allocate memory for those buckets.
-    // Svc::BufferManager::BufferBins upBuffMgrBins;
-    // memset(&upBuffMgrBins, 0, sizeof(upBuffMgrBins));
-    // upBuffMgrBins.bins[0].bufferSize = COM_BUFFER_SIZE;
-    // upBuffMgrBins.bins[0].numBuffers = COM_BUFFER_COUNT;
-    // commBufferManager.setup(BUFFER_MANAGER_ID, 0, mallocator, upBuffMgrBins);
-
     // Framer and Deframer components need to be passed a protocol handler
     downlink.setup(framing);
     uplink.setup(deframing);
@@ -114,6 +107,5 @@ void teardownTopology(const TopologyState& state) {
     stopTasks(state);
     freeThreads(state);
 
-    // commBufferManager.cleanup();
 }
 };  // namespace BaremetalReference
