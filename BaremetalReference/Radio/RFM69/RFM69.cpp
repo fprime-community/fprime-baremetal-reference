@@ -34,6 +34,21 @@ namespace Radio {
 
   }
 
+  bool RFM69 ::
+    send(const U8* payload, NATIVE_UINT_TYPE len)
+  {
+    rfm69.send(payload, len);
+    if(!rfm69.waitPacketSent(1000))
+    {
+      return false;
+    } 
+
+    pkt_tx_count++;
+    this->tlmWrite_NumPacketsSent(pkt_tx_count);
+
+    return true;
+  }
+
   void RFM69 ::
     recv()
   {
@@ -43,10 +58,16 @@ namespace Radio {
       U8 bytes_recv = payload.size();
 
       if (rfm69.recv(payload.data(), &bytes_recv)) {
+        payload.resize(bytes_recv);
         pkt_rx_count++;
+
+        this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload.data()));
+
+        Fw::Buffer recvBuffer(payload.data(), payload.size());
+        this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
+
         this->tlmWrite_NumPacketsReceived(pkt_rx_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
-        this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload.data()));
       }
     }
   }
@@ -55,18 +76,6 @@ namespace Radio {
   // Handler implementations for user-defined typed input ports
   // ----------------------------------------------------------------------
 
-  void RFM69 ::
-    drvConnected_handler(
-        const NATIVE_INT_TYPE portNum
-    )
-  {
-    Fw::Success radioSuccess = Fw::Success::SUCCESS;
-    if (this->isConnected_comStatus_OutputPort(0) && m_reinitialize) {
-        this->m_reinitialize = false;
-        this->comStatus_out(0, radioSuccess);
-    }
-  }
-
   Drv::SendStatus RFM69 ::
     comDataIn_handler(
         const NATIVE_INT_TYPE portNum,
@@ -74,27 +83,16 @@ namespace Radio {
     )
   {
     FW_ASSERT(!this->m_reinitialize || !this->isConnected_comStatus_OutputPort(0));  // A message should never get here if we need to reinitialize is needed
-    Drv::SendStatus driverStatus = Drv::SendStatus::SEND_RETRY;
-    for (NATIVE_UINT_TYPE i = 0; driverStatus == Drv::SendStatus::SEND_RETRY && i < RETRY_LIMIT; i++) {
-        driverStatus = this->drvDataOut_out(0, sendBuffer);
-    }
-    FW_ASSERT(driverStatus != Drv::SendStatus::SEND_RETRY);  // If it is still in retry state, there is no good answer
-    Fw::Success comSuccess = (driverStatus.e == Drv::SendStatus::SEND_OK) ? Fw::Success::SUCCESS : Fw::Success::FAILURE;
-    this->m_reinitialize = driverStatus.e != Drv::SendStatus::SEND_OK;
+    
+    this->comDataOut_out(0, sendBuffer, Drv::RecvStatus::RECV_OK);
+    this->send(sendBuffer.getData(), sendBuffer.getSize());
+
+    Fw::Success comSuccess = Fw::Success::SUCCESS;
+
     if (this->isConnected_comStatus_OutputPort(0)) {
         this->comStatus_out(0, comSuccess);
     }
     return Drv::SendStatus::SEND_OK;  // Always send ok to deframer as it does not handle this anyway
-  }
-
-  void RFM69 ::
-    drvDataIn_handler(
-        const NATIVE_INT_TYPE portNum,
-        Fw::Buffer &recvBuffer,
-        const Drv::RecvStatus &recvStatus
-    )
-  {
-    this->comDataOut_out(0, recvBuffer, recvStatus);
   }
 
   void RFM69 ::
@@ -130,15 +128,9 @@ namespace Radio {
     )
   {
     auto cmdResp = Fw::CmdResponse::OK;
-    rfm69.send(reinterpret_cast<const U8*>(payload.toChar()), payload.length());
-    if(!rfm69.waitPacketSent(1000))
+    if(!(this->send(reinterpret_cast<const U8*>(payload.toChar()), payload.length())))
     {
       cmdResp = Fw::CmdResponse::VALIDATION_ERROR;
-    } 
-    else
-    {
-      pkt_tx_count++;
-      this->tlmWrite_NumPacketsSent(pkt_tx_count);
     }
 
     this->cmdResponse_out(opCode, cmdSeq, cmdResp);

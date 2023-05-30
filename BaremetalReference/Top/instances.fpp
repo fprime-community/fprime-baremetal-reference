@@ -82,4 +82,8 @@ module BaremetalReference {
 
   instance gpioDriver: Arduino.GpioDriver base id 0x4C00
 
+  instance streamCrossoverUplink: Drv.StreamCrossover base id 0x4D00
+
+  instance streamCrossoverDownlink: Drv.StreamCrossover base id 0x4E00
+
 }

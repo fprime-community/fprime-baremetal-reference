@@ -35,6 +35,8 @@ module BaremetalReference {
     instance rateGroupDriver
     instance rfm69
     instance staticMemory
+    instance streamCrossoverUplink
+    instance streamCrossoverDownlink
     instance systemResources
     instance systemTime
     instance textLogger
@@ -69,8 +71,9 @@ module BaremetalReference {
       downlink.framedOut -> rfm69.comDataIn
       commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
 
-      rfm69.drvDataOut -> commDriver.send
-      commDriver.ready -> rfm69.drvConnected
+      rfm69.comDataOut -> streamCrossoverDownlink.streamIn
+      streamCrossoverDownlink.streamOut -> commDriver.send
+
       rfm69.comStatus -> commQueue.comStatusIn
 
     }
@@ -95,8 +98,10 @@ module BaremetalReference {
     connections Uplink {
 
       commDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.uplink]
-      commDriver.$recv -> rfm69.drvDataIn
-      rfm69.comDataOut -> uplink.framedIn
+      commDriver.$recv -> streamCrossoverUplink.streamIn
+      streamCrossoverUplink.streamOut -> rfm69.comDataIn
+
+      # rfm69.comDataOut -> uplink.framedIn
       uplink.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.uplink]
 
       uplink.comOut -> cmdDisp.seqCmdBuff

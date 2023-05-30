@@ -40,6 +40,7 @@ namespace Radio {
       //!
       ~RFM69();
 
+      bool send(const U8* payload, NATIVE_UINT_TYPE len);
       void recv();
 
     PRIVATE:
@@ -53,20 +54,6 @@ namespace Radio {
       Drv::SendStatus comDataIn_handler(
           const NATIVE_INT_TYPE portNum, /*!< The port number*/
           Fw::Buffer &sendBuffer 
-      );
-
-      //! Handler implementation for drvConnected
-      //!
-      void drvConnected_handler(
-          const NATIVE_INT_TYPE portNum /*!< The port number*/
-      );
-
-      //! Handler implementation for drvDataIn
-      //!
-      void drvDataIn_handler(
-          const NATIVE_INT_TYPE portNum, /*!< The port number*/
-          Fw::Buffer &recvBuffer, 
-          const Drv::RecvStatus &recvStatus 
       );
 
       //! Handler implementation for run

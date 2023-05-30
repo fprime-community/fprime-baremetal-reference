@@ -16,19 +16,6 @@ module Radio {
         output port comDataOut: Drv.ByteStreamRecv
 
         # ----------------------------------------------------------------------
-        # Byte stream model
-        # ----------------------------------------------------------------------
-
-        @ Ready signal when driver is connected
-        sync input port drvConnected: Drv.ByteStreamReady
-
-        @ Data received from driver
-        sync input port drvDataIn: Drv.ByteStreamRecv
-
-        @ Data going to the underlying driver
-        output port drvDataOut: Drv.ByteStreamSend
-
-        # ----------------------------------------------------------------------
         # Telemetry
         # ----------------------------------------------------------------------
 

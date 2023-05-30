@@ -89,7 +89,7 @@ namespace BaremetalReference
           this->gpioSet_out(0, (Fw::On::ON == new_state) ? Fw::Logic::HIGH : Fw::Logic::LOW);
         }
 
-        this->log_ACTIVITY_LO_LedState(new_state);
+        // this->log_ACTIVITY_LO_LedState(new_state);
         this->state = new_state;
       }
 
