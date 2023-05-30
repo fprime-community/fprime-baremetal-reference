@@ -29,16 +29,6 @@ module Radio {
         output port drvDataOut: Drv.ByteStreamSend
 
         # ----------------------------------------------------------------------
-        # Implementation ports
-        # ----------------------------------------------------------------------
-
-        @ Allows for deallocation of XBee command communications
-        output port deallocate: Fw.BufferSend
-
-        @ Allows for allocation of buffers
-        output port allocate: Fw.BufferGet
-
-        # ----------------------------------------------------------------------
         # Telemetry
         # ----------------------------------------------------------------------
 

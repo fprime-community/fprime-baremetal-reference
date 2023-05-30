@@ -24,6 +24,8 @@ namespace Radio {
 
     public:
 
+      const NATIVE_UINT_TYPE RETRY_LIMIT = 10;
+
       // ----------------------------------------------------------------------
       // Construction, initialization, and destruction
       // ----------------------------------------------------------------------
@@ -96,9 +98,7 @@ namespace Radio {
       U16 pkt_rx_count;
       U16 pkt_tx_count;
 
-      Types::CircularBuffer m_circular;
-      U8 m_data[RH_RF69_MAX_MESSAGE_LEN + 1];
-      bool m_reinit;
+      bool m_reinitialize;
     };
 
 } // end namespace Radio

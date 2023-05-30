@@ -53,6 +53,7 @@ void configureTopology() {
 
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
+
     // Set up ComQueue
     Svc::ComQueue::QueueConfigurationTable configurationTable;
     // Channels, deep queue, low priority
@@ -65,11 +66,11 @@ void configureTopology() {
     commQueue.configure(configurationTable, 0, mallocator);
 
     // Buffer managers need a configured set of buckets and an allocator used to allocate memory for those buckets.
-    Svc::BufferManager::BufferBins upBuffMgrBins;
-    memset(&upBuffMgrBins, 0, sizeof(upBuffMgrBins));
-    upBuffMgrBins.bins[0].bufferSize = COM_BUFFER_SIZE;
-    upBuffMgrBins.bins[0].numBuffers = COM_BUFFER_COUNT;
-    commBufferManager.setup(BUFFER_MANAGER_ID, 0, mallocator, upBuffMgrBins);
+    // Svc::BufferManager::BufferBins upBuffMgrBins;
+    // memset(&upBuffMgrBins, 0, sizeof(upBuffMgrBins));
+    // upBuffMgrBins.bins[0].bufferSize = COM_BUFFER_SIZE;
+    // upBuffMgrBins.bins[0].numBuffers = COM_BUFFER_COUNT;
+    // commBufferManager.setup(BUFFER_MANAGER_ID, 0, mallocator, upBuffMgrBins);
 
     // Framer and Deframer components need to be passed a protocol handler
     downlink.setup(framing);
@@ -113,6 +114,6 @@ void teardownTopology(const TopologyState& state) {
     stopTasks(state);
     freeThreads(state);
 
-    commBufferManager.cleanup();
+    // commBufferManager.cleanup();
 }
 };  // namespace BaremetalReference

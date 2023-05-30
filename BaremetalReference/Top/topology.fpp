@@ -23,7 +23,7 @@ module BaremetalReference {
     instance blinker
     instance tlmSend
     instance cmdDisp
-    instance commBufferManager
+    # instance commBufferManager
     instance commDriver
     instance commQueue
     instance downlink
@@ -61,27 +61,18 @@ module BaremetalReference {
 
     connections Downlink {
 
-      # tlmSend.PktSend -> commQueue.comQueueIn[0]
-      # eventLogger.PktSend -> commQueue.comQueueIn[1]
+      tlmSend.PktSend -> commQueue.comQueueIn[0]
+      eventLogger.PktSend -> commQueue.comQueueIn[1]
 
-      # commQueue.comQueueSend -> downlink.comIn
-
-      # downlink.framedAllocate -> commBufferManager.bufferGetCallee
-      # downlink.framedOut -> rfm69.comDataIn
-      # # downlink.comStatusOut -> commQueue.comStatusIn
-      # commDriver.deallocate -> commBufferManager.bufferSendIn
-
-      # rfm69.drvDataOut -> commDriver.send
-      # commDriver.ready -> rfm69.drvConnected
-      # rfm69.comStatus -> commQueue.comStatusIn
-
-      tlmSend.PktSend -> downlink.comIn
-      eventLogger.PktSend -> downlink.comIn
+      commQueue.comQueueSend -> downlink.comIn
 
       downlink.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.downlink]
-      downlink.framedOut -> commDriver.send
-
+      downlink.framedOut -> rfm69.comDataIn
       commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
+
+      rfm69.drvDataOut -> commDriver.send
+      commDriver.ready -> rfm69.drvConnected
+      rfm69.comStatus -> commQueue.comStatusIn
 
     }
 
@@ -99,25 +90,15 @@ module BaremetalReference {
       rateGroup1.RateGroupMemberOut[1] -> tlmSend.Run
       rateGroup1.RateGroupMemberOut[2] -> systemResources.run
       # rateGroup1.RateGroupMemberOut[3] -> commBufferManager.schedIn
-      rateGroup1.RateGroupMemberOut[4] -> blinker.run
-      rateGroup1.RateGroupMemberOut[5] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[3] -> blinker.run
+      rateGroup1.RateGroupMemberOut[4] -> rfm69.run
     }
 
     connections Uplink {
 
-      # commDriver.allocate -> commBufferManager.bufferGetCallee
-      # commDriver.$recv -> rfm69.drvDataIn
-      # rfm69.comDataOut -> uplink.framedIn
-      # uplink.framedDeallocate -> commBufferManager.bufferSendIn
-
-      # uplink.comOut -> cmdDisp.seqCmdBuff
-      # cmdDisp.seqCmdStatus -> uplink.cmdResponseIn
-
-      # uplink.bufferAllocate -> commBufferManager.bufferGetCallee
-      # uplink.bufferDeallocate -> commBufferManager.bufferSendIn
-
       commDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.uplink]
-      commDriver.$recv -> uplink.framedIn
+      commDriver.$recv -> rfm69.drvDataIn
+      rfm69.comDataOut -> uplink.framedIn
       uplink.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.uplink]
 
       uplink.comOut -> cmdDisp.seqCmdBuff
@@ -127,11 +108,6 @@ module BaremetalReference {
       uplink.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframing]
 
     }
-
-    # connections Radio {
-    #   rfm69.allocate -> commBufferManager.bufferGetCallee
-    #   rfm69.deallocate -> commBufferManager.bufferSendIn
-    # }
 
     connections BaremetalReference {
       # Add here connections to user-defined components
