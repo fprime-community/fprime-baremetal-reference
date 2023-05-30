@@ -5,7 +5,7 @@ module BaremetalReference {
   # ----------------------------------------------------------------------
 
   module Default {
-    constant QUEUE_SIZE = 5
+    constant QUEUE_SIZE = 3
     constant STACK_SIZE = 64 * 1024
   }
 
@@ -19,9 +19,14 @@ module BaremetalReference {
     priority 120
 
   instance cmdDisp: Svc.CommandDispatcher base id 0x0500 \
-    queue size 5 \
+    queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 101
+
+  instance commQueue: Svc.ComQueue base id 0x0600 \
+      queue size 5 \
+      stack size Default.STACK_SIZE \
+      priority 100 \
 
   instance eventLogger: Svc.ActiveLogger base id 0x0B00 \
     queue size Default.QUEUE_SIZE \
@@ -51,29 +56,29 @@ module BaremetalReference {
   # Passive component instances
   # ----------------------------------------------------------------------
 
-  instance downlink: Svc.Framer base id 0x4100
+  instance downlink: Svc.Framer base id 0x4000
 
-  instance fatalAdapter: Svc.AssertFatalAdapter base id 0x4200
+  instance fatalAdapter: Svc.AssertFatalAdapter base id 0x4100
 
-  instance fatalHandler: Svc.FatalHandler base id 0x4300
+  instance fatalHandler: Svc.FatalHandler base id 0x4200
 
-  instance systemTime: Svc.Time base id 0x4500 \
+  instance systemTime: Svc.Time base id 0x4300 \
     type "Svc::ArduinoTimeImpl" \
-    at "../../arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp"
+    at "../../lib/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp"
 
-  instance rateGroupDriver: Svc.RateGroupDriver base id 0x4600
+  instance rateGroupDriver: Svc.RateGroupDriver base id 0x4400
 
-  instance staticMemory: Svc.StaticMemory base id 0x4700
+  instance staticMemory: Svc.StaticMemory base id 0x4500
 
-  instance textLogger: Svc.PassiveTextLogger base id 0x4800
+  instance textLogger: Svc.PassiveTextLogger base id 0x4600
 
-  instance uplink: Svc.Deframer base id 0x4900
+  instance uplink: Svc.Deframer base id 0x4700
 
-  instance systemResources: Svc.SystemResources base id 0x4A00
+  instance systemResources: Svc.SystemResources base id 0x4800
 
-  instance rateDriver: Arduino.HardwareRateDriver base id 0x4B00
+  instance rateDriver: Arduino.HardwareRateDriver base id 0x4900
 
-  instance commDriver: Arduino.SerialDriver base id 0x4000
+  instance commDriver: Arduino.SerialDriver base id 0x4B00
 
   instance gpioDriver: Arduino.GpioDriver base id 0x4C00
 

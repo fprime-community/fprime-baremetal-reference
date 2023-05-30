@@ -61,5 +61,7 @@
 
     <ignore>
         <channel name="cmdDisp.CommandErrors"/>
+        <channel name="commQueue.comQueueDepth"/>
+        <channel name="commQueue.buffQueueDepth"/>
     </ignore>
 </packets>

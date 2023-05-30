@@ -2,10 +2,35 @@ module Radio {
     @ Example radio component using the RFM69HCW radio
     active component RFM69 {
 
-        @ Command to send packet
-        async command SEND_PACKET(
-                payload: string size 60
-        )
+        # ----------------------------------------------------------------------
+        # Framer, deframer, and queue ports
+        # ----------------------------------------------------------------------
+
+        @ Data coming in from the framing component
+        sync input port comDataIn: Drv.ByteStreamSend
+
+        @ Status of the last radio transmission
+        output port comStatus: Fw.SuccessCondition
+
+        @ Com data passing back out
+        output port comDataOut: Drv.ByteStreamRecv
+
+        # ----------------------------------------------------------------------
+        # Byte stream model
+        # ----------------------------------------------------------------------
+
+        @ Ready signal when driver is connected
+        sync input port drvConnected: Drv.ByteStreamReady
+
+        @ Data received from driver
+        sync input port drvDataIn: Drv.ByteStreamRecv
+
+        @ Data going to the underlying driver
+        output port drvDataOut: Drv.ByteStreamSend
+
+        # ----------------------------------------------------------------------
+        # Telemetry
+        # ----------------------------------------------------------------------
 
         @ Telemetry channel for radio status
         telemetry Status: Fw.On
@@ -24,11 +49,24 @@ module Radio {
             severity warning low \
             format "Payload: {}"
 
+        # ----------------------------------------------------------------------
+        # Special ports
+        # ----------------------------------------------------------------------
+
         @ Port receiving calls from the rate group
         sync input port run: Svc.Sched
 
         @ Port sending calls to the GPIO driver
         output port gpioSet: Drv.GpioWrite
+
+        # ----------------------------------------------------------------------
+        # Commands
+        # ----------------------------------------------------------------------
+
+        @ Command to send packet
+        async command SEND_PACKET(
+                payload: string size 60
+        )
 
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #
