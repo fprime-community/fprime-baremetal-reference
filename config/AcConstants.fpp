@@ -7,7 +7,7 @@
 constant ActiveRateGroupOutputPorts = 10
 
 @ Used to drive rate groups
-constant RateGroupDriverRateGroupPorts = 1
+constant RateGroupDriverRateGroupPorts = 2
 
 @ Used for command and registration ports
 constant CmdDispatcherComponentCommandPorts = 10

@@ -1,60 +1,46 @@
 // ======================================================================
-// \title  RFM69.hpp
-// \author ethanchee
-// \brief  hpp file for RFM69 component implementation class
+// \title  LedBlinker.hpp
+// \author ethan
+// \brief  hpp file for LedBlinker component implementation class
 // ======================================================================
 
-#ifndef RFM69_HPP
-#define RFM69_HPP
+#ifndef LedBlinker_HPP
+#define LedBlinker_HPP
 
-#include "BaremetalReference/Radio/RFM69/RFM69ComponentAc.hpp"
-#include "Utils/Types/CircularBuffer.hpp"
-#include "RH_RF69.h"
+#include "Components/LedBlinker/LedBlinkerComponentAc.hpp"
 
-namespace Radio {
+namespace Components {
 
-  #define RFM69_FREQ 915.0
-  #define RFM69_CS    8
-  #define RFM69_INT   3
-  #define RFM69_RST   4
-
-  class RFM69 :
-    public RFM69ComponentBase
+  class LedBlinker :
+    public LedBlinkerComponentBase
   {
 
     public:
-
-      const NATIVE_UINT_TYPE RETRY_LIMIT = 10;
 
       // ----------------------------------------------------------------------
       // Construction, initialization, and destruction
       // ----------------------------------------------------------------------
 
-      //! Construct object RFM69
+      //! Construct object LedBlinker
       //!
-      RFM69(
+      LedBlinker(
           const char *const compName /*!< The component name*/
       );
 
-      //! Destroy object RFM69
+      //! Destroy object LedBlinker
       //!
-      ~RFM69();
+      ~LedBlinker();
 
-      bool send(const U8* payload, NATIVE_UINT_TYPE len);
-      void recv();
+      //! Emit parameter updated EVR
+      //!
+      void parameterUpdated(FwPrmIdType id /*!< The parameter ID*/
+      );
 
     PRIVATE:
 
       // ----------------------------------------------------------------------
       // Handler implementations for user-defined typed input ports
       // ----------------------------------------------------------------------
-
-      //! Handler implementation for comDataIn
-      //!
-      Drv::SendStatus comDataIn_handler(
-          const NATIVE_INT_TYPE portNum, /*!< The port number*/
-          Fw::Buffer &sendBuffer 
-      );
 
       //! Handler implementation for run
       //!
@@ -71,23 +57,23 @@ namespace Radio {
       // Command handler implementations
       // ----------------------------------------------------------------------
 
-      //! Implementation for SEND_PACKET command handler
-      //! Command to send packet
-      void SEND_PACKET_cmdHandler(
+      //! Implementation for BLINKING_ON_OFF command handler
+      //! Command to turn on or off the blinking LED
+      void BLINKING_ON_OFF_cmdHandler(
           const FwOpcodeType opCode, /*!< The opcode*/
           const U32 cmdSeq, /*!< The command sequence number*/
-          const Fw::CmdStringArg& payload 
+          Fw::On on_off /*!< 
+          Indicates whether the blinking should be on or off
+          */
       );
 
-      RH_RF69 rfm69;
-      bool is_in_reset;
-      Fw::On radio_state;
-      U16 pkt_rx_count;
-      U16 pkt_tx_count;
-
-      bool m_reinitialize;
+      Os::Mutex lock;   //! Protects our data from thread race conditions
+      Fw::On state;     //! Keeps track if LED is on or off
+      U32 transitions;  //! The number of on/off transitions that have occurred from FSW boot up
+      U16 count;        //! Keeps track of how many ticks the LED has been on for
+      bool blinking;    //! Flag: if true then LED blinking will occur else no blinking will happen
     };
 
-} // end namespace Radio
+} // end namespace BaremetalReference
 
 #endif

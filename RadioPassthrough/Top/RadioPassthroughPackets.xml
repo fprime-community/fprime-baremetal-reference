@@ -1,13 +1,12 @@
-<packets name="BaremetalReferencePackets" namespace="BaremetalReference" size="111">
+<packets name="RadioPassthroughPackets" namespace="RadioPassthrough" size="111">
 
-    <import_topology>BaremetalReference/Top/BaremetalReferenceTopologyAppAi.xml</import_topology>
+    <import_topology>RadioPassthrough/Top/RadioPassthroughTopologyAppAi.xml</import_topology>
 
     <packet name="CDH" id="1" level="1">
-        <channel name="cmdDisp.CommandsDispatched"/>
         <channel name="rateGroup1.RgMaxTime"/>
         <channel name="rateGroup2.RgMaxTime"/>
         <!-- Uncomment to use Svc::TlmPacketizer -->
-        <!-- <channel name="tlmSend.SendLevel"/> -->
+        <!--channel name="tlmSend.SendLevel"/-->
     </packet>
 
     <packet name="CDHErrors" id="2" level="1">
@@ -47,12 +46,7 @@
         <channel name="systemResources.CPU_15"/>
     </packet>
 
-    <packet name="BlinkerChannels" id="6" level="1">
-        <channel name="blinker.LedTransitions"/>
-        <channel name="blinker.BlinkingState"/>
-    </packet>
-
-    <packet name="RadioChannels" id="7" level="1">
+    <packet name="RadioChannels" id="6" level="1">
         <channel name="rfm69.Status"/>
         <channel name="rfm69.NumPacketsReceived"/>
         <channel name="rfm69.NumPacketsSent"/>
@@ -62,7 +56,6 @@
     <!-- Ignored packets -->
 
     <ignore>
-        <channel name="cmdDisp.CommandErrors"/>
         <channel name="commQueue.comQueueDepth"/>
         <channel name="commQueue.buffQueueDepth"/>
     </ignore>

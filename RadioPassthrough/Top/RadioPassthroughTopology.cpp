@@ -1,18 +1,22 @@
 // ======================================================================
-// \title  BaremetalReferenceTopology.cpp
+// \title  RadioPassthroughTopology.cpp
 // \brief cpp file containing the topology instantiation code
 //
 // ======================================================================
 // Provides access to autocoded functions
-#include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
-#include <BaremetalReference/Top/BaremetalReferencePacketsAc.hpp>
+#include <RadioPassthrough/Top/RadioPassthroughTopologyAc.hpp>
+#include <RadioPassthrough/Top/RadioPassthroughPacketsAc.hpp>
 
 // Necessary project-specified types
 #include <Fw/Types/MallocAllocator.hpp>
+#include <Os/Log.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
+// Used for 1Hz synthetic cycling
+#include <Os/Mutex.hpp>
+
 // Allows easy reference to objects in FPP/autocoder required namespaces
-using namespace BaremetalReference;
+using namespace RadioPassthrough;
 
 // The reference topology uses a malloc-based allocator for components that need to allocate memory during the
 // initialization phase.
@@ -68,7 +72,6 @@ void configureTopology() {
 
     // Framer and Deframer components need to be passed a protocol handler
     downlink.setup(framing);
-    uplink.setup(deframing);
 
 }
 
@@ -96,9 +99,6 @@ void setupTopology(const TopologyState& state) {
     // Configure Serial
     commDriver.configure(state.uartNumber, state.uartBaud);
 
-    // Configure GPIO pins
-    gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
-
     // Start hardware rate driver
     rateDriver.start();
 }
@@ -109,4 +109,4 @@ void teardownTopology(const TopologyState& state) {
     freeThreads(state);
 
 }
-};  // namespace BaremetalReference
+};  // namespace RadioPassthrough

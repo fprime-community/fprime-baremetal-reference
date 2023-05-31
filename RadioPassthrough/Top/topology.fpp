@@ -21,16 +21,13 @@ module BaremetalReference {
     # Instances used in the topology
     # ----------------------------------------------------------------------
 
-    instance blinker
     instance tlmSend
-    instance cmdDisp
     instance commDriver
     instance commQueue
     instance downlink
     instance eventLogger
     instance fatalAdapter
     instance fatalHandler
-    instance gpioDriver
     instance rateDriver
     instance rateGroup1
     instance rateGroup2
@@ -42,13 +39,10 @@ module BaremetalReference {
     instance systemResources
     instance systemTime
     instance textLogger
-    instance uplink
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
     # ----------------------------------------------------------------------
-
-    command connections instance cmdDisp
 
     event connections instance eventLogger
 
@@ -92,8 +86,7 @@ module BaremetalReference {
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
       rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[1] -> systemResources.run
-      rateGroup1.RateGroupMemberOut[2] -> blinker.run
-      rateGroup1.RateGroupMemberOut[3] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[2] -> rfm69.run
 
       # Rate group 2
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
@@ -103,14 +96,9 @@ module BaremetalReference {
     connections Uplink {
 
       commDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.uplink]
-      commDriver.$recv -> uplink.framedIn
-      uplink.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.uplink]
-
-      uplink.comOut -> cmdDisp.seqCmdBuff
-      cmdDisp.seqCmdStatus -> uplink.cmdResponseIn
-
-      uplink.bufferAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframing]
-      uplink.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframing]
+      commDriver.$recv -> streamCrossoverUplink.streamIn
+      streamCrossoverUplink.streamOut -> rfm69.comDataIn
+      rfm69.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.uplink]
 
     }
 

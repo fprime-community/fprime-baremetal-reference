@@ -6,7 +6,7 @@
 
 #include <vector>
 
-#include <BaremetalReference/Radio/RFM69/RFM69.hpp>
+#include <Components/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
 
 namespace Radio {
@@ -64,7 +64,10 @@ namespace Radio {
         this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload.data()));
 
         Fw::Buffer recvBuffer(payload.data(), payload.size());
-        this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
+        if(this->isConnected_comDataOut_OutputPort(0))
+        {
+          this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
+        }
 
         this->tlmWrite_NumPacketsReceived(pkt_rx_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
@@ -82,13 +85,10 @@ namespace Radio {
         Fw::Buffer &sendBuffer
     )
   {
-    FW_ASSERT(!this->m_reinitialize || !this->isConnected_comStatus_OutputPort(0));  // A message should never get here if we need to reinitialize is needed
-    
     this->comDataOut_out(0, sendBuffer, Drv::RecvStatus::RECV_OK);
     this->send(sendBuffer.getData(), sendBuffer.getSize());
 
     Fw::Success comSuccess = Fw::Success::SUCCESS;
-
     if (this->isConnected_comStatus_OutputPort(0)) {
         this->comStatus_out(0, comSuccess);
     }
@@ -109,6 +109,9 @@ namespace Radio {
       FW_ASSERT(rfm69.setFrequency(RFM69_FREQ));
 
       rfm69.setTxPower(14, true);
+
+      Fw::Success radioSuccess = Fw::Success::SUCCESS;
+      this->comStatus_out(0, radioSuccess);
 
       radio_state = Fw::On::ON;
     }

@@ -1,24 +1,24 @@
 // ======================================================================
-// \title  BaremetalReferenceTopologyDefs.hpp
+// \title  RadioPassthroughTopologyDefs.hpp
 // \brief required header file containing the required definitions for the topology autocoder
 //
 // ======================================================================
-#ifndef BaremetalReference_BaremetalReferenceTOPOLOGYDEFS_HPP
-#define BaremetalReference_BaremetalReferenceTOPOLOGYDEFS_HPP
+#ifndef RadioPassthrough_RadioPassthroughTOPOLOGYDEFS_HPP
+#define RadioPassthrough_RadioPassthroughTOPOLOGYDEFS_HPP
 
+#include "Drv/BlockDriver/BlockDriver.hpp"
 #include "Fw/Types/MallocAllocator.hpp"
-#include "BaremetalReference/Top/FppConstantsAc.hpp"
+#include "RadioPassthrough/Top/FppConstantsAc.hpp"
 #include "Svc/FramingProtocol/FprimeProtocol.hpp"
-
-#include <FprimeArduino.hpp>
+#include "Svc/Health/Health.hpp"
 
 // Definitions are placed within a namespace named after the deployment
-namespace BaremetalReference {
+namespace RadioPassthrough {
 
 /**
  * \brief required type definition to carry state
  *
- * The topology autocoder requires an object that carries state with the name `BaremetalReference::TopologyState`. Only the type
+ * The topology autocoder requires an object that carries state with the name `RadioPassthrough::TopologyState`. Only the type
  * definition is required by the autocoder and the contents of this object are otherwise opaque to the autocoder. The
  * contents are entirely up to the definition of the project. This reference application specifies hostname and port
  * fields, which are derived by command line inputs.
@@ -63,7 +63,5 @@ namespace PingEntries {
     namespace rateGroup2 {
         enum { WARN = 3, FATAL = 5 };
     }
-}  // namespace PingEntries
-}  // namespace BaremetalReference
-
+}  // namespace RadioPassthrough
 #endif

@@ -23,11 +23,6 @@ module BaremetalReference {
     stack size Default.STACK_SIZE \
     priority 120
 
-  instance cmdDisp: Svc.CommandDispatcher base id 0x0500 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 101
-
   instance commQueue: Svc.ComQueue base id 0x0600 \
       queue size 5 \
       stack size Default.STACK_SIZE \
@@ -42,11 +37,6 @@ module BaremetalReference {
     queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 97
-
-  instance blinker: Components.LedBlinker base id 0x0F00 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 95
 
   instance rfm69: Radio.RFM69 base id 0x1000 \
     queue size Default.QUEUE_SIZE \
@@ -77,15 +67,11 @@ module BaremetalReference {
 
   instance textLogger: Svc.PassiveTextLogger base id 0x4600
 
-  instance uplink: Svc.Deframer base id 0x4700
-
   instance systemResources: Svc.SystemResources base id 0x4800
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4900
 
   instance commDriver: Arduino.SerialDriver base id 0x4B00
-
-  instance gpioDriver: Arduino.GpioDriver base id 0x4C00
 
   instance streamCrossoverUplink: Drv.StreamCrossover base id 0x4D00
 

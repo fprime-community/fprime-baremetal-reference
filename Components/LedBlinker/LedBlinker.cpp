@@ -4,10 +4,10 @@
 // \brief  cpp file for LedBlinker component implementation class
 // ======================================================================
 
-#include <BaremetalReference/LedBlinker/LedBlinker.hpp>
+#include <Components/LedBlinker/LedBlinker.hpp>
 #include <FpConfig.hpp>
 
-namespace BaremetalReference
+namespace Components
 {
 
   // ----------------------------------------------------------------------
