@@ -1,6 +1,6 @@
 module Radio {
     @ Example radio component using the RFM69HCW radio
-    active component RFM69 {
+    passive component RFM69 {
 
         # ----------------------------------------------------------------------
         # Framer, deframer, and queue ports
@@ -14,6 +14,16 @@ module Radio {
 
         @ Com data passing back out
         output port comDataOut: Drv.ByteStreamRecv
+
+        # ----------------------------------------------------------------------
+        # Implementation ports
+        # ----------------------------------------------------------------------
+
+        @ Allows for deallocation of XBee command communications
+        output port deallocate: Fw.BufferSend
+
+        @ Allows for allocation of buffers
+        output port allocate: Fw.BufferGet
 
         # ----------------------------------------------------------------------
         # Telemetry
@@ -51,7 +61,7 @@ module Radio {
         # ----------------------------------------------------------------------
 
         @ Command to send packet
-        async command SEND_PACKET(
+        sync command SEND_PACKET(
                 payload: string size 60
         )
 

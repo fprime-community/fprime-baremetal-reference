@@ -63,5 +63,6 @@ namespace PingEntries {
     namespace rateGroup2 {
         enum { WARN = 3, FATAL = 5 };
     }
+}  // namespace PingEntries
 }  // namespace RadioPassthrough
 #endif

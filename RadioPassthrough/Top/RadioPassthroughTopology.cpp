@@ -76,7 +76,7 @@ void configureTopology() {
 }
 
 // Public functions for use in main program are namespaced with deployment name BaremetalReference
-namespace BaremetalReference {
+namespace RadioPassthrough {
 void setupTopology(const TopologyState& state) {
     // Autocoded initialization. Function provided by autocoder.
     initComponents(state);
@@ -97,7 +97,10 @@ void setupTopology(const TopologyState& state) {
     rateDriver.configure(1);
 
     // Configure Serial
-    commDriver.configure(state.uartNumber, state.uartBaud);
+    commDriver.configure(&Serial);
+
+    // Configure GPIO pins
+    gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
 
     // Start hardware rate driver
     rateDriver.start();

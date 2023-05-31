@@ -1,4 +1,4 @@
-module BaremetalReference {
+module RadioPassthrough {
 
   # ----------------------------------------------------------------------
   # Symbolic constants for port numbers
@@ -15,12 +15,13 @@ module BaremetalReference {
       deframing
     }
 
-  topology BaremetalReference {
+  topology RadioPassthrough {
 
     # ----------------------------------------------------------------------
     # Instances used in the topology
     # ----------------------------------------------------------------------
 
+    instance blinker
     instance tlmSend
     instance commDriver
     instance commQueue
@@ -28,6 +29,7 @@ module BaremetalReference {
     instance eventLogger
     instance fatalAdapter
     instance fatalHandler
+    instance gpioDriver
     instance rateDriver
     instance rateGroup1
     instance rateGroup2
@@ -86,7 +88,8 @@ module BaremetalReference {
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
       rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[1] -> systemResources.run
-      rateGroup1.RateGroupMemberOut[2] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[2] -> blinker.run
+      rateGroup1.RateGroupMemberOut[3] -> rfm69.run
 
       # Rate group 2
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
@@ -102,7 +105,7 @@ module BaremetalReference {
 
     }
 
-    connections BaremetalReference {
+    connections RadioPassthrough {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
     }

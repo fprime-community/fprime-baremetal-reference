@@ -43,16 +43,6 @@ module BaremetalReference {
     stack size Default.STACK_SIZE \
     priority 97
 
-  instance blinker: Components.LedBlinker base id 0x0F00 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 95
-
-  instance rfm69: Radio.RFM69 base id 0x1000 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 95
-
   # ----------------------------------------------------------------------
   # Queued component instances
   # ----------------------------------------------------------------------
@@ -83,12 +73,16 @@ module BaremetalReference {
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4900
 
-  instance commDriver: Arduino.SerialDriver base id 0x4B00
+  instance commDriver: Arduino.StreamDriver base id 0x4B00
 
   instance gpioDriver: Arduino.GpioDriver base id 0x4C00
 
   instance streamCrossoverUplink: Drv.StreamCrossover base id 0x4D00
 
   instance streamCrossoverDownlink: Drv.StreamCrossover base id 0x4E00
+
+  instance blinker: Components.LedBlinker base id 0x6000
+
+  instance rfm69: Radio.RFM69 base id 0x6100
 
 }

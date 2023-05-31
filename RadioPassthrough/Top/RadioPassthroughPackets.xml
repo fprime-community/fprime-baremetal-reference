@@ -46,7 +46,12 @@
         <channel name="systemResources.CPU_15"/>
     </packet>
 
-    <packet name="RadioChannels" id="6" level="1">
+    <packet name="BlinkerChannels" id="6" level="1">
+        <channel name="blinker.LedTransitions"/>
+        <channel name="blinker.BlinkingState"/>
+    </packet>
+
+    <packet name="RadioChannels" id="7" level="1">
         <channel name="rfm69.Status"/>
         <channel name="rfm69.NumPacketsReceived"/>
         <channel name="rfm69.NumPacketsSent"/>

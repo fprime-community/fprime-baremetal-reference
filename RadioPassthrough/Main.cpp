@@ -35,13 +35,13 @@ void setup()
     Fw::Logger::logMsg("Program Started\n");
 
     // Object for communicating state to the reference topology
-    BaremetalReference::TopologyState inputs;
+    RadioPassthrough::TopologyState inputs;
     inputs.uartNumber = 0;
     inputs.uartBaud = 115200;
 
     // Setup, cycle, and teardown topology
-    BaremetalReference::setupTopology(inputs);
-    // BaremetalReference::teardownTopology(inputs);
+    RadioPassthrough::setupTopology(inputs);
+    // RadioPassthrough::teardownTopology(inputs);
 }
 
 void loop()

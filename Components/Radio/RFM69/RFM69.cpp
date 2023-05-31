@@ -53,17 +53,16 @@ namespace Radio {
     recv()
   {
     if (rfm69.available()) {
-      std::vector<U8> payload;
-      payload.resize(RH_RF69_MAX_MESSAGE_LEN);
-      U8 bytes_recv = payload.size();
+      U8 payload[RH_RF69_MAX_MESSAGE_LEN];
+      U8 bytes_recv = sizeof(payload);
 
-      if (rfm69.recv(payload.data(), &bytes_recv)) {
-        payload.resize(bytes_recv);
+      if (rfm69.recv(payload, &bytes_recv)) {
+        payload[bytes_recv] = 0;
         pkt_rx_count++;
 
-        this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload.data()));
+        this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload));
 
-        Fw::Buffer recvBuffer(payload.data(), payload.size());
+        Fw::Buffer recvBuffer(payload, sizeof(payload));
         if(this->isConnected_comDataOut_OutputPort(0))
         {
           this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
