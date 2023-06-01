@@ -40,14 +40,12 @@ namespace Radio {
   {
     if(len == 0)
     {
-      Fw::Logger::logMsg("msg zero length\n");
       return true;
     }
 
     rfm69.send(payload, len);
     if(!rfm69.waitPacketSent(1000))
     {
-      Fw::Logger::logMsg("Fail to send\n");
       return false;
     } 
 
@@ -76,8 +74,11 @@ namespace Radio {
 
         this->tlmWrite_NumPacketsReceived(pkt_rx_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
+
         return;
       }
+
+      return;
     }
 
     recvBuffer.setSize(0);
@@ -93,7 +94,6 @@ namespace Radio {
         Fw::Buffer &sendBuffer
     )
   {
-    Fw::Logger::logMsg("commData received\n");
     this->send(sendBuffer.getData(), sendBuffer.getSize());
     deallocate_out(0, sendBuffer);
 
@@ -106,10 +106,6 @@ namespace Radio {
         NATIVE_UINT_TYPE context
     )
   {
-    Fw::Buffer recvBuffer = this->allocate_out(0, RH_RF69_MAX_MESSAGE_LEN);
-
-    this->tlmWrite_Status(radio_state);
-
     if(radio_state == Fw::On::OFF)
     {
       FW_ASSERT(rfm69.init());
@@ -123,11 +119,13 @@ namespace Radio {
       }
 
       radio_state = Fw::On::ON;
-      Serial.println("RADIO INIT");
     }
     
+    Fw::Buffer recvBuffer = this->allocate_out(0, RH_RF69_MAX_MESSAGE_LEN);
     this->recv(recvBuffer);
     this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
+
+    this->tlmWrite_Status(radio_state);
   }
 
   // ----------------------------------------------------------------------

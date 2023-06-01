@@ -68,15 +68,13 @@ module BaremetalReference {
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      # rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[0] -> rfm69.run
-      rateGroup1.RateGroupMemberOut[1] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[2] -> blinker.run
-      
+      rateGroup1.RateGroupMemberOut[1] -> blinker.run
+      rateGroup2.RateGroupMemberOut[2] -> tlmSend.Run
+      rateGroup2.RateGroupMemberOut[3] -> systemResources.run
 
       # Rate group 2
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
-      rateGroup2.RateGroupMemberOut[0] -> systemResources.run
     }
 
     connections FaultProtection {
