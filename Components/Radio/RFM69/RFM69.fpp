@@ -42,7 +42,12 @@ module Radio {
         telemetry RSSI: I16
 
         @ Prints received packet payload
-        event PayloadMessage(msg: U32) \
+        event PayloadMessageTX(msg: U32) \
+            severity diagnostic \
+            format "Payload Size Sent: {}"
+
+        @ Prints received packet payload
+        event PayloadMessageRX(msg: U32) \
             severity diagnostic \
             format "Payload Size Recevied: {}"
 

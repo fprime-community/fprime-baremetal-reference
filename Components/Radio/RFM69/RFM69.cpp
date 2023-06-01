@@ -44,13 +44,14 @@ namespace Radio {
     }
 
     rfm69.send(payload, len);
-    if(!rfm69.waitPacketSent(1000))
+    if(!rfm69.waitPacketSent(500))
     {
       return false;
     } 
 
     pkt_tx_count++;
     this->tlmWrite_NumPacketsSent(pkt_tx_count);
+    this->log_DIAGNOSTIC_PayloadMessageTX(len);
 
     Fw::Success radioSuccess = Fw::Success::SUCCESS;
     if (this->isConnected_comStatus_OutputPort(0)) {
@@ -70,7 +71,7 @@ namespace Radio {
         recvBuffer.setSize(bytes_recv);
         pkt_rx_count++;
 
-        this->log_DIAGNOSTIC_PayloadMessage(recvBuffer.getSize());
+        this->log_DIAGNOSTIC_PayloadMessageRX(recvBuffer.getSize());
 
         this->tlmWrite_NumPacketsReceived(pkt_rx_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
@@ -94,7 +95,10 @@ namespace Radio {
         Fw::Buffer &sendBuffer
     )
   {
-    this->send(sendBuffer.getData(), sendBuffer.getSize());
+    if(!(this->send(sendBuffer.getData(), sendBuffer.getSize())))
+    {
+      radio_state = Fw::On::OFF;
+    }
     deallocate_out(0, sendBuffer);
 
     return Drv::SendStatus::SEND_OK;  // Always send ok to deframer as it does not handle this anyway

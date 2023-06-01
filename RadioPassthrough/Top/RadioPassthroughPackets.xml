@@ -4,10 +4,12 @@
 
     <packet name="CDH" id="1" level="1">
         <channel name="rateGroup1.RgMaxTime"/>
+        <channel name="rateGroup2.RgMaxTime"/>
     </packet>
 
     <packet name="CDHErrors" id="2" level="1">
         <channel name="rateGroup1.RgCycleSlips"/>
+        <channel name="rateGroup2.RgCycleSlips"/>
     </packet>
 
     <packet name="BlinkerChannels" id="6" level="1">

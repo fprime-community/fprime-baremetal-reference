@@ -6,6 +6,7 @@ module RadioPassthrough {
 
     enum Ports_RateGroups {
       rateGroup1
+      rateGroup2
     }
 
     enum Ports_StaticMemory {
@@ -24,6 +25,7 @@ module RadioPassthrough {
     instance gpioDriver
     instance rateDriver
     instance rateGroup1
+    instance rateGroup2
     instance rateGroupDriver
     instance rfm69
     instance staticMemory
@@ -61,8 +63,11 @@ module RadioPassthrough {
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
       rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
-      rateGroup1.RateGroupMemberOut[1] -> blinker.run
-      rateGroup1.RateGroupMemberOut[2] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[1] -> rfm69.run
+
+      # Rate group 2
+      rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
+      rateGroup2.RateGroupMemberOut[0] -> blinker.run
     }
 
     connections Downlink {
