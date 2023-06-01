@@ -41,7 +41,7 @@ namespace Radio {
       ~RFM69();
 
       bool send(const U8* payload, NATIVE_UINT_TYPE len);
-      void recv();
+      void recv(Fw::Buffer &recvBuffer);
 
     PRIVATE:
 
@@ -80,12 +80,9 @@ namespace Radio {
       );
 
       RH_RF69 rfm69;
-      bool is_in_reset;
       Fw::On radio_state;
       U16 pkt_rx_count;
       U16 pkt_tx_count;
-
-      bool m_reinitialize;
     };
 
 } // end namespace Radio

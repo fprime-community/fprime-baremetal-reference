@@ -51,7 +51,7 @@ module BaremetalReference {
   # Passive component instances
   # ----------------------------------------------------------------------
 
-  instance downlink: Svc.Framer base id 0x4000
+  instance framer: Svc.Framer base id 0x4000
 
   instance fatalAdapter: Svc.AssertFatalAdapter base id 0x4100
 
@@ -67,13 +67,13 @@ module BaremetalReference {
 
   instance textLogger: Svc.PassiveTextLogger base id 0x4600
 
-  instance uplink: Svc.Deframer base id 0x4700
+  instance deframer: Svc.Deframer base id 0x4700
 
   instance systemResources: Svc.SystemResources base id 0x4800
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4900
 
-  instance commDriver: Arduino.StreamDriver base id 0x4B00
+  # instance commDriver: Arduino.StreamDriver base id 0x4B00
 
   instance gpioDriver: Arduino.GpioDriver base id 0x4C00
 

@@ -6,13 +6,11 @@ module RadioPassthrough {
 
     enum Ports_RateGroups {
       rateGroup1
-      rateGroup2
     }
 
     enum Ports_StaticMemory {
       downlink
       uplink
-      deframing
     }
 
   topology RadioPassthrough {
@@ -22,59 +20,35 @@ module RadioPassthrough {
     # ----------------------------------------------------------------------
 
     instance blinker
-    instance tlmSend
     instance commDriver
-    instance commQueue
-    instance downlink
-    instance eventLogger
-    instance fatalAdapter
-    instance fatalHandler
     instance gpioDriver
     instance rateDriver
     instance rateGroup1
-    instance rateGroup2
     instance rateGroupDriver
     instance rfm69
     instance staticMemory
     instance streamCrossoverUplink
     instance streamCrossoverDownlink
-    instance systemResources
     instance systemTime
     instance textLogger
+
+    instance eventLogger
+    instance fatalAdapter
+    instance fatalHandler
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
     # ----------------------------------------------------------------------
 
-    event connections instance eventLogger
-
-    telemetry connections instance tlmSend
-
     text event connections instance textLogger
+
+    event connections instance eventLogger
 
     time connections instance systemTime
 
     # ----------------------------------------------------------------------
     # Direct graph specifiers
     # ----------------------------------------------------------------------
-
-    connections Downlink {
-
-      tlmSend.PktSend -> commQueue.comQueueIn[0]
-      eventLogger.PktSend -> commQueue.comQueueIn[1]
-
-      commQueue.comQueueSend -> downlink.comIn
-
-      downlink.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.downlink]
-      downlink.framedOut -> rfm69.comDataIn
-      commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
-
-      rfm69.comDataOut -> streamCrossoverDownlink.streamIn
-      streamCrossoverDownlink.streamOut -> commDriver.send
-
-      rfm69.comStatus -> commQueue.comStatusIn
-
-    }
 
     connections FaultProtection {
       eventLogger.FatalAnnounce -> fatalHandler.FatalReceive
@@ -87,13 +61,17 @@ module RadioPassthrough {
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
       rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
-      rateGroup1.RateGroupMemberOut[1] -> systemResources.run
-      rateGroup1.RateGroupMemberOut[2] -> blinker.run
-      rateGroup1.RateGroupMemberOut[3] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[1] -> blinker.run
+      rateGroup1.RateGroupMemberOut[2] -> rfm69.run
+    }
 
-      # Rate group 2
-      rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
-      rateGroup2.RateGroupMemberOut[0] -> tlmSend.Run
+    connections Downlink {
+
+      rfm69.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.downlink]
+      rfm69.comDataOut -> streamCrossoverDownlink.streamIn
+      streamCrossoverDownlink.streamOut -> commDriver.send
+      commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
+
     }
 
     connections Uplink {

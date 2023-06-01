@@ -22,19 +22,12 @@ using namespace RadioPassthrough;
 // initialization phase.
 Fw::MallocAllocator mallocator;
 
-// The reference topology uses the F´ packet protocol when communicating with the ground and therefore uses the F´
-// framing and deframing implementations.
-Svc::FprimeFraming framing;
-Svc::FprimeDeframing deframing;
-
 // The reference topology divides the incoming clock signal (1Hz) into sub-signals: 1Hz, 1/2Hz, and 1/4Hz
 NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 1000};
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
 NATIVE_INT_TYPE rateGroup1Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
-NATIVE_INT_TYPE rateGroup2Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
-// NATIVE_INT_TYPE rateGroup3Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
 
 // A number of constants are needed for construction of the topology. These are specified here.
 enum TopologyConstants {
@@ -57,21 +50,6 @@ void configureTopology() {
 
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
-    rateGroup2.configure(rateGroup2Context, FW_NUM_ARRAY_ELEMENTS(rateGroup2Context));
-
-    // Set up ComQueue
-    Svc::ComQueue::QueueConfigurationTable configurationTable;
-    // Channels, deep queue, low priority
-    configurationTable.entries[0] = {.depth = 5, .priority = 1};
-    // Events , highest-priority
-    configurationTable.entries[1] = {.depth = 10, .priority = 0};
-    // ???
-    configurationTable.entries[2] = {.depth = 1, .priority = 2};
-    // Allocation identifier is 0 as the MallocAllocator discards it
-    commQueue.configure(configurationTable, 0, mallocator);
-
-    // Framer and Deframer components need to be passed a protocol handler
-    downlink.setup(framing);
 
 }
 
@@ -85,14 +63,14 @@ void setupTopology(const TopologyState& state) {
     // Autocoded connection wiring. Function provided by autocoder.
     connectComponents();
     // Autocoded command registration. Function provided by autocoder.
-    regCommands();
+    // regCommands();
     // Project-specific component configuration. Function provided above. May be inlined, if desired.
     configureTopology();
     // Autocoded parameter loading. Function provided by autocoder.
     // loadParameters();
     // Autocoded task kick-off (active components). Function provided by autocoder.
     startTasks(state);
-    
+
     // Configure hardware rate driver
     rateDriver.configure(1);
 

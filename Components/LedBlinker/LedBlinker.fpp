@@ -25,7 +25,7 @@ module Components {
 
         @ Event logged when the LED turns on or off
         event LedState(on_off: Fw.On) \
-            severity activity low \
+            severity diagnostic \
             format "LED is {}"
 
         @ Event logged when the LED blink interval is updated

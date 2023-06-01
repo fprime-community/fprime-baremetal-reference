@@ -48,19 +48,7 @@ struct TopologyState {
  * ```
  */
 namespace PingEntries {
-    namespace tlmSend {
-        enum { WARN = 3, FATAL = 5 };
-    }
-    namespace cmdDisp {
-        enum { WARN = 3, FATAL = 5 };
-    }
-    namespace eventLogger {
-        enum { WARN = 3, FATAL = 5 };
-    }
     namespace rateGroup1 {
-        enum { WARN = 3, FATAL = 5 };
-    }
-    namespace rateGroup2 {
         enum { WARN = 3, FATAL = 5 };
     }
 }  // namespace PingEntries

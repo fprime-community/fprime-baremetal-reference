@@ -9,6 +9,8 @@
 #include <Components/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
 
+#include <Fw/Logger/Logger.hpp>
+
 namespace Radio {
 
   // ----------------------------------------------------------------------
@@ -22,8 +24,7 @@ namespace Radio {
         radio_state(Fw::On::OFF),
         pkt_rx_count(0),
         pkt_tx_count(0),
-        rfm69(RFM69_CS, RFM69_INT),
-        m_reinitialize(true)
+        rfm69(RFM69_CS, RFM69_INT)
   {
     
   }
@@ -37,41 +38,49 @@ namespace Radio {
   bool RFM69 ::
     send(const U8* payload, NATIVE_UINT_TYPE len)
   {
+    if(len == 0)
+    {
+      Fw::Logger::logMsg("msg zero length\n");
+      return true;
+    }
+
     rfm69.send(payload, len);
     if(!rfm69.waitPacketSent(1000))
     {
+      Fw::Logger::logMsg("Fail to send\n");
       return false;
     } 
 
     pkt_tx_count++;
     this->tlmWrite_NumPacketsSent(pkt_tx_count);
 
+    Fw::Success radioSuccess = Fw::Success::SUCCESS;
+    if (this->isConnected_comStatus_OutputPort(0)) {
+        this->comStatus_out(0, radioSuccess);
+    }
+
     return true;
   }
 
   void RFM69 ::
-    recv()
+    recv(Fw::Buffer &recvBuffer)
   {
     if (rfm69.available()) {
-      U8 payload[RH_RF69_MAX_MESSAGE_LEN];
-      U8 bytes_recv = sizeof(payload);
+      U8 bytes_recv = RH_RF69_MAX_MESSAGE_LEN;
 
-      if (rfm69.recv(payload, &bytes_recv)) {
-        payload[bytes_recv] = 0;
+      if (rfm69.recv(recvBuffer.getData(), &bytes_recv)) {
+        recvBuffer.setSize(bytes_recv);
         pkt_rx_count++;
 
-        this->log_WARNING_LO_PayloadMessage(reinterpret_cast<const char*>(payload));
-
-        Fw::Buffer recvBuffer(payload, sizeof(payload));
-        if(this->isConnected_comDataOut_OutputPort(0))
-        {
-          this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
-        }
+        this->log_DIAGNOSTIC_PayloadMessage(recvBuffer.getSize());
 
         this->tlmWrite_NumPacketsReceived(pkt_rx_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
+        return;
       }
     }
+
+    recvBuffer.setSize(0);
   }
 
   // ----------------------------------------------------------------------
@@ -84,13 +93,10 @@ namespace Radio {
         Fw::Buffer &sendBuffer
     )
   {
-    this->comDataOut_out(0, sendBuffer, Drv::RecvStatus::RECV_OK);
+    Fw::Logger::logMsg("commData received\n");
     this->send(sendBuffer.getData(), sendBuffer.getSize());
+    deallocate_out(0, sendBuffer);
 
-    Fw::Success comSuccess = Fw::Success::SUCCESS;
-    if (this->isConnected_comStatus_OutputPort(0)) {
-        this->comStatus_out(0, comSuccess);
-    }
     return Drv::SendStatus::SEND_OK;  // Always send ok to deframer as it does not handle this anyway
   }
 
@@ -100,6 +106,8 @@ namespace Radio {
         NATIVE_UINT_TYPE context
     )
   {
+    Fw::Buffer recvBuffer = this->allocate_out(0, RH_RF69_MAX_MESSAGE_LEN);
+
     this->tlmWrite_Status(radio_state);
 
     if(radio_state == Fw::On::OFF)
@@ -110,12 +118,16 @@ namespace Radio {
       rfm69.setTxPower(14, true);
 
       Fw::Success radioSuccess = Fw::Success::SUCCESS;
-      this->comStatus_out(0, radioSuccess);
+      if (this->isConnected_comStatus_OutputPort(0)) {
+          this->comStatus_out(0, radioSuccess);
+      }
 
       radio_state = Fw::On::ON;
+      Serial.println("RADIO INIT");
     }
     
-    this->recv();
+    this->recv(recvBuffer);
+    this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
   }
 
   // ----------------------------------------------------------------------

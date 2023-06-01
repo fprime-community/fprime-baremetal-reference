@@ -18,25 +18,10 @@ module RadioPassthrough {
     stack size Default.STACK_SIZE \
     priority 120
 
-  instance rateGroup2: Svc.ActiveRateGroup base id 0x0300 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 120
-
-  instance commQueue: Svc.ComQueue base id 0x0600 \
-      queue size 5 \
-      stack size Default.STACK_SIZE \
-      priority 100 \
-
   instance eventLogger: Svc.ActiveLogger base id 0x0B00 \
     queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 98
-
-  instance tlmSend: Svc.TlmChan base id 0x0C00 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 97
 
   # ----------------------------------------------------------------------
   # Queued component instances
@@ -45,8 +30,6 @@ module RadioPassthrough {
   # ----------------------------------------------------------------------
   # Passive component instances
   # ----------------------------------------------------------------------
-
-  instance downlink: Svc.Framer base id 0x4000
 
   instance fatalAdapter: Svc.AssertFatalAdapter base id 0x4100
 
@@ -61,8 +44,6 @@ module RadioPassthrough {
   instance staticMemory: Svc.StaticMemory base id 0x4500
 
   instance textLogger: Svc.PassiveTextLogger base id 0x4600
-
-  instance systemResources: Svc.SystemResources base id 0x4800
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4900
 

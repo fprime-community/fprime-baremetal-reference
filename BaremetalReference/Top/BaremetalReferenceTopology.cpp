@@ -67,8 +67,8 @@ void configureTopology() {
     commQueue.configure(configurationTable, 0, mallocator);
 
     // Framer and Deframer components need to be passed a protocol handler
-    downlink.setup(framing);
-    uplink.setup(deframing);
+    framer.setup(framing);
+    deframer.setup(deframing);
 
 }
 
@@ -94,7 +94,7 @@ void setupTopology(const TopologyState& state) {
     rateDriver.configure(1);
 
     // Configure Serial
-    commDriver.configure(&Serial);
+    // commDriver.configure(&Serial);
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
