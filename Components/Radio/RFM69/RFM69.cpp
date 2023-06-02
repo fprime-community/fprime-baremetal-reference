@@ -43,7 +43,19 @@ namespace Radio {
       return true;
     }
 
-    rfm69.send(payload, len);
+    while(len > RH_RF69_MAX_MESSAGE_LEN)
+    {
+      rfm69.send(payload, RH_RF69_MAX_MESSAGE_LEN);
+      rfm69.waitPacketSent(500);
+      delay(10);
+      payload += RH_RF69_MAX_MESSAGE_LEN;
+      len -= RH_RF69_MAX_MESSAGE_LEN;
+    }
+
+    if(!rfm69.send(payload, len))
+    {
+      Fw::Logger::logMsg("bad length: %d\n", len);
+    }
     if(!rfm69.waitPacketSent(500))
     {
       return false;
@@ -143,11 +155,8 @@ namespace Radio {
         const Fw::CmdStringArg& payload
     )
   {
+    // TODO
     auto cmdResp = Fw::CmdResponse::OK;
-    if(!(this->send(reinterpret_cast<const U8*>(payload.toChar()), payload.length())))
-    {
-      cmdResp = Fw::CmdResponse::VALIDATION_ERROR;
-    }
 
     this->cmdResponse_out(opCode, cmdSeq, cmdResp);
   }

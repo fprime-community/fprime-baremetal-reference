@@ -28,16 +28,8 @@ NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 10
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
-NATIVE_INT_TYPE rateGroup1Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
-NATIVE_INT_TYPE rateGroup2Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
-// NATIVE_INT_TYPE rateGroup3Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
-
-// A number of constants are needed for construction of the topology. These are specified here.
-enum TopologyConstants {
-    COM_BUFFER_SIZE          = 1024,
-    COM_BUFFER_COUNT         = 5,
-    BUFFER_MANAGER_ID = 200
-};
+NATIVE_INT_TYPE rateGroup1Context[Svc::PassiveRateGroup::CONNECTION_COUNT_MAX] = {};
+NATIVE_INT_TYPE rateGroup2Context[Svc::PassiveRateGroup::CONNECTION_COUNT_MAX] = {};
 
 /**
  * \brief configure/setup components in project-specific way
@@ -58,7 +50,7 @@ void configureTopology() {
     // Set up ComQueue
     Svc::ComQueue::QueueConfigurationTable configurationTable;
     // Channels, deep queue, low priority
-    configurationTable.entries[0] = {.depth = 5, .priority = 1};
+    configurationTable.entries[0] = {.depth = 25, .priority = 1};
     // Events , highest-priority
     configurationTable.entries[1] = {.depth = 10, .priority = 0};
     // ???

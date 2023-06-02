@@ -6,9 +6,9 @@
 // Provides access to autocoded functions
 #include <RadioPassthrough/Top/RadioPassthroughTopologyAc.hpp>
 #include <RadioPassthrough/Top/RadioPassthroughPacketsAc.hpp>
+#include <config/FppConstantsAc.hpp>
 
 // Necessary project-specified types
-#include <Fw/Types/MallocAllocator.hpp>
 #include <Os/Log.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
@@ -18,24 +18,13 @@
 // Allows easy reference to objects in FPP/autocoder required namespaces
 using namespace RadioPassthrough;
 
-// The reference topology uses a malloc-based allocator for components that need to allocate memory during the
-// initialization phase.
-Fw::MallocAllocator mallocator;
-
 // The reference topology divides the incoming clock signal (1Hz) into sub-signals: 1Hz, 1/2Hz, and 1/4Hz
 NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {1, 100};
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
-NATIVE_INT_TYPE rateGroup1Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
-NATIVE_INT_TYPE rateGroup2Context[Svc::ActiveRateGroup::CONNECTION_COUNT_MAX] = {};
-
-// A number of constants are needed for construction of the topology. These are specified here.
-enum TopologyConstants {
-    COM_BUFFER_SIZE          = 1024,
-    COM_BUFFER_COUNT         = 5,
-    BUFFER_MANAGER_ID = 200
-};
+NATIVE_INT_TYPE rateGroup1Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
+NATIVE_INT_TYPE rateGroup2Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
 
 /**
  * \brief configure/setup components in project-specific way

@@ -13,23 +13,13 @@ module BaremetalReference {
   # Active component instances
   # ----------------------------------------------------------------------
 
-  instance rateGroup1: Svc.ActiveRateGroup base id 0x0200 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 120
-
-  instance rateGroup2: Svc.ActiveRateGroup base id 0x0300 \
-    queue size Default.QUEUE_SIZE \
-    stack size Default.STACK_SIZE \
-    priority 120
-
   instance cmdDisp: Svc.CommandDispatcher base id 0x0500 \
     queue size Default.QUEUE_SIZE \
     stack size Default.STACK_SIZE \
     priority 101
 
   instance commQueue: Svc.ComQueue base id 0x0600 \
-      queue size 5 \
+      queue size 15 \
       stack size Default.STACK_SIZE \
       priority 100 \
 
@@ -39,7 +29,7 @@ module BaremetalReference {
     priority 98
 
   instance tlmSend: Svc.TlmChan base id 0x0C00 \
-    queue size Default.QUEUE_SIZE \
+    queue size 15 \
     stack size Default.STACK_SIZE \
     priority 97
 
@@ -50,6 +40,10 @@ module BaremetalReference {
   # ----------------------------------------------------------------------
   # Passive component instances
   # ----------------------------------------------------------------------
+
+  instance rateGroup1: Svc.PassiveRateGroup base id 0x0200
+
+  instance rateGroup2: Svc.PassiveRateGroup base id 0x0300
 
   instance framer: Svc.Framer base id 0x4000
 
@@ -73,13 +67,7 @@ module BaremetalReference {
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4900
 
-  # instance commDriver: Arduino.StreamDriver base id 0x4B00
-
   instance gpioDriver: Arduino.GpioDriver base id 0x4C00
-
-  instance streamCrossoverUplink: Drv.StreamCrossover base id 0x4D00
-
-  instance streamCrossoverDownlink: Drv.StreamCrossover base id 0x4E00
 
   instance blinker: Components.LedBlinker base id 0x6000
 

@@ -3,13 +3,15 @@
     <import_topology>RadioPassthrough/Top/RadioPassthroughTopologyAppAi.xml</import_topology>
 
     <packet name="CDH" id="1" level="1">
-        <channel name="rateGroup1.RgMaxTime"/>
-        <channel name="rateGroup2.RgMaxTime"/>
+        <channel name="rateGroup1.MaxCycleTime"/>
+        <channel name="rateGroup2.MaxCycleTime"/>
+        <channel name="rateGroup1.CycleTime"/>
+        <channel name="rateGroup2.CycleTime"/>
+        <channel name="rateGroup1.CycleCount"/>
+        <channel name="rateGroup2.CycleCount"/>
     </packet>
 
     <packet name="CDHErrors" id="2" level="1">
-        <channel name="rateGroup1.RgCycleSlips"/>
-        <channel name="rateGroup2.RgCycleSlips"/>
     </packet>
 
     <packet name="BlinkerChannels" id="6" level="1">

@@ -42,7 +42,7 @@ module RadioPassthrough {
     # Pattern graph specifiers
     # ----------------------------------------------------------------------
 
-    text event connections instance textLogger
+    # text event connections instance textLogger
 
     event connections instance eventLogger
 

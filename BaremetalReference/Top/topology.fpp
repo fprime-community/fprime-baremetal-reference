@@ -24,7 +24,6 @@ module BaremetalReference {
     instance blinker
     instance tlmSend
     instance cmdDisp
-    # instance commDriver
     instance commQueue
     instance framer
     instance eventLogger
@@ -37,8 +36,6 @@ module BaremetalReference {
     instance rateGroupDriver
     instance rfm69
     instance staticMemory
-    instance streamCrossoverUplink
-    instance streamCrossoverDownlink
     instance systemResources
     instance systemTime
     instance textLogger
@@ -71,10 +68,10 @@ module BaremetalReference {
       rateGroup1.RateGroupMemberOut[1] -> rfm69.run
       rateGroup1.RateGroupMemberOut[2] -> blinker.run
       rateGroup1.RateGroupMemberOut[0] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[3] -> systemResources.run
 
       # Rate group 2
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
+      rateGroup2.RateGroupMemberOut[0] -> systemResources.run
     }
 
     connections FaultProtection {
