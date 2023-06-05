@@ -22,6 +22,7 @@ module RadioPassthrough {
 
     instance blinker
     instance commDriver
+    instance eventLogger
     instance gpioDriver
     instance rateDriver
     instance rateGroup1
@@ -32,17 +33,10 @@ module RadioPassthrough {
     instance streamCrossoverUplink
     instance streamCrossoverDownlink
     instance systemTime
-    instance textLogger
-
-    instance eventLogger
-    instance fatalAdapter
-    instance fatalHandler
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
     # ----------------------------------------------------------------------
-
-    # text event connections instance textLogger
 
     event connections instance eventLogger
 
@@ -51,10 +45,6 @@ module RadioPassthrough {
     # ----------------------------------------------------------------------
     # Direct graph specifiers
     # ----------------------------------------------------------------------
-
-    connections FaultProtection {
-      eventLogger.FatalAnnounce -> fatalHandler.FatalReceive
-    }
 
     connections RateGroups {
       # Block driver

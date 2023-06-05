@@ -43,23 +43,24 @@ namespace Radio {
       return true;
     }
 
+    NATIVE_UINT_TYPE offset = 0;
     while(len > RH_RF69_MAX_MESSAGE_LEN)
     {
-      rfm69.send(payload, RH_RF69_MAX_MESSAGE_LEN);
-      rfm69.waitPacketSent(500);
+      rfm69.send(&payload[offset], RH_RF69_MAX_MESSAGE_LEN);
+      if(!rfm69.waitPacketSent(500))
+      {
+        return false;
+      } 
       delay(10);
-      payload += RH_RF69_MAX_MESSAGE_LEN;
+      offset += RH_RF69_MAX_MESSAGE_LEN;
       len -= RH_RF69_MAX_MESSAGE_LEN;
     }
 
-    if(!rfm69.send(payload, len))
-    {
-      Fw::Logger::logMsg("bad length: %d\n", len);
-    }
+    rfm69.send(&payload[offset], len);
     if(!rfm69.waitPacketSent(500))
     {
       return false;
-    } 
+    }
 
     pkt_tx_count++;
     this->tlmWrite_NumPacketsSent(pkt_tx_count);
