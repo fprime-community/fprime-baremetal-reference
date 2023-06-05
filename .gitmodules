@@ -2,7 +2,10 @@
 	path = fprime
 	url = https://github.com/nasa/fprime.git
 	branch = devel
-[submodule "arduino/fprime-arduino"]
-	path = arduino/fprime-arduino
-	url = https://github.com/SterlingPeet/fprime-arduino
+[submodule "lib/arduino/fprime-arduino"]
+	path = lib/arduino/fprime-arduino
+	url = https://github.com/SterlingPeet/fprime-arduino.git
 	branch = mbed-work
+[submodule "lib/arduino/RadioHead"]
+	path = lib/arduino/RadioHead
+	url = https://github.com/PaulStoffregen/RadioHead.git

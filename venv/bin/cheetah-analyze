@@ -1,6 +1,0 @@
-#!/home/ethan/jpl/projects/BareMetal/venv/bin/python
-
-from Cheetah import DirectiveAnalyzer
-
-if __name__ == '__main__':
-    DirectiveAnalyzer.main()
