@@ -6,11 +6,12 @@ module BaremetalReference {
 
     enum Ports_RateGroups {
       rateGroup1
+      rateGroup2
     }
 
     enum Ports_StaticMemory {
-      downlink
-      uplink
+      framer
+      deframer
       deframing
     }
 
@@ -23,22 +24,22 @@ module BaremetalReference {
     instance blinker
     instance tlmSend
     instance cmdDisp
-    instance commDriver
     instance commQueue
-    instance downlink
+    instance framer
     instance eventLogger
     instance fatalAdapter
     instance fatalHandler
     instance gpioDriver
     instance rateDriver
     instance rateGroup1
+    instance rateGroup2
     instance rateGroupDriver
     instance rfm69
     instance staticMemory
     instance systemResources
     instance systemTime
     instance textLogger
-    instance uplink
+    instance deframer
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
@@ -58,52 +59,51 @@ module BaremetalReference {
     # Direct graph specifiers
     # ----------------------------------------------------------------------
 
-    connections Downlink {
-
-      tlmSend.PktSend -> commQueue.comQueueIn[0]
-      eventLogger.PktSend -> commQueue.comQueueIn[1]
-
-      commQueue.comQueueSend -> downlink.comIn
-
-      downlink.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.downlink]
-      downlink.framedOut -> rfm69.comDataIn
-      commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
-
-      rfm69.drvDataOut -> commDriver.send
-      commDriver.ready -> rfm69.drvConnected
-      rfm69.comStatus -> commQueue.comStatusIn
-
-    }
-
-    connections FaultProtection {
-      eventLogger.FatalAnnounce -> fatalHandler.FatalReceive
-    }
-
     connections RateGroups {
       # Block driver
       rateDriver.CycleOut -> rateGroupDriver.CycleIn
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      rateGroup1.RateGroupMemberOut[0] -> commDriver.schedIn
-      rateGroup1.RateGroupMemberOut[1] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[2] -> systemResources.run
-      rateGroup1.RateGroupMemberOut[3] -> blinker.run
-      rateGroup1.RateGroupMemberOut[4] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[0] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[1] -> blinker.run
+
+      # Rate group 2
+      rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
+      rateGroup2.RateGroupMemberOut[0] -> systemResources.run
+      rateGroup2.RateGroupMemberOut[1] -> tlmSend.Run
+    }
+
+    connections FaultProtection {
+      eventLogger.FatalAnnounce -> fatalHandler.FatalReceive
+    }
+
+    connections Downlink {
+
+      tlmSend.PktSend -> commQueue.comQueueIn[0]
+      eventLogger.PktSend -> commQueue.comQueueIn[1]
+
+      commQueue.comQueueSend -> framer.comIn
+
+      framer.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.framer]
+      framer.framedOut -> rfm69.comDataIn
+      rfm69.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.framer]
+
+      rfm69.comStatus -> commQueue.comStatusIn
+
     }
 
     connections Uplink {
 
-      commDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.uplink]
-      commDriver.$recv -> rfm69.drvDataIn
-      rfm69.comDataOut -> uplink.framedIn
-      uplink.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.uplink]
+      rfm69.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframer]
+      rfm69.comDataOut -> deframer.framedIn
+      deframer.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframer]
 
-      uplink.comOut -> cmdDisp.seqCmdBuff
-      cmdDisp.seqCmdStatus -> uplink.cmdResponseIn
+      deframer.comOut -> cmdDisp.seqCmdBuff
+      cmdDisp.seqCmdStatus -> deframer.cmdResponseIn
 
-      uplink.bufferAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframing]
-      uplink.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframing]
+      deframer.bufferAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframing]
+      deframer.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframing]
 
     }
 

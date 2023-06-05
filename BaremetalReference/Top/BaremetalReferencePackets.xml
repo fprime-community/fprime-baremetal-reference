@@ -4,13 +4,15 @@
 
     <packet name="CDH" id="1" level="1">
         <channel name="cmdDisp.CommandsDispatched"/>
-        <channel name="rateGroup1.RgMaxTime"/>
-        <!-- Uncomment to use Svc::TlmPacketizer -->
-        <!-- <channel name="tlmSend.SendLevel"/> -->
+        <channel name="rateGroup1.MaxCycleTime"/>
+        <channel name="rateGroup2.MaxCycleTime"/>
+        <channel name="rateGroup1.CycleTime"/>
+        <channel name="rateGroup2.CycleTime"/>
+        <channel name="rateGroup1.CycleCount"/>
+        <channel name="rateGroup2.CycleCount"/>
     </packet>
 
     <packet name="CDHErrors" id="2" level="1">
-        <channel name="rateGroup1.RgCycleSlips"/>
     </packet>
 
     <packet name="SystemRes1" id="3" level="2">

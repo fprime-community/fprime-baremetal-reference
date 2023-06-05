@@ -4,10 +4,10 @@
 // \brief  cpp file for LedBlinker component implementation class
 // ======================================================================
 
-#include <BaremetalReference/LedBlinker/LedBlinker.hpp>
+#include <Components/LedBlinker/LedBlinker.hpp>
 #include <FpConfig.hpp>
 
-namespace BaremetalReference
+namespace Components
 {
 
   // ----------------------------------------------------------------------
@@ -89,7 +89,7 @@ namespace BaremetalReference
           this->gpioSet_out(0, (Fw::On::ON == new_state) ? Fw::Logic::HIGH : Fw::Logic::LOW);
         }
 
-        this->log_ACTIVITY_LO_LedState(new_state);
+        this->log_DIAGNOSTIC_LedState(new_state);
         this->state = new_state;
       }
 

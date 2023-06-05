@@ -1,6 +1,6 @@
 module Radio {
     @ Example radio component using the RFM69HCW radio
-    active component RFM69 {
+    passive component RFM69 {
 
         # ----------------------------------------------------------------------
         # Framer, deframer, and queue ports
@@ -16,17 +16,14 @@ module Radio {
         output port comDataOut: Drv.ByteStreamRecv
 
         # ----------------------------------------------------------------------
-        # Byte stream model
+        # Implementation ports
         # ----------------------------------------------------------------------
 
-        @ Ready signal when driver is connected
-        sync input port drvConnected: Drv.ByteStreamReady
+        @ Allows for deallocation of XBee command communications
+        output port deallocate: Fw.BufferSend
 
-        @ Data received from driver
-        sync input port drvDataIn: Drv.ByteStreamRecv
-
-        @ Data going to the underlying driver
-        output port drvDataOut: Drv.ByteStreamSend
+        @ Allows for allocation of buffers
+        output port allocate: Fw.BufferGet
 
         # ----------------------------------------------------------------------
         # Telemetry
@@ -45,9 +42,14 @@ module Radio {
         telemetry RSSI: I16
 
         @ Prints received packet payload
-        event PayloadMessage(msg: string size 60) \
-            severity warning low \
-            format "Payload: {}"
+        event PayloadMessageTX(msg: U32) \
+            severity diagnostic \
+            format "Payload Size Sent: {}"
+
+        @ Prints received packet payload
+        event PayloadMessageRX(msg: U32) \
+            severity diagnostic \
+            format "Payload Size Recevied: {}"
 
         # ----------------------------------------------------------------------
         # Special ports
@@ -64,7 +66,7 @@ module Radio {
         # ----------------------------------------------------------------------
 
         @ Command to send packet
-        async command SEND_PACKET(
+        sync command SEND_PACKET(
                 payload: string size 60
         )
 

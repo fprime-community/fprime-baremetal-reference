@@ -7,9 +7,9 @@
 
 set(SOURCE_FILES
   "${CMAKE_CURRENT_LIST_DIR}/instances.fpp"
-  "${CMAKE_CURRENT_LIST_DIR}/BaremetalReferencePackets.xml"
+  "${CMAKE_CURRENT_LIST_DIR}/RadioPassthroughPackets.xml"
   "${CMAKE_CURRENT_LIST_DIR}/topology.fpp"
-  "${CMAKE_CURRENT_LIST_DIR}/BaremetalReferenceTopology.cpp"
+  "${CMAKE_CURRENT_LIST_DIR}/RadioPassthroughTopology.cpp"
 )
 set(MOD_DEPS
   Fw/Logger

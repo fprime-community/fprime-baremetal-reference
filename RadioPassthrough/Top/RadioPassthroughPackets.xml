@@ -1,0 +1,33 @@
+<packets name="RadioPassthroughPackets" namespace="RadioPassthrough" size="111">
+
+    <import_topology>RadioPassthrough/Top/RadioPassthroughTopologyAppAi.xml</import_topology>
+
+    <packet name="CDH" id="1" level="1">
+        <channel name="rateGroup1.MaxCycleTime"/>
+        <channel name="rateGroup2.MaxCycleTime"/>
+        <channel name="rateGroup1.CycleTime"/>
+        <channel name="rateGroup2.CycleTime"/>
+        <channel name="rateGroup1.CycleCount"/>
+        <channel name="rateGroup2.CycleCount"/>
+    </packet>
+
+    <packet name="CDHErrors" id="2" level="1">
+    </packet>
+
+    <packet name="BlinkerChannels" id="6" level="1">
+        <channel name="blinker.LedTransitions"/>
+        <channel name="blinker.BlinkingState"/>
+    </packet>
+
+    <packet name="RadioChannels" id="7" level="1">
+        <channel name="rfm69.Status"/>
+        <channel name="rfm69.NumPacketsReceived"/>
+        <channel name="rfm69.NumPacketsSent"/>
+        <channel name="rfm69.RSSI"/>
+    </packet>
+
+    <!-- Ignored packets -->
+
+    <ignore>
+    </ignore>
+</packets>

@@ -2,4 +2,6 @@
 # reused easily between deployments, but also by other projects.
 
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/lib")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/Components")
 add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/BaremetalReference")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/RadioPassthrough")

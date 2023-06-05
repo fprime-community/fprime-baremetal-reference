@@ -7,9 +7,9 @@
 #ifndef LedBlinker_HPP
 #define LedBlinker_HPP
 
-#include "BaremetalReference/LedBlinker/LedBlinkerComponentAc.hpp"
+#include "Components/LedBlinker/LedBlinkerComponentAc.hpp"
 
-namespace BaremetalReference {
+namespace Components {
 
   class LedBlinker :
     public LedBlinkerComponentBase
