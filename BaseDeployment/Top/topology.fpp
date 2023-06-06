@@ -1,4 +1,4 @@
-module BaremetalReference {
+module BaseDeployment {
 
   # ----------------------------------------------------------------------
   # Symbolic constants for port numbers
@@ -6,7 +6,6 @@ module BaremetalReference {
 
     enum Ports_RateGroups {
       rateGroup1
-      rateGroup2
     }
 
     enum Ports_StaticMemory {
@@ -15,7 +14,7 @@ module BaremetalReference {
       deframing
     }
 
-  topology BaremetalReference {
+  topology BaseDeployment {
 
     # ----------------------------------------------------------------------
     # Instances used in the topology
@@ -23,7 +22,7 @@ module BaremetalReference {
 
     instance blinker
     instance cmdDisp
-    instance commQueue
+    instance commDriver
     instance deframer
     instance eventLogger
     instance fatalAdapter
@@ -32,9 +31,7 @@ module BaremetalReference {
     instance gpioDriver
     instance rateDriver
     instance rateGroup1
-    instance rateGroup2
     instance rateGroupDriver
-    instance rfm69
     instance staticMemory
     instance systemResources
     instance systemTime
@@ -65,13 +62,10 @@ module BaremetalReference {
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      rateGroup1.RateGroupMemberOut[0] -> rfm69.run
-      rateGroup1.RateGroupMemberOut[1] -> blinker.run
-
-      # Rate group 2
-      rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
-      rateGroup2.RateGroupMemberOut[0] -> systemResources.run
-      rateGroup2.RateGroupMemberOut[1] -> tlmSend.Run
+      rateGroup1.RateGroupMemberOut[0] -> blinker.run
+      rateGroup1.RateGroupMemberOut[1] -> commDriver.schedIn
+      rateGroup1.RateGroupMemberOut[2] -> tlmSend.Run
+      rateGroup1.RateGroupMemberOut[3] -> systemResources.run
     }
 
     connections FaultProtection {
@@ -80,23 +74,20 @@ module BaremetalReference {
 
     connections Downlink {
 
-      tlmSend.PktSend -> commQueue.comQueueIn[0]
-      eventLogger.PktSend -> commQueue.comQueueIn[1]
-
-      commQueue.comQueueSend -> framer.comIn
+      tlmSend.PktSend -> framer.comIn
+      eventLogger.PktSend -> framer.comIn
 
       framer.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.framer]
-      framer.framedOut -> rfm69.comDataIn
-      rfm69.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.framer]
+      framer.framedOut -> commDriver.send
 
-      rfm69.comStatus -> commQueue.comStatusIn
+      commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.framer]
 
     }
 
     connections Uplink {
 
-      rfm69.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframer]
-      rfm69.comDataOut -> deframer.framedIn
+      commDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframer]
+      commDriver.$recv -> deframer.framedIn
       deframer.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframer]
 
       deframer.comOut -> cmdDisp.seqCmdBuff
@@ -107,7 +98,7 @@ module BaremetalReference {
 
     }
 
-    connections BaremetalReference {
+    connections BaseDeployment {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
     }
