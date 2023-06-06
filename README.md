@@ -69,6 +69,8 @@ Add udev rules. Save the `.rules` files located in `./docs/rules` into `/etc/ude
 $ sudo cp docs/rules/* /etc/udev/rules.d/
 ```
 
+### Generate/Build Application
+
 In order to build any other F´ application, we first need to generate a build directory. 
 This can be done with the following commands:
 
@@ -86,7 +88,7 @@ These devices have been tested:
   - teensy41
   - featherM0
 
-# Building and Running the BaseDeployment Application
+# Programming and Running the BaseDeployment Application
 The goal is to be able to establish a connection bewteen a microcontroller and fprime-gds. From there, you will be able to enable/disable the LED blinking as well as adjusting the blinking interval. This base deployment utilizes minimal F' components and an LED blinker component.
 
 ## Uploading hex file for the Teensy
@@ -110,7 +112,7 @@ Note:
   - If you have more than one device connected, or if you are using a different OS, `/dev/ttyACM0` may differ for your system.
   - Change `YOUR_DEVICE` to the respective device. (i.e. `teensy41`, `featherM0`)
 
-# Building and Running the BaremetalReference and RadioPassthrough Applications
+# Programming and Running the BaremetalReference and RadioPassthrough Applications
 You will need two microcontrollers: one that will run the BaremetalReference and the other for the RadioPassthrough. The goal is to command the BaremetalReference deployment wirelessly from the RadioPassthrough deployment using a radio and fprime-gds. The BaremetalReference deployment is a reference of components that spacecrafts are expected to have, such as the LED blinker and radio components.
 
 ## Uploading hex file for the Teensy
