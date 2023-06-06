@@ -21,10 +21,10 @@ namespace Radio {
     RFM69(
         const char *const compName
     ) : RFM69ComponentBase(compName),
+        rfm69(RFM69_CS, RFM69_INT),
         radio_state(Fw::On::OFF),
         pkt_rx_count(0),
-        pkt_tx_count(0),
-        rfm69(RFM69_CS, RFM69_INT)
+        pkt_tx_count(0)
   {
     
   }
