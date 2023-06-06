@@ -6,6 +6,7 @@
 // Provides access to autocoded functions
 #include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
 #include <BaremetalReference/Top/BaremetalReferencePacketsAc.hpp>
+#include <config/FppConstantsAc.hpp>
 
 // Necessary project-specified types
 #include <Fw/Types/MallocAllocator.hpp>
@@ -28,8 +29,8 @@ NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 10
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
-NATIVE_INT_TYPE rateGroup1Context[Svc::PassiveRateGroup::CONNECTION_COUNT_MAX] = {};
-NATIVE_INT_TYPE rateGroup2Context[Svc::PassiveRateGroup::CONNECTION_COUNT_MAX] = {};
+NATIVE_INT_TYPE rateGroup1Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
+NATIVE_INT_TYPE rateGroup2Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
 
 /**
  * \brief configure/setup components in project-specific way
@@ -84,9 +85,6 @@ void setupTopology(const TopologyState& state) {
     
     // Configure hardware rate driver
     rateDriver.configure(1);
-
-    // Configure Serial
-    // commDriver.configure(&Serial);
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
