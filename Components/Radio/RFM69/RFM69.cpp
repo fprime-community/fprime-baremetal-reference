@@ -38,11 +38,6 @@ namespace Radio {
   bool RFM69 ::
     send(const U8* payload, NATIVE_UINT_TYPE len)
   {
-    if(len == 0)
-    {
-      return true;
-    }
-
     NATIVE_UINT_TYPE offset = 0;
     while(len > RH_RF69_MAX_MESSAGE_LEN)
     {
@@ -51,7 +46,7 @@ namespace Radio {
       {
         return false;
       } 
-      delay(10);
+      delay(1);
       offset += RH_RF69_MAX_MESSAGE_LEN;
       len -= RH_RF69_MAX_MESSAGE_LEN;
     }
@@ -108,7 +103,7 @@ namespace Radio {
         Fw::Buffer &sendBuffer
     )
   {
-    if(!(this->send(sendBuffer.getData(), sendBuffer.getSize())))
+    if(sendBuffer.getSize() > 0 && !(this->send(sendBuffer.getData(), sendBuffer.getSize())))
     {
       radio_state = Fw::On::OFF;
     }
