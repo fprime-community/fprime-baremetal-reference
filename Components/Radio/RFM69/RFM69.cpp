@@ -21,10 +21,10 @@ namespace Radio {
     RFM69(
         const char *const compName
     ) : RFM69ComponentBase(compName),
+        rfm69(RFM69_CS, RFM69_INT),
         radio_state(Fw::On::OFF),
         pkt_rx_count(0),
-        pkt_tx_count(0),
-        rfm69(RFM69_CS, RFM69_INT)
+        pkt_tx_count(0)
   {
     
   }
@@ -38,11 +38,6 @@ namespace Radio {
   bool RFM69 ::
     send(const U8* payload, NATIVE_UINT_TYPE len)
   {
-    if(len == 0)
-    {
-      return true;
-    }
-
     NATIVE_UINT_TYPE offset = 0;
     while(len > RH_RF69_MAX_MESSAGE_LEN)
     {
@@ -51,7 +46,7 @@ namespace Radio {
       {
         return false;
       } 
-      delay(10);
+      delay(1);
       offset += RH_RF69_MAX_MESSAGE_LEN;
       len -= RH_RF69_MAX_MESSAGE_LEN;
     }
@@ -108,7 +103,7 @@ namespace Radio {
         Fw::Buffer &sendBuffer
     )
   {
-    if(!(this->send(sendBuffer.getData(), sendBuffer.getSize())))
+    if(sendBuffer.getSize() > 0 && !(this->send(sendBuffer.getData(), sendBuffer.getSize())))
     {
       radio_state = Fw::On::OFF;
     }

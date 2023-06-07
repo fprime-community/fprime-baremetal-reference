@@ -1,11 +1,11 @@
 // ======================================================================
-// \title  BaremetalReferenceTopology.cpp
+// \title  BaseDeploymentTopology.cpp
 // \brief cpp file containing the topology instantiation code
 //
 // ======================================================================
 // Provides access to autocoded functions
-#include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
-#include <BaremetalReference/Top/BaremetalReferencePacketsAc.hpp>
+#include <BaseDeployment/Top/BaseDeploymentTopologyAc.hpp>
+#include <BaseDeployment/Top/BaseDeploymentPacketsAc.hpp>
 #include <config/FppConstantsAc.hpp>
 
 // Necessary project-specified types
@@ -13,7 +13,7 @@
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
 // Allows easy reference to objects in FPP/autocoder required namespaces
-using namespace BaremetalReference;
+using namespace BaseDeployment;
 
 // The reference topology uses a malloc-based allocator for components that need to allocate memory during the
 // initialization phase.
@@ -30,7 +30,6 @@ NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 10
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
 NATIVE_INT_TYPE rateGroup1Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
-NATIVE_INT_TYPE rateGroup2Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
 
 /**
  * \brief configure/setup components in project-specific way
@@ -46,18 +45,6 @@ void configureTopology() {
 
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
-    rateGroup2.configure(rateGroup2Context, FW_NUM_ARRAY_ELEMENTS(rateGroup2Context));
-
-    // Set up ComQueue
-    Svc::ComQueue::QueueConfigurationTable configurationTable;
-    // Channels, deep queue, low priority
-    configurationTable.entries[0] = {.depth = 25, .priority = 1};
-    // Events , highest-priority
-    configurationTable.entries[1] = {.depth = 10, .priority = 0};
-    // ???
-    configurationTable.entries[2] = {.depth = 1, .priority = 2};
-    // Allocation identifier is 0 as the MallocAllocator discards it
-    commQueue.configure(configurationTable, 0, mallocator);
 
     // Framer and Deframer components need to be passed a protocol handler
     framer.setup(framing);
@@ -65,8 +52,8 @@ void configureTopology() {
 
 }
 
-// Public functions for use in main program are namespaced with deployment name BaremetalReference
-namespace BaremetalReference {
+// Public functions for use in main program are namespaced with deployment name BaseDeployment
+namespace BaseDeployment {
 void setupTopology(const TopologyState& state) {
     // Autocoded initialization. Function provided by autocoder.
     initComponents(state);
@@ -82,14 +69,10 @@ void setupTopology(const TopologyState& state) {
     // loadParameters();
     // Autocoded task kick-off (active components). Function provided by autocoder.
     startTasks(state);
-    
-    // Configure hardware rate driver
+
     rateDriver.configure(1);
-
-    // Configure GPIO pins
-    gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
-
-    // Start hardware rate driver
+    commDriver.configure(&Serial);
+    gpioDriver.open(13, Arduino::GpioDriver::GpioDirection::OUT);
     rateDriver.start();
 }
 
@@ -99,4 +82,4 @@ void teardownTopology(const TopologyState& state) {
     freeThreads(state);
 
 }
-};  // namespace BaremetalReference
+};  // namespace BaseDeployment
