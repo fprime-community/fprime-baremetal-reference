@@ -13,6 +13,8 @@
 #include <Os/Log.hpp>
 #include <Arduino/Os/StreamLog.hpp>
 
+#include <Wire.h>
+
 // Instantiate a system logger that will handle Fw::Logger::logMsg calls
 Os::Log logger;
 
@@ -29,8 +31,13 @@ Os::TaskRunner taskrunner;
  */
 void setup()
 {
+    // Setup Serial
     Serial.begin(115200);
     Os::setArduinoStreamLogHandler(&Serial);
+
+    // Setup I2C
+    Wire.begin();
+
     delay(1000);
     Fw::Logger::logMsg("Program Started\n");
 

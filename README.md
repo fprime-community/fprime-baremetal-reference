@@ -63,6 +63,11 @@ $ arduino-cli core install teensy:avr
 $ arduino-cli core install adafruit:samd
 ```
 
+### Install external libraries
+```
+$ arduino-cli lib install "SparkFun MPU-9250 9 DOF IMU Breakout"
+```
+
 ### Adding udev rules for Linux only
 Add udev rules. Save the `.rules` files located in `./docs/rules` into `/etc/udev/rules.d/`.
 ```

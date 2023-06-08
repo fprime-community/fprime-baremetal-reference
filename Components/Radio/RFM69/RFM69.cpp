@@ -4,8 +4,6 @@
 // \brief  cpp file for RFM69 component implementation class
 // ======================================================================
 
-#include <vector>
-
 #include <Components/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
 
@@ -138,23 +136,6 @@ namespace Radio {
     this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
 
     this->tlmWrite_Status(radio_state);
-  }
-
-  // ----------------------------------------------------------------------
-  // Command handler implementations
-  // ----------------------------------------------------------------------
-
-  void RFM69 ::
-    SEND_PACKET_cmdHandler(
-        const FwOpcodeType opCode,
-        const U32 cmdSeq,
-        const Fw::CmdStringArg& payload
-    )
-  {
-    // TODO
-    auto cmdResp = Fw::CmdResponse::OK;
-
-    this->cmdResponse_out(opCode, cmdSeq, cmdResp);
   }
 
 } // end namespace Radio

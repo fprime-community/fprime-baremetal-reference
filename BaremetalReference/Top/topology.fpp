@@ -30,6 +30,8 @@ module BaremetalReference {
     instance fatalHandler
     instance framer
     instance gpioDriver
+    instance i2cDriver
+    instance imu
     instance rateDriver
     instance rateGroup1
     instance rateGroup2
@@ -72,6 +74,7 @@ module BaremetalReference {
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
       rateGroup2.RateGroupMemberOut[0] -> systemResources.run
       rateGroup2.RateGroupMemberOut[1] -> tlmSend.Run
+      rateGroup2.RateGroupMemberOut[2] -> imu.run
     }
 
     connections FaultProtection {
@@ -105,6 +108,11 @@ module BaremetalReference {
       deframer.bufferAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframing]
       deframer.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframing]
 
+    }
+
+    connections I2c {
+      imu.read -> i2cDriver.read
+      imu.write -> i2cDriver.write
     }
 
     connections BaremetalReference {

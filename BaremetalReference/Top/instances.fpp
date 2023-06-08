@@ -67,10 +67,14 @@ module BaremetalReference {
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4900
 
-  instance gpioDriver: Arduino.GpioDriver base id 0x4C00
+  instance gpioDriver: Arduino.GpioDriver base id 0x5000
 
-  instance blinker: Components.LedBlinker base id 0x6000
+  instance i2cDriver: Arduino.I2cDriver base id 0x5100
 
-  instance rfm69: Radio.RFM69 base id 0x6100
+  instance blinker: Components.LedBlinker base id 0x10000
+
+  instance rfm69: Radio.RFM69 base id 0x10100
+
+  instance imu: Sensors.IMU_MPU9250 base id 0x10200
 
 }

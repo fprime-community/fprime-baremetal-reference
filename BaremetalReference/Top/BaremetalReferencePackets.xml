@@ -59,6 +59,11 @@
         <channel name="rfm69.RSSI"/>
     </packet>
 
+    <packet name="SensorChannels" id="8" level="1">
+        <channel name="imu.accelerometer"/>
+        <channel name="imu.gyroscope"/>
+    </packet>
+
     <!-- Ignored packets -->
 
     <ignore>
