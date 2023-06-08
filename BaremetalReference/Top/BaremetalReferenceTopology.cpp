@@ -89,6 +89,12 @@ void setupTopology(const TopologyState& state) {
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
 
+    // Configure I2C driver
+    i2cDriver.open(&Wire);
+
+    // Configure IMU
+    imu.setup(Sensors::IMU_MPU9250::I2cDevAddr::AD0_0);
+
     // Start hardware rate driver
     rateDriver.start();
 }

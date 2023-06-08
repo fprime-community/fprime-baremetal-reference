@@ -34,10 +34,6 @@ void setup()
     // Setup Serial
     Serial.begin(115200);
     Os::setArduinoStreamLogHandler(&Serial);
-
-    // Setup I2C
-    Wire.begin();
-
     delay(1000);
     Fw::Logger::logMsg("Program Started\n");
 
