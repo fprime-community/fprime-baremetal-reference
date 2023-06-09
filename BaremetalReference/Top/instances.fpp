@@ -69,6 +69,8 @@ module BaremetalReference {
 
   instance gpioDriver: Arduino.GpioDriver base id 0x5000
 
+  instance gpioRadioReset: Arduino.GpioDriver base id 0x5010
+
   instance i2cDriver: Arduino.I2cDriver base id 0x5100
 
   instance blinker: Components.LedBlinker base id 0x10000

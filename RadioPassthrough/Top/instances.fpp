@@ -48,14 +48,16 @@ module RadioPassthrough {
 
   instance commDriver: Arduino.StreamDriver base id 0x4B00
   
-  instance gpioDriver: Arduino.GpioDriver base id 0x4C00
-
   instance streamCrossoverUplink: Drv.StreamCrossover base id 0x4D00
 
   instance streamCrossoverDownlink: Drv.StreamCrossover base id 0x4E00
 
-  instance blinker: Components.LedBlinker base id 0x6000
+  instance gpioDriver: Arduino.GpioDriver base id 0x5000
 
-  instance rfm69: Radio.RFM69 base id 0x6100
+  instance gpioRadioReset: Arduino.GpioDriver base id 0x5010
+
+  instance blinker: Components.LedBlinker base id 0x10000
+
+  instance rfm69: Radio.RFM69 base id 0x10100
 
 }

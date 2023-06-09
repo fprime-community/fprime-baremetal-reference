@@ -7,8 +7,6 @@
 #include <Components/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
 
-#include <Fw/Logger/Logger.hpp>
-
 namespace Radio {
 
   // ----------------------------------------------------------------------
@@ -36,6 +34,8 @@ namespace Radio {
   bool RFM69 ::
     send(const U8* payload, NATIVE_UINT_TYPE len)
   {
+    FW_ASSERT(payload != nullptr);
+
     NATIVE_UINT_TYPE offset = 0;
     while(len > RH_RF69_MAX_MESSAGE_LEN)
     {
@@ -116,11 +116,24 @@ namespace Radio {
         NATIVE_UINT_TYPE context
     )
   {
+    this->tlmWrite_Status(radio_state);
+
     if(radio_state == Fw::On::OFF)
     {
-      FW_ASSERT(rfm69.init());
-      FW_ASSERT(rfm69.setFrequency(RFM69_FREQ));
+      if(this->isConnected_gpioReset_OutputPort(0))
+      {
+        this->gpioReset_out(0, Fw::Logic::HIGH);
+        delay(10);
+        this->gpioReset_out(0, Fw::Logic::LOW);
+        delay(10);
+      }
+      
+      if(!rfm69.init())
+      {
+        return;
+      }
 
+      rfm69.setFrequency(RFM69_FREQ);
       rfm69.setTxPower(14, true);
 
       Fw::Success radioSuccess = Fw::Success::SUCCESS;
@@ -134,8 +147,6 @@ namespace Radio {
     Fw::Buffer recvBuffer = this->allocate_out(0, RH_RF69_MAX_MESSAGE_LEN);
     this->recv(recvBuffer);
     this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
-
-    this->tlmWrite_Status(radio_state);
   }
 
 } // end namespace Radio

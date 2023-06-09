@@ -59,7 +59,7 @@ module Radio {
         sync input port run: Svc.Sched
 
         @ Port sending calls to the GPIO driver
-        output port gpioSet: Drv.GpioWrite
+        output port gpioReset: Drv.GpioWrite
 
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #

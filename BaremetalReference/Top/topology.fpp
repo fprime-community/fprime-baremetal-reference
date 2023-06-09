@@ -30,6 +30,7 @@ module BaremetalReference {
     instance fatalHandler
     instance framer
     instance gpioDriver
+    instance gpioRadioReset
     instance i2cDriver
     instance imu
     instance rateDriver
@@ -74,7 +75,7 @@ module BaremetalReference {
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
       rateGroup2.RateGroupMemberOut[0] -> systemResources.run
       rateGroup2.RateGroupMemberOut[1] -> tlmSend.Run
-      rateGroup2.RateGroupMemberOut[2] -> imu.run
+      # rateGroup2.RateGroupMemberOut[2] -> imu.run
     }
 
     connections FaultProtection {
@@ -118,6 +119,7 @@ module BaremetalReference {
     connections BaremetalReference {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
+      rfm69.gpioReset -> gpioRadioReset.gpioWrite
     }
 
   }

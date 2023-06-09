@@ -88,6 +88,7 @@ void setupTopology(const TopologyState& state) {
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
+    gpioRadioReset.open(4, Arduino::GpioDriver::GpioDirection::OUT);
 
     // Configure I2C driver
     i2cDriver.open(&Wire);

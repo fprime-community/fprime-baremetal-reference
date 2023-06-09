@@ -9,6 +9,7 @@
 
 #include "Components/Radio/RFM69/RFM69ComponentAc.hpp"
 #include "RH_RF69.h"
+#include <FprimeArduino.hpp>
 
 namespace Radio {
 
