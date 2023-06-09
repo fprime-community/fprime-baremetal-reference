@@ -26,6 +26,38 @@ module Sensors {
         telemetry gyroscope: imuTlm id 1 update always format "{} deg/s"
 
         # ----------------------------------------------------------------------
+        # Events
+        # ----------------------------------------------------------------------
+
+        @ Error occurred when requesting telemetry
+        event TelemetryError(
+            status: Drv.I2cStatus @< the status value returned
+        ) \
+        severity warning high \
+        format "Telemetry request failed with status {}"
+
+        @ Configuration failed
+        event SetUpConfigError(
+            writeStatus: Drv.I2cStatus @< the status of writing data to device
+        ) \
+        severity warning high \
+        format "Setup Error: Write status failed with code {}"
+
+        @ Device was not taken out of sleep mode
+        event PowerModeError(
+            writeStatus: Drv.I2cStatus @< the status of writing data to device
+        ) \
+        severity warning high \
+        format "Setup Error: Power mode failed to set up with write code {}"
+
+        @ Report power state
+        event PowerStatus(
+            powerStatus: PowerState @< power state of device
+        ) \
+        severity activity high \
+        format "The device has been turned {}"
+
+        # ----------------------------------------------------------------------
         # Special ports
         # ----------------------------------------------------------------------
 

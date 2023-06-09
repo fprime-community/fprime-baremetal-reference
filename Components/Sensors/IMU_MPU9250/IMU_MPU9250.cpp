@@ -46,7 +46,7 @@ namespace Sensors {
 
     Drv::I2cStatus status = write_out(0, m_i2cDevAddress, buffer);
     if (status != Drv::I2cStatus::I2C_OK) {
-        // this->log_WARNING_HI_SetUpConfigError(status);
+        this->log_WARNING_HI_SetUpConfigError(status);
     }
 
     // Set accel range to +- 2g
@@ -55,7 +55,7 @@ namespace Sensors {
     status =this-> write_out(0, m_i2cDevAddress, buffer);
 
     if (status != Drv::I2cStatus::I2C_OK) {
-        // this->log_WARNING_HI_SetUpConfigError(status);
+        this->log_WARNING_HI_SetUpConfigError(status);
     }
   }
 
@@ -112,7 +112,7 @@ namespace Sensors {
         Sensors::imuTlm vector = deserializeVector(buffer, accelScaleFactor);
         this->tlmWrite_accelerometer(vector);
     } else {
-        // this->log_WARNING_HI_TelemetryError(status);
+        this->log_WARNING_HI_TelemetryError(status);
     }
   }
 
@@ -130,7 +130,7 @@ namespace Sensors {
           Sensors::imuTlm vector = deserializeVector(buffer, gyroScaleFactor);
           this->tlmWrite_gyroscope(vector);
       } else {
-          // this->log_WARNING_HI_TelemetryError(status);
+          this->log_WARNING_HI_TelemetryError(status);
       }
   }
 
