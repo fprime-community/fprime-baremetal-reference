@@ -17,7 +17,9 @@ namespace Sensors {
   IMU_MPU9250 ::
     IMU_MPU9250(
         const char *const compName
-    ) : IMU_MPU9250ComponentBase(compName)
+    ) : IMU_MPU9250ComponentBase(compName),
+        m_i2cDevAddress(I2cDevAddr::AD0_0),
+        m_power(Fw::On::OFF)
   {
 
   }
@@ -144,7 +146,7 @@ namespace Sensors {
         NATIVE_UINT_TYPE context
     )
   {
-    if(m_power == PowerState::ON)
+    if(m_power == Fw::On::ON)
     {
       updateAccel();
       updateGyro();
@@ -159,25 +161,25 @@ namespace Sensors {
     PowerSwitch_cmdHandler(
         const FwOpcodeType opCode,
         const U32 cmdSeq,
-        Sensors::PowerState powerState
+        Fw::On powerState
     )
   {
     U8 data[IMU_REG_SIZE_BYTES * 2];
     Fw::Buffer buffer(data, sizeof data);
 
     // Check if already on/off
-    if (powerState.e == m_power) {
+    if (powerState == m_power) {
         return;
     }
 
     data[0] = POWER_MGMT_ADDR;
-    data[1] = (powerState.e == PowerState::ON) ? POWER_ON_VALUE : POWER_OFF_VALUE;
+    data[1] = (powerState == Fw::On::ON) ? POWER_ON_VALUE : POWER_OFF_VALUE;
 
     Drv::I2cStatus status = this->write_out(0, m_i2cDevAddress, buffer);
     if (status == Drv::I2cStatus::I2C_OK) {
-        m_power = powerState.e;
+        m_power = powerState;
         // Must configure at power on
-        if (m_power == PowerState::ON) {
+        if (m_power == Fw::On::ON) {
             config();
         }
     }

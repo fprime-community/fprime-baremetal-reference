@@ -1,8 +1,5 @@
 module Sensors {
 
-    @ The power state enumeration
-    enum PowerState {OFF, ON}
-
     @ 3-tuple type used for telemetry
     array imuTlm = [3] F32
 
@@ -52,7 +49,7 @@ module Sensors {
 
         @ Report power state
         event PowerStatus(
-            powerStatus: PowerState @< power state of device
+            powerStatus: Fw.On @< power state of device
         ) \
         severity activity high \
         format "The device has been turned {}"
@@ -69,7 +66,7 @@ module Sensors {
         # ----------------------------------------------------------------------
 
         @ Command to turn on the device
-        guarded command PowerSwitch(powerState: PowerState)
+        guarded command PowerSwitch(powerState: Fw.On)
 
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #

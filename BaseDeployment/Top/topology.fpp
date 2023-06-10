@@ -37,6 +37,7 @@ module BaseDeployment {
     instance systemTime
     instance textLogger
     instance tlmSend
+    instance imu
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers

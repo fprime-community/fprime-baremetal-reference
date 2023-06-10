@@ -81,7 +81,7 @@ namespace Sensors {
       void PowerSwitch_cmdHandler(
           const FwOpcodeType opCode, /*!< The opcode*/
           const U32 cmdSeq, /*!< The command sequence number*/
-          Sensors::PowerState powerState 
+          Fw::On powerState 
       );
 
 
@@ -138,7 +138,7 @@ namespace Sensors {
       void updateGyro();
 
       I2cDevAddr::T m_i2cDevAddress; //!< Stored device address
-      PowerState::t m_power; //!< Power state of device
+      Fw::On m_power; //!< Power state of device
     };
 
 } // end namespace Sensors

@@ -66,4 +66,6 @@ module BaseDeployment {
 
   instance blinker: Components.LedBlinker base id 0x6000
 
+  instance imu: Sensors.IMU_MPU9250 base id 0x10200
+
 }
