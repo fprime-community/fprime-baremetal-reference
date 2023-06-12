@@ -13,8 +13,6 @@
 #include <Os/Log.hpp>
 #include <Arduino/Os/StreamLog.hpp>
 
-#include <Wire.h>
-
 // Instantiate a system logger that will handle Fw::Logger::logMsg calls
 Os::Log logger;
 

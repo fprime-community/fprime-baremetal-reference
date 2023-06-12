@@ -15,6 +15,7 @@ set(MOD_DEPS
   Fw/Logger
   Arduino/ArduinoTime
   Arduino/Drv/StreamDriver
+  Arduino/Drv/I2cDriver
   Os/Baremetal/TaskRunner
 )
 

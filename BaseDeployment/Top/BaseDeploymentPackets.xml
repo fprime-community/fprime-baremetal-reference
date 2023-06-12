@@ -49,11 +49,6 @@
         <channel name="blinker.BlinkingState"/>
     </packet>
 
-    <packet name="SensorChannels" id="9" level="1">
-        <channel name="imu.accelerometer"/>
-        <channel name="imu.gyroscope"/>
-    </packet>
-
     <!-- Ignored packets -->
 
     <ignore>
