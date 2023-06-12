@@ -7,8 +7,8 @@ F´ (F Prime) is a component-driven framework that enables rapid development and
 
 # Table of Contents
   1. [Setup](#setup)
-  2. [Building and Running the BaseDeployment Application](#building-and-running-the-basedeployment-application)
-  3. [Building and Running the BaremetalReference and RadioPassthrough Applications](#building-and-running-the-baremetalreference-and-radiopassthrough-applications)
+  2. [Programming and Running the BaseDeployment Application](#programming-and-running-the-basedeployment-application)
+  3. [Programming and Running the BaremetalReference and RadioPassthrough Applications](#programming-and-running-the-baremetalreference-and-radiopassthrough-applications)
 
 # Setup
 
