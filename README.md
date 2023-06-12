@@ -13,13 +13,13 @@ F´ (F Prime) is a component-driven framework that enables rapid development and
 # Setup
 
 ### Install arduino-cli
-```
+```sh
 $ curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
 
 ```
 
 ### Install arduino-cli-wrapper
-```
+```sh
 $ cd ~/.local/bin
 $ git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
 $ cd arduino-cli-cmake-wrapper
@@ -28,7 +28,7 @@ $ pip install .
 ```
 
 ### Add `~/.local/bin` to PATH
-```
+```sh
 $ sudo nano ~/.bashrc
 ```
 
@@ -38,12 +38,12 @@ export PATH=~/.local/bin:$PATH
 ```
 
 Save and close the file. Then run:
-```
+```sh
 $ source ~/.bashrc
 ```
 
 ### Setup arduino-cli for Teensy boards
-```
+```sh
 $ arduino-cli config init
 $ sudo nano ~/.arduino15/arduino-cli.yaml
 ```
@@ -57,7 +57,7 @@ board_manager:
 ```
 
 Download the new board package:
-```
+```sh
 $ arduino-cli core update-index
 $ arduino-cli core install teensy:avr
 $ arduino-cli core install adafruit:samd
@@ -65,7 +65,7 @@ $ arduino-cli core install adafruit:samd
 
 ### Adding udev rules for Linux only
 Add udev rules. Save the `.rules` files located in `./docs/rules` into `/etc/udev/rules.d/`.
-```
+```sh
 $ sudo cp docs/rules/* /etc/udev/rules.d/
 ```
 
@@ -74,12 +74,12 @@ $ sudo cp docs/rules/* /etc/udev/rules.d/
 In order to build any other F´ application, we first need to generate a build directory. 
 This can be done with the following commands:
 
-```
+```sh
 $ fprime-util generate
 ```
 
 The next step is to build the RadioPassthrough application's code.
-```
+```sh
 $ fprime-util build
 ```
 
@@ -97,7 +97,7 @@ The Teensyduino application should have appeared after running `fprime-util buil
 ## Uploading binary file for the Feather M0
 Double press on the reset button on the Feather to set it to programming mode. Then run the following commands below.
 
-```
+```sh
 $ ~/.arduino15/packages/adafruit/tools/bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM0 -U -i --offset=0x2000 -w -v ./build-artifacts/featherM0/BaseDeployment/bin/BaseDeployment.bin -R
 
 ```
@@ -105,7 +105,7 @@ Note:
   - If you have more than one device connected, or if you are using a different OS, `ttyACM0` may differ for your system.
 
 ## Using GDS over serial
-```
+```sh
 $ fprime-gds -n --dictionary ./build-artifacts/YOUR_DEVICE/BaseDeployment/dict/BaseDeploymentTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
 ```
 Note:
@@ -120,7 +120,7 @@ The Teensyduino application should have appeared after running `fprime-util buil
 
 ## Uploading binary file for the Feather M0
 Double press on the reset button on the Feather to set it to programming mode. Then run the following commands below for the respective port. There are two binary files: one for the Baremetal Reference and another for the Radio Passthrough. 
-```
+```sh
 $ ~/.arduino15/packages/adafruit/tools/bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM0 -U -i --offset=0x2000 -w -v ./build-artifacts/featherM0/RadioPassthrough/bin/RadioPassthrough.bin -R
 $ ~/.arduino15/packages/adafruit/tools/bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM1 -U -i --offset=0x2000 -w -v ./build-artifacts/featherM0/BaremetalReference/bin/BaremetalReference.bin -R
 
@@ -129,7 +129,7 @@ Note:
   - If you have other devices connected, or if you are using a different OS, `ttyACM0` and/or `ttyACM1` may differ for your system.
 
 ## Using GDS over serial
-```
+```sh
 $ fprime-gds -n --dictionary ./build-artifacts/YOUR_DEVICE/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
 ```
 Note:
