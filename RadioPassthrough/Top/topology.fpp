@@ -24,6 +24,7 @@ module RadioPassthrough {
     instance commDriver
     instance eventLogger
     instance gpioDriver
+    instance gpioRadioReset
     instance rateDriver
     instance rateGroup1
     instance rateGroup2
@@ -67,6 +68,8 @@ module RadioPassthrough {
       streamCrossoverDownlink.streamOut -> commDriver.send
       commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
 
+      streamCrossoverDownlink.errorDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
+
     }
 
     connections Uplink {
@@ -75,12 +78,15 @@ module RadioPassthrough {
       commDriver.$recv -> streamCrossoverUplink.streamIn
       streamCrossoverUplink.streamOut -> rfm69.comDataIn
       rfm69.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.uplink]
+      
+      streamCrossoverUplink.errorDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.uplink]
 
     }
 
     connections RadioPassthrough {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
+      rfm69.gpioReset -> gpioRadioReset.gpioWrite
     }
 
   }

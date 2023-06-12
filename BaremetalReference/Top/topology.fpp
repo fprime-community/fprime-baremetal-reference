@@ -9,12 +9,6 @@ module BaremetalReference {
       rateGroup2
     }
 
-    enum Ports_StaticMemory {
-      framer
-      deframer
-      deframing
-    }
-
   topology BaremetalReference {
 
     # ----------------------------------------------------------------------
@@ -22,6 +16,7 @@ module BaremetalReference {
     # ----------------------------------------------------------------------
 
     instance blinker
+    instance bufferManager
     instance cmdDisp
     instance commQueue
     instance deframer
@@ -30,12 +25,14 @@ module BaremetalReference {
     instance fatalHandler
     instance framer
     instance gpioDriver
+    instance gpioRadioReset
+    instance i2cDriver
+    instance imu
     instance rateDriver
     instance rateGroup1
     instance rateGroup2
     instance rateGroupDriver
     instance rfm69
-    instance staticMemory
     instance systemResources
     instance systemTime
     instance textLogger
@@ -72,6 +69,8 @@ module BaremetalReference {
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
       rateGroup2.RateGroupMemberOut[0] -> systemResources.run
       rateGroup2.RateGroupMemberOut[1] -> tlmSend.Run
+      rateGroup2.RateGroupMemberOut[2] -> imu.run
+      rateGroup2.RateGroupMemberOut[3] -> bufferManager.schedIn
     }
 
     connections FaultProtection {
@@ -85,9 +84,9 @@ module BaremetalReference {
 
       commQueue.comQueueSend -> framer.comIn
 
-      framer.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.framer]
+      framer.framedAllocate -> bufferManager.bufferGetCallee
       framer.framedOut -> rfm69.comDataIn
-      rfm69.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.framer]
+      rfm69.deallocate -> bufferManager.bufferSendIn
 
       rfm69.comStatus -> commQueue.comStatusIn
 
@@ -95,21 +94,27 @@ module BaremetalReference {
 
     connections Uplink {
 
-      rfm69.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframer]
+      rfm69.allocate -> bufferManager.bufferGetCallee
       rfm69.comDataOut -> deframer.framedIn
-      deframer.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframer]
+      deframer.framedDeallocate -> bufferManager.bufferSendIn
 
       deframer.comOut -> cmdDisp.seqCmdBuff
       cmdDisp.seqCmdStatus -> deframer.cmdResponseIn
 
-      deframer.bufferAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframing]
-      deframer.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframing]
+      deframer.bufferAllocate -> bufferManager.bufferGetCallee
+      deframer.bufferDeallocate -> bufferManager.bufferSendIn
 
+    }
+
+    connections I2c {
+      imu.read -> i2cDriver.read
+      imu.write -> i2cDriver.write
     }
 
     connections BaremetalReference {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
+      rfm69.gpioReset -> gpioRadioReset.gpioWrite
     }
 
   }

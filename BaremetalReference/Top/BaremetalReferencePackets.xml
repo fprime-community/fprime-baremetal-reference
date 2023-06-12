@@ -10,9 +10,14 @@
         <channel name="rateGroup2.CycleTime"/>
         <channel name="rateGroup1.CycleCount"/>
         <channel name="rateGroup2.CycleCount"/>
+        <channel name="bufferManager.TotalBuffs"/>
+        <channel name="bufferManager.CurrBuffs"/>
+        <channel name="bufferManager.HiBuffs"/>
     </packet>
 
     <packet name="CDHErrors" id="2" level="1">
+        <channel name="bufferManager.NoBuffs"/>
+        <channel name="bufferManager.EmptyBuffs"/>
     </packet>
 
     <packet name="SystemRes1" id="3" level="2">
@@ -57,6 +62,11 @@
         <channel name="rfm69.NumPacketsReceived"/>
         <channel name="rfm69.NumPacketsSent"/>
         <channel name="rfm69.RSSI"/>
+    </packet>
+
+    <packet name="SensorChannels" id="8" level="1">
+        <channel name="imu.accelerometer"/>
+        <channel name="imu.gyroscope"/>
     </packet>
 
     <!-- Ignored packets -->

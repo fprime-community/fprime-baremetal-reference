@@ -253,7 +253,7 @@ typedef U16 FwTlmPacketizeIdType;
 
 // Specifies the size of the buffer that contains the serialized telemetry value.
 #ifndef FW_TLM_BUFFER_MAX_SIZE
-#define FW_TLM_BUFFER_MAX_SIZE (FW_COM_BUFFER_MAX_SIZE - sizeof(FwChanIdType) - sizeof(FwPacketDescriptorType))
+#define FW_TLM_BUFFER_MAX_SIZE 12 + sizeof(FwChanIdType) + sizeof(FwPacketDescriptorType) // (FW_COM_BUFFER_MAX_SIZE - sizeof(FwChanIdType) - sizeof(FwPacketDescriptorType))
 #endif
 
 // Specifies the maximum size of a string in a telemetry channel

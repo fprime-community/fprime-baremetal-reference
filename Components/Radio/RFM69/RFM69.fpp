@@ -59,31 +59,13 @@ module Radio {
         sync input port run: Svc.Sched
 
         @ Port sending calls to the GPIO driver
-        output port gpioSet: Drv.GpioWrite
-
-        # ----------------------------------------------------------------------
-        # Commands
-        # ----------------------------------------------------------------------
-
-        @ Command to send packet
-        sync command SEND_PACKET(
-                payload: string size 60
-        )
+        output port gpioReset: Drv.GpioWrite
 
         ###############################################################################
         # Standard AC Ports: Required for Channels, Events, Commands, and Parameters  #
         ###############################################################################
         @ Port for requesting the current time
         time get port timeCaller
-
-        @ Port for sending command registrations
-        command reg port cmdRegOut
-
-        @ Port for receiving commands
-        command recv port cmdIn
-
-        @ Port for sending command responses
-        command resp port cmdResponseOut
 
         @ Port for sending textual representation of events
         text event port logTextOut
@@ -93,12 +75,6 @@ module Radio {
 
         @ Port for sending telemetry channels to downlink
         telemetry port tlmOut
-
-        @ Port to return the value of a parameter
-        param get port prmGetOut
-
-        @Port to set the value of a parameter
-        param set port prmSetOut
 
     }
 }

@@ -4,12 +4,8 @@
 // \brief  cpp file for RFM69 component implementation class
 // ======================================================================
 
-#include <vector>
-
 #include <Components/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
-
-#include <Fw/Logger/Logger.hpp>
 
 namespace Radio {
 
@@ -38,6 +34,8 @@ namespace Radio {
   bool RFM69 ::
     send(const U8* payload, NATIVE_UINT_TYPE len)
   {
+    FW_ASSERT(payload != nullptr);
+
     NATIVE_UINT_TYPE offset = 0;
     while(len > RH_RF69_MAX_MESSAGE_LEN)
     {
@@ -70,12 +68,15 @@ namespace Radio {
   }
 
   void RFM69 ::
-    recv(Fw::Buffer &recvBuffer)
+    recv()
   {
     if (rfm69.available()) {
+      U8 buf[RH_RF69_MAX_MESSAGE_LEN];
       U8 bytes_recv = RH_RF69_MAX_MESSAGE_LEN;
 
-      if (rfm69.recv(recvBuffer.getData(), &bytes_recv)) {
+      if (rfm69.recv(buf, &bytes_recv)) {
+        Fw::Buffer recvBuffer = this->allocate_out(0, bytes_recv);
+        memcpy(recvBuffer.getData(), buf, bytes_recv);
         recvBuffer.setSize(bytes_recv);
         pkt_rx_count++;
 
@@ -84,13 +85,9 @@ namespace Radio {
         this->tlmWrite_NumPacketsReceived(pkt_rx_count);
         this->tlmWrite_RSSI(rfm69.lastRssi());
 
-        return;
+        this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
       }
-
-      return;
     }
-
-    recvBuffer.setSize(0);
   }
 
   // ----------------------------------------------------------------------
@@ -118,11 +115,24 @@ namespace Radio {
         NATIVE_UINT_TYPE context
     )
   {
+    this->tlmWrite_Status(radio_state);
+
     if(radio_state == Fw::On::OFF)
     {
-      FW_ASSERT(rfm69.init());
-      FW_ASSERT(rfm69.setFrequency(RFM69_FREQ));
+      if(this->isConnected_gpioReset_OutputPort(0))
+      {
+        this->gpioReset_out(0, Fw::Logic::HIGH);
+        delay(10);
+        this->gpioReset_out(0, Fw::Logic::LOW);
+        delay(10);
+      }
+      
+      if(!rfm69.init())
+      {
+        return;
+      }
 
+      rfm69.setFrequency(RFM69_FREQ);
       rfm69.setTxPower(14, true);
 
       Fw::Success radioSuccess = Fw::Success::SUCCESS;
@@ -133,28 +143,7 @@ namespace Radio {
       radio_state = Fw::On::ON;
     }
     
-    Fw::Buffer recvBuffer = this->allocate_out(0, RH_RF69_MAX_MESSAGE_LEN);
-    this->recv(recvBuffer);
-    this->comDataOut_out(0, recvBuffer, Drv::RecvStatus::RECV_OK);
-
-    this->tlmWrite_Status(radio_state);
-  }
-
-  // ----------------------------------------------------------------------
-  // Command handler implementations
-  // ----------------------------------------------------------------------
-
-  void RFM69 ::
-    SEND_PACKET_cmdHandler(
-        const FwOpcodeType opCode,
-        const U32 cmdSeq,
-        const Fw::CmdStringArg& payload
-    )
-  {
-    // TODO
-    auto cmdResp = Fw::CmdResponse::OK;
-
-    this->cmdResponse_out(opCode, cmdSeq, cmdResp);
+    this->recv();
   }
 
 } // end namespace Radio

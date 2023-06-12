@@ -32,6 +32,12 @@ NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 10
 NATIVE_INT_TYPE rateGroup1Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
 NATIVE_INT_TYPE rateGroup2Context[FppConstant_PassiveRateGroupOutputPorts::PassiveRateGroupOutputPorts] = {};
 
+enum {
+    COM_BUFFER_SIZE   = 140,
+    COM_BUFFER_COUNT  = 3,
+    BUFFER_MANAGER_ID = 200
+};
+
 /**
  * \brief configure/setup components in project-specific way
  *
@@ -58,6 +64,12 @@ void configureTopology() {
     configurationTable.entries[2] = {.depth = 1, .priority = 2};
     // Allocation identifier is 0 as the MallocAllocator discards it
     commQueue.configure(configurationTable, 0, mallocator);
+
+    Svc::BufferManager::BufferBins buffMgrBins;
+    memset(&buffMgrBins, 0, sizeof(buffMgrBins));
+    buffMgrBins.bins[0].bufferSize = COM_BUFFER_SIZE;
+    buffMgrBins.bins[0].numBuffers = COM_BUFFER_COUNT;
+    bufferManager.setup(BUFFER_MANAGER_ID, 0, mallocator, buffMgrBins);
 
     // Framer and Deframer components need to be passed a protocol handler
     framer.setup(framing);
@@ -88,6 +100,13 @@ void setupTopology(const TopologyState& state) {
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
+    gpioRadioReset.open(4, Arduino::GpioDriver::GpioDirection::OUT);
+
+    // Configure I2C driver
+    i2cDriver.open(&Wire);
+
+    // Configure IMU
+    imu.setup(Sensors::IMU_MPU9250::I2cDevAddr::AD0_0);
 
     // Start hardware rate driver
     rateDriver.start();
@@ -98,5 +117,6 @@ void teardownTopology(const TopologyState& state) {
     stopTasks(state);
     freeThreads(state);
 
+    bufferManager.cleanup();
 }
 };  // namespace BaremetalReference
