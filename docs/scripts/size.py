@@ -3,7 +3,7 @@ import os
 import subprocess
 
 ROOT_USER = os.path.expanduser('~')
-PROJECT_ROOT = os.path.abspath('../..')
+PROJECT_ROOT = os.path.abspath(f'{os.path.dirname(__file__)}/../..')
 BUILD_ARTIFACTS = f'{PROJECT_ROOT}/build-artifacts'
 
 def main(argc, argv):
