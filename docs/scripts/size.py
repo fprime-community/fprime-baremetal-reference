@@ -10,7 +10,7 @@ PRINTED_COMPONENT_SIZE = False
 for build in os.scandir(BUILD_ARTIFACTS):
     if build.name == 'featherM0':
         SIZE_UTIL_EXECS = f'{ROOT_USER}/.arduino15/packages/adafruit/tools/arm-none-eabi-gcc/9-2019q4/bin/arm-none-eabi'
-    elif build.name == 'teensy41a':
+    elif build.name == 'teensy41':
         SIZE_UTIL_EXECS = f'{ROOT_USER}/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi'
     else:
         print('!!!-----------------------------------------!!!')
