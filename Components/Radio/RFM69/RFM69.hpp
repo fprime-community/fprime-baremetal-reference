@@ -39,7 +39,7 @@ namespace Radio {
       ~RFM69();
 
       bool send(const U8* payload, NATIVE_UINT_TYPE len);
-      void recv(Fw::Buffer &recvBuffer);
+      void recv();
 
     PRIVATE:
 
