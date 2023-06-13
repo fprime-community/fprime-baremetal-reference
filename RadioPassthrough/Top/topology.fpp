@@ -61,8 +61,9 @@ module RadioPassthrough {
       rateGroup2.RateGroupMemberOut[0] -> blinker.run
     }
 
-    connections Downlink {
+    connections Comms {
 
+      # Downlink
       rfm69.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.downlink]
       rfm69.comDataOut -> streamCrossoverDownlink.streamIn
       streamCrossoverDownlink.streamOut -> commDriver.send
@@ -70,10 +71,7 @@ module RadioPassthrough {
 
       streamCrossoverDownlink.errorDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
 
-    }
-
-    connections Uplink {
-
+      # Uplink
       commDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.uplink]
       commDriver.$recv -> streamCrossoverUplink.streamIn
       streamCrossoverUplink.streamOut -> rfm69.comDataIn

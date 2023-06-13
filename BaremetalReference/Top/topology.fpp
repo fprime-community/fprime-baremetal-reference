@@ -77,8 +77,9 @@ module BaremetalReference {
       eventLogger.FatalAnnounce -> fatalHandler.FatalReceive
     }
 
-    connections Downlink {
+    connections Comms {
 
+      # Downlink
       tlmSend.PktSend -> commQueue.comQueueIn[0]
       eventLogger.PktSend -> commQueue.comQueueIn[1]
 
@@ -90,10 +91,7 @@ module BaremetalReference {
 
       rfm69.comStatus -> commQueue.comStatusIn
 
-    }
-
-    connections Uplink {
-
+      # Uplink
       rfm69.allocate -> bufferManager.bufferGetCallee
       rfm69.comDataOut -> deframer.framedIn
       deframer.framedDeallocate -> bufferManager.bufferSendIn
