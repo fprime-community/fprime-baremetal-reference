@@ -22,7 +22,7 @@ constant CmdDispatcherSequencePorts = 1
 constant StaticMemoryAllocations = 3
 
 @ Used to ping active components
-constant HealthPingPorts = 10
+constant HealthPingPorts = 1
 
 @ Used for broadcasting completed file downlinks
 constant FileDownCompletePorts = 1
