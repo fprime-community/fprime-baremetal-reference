@@ -8,15 +8,10 @@
 #define RFM69_HPP
 
 #include "Components/Radio/RFM69/RFM69ComponentAc.hpp"
-#include "Utils/Types/CircularBuffer.hpp"
 #include "RH_RF69.h"
+#include <FprimeArduino.hpp>
 
 namespace Radio {
-
-  #define RFM69_FREQ 915.0
-  #define RFM69_CS    8
-  #define RFM69_INT   3
-  #define RFM69_RST   4
 
   class RFM69 :
     public RFM69ComponentBase
@@ -24,7 +19,10 @@ namespace Radio {
 
     public:
 
-      const NATIVE_UINT_TYPE RETRY_LIMIT = 10;
+      const NATIVE_INT_TYPE RFM69_FREQ = 915;
+      const NATIVE_INT_TYPE RFM69_CS   = 8;
+      const NATIVE_INT_TYPE RFM69_INT  = 3;
+      const NATIVE_INT_TYPE RFM69_RST  = 4;
 
       // ----------------------------------------------------------------------
       // Construction, initialization, and destruction
@@ -41,7 +39,7 @@ namespace Radio {
       ~RFM69();
 
       bool send(const U8* payload, NATIVE_UINT_TYPE len);
-      void recv(Fw::Buffer &recvBuffer);
+      void recv();
 
     PRIVATE:
 
@@ -63,20 +61,6 @@ namespace Radio {
           NATIVE_UINT_TYPE context /*!< 
       The call order
       */
-      );
-
-    PRIVATE:
-
-      // ----------------------------------------------------------------------
-      // Command handler implementations
-      // ----------------------------------------------------------------------
-
-      //! Implementation for SEND_PACKET command handler
-      //! Command to send packet
-      void SEND_PACKET_cmdHandler(
-          const FwOpcodeType opCode, /*!< The opcode*/
-          const U32 cmdSeq, /*!< The command sequence number*/
-          const Fw::CmdStringArg& payload 
       );
 
       RH_RF69 rfm69;

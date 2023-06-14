@@ -67,7 +67,6 @@ namespace Components {
           */
       );
 
-      Os::Mutex lock;   //! Protects our data from thread race conditions
       Fw::On state;     //! Keeps track if LED is on or off
       U32 transitions;  //! The number of on/off transitions that have occurred from FSW boot up
       U16 count;        //! Keeps track of how many ticks the LED has been on for

@@ -13,16 +13,16 @@ constant PassiveRateGroupOutputPorts = 10
 constant RateGroupDriverRateGroupPorts = 2
 
 @ Used for command and registration ports
-constant CmdDispatcherComponentCommandPorts = 10
+constant CmdDispatcherComponentCommandPorts = 5
 
 @ Used for uplink/sequencer buffer/response ports
-constant CmdDispatcherSequencePorts = 5
+constant CmdDispatcherSequencePorts = 1
 
 @ Number of static memory allocations
-constant StaticMemoryAllocations = 4
+constant StaticMemoryAllocations = 3
 
 @ Used to ping active components
-constant HealthPingPorts = 10
+constant HealthPingPorts = 1
 
 @ Used for broadcasting completed file downlinks
 constant FileDownCompletePorts = 1

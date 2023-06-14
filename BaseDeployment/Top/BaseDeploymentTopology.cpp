@@ -72,7 +72,7 @@ void setupTopology(const TopologyState& state) {
 
     rateDriver.configure(1);
     commDriver.configure(&Serial);
-    gpioDriver.open(13, Arduino::GpioDriver::GpioDirection::OUT);
+    gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
     rateDriver.start();
 }
 

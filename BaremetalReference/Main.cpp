@@ -29,6 +29,7 @@ Os::TaskRunner taskrunner;
  */
 void setup()
 {
+    // Setup Serial
     Serial.begin(115200);
     Os::setArduinoStreamLogHandler(&Serial);
     delay(1000);
