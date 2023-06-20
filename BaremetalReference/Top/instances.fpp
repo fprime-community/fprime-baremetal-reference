@@ -28,7 +28,7 @@ module BaremetalReference {
     stack size Default.STACK_SIZE \
     priority 98
 
-  instance tlmSend: Svc.TlmChan base id 0x0400 \
+  instance tlmSend: Svc.TlmLinearChan base id 0x0400 \
     queue size 15 \
     stack size Default.STACK_SIZE \
     priority 97
