@@ -18,6 +18,4 @@ set(SOURCE_FILES
 #     Add your dependencies here
 # )
 
-target_use_arduino_libraries("Wire" "MPU9250")
-
 register_fprime_module()

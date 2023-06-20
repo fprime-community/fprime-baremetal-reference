@@ -9,3 +9,6 @@
 [submodule "lib/arduino/RadioHead"]
 	path = lib/arduino/RadioHead
 	url = https://github.com/PaulStoffregen/RadioHead.git
+[submodule "lib/fprime-baremetal"]
+	path = lib/fprime-baremetal
+	url = https://github.com/ethancheez/fprime-baremetal.git
