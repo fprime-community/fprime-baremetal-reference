@@ -6,8 +6,8 @@ The BaremetalReference is a reference to run F´ on embedded systems with hardwa
 
 # Table of Contents
   1. [Install Arduino CLI](docs/arduino-cli-install.md)
-  2. [Programming and Running the BaseDeployment Application](#programming-and-running-the-basedeployment-application)
-  3. [Programming and Running the BaremetalReference and RadioPassthrough Applications](#programming-and-running-the-baremetalreference-and-radiopassthrough-applications)
+  2. [Programming and Running the BaseDeployment Application](docs/run-base-deployment.md)
+  3. [Programming and Running the BaremetalReference and RadioPassthrough Applications](docs/run-baremetal-reference.md)
 
 
 ### First Step: [Install Arduino CLI](docs/arduino-cli-install.md)
