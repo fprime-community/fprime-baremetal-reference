@@ -12,8 +12,7 @@
 #include <Os/Log.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
-// Used for 1Hz synthetic cycling
-#include <Os/Mutex.hpp>
+#include  <Components/Radio/RFM69/RFM69.hpp>
 
 // Allows easy reference to objects in FPP/autocoder required namespaces
 using namespace RadioPassthrough;
@@ -70,7 +69,7 @@ void setupTopology(const TopologyState& state) {
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
-    gpioRadioReset.open(4, Arduino::GpioDriver::GpioDirection::OUT);
+    gpioRadioReset.open(Radio::RFM69::RFM69_RST, Arduino::GpioDriver::GpioDirection::OUT);
 
     // Start hardware rate driver
     rateDriver.start();
