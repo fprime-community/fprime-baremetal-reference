@@ -45,6 +45,8 @@ module BaremetalReference {
 
   instance rateGroup2: Svc.PassiveRateGroup base id 0x0600
 
+  instance staticMemory: Svc.StaticMemory base id 0x0700
+
   instance bufferManager: Svc.BufferManager base id 0x1000
 
   instance framer: Svc.Framer base id 0x4000
@@ -78,5 +80,15 @@ module BaremetalReference {
   instance rfm69: Radio.RFM69 base id 0x10100
 
   instance imu: Sensors.IMU_MPU9250 base id 0x10200
+
+  instance hub: Svc.GenericHub base id 0x100000
+
+  instance hubFramer: Svc.Framer base id 0x100100
+
+  instance hubDeframer: Svc.Deframer base id 0x100200
+
+  instance hubDriver: Arduino.StreamDriver base id 0x100300
+
+  instance splitter: Svc.CmdSplitter base id 0x100400 
 
 }

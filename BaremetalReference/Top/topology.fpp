@@ -9,6 +9,13 @@ module BaremetalReference {
       rateGroup2
     }
 
+    enum Ports_StaticMemory {
+      hub
+      hubFramer
+      hubDeframer
+      hubDriver
+    }
+
   topology BaremetalReference {
 
     # ----------------------------------------------------------------------
@@ -37,6 +44,12 @@ module BaremetalReference {
     instance systemTime
     instance textLogger
     instance tlmSend
+    instance hub
+    instance hubDeframer
+    instance hubFramer
+    instance hubDriver
+    instance splitter
+    instance staticMemory
 
     # ----------------------------------------------------------------------
     # Pattern graph specifiers
@@ -64,6 +77,7 @@ module BaremetalReference {
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
       rateGroup1.RateGroupMemberOut[0] -> rfm69.run
       rateGroup1.RateGroupMemberOut[1] -> blinker.run
+      rateGroup1.RateGroupMemberOut[2] -> hubDriver.schedIn
 
       # Rate group 2
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup2] -> rateGroup2.CycleIn
@@ -96,8 +110,13 @@ module BaremetalReference {
       rfm69.comDataOut -> deframer.framedIn
       deframer.framedDeallocate -> bufferManager.bufferSendIn
 
-      deframer.comOut -> cmdDisp.seqCmdBuff
-      cmdDisp.seqCmdStatus -> deframer.cmdResponseIn
+      # deframer.comOut -> cmdDisp.seqCmdBuff
+      # cmdDisp.seqCmdStatus -> deframer.cmdResponseIn
+
+      deframer.comOut -> splitter.CmdBuff
+      splitter.LocalCmd -> cmdDisp.seqCmdBuff
+      cmdDisp.seqCmdStatus -> splitter.seqCmdStatus
+      splitter.forwardSeqCmdStatus -> deframer.cmdResponseIn
 
       deframer.bufferAllocate -> bufferManager.bufferGetCallee
       deframer.bufferDeallocate -> bufferManager.bufferSendIn
@@ -113,6 +132,34 @@ module BaremetalReference {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
       rfm69.gpioReset -> gpioRadioReset.gpioWrite
+    }
+
+    connections HubToDriver {
+      # Hub -> Framer -> Uart Driver
+      hub.dataOutAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.hub]
+      hub.dataOut -> hubFramer.bufferIn
+      hubFramer.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.hub]
+      hubFramer.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.hubFramer]
+      hubFramer.framedOut -> hubDriver.send
+      hubDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.hubFramer]
+
+      # Uart Driver -> Deframer -> Hub
+      hubDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.hubDriver]
+      hubDriver.$recv -> hubDeframer.framedIn
+      hubDeframer.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.hubDriver]
+      hubDeframer.bufferAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.hubDeframer]
+      hubDeframer.bufferOut -> hub.dataIn
+      hub.dataInDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.hubDeframer]
+    }
+
+
+    connections HubToDeployment {
+      hub.LogSend -> eventLogger.LogRecv
+      hub.TlmSend -> tlmSend.TlmRecv
+
+      splitter.RemoteCmd -> hub.portIn[0]
+      hub.portOut[0] -> splitter.seqCmdStatus
+
     }
 
   }

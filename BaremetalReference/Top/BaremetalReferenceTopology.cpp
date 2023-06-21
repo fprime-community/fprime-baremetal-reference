@@ -24,6 +24,9 @@ Fw::MallocAllocator mallocator;
 Svc::FprimeFraming framing;
 Svc::FprimeDeframing deframing;
 
+Svc::FprimeFraming hubframing;
+Svc::FprimeDeframing hubdeframing;
+
 // The reference topology divides the incoming clock signal (1Hz) into sub-signals: 1Hz, 1/2Hz, and 1/4Hz
 NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 1000};
 
@@ -75,6 +78,9 @@ void configureTopology() {
     framer.setup(framing);
     deframer.setup(deframing);
 
+    hubFramer.setup(hubframing);
+    hubDeframer.setup(hubdeframing);
+
 }
 
 // Public functions for use in main program are namespaced with deployment name BaremetalReference
@@ -97,6 +103,8 @@ void setupTopology(const TopologyState& state) {
     
     // Configure hardware rate driver
     rateDriver.configure(1);
+
+    hubDriver.configure(&Serial1);
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
