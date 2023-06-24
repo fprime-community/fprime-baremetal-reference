@@ -10,6 +10,7 @@ BUILD_ARTIFACTS = f'{PROJECT_ROOT}/build-artifacts'
 # Supported Arduino Toolchain paths
 # =======================================================================
 toolchains = {
+    'esp32': f'{ROOT_USER}/.arduino15/packages/esp32/tools/xtensa-esp32-elf-gcc/esp-2021r2-patch5-8.4.0/bin/xtensa-esp32-elf',
     'featherM0': f'{ROOT_USER}/.arduino15/packages/adafruit/tools/arm-none-eabi-gcc/9-2019q4/bin/arm-none-eabi',
     'teensy32': f'{ROOT_USER}/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi',
     'teensy40': f'{ROOT_USER}/.arduino15/packages/teensy/tools/teensy-compile/11.3.1/arm/bin/arm-none-eabi',
