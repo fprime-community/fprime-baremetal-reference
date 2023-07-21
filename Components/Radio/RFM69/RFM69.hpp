@@ -19,10 +19,10 @@ namespace Radio {
 
     public:
 
-      const NATIVE_INT_TYPE RFM69_FREQ = 915;
-      const NATIVE_INT_TYPE RFM69_CS   = 8;
-      const NATIVE_INT_TYPE RFM69_INT  = 3;
-      const NATIVE_INT_TYPE RFM69_RST  = 4;
+      static const NATIVE_INT_TYPE RFM69_FREQ = 915;
+      static const NATIVE_INT_TYPE RFM69_CS   = 8;
+      static const NATIVE_INT_TYPE RFM69_INT  = 3;
+      static const NATIVE_INT_TYPE RFM69_RST  = 4;
 
       // ----------------------------------------------------------------------
       // Construction, initialization, and destruction

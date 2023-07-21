@@ -100,7 +100,7 @@ namespace Radio {
         Fw::Buffer &sendBuffer
     )
   {
-    if(sendBuffer.getSize() > 0 && !(this->send(sendBuffer.getData(), sendBuffer.getSize())))
+    if((radio_state == Fw::On::ON) && (sendBuffer.getSize() > 0) && (not this->send(sendBuffer.getData(), sendBuffer.getSize())))
     {
       radio_state = Fw::On::OFF;
     }
