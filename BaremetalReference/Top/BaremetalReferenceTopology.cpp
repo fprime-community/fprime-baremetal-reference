@@ -28,7 +28,7 @@ Svc::FprimeFraming hubframing;
 Svc::FprimeDeframing hubdeframing;
 
 // The reference topology divides the incoming clock signal (1Hz) into sub-signals: 1Hz, 1/2Hz, and 1/4Hz
-NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 1000};
+NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {10, 1000};
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.

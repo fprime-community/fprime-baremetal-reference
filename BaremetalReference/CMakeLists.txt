@@ -1,3 +1,5 @@
+restrict_platforms(ArduinoFw)
+
 ###
 # Components and Topology
 ###

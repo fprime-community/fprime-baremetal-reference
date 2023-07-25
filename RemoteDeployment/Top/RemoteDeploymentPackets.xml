@@ -1,0 +1,75 @@
+<packets name="RemoteDeploymentPackets" namespace="RemoteDeployment" size="111">
+
+    <import_topology>RemoteDeployment/Top/RemoteDeploymentTopologyAppAi.xml</import_topology>
+
+    <packet name="CDH" id="1" level="1">
+        <channel name="r_cmdDisp.CommandsDispatched"/>
+        <channel name="r_rateGroup1.RgMaxTime"/>
+        <channel name="r_rateGroup2.RgMaxTime"/>
+        <channel name="r_rateGroup3.RgMaxTime"/>
+        <channel name="r_bufferManager.TotalBuffs"/>
+        <channel name="r_bufferManager.CurrBuffs"/>
+        <channel name="r_bufferManager.HiBuffs"/>
+        <channel name="r_fileDownlink.FilesSent"/>
+        <channel name="r_fileDownlink.PacketsSent"/>
+        <channel name="r_fileManager.CommandsExecuted"/>
+        <!-- Uncomment to use Svc::TlmPacketizer -->
+        <!--channel name="r_tlmSend.SendLevel"/-->
+    </packet>
+
+    <packet name="CDHErrors" id="2" level="1">
+        <channel name="r_rateGroup1.RgCycleSlips"/>
+        <channel name="r_rateGroup2.RgCycleSlips"/>
+        <channel name="r_rateGroup3.RgCycleSlips"/>
+        <channel name="r_fileDownlink.Warnings"/>
+        <channel name="r_health.PingLateWarnings"/>
+        <channel name="r_fileManager.Errors"/>
+        <channel name="r_bufferManager.NoBuffs"/>
+        <channel name="r_bufferManager.EmptyBuffs"/>
+        <channel name="r_fileManager.Errors"/>
+    </packet>
+
+    <packet name="DriveTlm" id="3" level="1">
+        <channel name="r_blockDrv.BD_Cycles"/>
+    </packet>
+
+    <packet name="SystemRes1" id="5" level="2">
+        <channel name="r_systemResources.MEMORY_TOTAL"/>
+        <channel name="r_systemResources.MEMORY_USED"/>
+        <channel name="r_systemResources.NON_VOLATILE_TOTAL"/>
+        <channel name="r_systemResources.NON_VOLATILE_FREE"/>
+    </packet>
+
+    <packet name="SystemRes2" id="6" level="2">
+        <channel name="r_systemResources.FRAMEWORK_VERSION"/>
+        <channel name="r_systemResources.PROJECT_VERSION"/>
+    </packet>
+
+    <packet name="SystemRes3" id="7" level="2">
+        <channel name="r_systemResources.CPU"/>
+        <channel name="r_systemResources.CPU_00"/>
+        <channel name="r_systemResources.CPU_01"/>
+        <channel name="r_systemResources.CPU_02"/>
+        <channel name="r_systemResources.CPU_03"/>
+        <channel name="r_systemResources.CPU_04"/>
+        <channel name="r_systemResources.CPU_05"/>
+        <channel name="r_systemResources.CPU_06"/>
+        <channel name="r_systemResources.CPU_07"/>
+        <channel name="r_systemResources.CPU_08"/>
+        <channel name="r_systemResources.CPU_09"/>
+        <channel name="r_systemResources.CPU_10"/>
+        <channel name="r_systemResources.CPU_11"/>
+        <channel name="r_systemResources.CPU_12"/>
+        <channel name="r_systemResources.CPU_13"/>
+        <channel name="r_systemResources.CPU_14"/>
+        <channel name="r_systemResources.CPU_15"/>
+    </packet>
+
+    <!-- Ignored packets -->
+
+    <ignore>
+        <channel name="r_cmdDisp.CommandErrors"/>
+        <channel name="r_hubDriver.BytesRecv"/>
+        <channel name="r_hubDriver.BytesSent"/>
+    </ignore>
+</packets>

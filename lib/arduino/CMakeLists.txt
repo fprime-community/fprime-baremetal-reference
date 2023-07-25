@@ -1,3 +1,5 @@
+restrict_platforms(ArduinoFw)
+
 ####
 # F prime CMakeLists.txt:
 #

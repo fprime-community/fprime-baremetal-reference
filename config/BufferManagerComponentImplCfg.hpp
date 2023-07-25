@@ -4,7 +4,7 @@
 #include <FpConfig.hpp>
 
 namespace Svc {
-    static const NATIVE_UINT_TYPE BUFFERMGR_MAX_NUM_BINS = 1;
+    static const NATIVE_UINT_TYPE BUFFERMGR_MAX_NUM_BINS = 3;
 }
 
 

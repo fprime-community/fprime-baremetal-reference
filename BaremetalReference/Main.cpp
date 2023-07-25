@@ -31,6 +31,7 @@ void setup()
 {
     // Setup Serial
     Serial.begin(115200);
+    Serial1.begin(115200);
     Os::setArduinoStreamLogHandler(&Serial);
     delay(1000);
     Fw::Logger::logMsg("Program Started\n");
