@@ -8,7 +8,7 @@
 #####
 
 # Deployment is only compatible with the Arduino platform
-restrict_platforms(Generic)
+restrict_platforms(ArduinoFw)
 
 ###
 # Topology and Components
