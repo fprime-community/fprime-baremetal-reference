@@ -26,23 +26,15 @@ Add the following line at the end of the file:
 export PATH=~/.local/bin:$PATH
 ```
 
-## Setup arduino-cli for Teensy and Adafruit boards
+## Setup arduino-cli for Teensy, Adafruit, and RPi Pico W boards
 ```shell
 arduino-cli config init
 
-# Linux
-sudo nano ~/.arduino15/arduino-cli.yaml
-
-# MacOS
-sudo nano ~/Library/Arduino15/arduino-cli.yaml
-```
-
-Add the following URLs to the `board_manager` section:
-```
-board_manager:
-  additional_urls:
-    - https://www.pjrc.com/teensy/package_teensy_index.json
-    - https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+Below are board manager URLs for select Arduino boards. You are not required to add all of these boards, but you are free to do so.
+```shell
+arduino-cli config add board_manager.additional_urls https://www.pjrc.com/teensy/package_teensy_index.json
+arduino-cli config add board_manager.additional_urls https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+arduino-cli config add board_manager.additional_urls https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
 ```
 
 Download the new board package:
@@ -50,6 +42,12 @@ Download the new board package:
 arduino-cli core update-index
 arduino-cli core install teensy:avr
 arduino-cli core install adafruit:samd
+arduino-cli core install rp2040:rp2040
+```
+
+Install library dependencies:
+```shell
+arduino-cli lib install RadioHead
 ```
 
 ## Adding udev rules (Linux Only)
