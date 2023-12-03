@@ -46,9 +46,7 @@ module BaseDeployment {
 
   instance fatalHandler: Svc.FatalHandler base id 0x4300
 
-  instance systemTime: Svc.Time base id 0x4400 \
-    type "Svc::ArduinoTimeImpl" \
-    at "../../lib/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp"
+  instance systemTime: Arduino.ArduinoTime base id 0x4400 \
 
   instance rateGroupDriver: Svc.RateGroupDriver base id 0x4500
 

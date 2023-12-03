@@ -10,4 +10,5 @@
 	url = https://github.com/ethancheez/fprime-baremetal.git
 [submodule "lib/arduino/fprime-arduino"]
 	path = lib/arduino/fprime-arduino
-	url = https://github.com/ethancheez/fprime-arduino.git
+	url = https://github.com/fprime-community/fprime-arduino.git
+	branch = devel

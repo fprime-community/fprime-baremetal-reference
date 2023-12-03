@@ -17,8 +17,8 @@
 // Allows easy reference to objects in FPP/autocoder required namespaces
 using namespace RadioPassthrough;
 
-// The reference topology divides the incoming clock signal (1Hz) into sub-signals: 1Hz, 1/2Hz, and 1/4Hz
-NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {1, 100};
+// The reference topology divides the incoming clock signal (1kHz) into sub-signals: 1kHz, 10Hz
+Svc::RateGroupDriver::DividerSet rateGroupDivisors = {{ {1, 0}, {100, 0} }};
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
@@ -35,7 +35,7 @@ NATIVE_INT_TYPE rateGroup2Context[FppConstant_PassiveRateGroupOutputPorts::Passi
 void configureTopology() {
 
     // Rate group driver needs a divisor list
-    rateGroupDriver.configure(rateGroupDivisors, FW_NUM_ARRAY_ELEMENTS(rateGroupDivisors));
+    rateGroupDriver.configure(rateGroupDivisors);
 
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
