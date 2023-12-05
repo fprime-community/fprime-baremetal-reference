@@ -12,6 +12,8 @@
 #include <Fw/Types/MallocAllocator.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
+#include  <Components/Radio/RFM69/RFM69.hpp>
+
 // Allows easy reference to objects in FPP/autocoder required namespaces
 using namespace BaremetalReference;
 
@@ -100,7 +102,7 @@ void setupTopology(const TopologyState& state) {
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
-    gpioRadioReset.open(4, Arduino::GpioDriver::GpioDirection::OUT);
+    gpioRadioReset.open(Radio::RFM69::RFM69_RST, Arduino::GpioDriver::GpioDirection::OUT);
 
     // Configure I2C driver
     i2cDriver.open(&Wire);
