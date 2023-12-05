@@ -5,10 +5,11 @@
 [submodule "lib/arduino/RadioHead"]
 	path = lib/arduino/RadioHead
 	url = https://github.com/PaulStoffregen/RadioHead.git
-[submodule "lib/fprime-baremetal"]
-	path = lib/fprime-baremetal
-	url = https://github.com/ethancheez/fprime-baremetal.git
 [submodule "lib/arduino/fprime-arduino"]
 	path = lib/arduino/fprime-arduino
 	url = https://github.com/fprime-community/fprime-arduino.git
 	branch = devel
+[submodule "lib/fprime-baremetal"]
+	path = lib/fprime-baremetal
+	url = https://github.com/fprime-community/fprime-baremetal.git
+	branch = size-utilility
