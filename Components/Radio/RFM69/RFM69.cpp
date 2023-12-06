@@ -6,6 +6,7 @@
 
 #include <Components/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
+#include <Os/Log.hpp>
 
 namespace Radio {
 
@@ -129,6 +130,7 @@ namespace Radio {
       
       if(!rfm69.init())
       {
+        Fw::Logger::logMsg("Failed to initialize radio... Trying again...\n");
         return;
       }
 

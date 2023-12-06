@@ -11,6 +11,12 @@
 #include "RH_RF69.h"
 #include <FprimeArduino.hpp>
 
+// Other SPI Ports, Teensy 3.5, 3.6, 4.0, 4.1 Compatible
+#if defined(__arm__) && defined(TEENSYDUINO) && (defined(__MK64FX512__) || defined(__MK66FX1M0__) || defined(__IMXRT1052__)|| defined(__IMXRT1062__))
+#include <RHHardwareSPI1.h>
+#include <RHHardwareSPI2.h>
+#endif
+
 namespace Radio {
 
   class RFM69 :
