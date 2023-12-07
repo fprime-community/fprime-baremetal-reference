@@ -135,6 +135,7 @@ namespace Radio {
       }
 
       rfm69.setFrequency(RFM69_FREQ);
+      rfm69.setModemConfig(RH_RF69::ModemConfigChoice::GFSK_Rb250Fd250);
       rfm69.setTxPower(14, true);
 
       Fw::Success radioSuccess = Fw::Success::SUCCESS;
