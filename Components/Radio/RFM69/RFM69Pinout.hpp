@@ -18,7 +18,7 @@ namespace Radio
     static const NATIVE_INT_TYPE RFM69_CS = 8;
     static const NATIVE_INT_TYPE RFM69_INT = 3;
     static const NATIVE_INT_TYPE RFM69_RST = 4;
-#if defined(_BOARD_FEATHERRP2040RFM) // Adafruit Feather RP2040
+#elif defined(_BOARD_FEATHERRP2040RFM) // Adafruit Feather RP2040
     static const NATIVE_INT_TYPE RFM69_MISO = 20;   // GPIO20
     static const NATIVE_INT_TYPE RFM69_MOSI = 19;   // GPIO19
     static const NATIVE_INT_TYPE RFM69_SCK = 18;    // GPIO18
