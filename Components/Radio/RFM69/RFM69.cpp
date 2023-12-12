@@ -24,6 +24,11 @@ RFM69::RFM69(const char* const compName)
       radio_state(Fw::On::OFF),
       pkt_rx_count(0),
       pkt_tx_count(0) {
+
+#if defined(_BOARD_TEENSY40)
+    SPI.setSCK(RFM69_SCK);
+#endif
+
 }
 
 RFM69::~RFM69() {}
