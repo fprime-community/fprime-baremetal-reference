@@ -25,7 +25,7 @@ RFM69::RFM69(const char* const compName)
       pkt_rx_count(0),
       pkt_tx_count(0) {
 
-#if defined(_BOARD_TEENSY40)
+#if defined(_BOARD_TEENSY32)
     SPI.setSCK(RFM69_SCK);
 #endif
 
