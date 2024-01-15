@@ -9,7 +9,12 @@
 
 #include "Components/Radio/RFM69/RFM69ComponentAc.hpp"
 #include "RH_RF69.h"
+#include "RFM69Pinout.hpp"
 #include <FprimeArduino.hpp>
+
+#if defined(_BOARD_TEENSY41)
+#include <RHHardwareSPI1.h>
+#endif
 
 namespace Radio {
 
@@ -20,9 +25,6 @@ namespace Radio {
     public:
 
       static const NATIVE_INT_TYPE RFM69_FREQ = 915;
-      static const NATIVE_INT_TYPE RFM69_CS   = 8;
-      static const NATIVE_INT_TYPE RFM69_INT  = 3;
-      static const NATIVE_INT_TYPE RFM69_RST  = 4;
 
       // ----------------------------------------------------------------------
       // Construction, initialization, and destruction

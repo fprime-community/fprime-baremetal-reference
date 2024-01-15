@@ -34,9 +34,7 @@ module RadioPassthrough {
 
   instance fatalHandler: Svc.FatalHandler base id 0x4200
 
-  instance systemTime: Svc.Time base id 0x4300 \
-    type "Svc::ArduinoTimeImpl" \
-    at "../../lib/arduino/fprime-arduino/Arduino/ArduinoTime/ArduinoTimeImpl.hpp"
+  instance systemTime: Arduino.ArduinoTime base id 0x4300 \
 
   instance rateGroupDriver: Svc.RateGroupDriver base id 0x4400
 

@@ -12,6 +12,8 @@
 #include <Fw/Types/MallocAllocator.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
+#include  <Components/Radio/RFM69/RFM69.hpp>
+
 // Allows easy reference to objects in FPP/autocoder required namespaces
 using namespace BaremetalReference;
 
@@ -24,8 +26,8 @@ Fw::MallocAllocator mallocator;
 Svc::FprimeFraming framing;
 Svc::FprimeDeframing deframing;
 
-// The reference topology divides the incoming clock signal (1Hz) into sub-signals: 1Hz, 1/2Hz, and 1/4Hz
-NATIVE_INT_TYPE rateGroupDivisors[Svc::RateGroupDriver::DIVIDER_SIZE] = {100, 1000};
+// The reference topology divides the incoming clock signal (1kHz) into sub-signals: 10Hz, 1Hz
+Svc::RateGroupDriver::DividerSet rateGroupDivisors = {{ {100, 0}, {1000, 0} }};
 
 // Rate groups may supply a context token to each of the attached children whose purpose is set by the project. The
 // reference topology sets each token to zero as these contexts are unused in this project.
@@ -48,7 +50,7 @@ enum {
 void configureTopology() {
 
     // Rate group driver needs a divisor list
-    rateGroupDriver.configure(rateGroupDivisors, FW_NUM_ARRAY_ELEMENTS(rateGroupDivisors));
+    rateGroupDriver.configure(rateGroupDivisors);
 
     // Rate groups require context arrays.
     rateGroup1.configure(rateGroup1Context, FW_NUM_ARRAY_ELEMENTS(rateGroup1Context));
@@ -100,7 +102,7 @@ void setupTopology(const TopologyState& state) {
 
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
-    gpioRadioReset.open(4, Arduino::GpioDriver::GpioDirection::OUT);
+    gpioRadioReset.open(Radio::RFM69_RST, Arduino::GpioDriver::GpioDirection::OUT);
 
     // Configure I2C driver
     i2cDriver.open(&Wire);
