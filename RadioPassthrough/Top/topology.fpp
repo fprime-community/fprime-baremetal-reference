@@ -66,7 +66,7 @@ module RadioPassthrough {
       # Downlink
       rfm69.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.downlink]
       rfm69.comDataOut -> streamCrossoverDownlink.streamIn
-      streamCrossoverDownlink.streamOut -> commDriver.send
+      streamCrossoverDownlink.streamOut -> commDriver.$send
       commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
 
       streamCrossoverDownlink.errorDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.downlink]
