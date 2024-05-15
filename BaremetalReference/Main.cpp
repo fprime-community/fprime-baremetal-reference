@@ -31,9 +31,9 @@ void setup()
 {
     // Setup Serial
     Serial.begin(115200);
-    Os::setArduinoStreamLogHandler(&Serial);
+    //Os::setArduinoStreamLogHandler(&Serial); //***Turn off for Uart Comm
     delay(1000);
-    Fw::Logger::logMsg("Program Started\n");
+    //Fw::Logger::logMsg("Program Started\n"); //***Turn off for Uart Comm
 
     // Object for communicating state to the reference topology
     BaremetalReference::TopologyState inputs;

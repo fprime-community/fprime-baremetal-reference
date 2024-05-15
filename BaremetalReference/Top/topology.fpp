@@ -18,6 +18,7 @@ module BaremetalReference {
     instance blinker
     instance bufferManager
     instance cmdDisp
+    instance comDriver ## disable when using radio
     instance commQueue
     instance deframer
     instance eventLogger
@@ -62,7 +63,7 @@ module BaremetalReference {
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      rateGroup1.RateGroupMemberOut[0] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[0] -> comDriver.schedIn #rfm69.run
       rateGroup1.RateGroupMemberOut[1] -> blinker.run
 
       # Rate group 2
@@ -87,12 +88,17 @@ module BaremetalReference {
 
       framer.framedAllocate -> bufferManager.bufferGetCallee
       framer.framedOut -> rfm69.comDataIn
-      rfm69.deallocate -> bufferManager.bufferSendIn
-
+      #rfm69.deallocate -> bufferManager.bufferSendIn ### //Turn off for Uart Comm
+      comDriver.deallocate -> bufferManager.bufferSendIn
+      comDriver.ready -> rfm69.drvConnected
       rfm69.comStatus -> commQueue.comStatusIn
+      rfm69.drvDataOut -> comDriver.$send
 
       # Uplink
-      rfm69.allocate -> bufferManager.bufferGetCallee
+      #rfm69.allocate -> bufferManager.bufferGetCallee
+      comDriver.$recv -> rfm69.drvDataIn
+      comDriver.allocate -> bufferManager.bufferGetCallee
+
       rfm69.comDataOut -> deframer.framedIn
       deframer.framedDeallocate -> bufferManager.bufferSendIn
 
@@ -101,7 +107,6 @@ module BaremetalReference {
 
       deframer.bufferAllocate -> bufferManager.bufferGetCallee
       deframer.bufferDeallocate -> bufferManager.bufferSendIn
-
     }
 
     connections I2c {
@@ -112,7 +117,7 @@ module BaremetalReference {
     connections BaremetalReference {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
-      rfm69.gpioReset -> gpioRadioReset.gpioWrite
+      #rfm69.gpioReset -> gpioRadioReset.gpioWrite ### //Turn off for Uart Comm
     }
 
   }

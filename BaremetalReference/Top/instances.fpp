@@ -73,8 +73,11 @@ module BaremetalReference {
 
   instance blinker: Components.LedBlinker base id 0x10000
 
-  instance rfm69: Radio.RFM69 base id 0x10100
+  #instance rfm69: Radio.RFM69 base id 0x10100 ###//Turn off for Uart Comm
+  instance rfm69: Svc.ComStub base id 0x10100
 
-  instance imu: Sensors.IMU_MPU9250 base id 0x10200
+  instance comDriver: Arduino.StreamDriver base id 0x10200
+
+  instance imu: Sensors.IMU_MPU9250 base id 0x10300
 
 }
