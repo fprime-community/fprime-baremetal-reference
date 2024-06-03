@@ -29,7 +29,6 @@ def test_send_command_with_args(fprime_test_api):
 
     Test command send, dispatch, and receipt using a pair of NO_OP_STRING commands.
     """
-    #result = fprime_test_api.send_and_assert_command('cmdDisp.CMD_NO_OP_STRING', ['hello'], max_delay=10.0)
     result = fprime_test_api.send_command('cmdDisp.CMD_NO_OP_STRING', ['hello'])
     result = fprime_test_api.assert_event('OpCodeDispatched', timeout = 3)
     result = fprime_test_api.assert_event('OpCodeCompleted')
@@ -44,7 +43,6 @@ def test_telemetry_update(fprime_test_api):
     2. Send 5 CMD_NO_OP commands.
     3. Verify channel CommandsDispatched is the baseline value +5.
     """
-    #result = fprime_test_api.send_and_await_telemetry('cmdDisp.CMD_NO_OP', channels = 'cmdDisp.CommandsDispatched')
     result = fprime_test_api.send_command('cmdDisp.CMD_NO_OP') #have to send a no op to get chan to update to grab baseline value
     result = fprime_test_api.await_telemetry('cmdDisp.CommandsDispatched')
 
