@@ -10,7 +10,8 @@ Without doing this during upload you will get the following message:
 
 2. Have the Teensy connected to the computer and press the button the board to put it in the HalfKay bootloader mode. Board should now have a solid red led lit by the usb port.
 
-Note: Teensy has 2 different serial addresses, one for when programming is running and one for when the board is in HalfKay bootloader mode. Right now you will need the latter. To determine the address do one of two things (after putting the board in HalfKay bootloader mode):
+Note: Teensy has 2 different serial addresses, one for when programming is running and one for when the board is in HalfKay bootloader mode. Right now you will need the latter. To determine the address do one of three things (after putting the board in HalfKay bootloader mode):
+- Run command `arduino-cli board list`. Look for `usb:xxxxxxx` that should have protocol `teensy`. This also lists the fully qualified board name (FQBN) that we will use in the next step.
 - Use Arduino IDE. Under Tools -> Port, select port listed under teensy port. After this go to Tools tab again and now Port should print out the usb address similar to `usb:xxxxxxxx`.
 - if on a Mac, About -> System Report. Look for USB Serial device. Manufacturer should be Teensyduino. Location id given is the address.
 
