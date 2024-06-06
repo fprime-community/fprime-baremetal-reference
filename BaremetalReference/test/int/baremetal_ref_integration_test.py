@@ -101,7 +101,7 @@ def test_id_filter(fprime_test_api):
     result = fprime_test_api.assert_event('SetBlinkingState', timeout = 3)
     result = fprime_test_api.assert_event('OpCodeDispatched', timeout = 3)
     result = fprime_test_api.assert_event('OpCodeCompleted')
-    time.sleep(3)
+    time.sleep(5)
     result = fprime_test_api.send_command('eventLogger.SET_ID_FILTER', ['0x10001', 'ENABLED'])
     result = fprime_test_api.assert_event('eventLogger.ID_FILTER_ENABLED', timeout = 3)
     result = fprime_test_api.assert_event('OpCodeDispatched', timeout = 3)
