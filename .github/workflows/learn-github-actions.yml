@@ -11,3 +11,11 @@ jobs:
           node-version: '20'
       - run: npm install -g bats
       - run: bats -v
+      - name: "Overlay current F´ revision"
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          path: ${{ inputs.fprime_location }}
+      - name: "install requirements.txt"
+        run: pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+        shell: bash
