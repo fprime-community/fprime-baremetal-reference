@@ -25,7 +25,12 @@ jobs:
              fprime-util generate
              fprime-util build
         shell: bash
+      - name: "Temp step, file renaming "
+        run: |
+             mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.ino
+             mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.ino
+        shell: bash
       - name: "Burn"
         run: |
-             arduino-cli upload --fqbn teensy:avr:teensy:41 -p usb:3120000 -i ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
+             arduino-cli upload --fqbn teensy:avr:teensy41 -p usb:3120000 -i ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
         shell: bash
