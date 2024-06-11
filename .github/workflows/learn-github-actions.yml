@@ -2,7 +2,7 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  baremetal:
+  baremetal-int:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
@@ -11,12 +11,16 @@ jobs:
         with:
           submodules: true
           path: ${{ inputs.fprime_location }}
-      - uses: ./fprime/.github/actions/setup
-      - name: "Install requirements.txt"
-        run: pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+      - name: "Build"
+        run: |
+             python3 -m venv ./fprime-venv
+             . ./fprime-venv/bin/activate
+             pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+             curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=. sh
+             git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
+             cd arduino-cli-cmake-wrapper
+             git checkout update/refactor
+             pip install .
+             cd ..
+             fprime-util generate
         shell: bash
-      - name: "Generate build cache"
-      working-direcotry: ${{ inputs.build_location}}
-      run: |
-        fprime-util generate  ${{ runner.debug == '1' && '--verbose' || '' }} ${{ inputs.target_platform }}
-      shell: bash
