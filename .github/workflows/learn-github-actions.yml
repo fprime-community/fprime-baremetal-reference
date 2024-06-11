@@ -12,6 +12,11 @@ jobs:
           submodules: true
           path: ${{ inputs.fprime_location }}
       - uses: ./fprime/.github/actions/setup
-      - name: "install requirements.txt"
+      - name: "Install requirements.txt"
         run: pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
         shell: bash
+      - name: "Generate build cache"
+      working-direcotry: ${{ inputs.build_location}}
+      run: |
+        fprime-util generate  ${{ runner.debug == '1' && '--verbose' || '' }} ${{ inputs.target_platform }}
+      shell: bash
