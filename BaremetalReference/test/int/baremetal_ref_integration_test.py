@@ -52,7 +52,8 @@ def test_telemetry_update(fprime_test_api):
 
     for i in range(cmdsCount):
         result = fprime_test_api.send_command('cmdDisp.CMD_NO_OP')
-    result = fprime_test_api.await_telemetry('cmdDisp.CommandsDispatched', expectedVal)
+    time.sleep(3)
+    result = fprime_test_api.assert_telemetry('cmdDisp.CommandsDispatched', expectedVal, timeout = 5)
 
 def test_event_filter(fprime_test_api):
     """Test that events can be filtered by type
