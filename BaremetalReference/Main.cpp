@@ -30,10 +30,11 @@ Os::TaskRunner taskrunner;
 void setup()
 {
     // Setup Serial
-    Serial.begin(115200);
-    //Os::setArduinoStreamLogHandler(&Serial); //***Turn off for Uart Comm
+    Serial.begin(115200); //Uart Comm
+    Serial1.begin(115200); //logging
+    Os::setArduinoStreamLogHandler(&Serial1);
     delay(1000);
-    //Fw::Logger::logMsg("Program Started\n"); //***Turn off for Uart Comm
+    Fw::Logger::logMsg("Program Started\n");
 
     // Object for communicating state to the reference topology
     BaremetalReference::TopologyState inputs;
