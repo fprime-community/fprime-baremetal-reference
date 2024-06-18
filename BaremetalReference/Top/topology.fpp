@@ -33,7 +33,7 @@ module BaremetalReference {
     instance rateGroup1
     instance rateGroup2
     instance rateGroupDriver
-    instance rfm69
+    #instance rfm69 ## enable when using radio
     instance systemResources
     instance systemTime
     instance textLogger
