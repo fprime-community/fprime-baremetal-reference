@@ -30,8 +30,9 @@ Os::TaskRunner taskrunner;
 void setup()
 {
     // Setup Serial
-    Serial.begin(115200);
-    Os::setArduinoStreamLogHandler(&Serial);
+    Serial.begin(115200); //Uart Comm
+    Serial1.begin(115200); //logging
+    Os::setArduinoStreamLogHandler(&Serial1);
     delay(1000);
     Fw::Logger::logMsg("Program Started\n");
 

@@ -18,6 +18,7 @@ module BaremetalReference {
     instance blinker
     instance bufferManager
     instance cmdDisp
+    instance comDriver ## disable when using radio
     instance commQueue
     instance deframer
     instance eventLogger
@@ -32,7 +33,7 @@ module BaremetalReference {
     instance rateGroup1
     instance rateGroup2
     instance rateGroupDriver
-    instance rfm69
+    #instance rfm69 ## enable when using radio
     instance systemResources
     instance systemTime
     instance textLogger
@@ -62,7 +63,7 @@ module BaremetalReference {
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      rateGroup1.RateGroupMemberOut[0] -> rfm69.run
+      rateGroup1.RateGroupMemberOut[0] -> comDriver.schedIn #rfm69.run
       rateGroup1.RateGroupMemberOut[1] -> blinker.run
 
       # Rate group 2
@@ -77,23 +78,21 @@ module BaremetalReference {
       eventLogger.FatalAnnounce -> fatalHandler.FatalReceive
     }
 
-    connections Comms {
+    connections SerialComms {
 
       # Downlink
-      tlmSend.PktSend -> commQueue.comQueueIn[0]
-      eventLogger.PktSend -> commQueue.comQueueIn[1]
 
-      commQueue.comQueueSend -> framer.comIn
+      tlmSend.PktSend -> framer.comIn
+      eventLogger.PktSend -> framer.comIn
 
       framer.framedAllocate -> bufferManager.bufferGetCallee
-      framer.framedOut -> rfm69.comDataIn
-      rfm69.deallocate -> bufferManager.bufferSendIn
-
-      rfm69.comStatus -> commQueue.comStatusIn
+      framer.framedOut -> comDriver.$send
+      comDriver.deallocate -> bufferManager.bufferSendIn
 
       # Uplink
-      rfm69.allocate -> bufferManager.bufferGetCallee
-      rfm69.comDataOut -> deframer.framedIn
+      comDriver.$recv ->deframer.framedIn
+      comDriver.allocate -> bufferManager.bufferGetCallee
+
       deframer.framedDeallocate -> bufferManager.bufferSendIn
 
       deframer.comOut -> cmdDisp.seqCmdBuff
@@ -101,8 +100,33 @@ module BaremetalReference {
 
       deframer.bufferAllocate -> bufferManager.bufferGetCallee
       deframer.bufferDeallocate -> bufferManager.bufferSendIn
-
     }
+
+    #Uncomment RadioComms and comment SerialComms to swap to radio
+    #connections RadioComms {
+      # Downlink
+      #tlmSend.PktSend -> commQueue.comQueueIn[0]
+      #eventLogger.PktSend -> commQueue.comQueueIn[1]
+
+      #commQueue.comQueueSend -> framer.comIn
+
+      #framer.framedAllocate -> bufferManager.bufferGetCallee
+      #framer.framedOut -> rfm69.comDataIn
+      #rfm69.deallocate -> bufferManager.bufferSendIn
+
+      #rfm69.comStatus -> commQueue.comStatusIn
+
+      # Uplink
+      #rfm69.allocate -> bufferManager.bufferGetCallee
+      #rfm69.comDataOut -> deframer.framedIn
+      #deframer.framedDeallocate -> bufferManager.bufferSendIn
+
+      #deframer.comOut -> cmdDisp.seqCmdBuff
+      #cmdDisp.seqCmdStatus -> deframer.cmdResponseIn
+
+      #deframer.bufferAllocate -> bufferManager.bufferGetCallee
+      #deframer.bufferDeallocate -> bufferManager.bufferSendIn
+    #}
 
     connections I2c {
       imu.read -> i2cDriver.read
@@ -112,7 +136,7 @@ module BaremetalReference {
     connections BaremetalReference {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
-      rfm69.gpioReset -> gpioRadioReset.gpioWrite
+      #rfm69.gpioReset -> gpioRadioReset.gpioWrite ### //Turn off for Uart Comm
     }
 
   }

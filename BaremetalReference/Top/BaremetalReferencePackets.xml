@@ -57,12 +57,14 @@
         <channel name="blinker.BlinkingState"/>
     </packet>
 
+    <!-- Disabled for Uart. Enable if running radio
     <packet name="RadioChannels" id="7" level="1">
         <channel name="rfm69.Status"/>
         <channel name="rfm69.NumPacketsReceived"/>
         <channel name="rfm69.NumPacketsSent"/>
         <channel name="rfm69.RSSI"/>
     </packet>
+    -->
 
     <packet name="SensorChannels" id="8" level="1">
         <channel name="imu.accelerometer"/>
