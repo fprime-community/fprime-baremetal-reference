@@ -35,7 +35,7 @@ jobs:
              arduino-cli upload --fqbn teensy:avr:teensy41 -p usb:3120000 -i ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
         shell: bash
       - name: "Start GDS"
-        run: fprime-gds -n --dictionary ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/tty.usbmodem159910601 &
+        run: fprime-gds -n --dictionary ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --gui none --comm-adapter uart --uart-device /dev/tty.usbmodem159910601 &
         shell: bash
       - name: "Run Integration tests"
         run: |
