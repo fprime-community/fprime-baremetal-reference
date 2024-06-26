@@ -40,4 +40,5 @@ jobs:
       - name: "Run Integration tests"
         run: |
             sleep 10
-            pytest BaremetalReference/test/int/baremetal_ref_integration_test.py --dictionary ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml -rP
+            pytest BaremetalReference/test/int/baremetal_ref_integration_test.py --dictionary ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml -rP | tee ../test_artifacts/test_run_$(date '+%Y-%m-%d-%H-%M').txt
+
