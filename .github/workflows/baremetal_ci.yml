@@ -1,8 +1,16 @@
 name: baremetal-ci-actions
 run-name: ${{ github.actor }} running Baremetal CI actions
 on: [push]
+
+env:
+  baremetal-bin: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
+  baremetal-dict: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
+  upload-addr: usb:3120000
+  serial-gds-args: --comm-adapter uart --uart-device /dev/tty.usbmodem159910601
+  log-path:  ../test_artifacts/test_run_$(date +'%Y-%m-%dT%H%M%S').txt
+
 jobs:
-  baremetal-int:
+  build:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
@@ -24,21 +32,27 @@ jobs:
              cd ..
              fprime-util generate
              fprime-util build
-        shell: bash
       - name: "Temp step, file renaming"
         run: |
              mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.ino
              mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.ino
-        shell: bash
-      - name: "Burn"
-        run: |
-             arduino-cli upload --fqbn teensy:avr:teensy41 -p usb:3120000 -i ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
-        shell: bash
+  upload:
+    runs-on: self-hosted
+    needs: build
+    steps:
+      - name: "Load FSW onto Teensy41"
+        run: arduino-cli upload --fqbn teensy:avr:teensy41 -p ${{ env.upload-addr }} -i ${{ env.baremetal-bin }}
+  gds:
+    runs-on: self-hosted
+    needs: [build, upload]
+    steps:
       - name: "Start GDS"
-        run: fprime-gds -n --dictionary ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --gui none --comm-adapter uart --uart-device /dev/tty.usbmodem159910601 &
-        shell: bash
+        run: fprime-gds -n --dictionary ${{ env.baremetal-dict }} --gui none ${{ env.serial-gds-args }} &
+  fit:
+    runs-on: self-hosted
+    needs: [build, upload, gds]
+    steps:
       - name: "Run Integration tests"
         run: |
             sleep 13
-            pytest BaremetalReference/test/int/baremetal_ref_integration_test.py --dictionary ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml -rP | tee ../test_artifacts/test_run_$(date +'%Y-%m-%dT%H%M%S').txt
-
+            pytest BaremetalReference/test/int/baremetal_ref_integration_test.py --dictionary ${{ env.baremetal-dict }} -rP | tee ${{ env.log-path }}
