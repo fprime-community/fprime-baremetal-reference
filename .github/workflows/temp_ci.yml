@@ -1,0 +1,28 @@
+name: temp-ci-actions
+run-name: ${{ github.actor }} running Baremetal CI actions
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Checkout F' Repository"
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          path: ${{ inputs.fprime_location }}
+      - name: "Build"
+        run: |
+            echo "hello"
+
+  fit:
+    needs: [build]
+    uses: ./.github/workflows/reusable_fit.yml
+    with:
+      runs_on: ubuntu-latest
+      start_cmd: "arduino-cli upload --fqbn teensy:avr:teensy41 -p usb:3120000 -i ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex"
+      gds_args: "--comm-adapter uart --uart-device /dev/tty.usbmodem159910601"
+      log_path: "../test_artifacts/test_run_$(date +'%Y-%m-%dT%H%M%S').txt"
+      dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
+      fsw_first: false

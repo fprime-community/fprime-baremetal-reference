@@ -1,0 +1,57 @@
+name: resuable-fit
+
+on:
+  workflow_call:
+    inputs:
+      runs_on:
+        required: false
+        type: string
+        default: "ubuntu-latest"
+      gds_args:
+        required: true
+        type: string
+      log_path:
+        required: true
+        type: string
+      dict_path:
+        required: true
+        type: string
+      start_cmd:
+        required: false
+        type: string
+        default: "start fsw cmd"
+      fsw_first:
+        required: false
+        type: boolean
+        default: true
+jobs:
+# Either jobs below gets run before starting FIT: fsw-gds (start FSW first and then GDS) or gds-fsw (start GDS first and then FSW)
+  fsw-gds:
+    if: ${{ inputs.fsw_first }}
+    runs-on: ${{ inputs.runs_on}}
+    steps:
+      - name: "Start FSW"
+        run: echo ${{ inputs.start_cmd }}
+      - name: "Start GDS"
+        run: |
+            echo ${{ inputs.gds_args }}
+            sleep 10
+  gds-fsw:
+    if: ${{ inputs.fsw_first == false }}
+    runs-on: ${{ inputs.runs_on }}
+    steps:
+      - name: "Start GDS"
+        run: echo ${{ inputs.gds_args }}
+      - name: "Start FSW"
+        run: |
+            echo ${{ inputs.start_cmd }}
+            sleep 10
+
+  fit:
+    runs-on: ${{ inputs.runs_on }}
+    if: ${{ always() }}
+    needs: [fsw-gds, gds-fsw]
+    steps:
+      - name: "Run Integration tests"
+        run: |
+            echo ${{ inputs.dict-path }} ${{ inputs.log_path }}
