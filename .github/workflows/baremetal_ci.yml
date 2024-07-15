@@ -3,9 +3,7 @@ run-name: ${{ github.actor }} running Baremetal CI actions
 #on: [push]
 
 env:
-  baremetal-bin: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
   baremetal-dict: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
-  upload-addr: usb:3120000
   serial-gds-args: --comm-adapter uart --uart-device /dev/tty.usbmodem159910601
   log-path:  ../test_artifacts/test_run_$(date +'%Y-%m-%dT%H%M%S').txt
 
@@ -41,7 +39,7 @@ jobs:
     needs: build
     steps:
       - name: "Load FSW onto Teensy41"
-        run: arduino-cli upload --fqbn teensy:avr:teensy41 -p ${{ env.upload-addr }} -i ${{ env.baremetal-bin }}
+        run: arduino-cli upload --fqbn teensy:avr:teensy41 -p usb:3120000 -i ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
   gds:
     runs-on: self-hosted
     needs: [build, upload]
@@ -54,5 +52,4 @@ jobs:
     steps:
       - name: "Run Integration tests"
         run: |
-            sleep 13
             pytest BaremetalReference/test/int/baremetal_ref_integration_test.py --dictionary ${{ env.baremetal-dict }} -rP | tee ${{ env.log-path }}

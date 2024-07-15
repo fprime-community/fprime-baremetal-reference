@@ -7,28 +7,49 @@ on:
         required: false
         type: string
         default: "ubuntu-latest"
-      gds_args:
-        required: true
-        type: string
       log_path:
         required: true
         type: string
-      dict_path:
+      non_embedded:
         required: true
-        type: string
-      start_cmd:
-        required: false
-        type: string
-        default: "start fsw cmd"
+        type: boolean
+      # following are labelled as not required but are needed if non_embedded is false
       fsw_first:
         required: false
         type: boolean
         default: true
+      start_cmd:
+        required: false
+        type: string
+        default: "start fsw cmd"
+      gds_args:
+        required: false
+        type: string
+      dict_path:
+        required: false
+        type: string
+
 jobs:
-# Either jobs below gets run before starting FIT: fsw-gds (start FSW first and then GDS) or gds-fsw (start GDS first and then FSW)
+# Following 3 jobs are on a switch, only one will run based on 2 conditionals: non_embedded and fsw_first.
+# job 1 start fsw gds together: if non_embedded is true.
+# job 2 start fsw first and then gds: if not non_embedded and fsw_first is true
+# job 3 start gds and then fsw: if not non_embedded and not fsw_first
+# after one of these 3 jobs run, fit job will run.
+#
+#           /    non-embedded   \
+# build --->|    fsw-gds        |---> fit
+#           \    gds-fsw        /
+
+  non-embedded:
+    if: ${{ inputs.non_embedded }}
+    runs-on: ${{ inputs.runs_on }}
+    steps:
+      - name: "Start FSW and GDS"
+        run: echo ${{ inputs.start_cmd }}
+
   fsw-gds:
-    if: ${{ inputs.fsw_first }}
-    runs-on: ${{ inputs.runs_on}}
+    if: ${{ !inputs.non_embedded && inputs.fsw_first }}
+    runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW"
         run: echo ${{ inputs.start_cmd }}
@@ -37,7 +58,7 @@ jobs:
             echo ${{ inputs.gds_args }}
             sleep 10
   gds-fsw:
-    if: ${{ inputs.fsw_first == false }}
+    if: ${{ !inputs.non_embedded && !inputs.fsw_first }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start GDS"
@@ -50,7 +71,7 @@ jobs:
   fit:
     runs-on: ${{ inputs.runs_on }}
     if: ${{ always() }}
-    needs: [fsw-gds, gds-fsw]
+    needs: [non-embedded, fsw-gds, gds-fsw]
     steps:
       - name: "Run Integration tests"
         run: |
