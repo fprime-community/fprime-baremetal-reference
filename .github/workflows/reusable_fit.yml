@@ -21,11 +21,14 @@ on:
       start_cmd:
         required: false
         type: string
-        default: "start fsw cmd"
+        default: "fprime-gds"
       gds_args:
         required: false
         type: string
       dict_path:
+        required: false
+        type: string
+      test_path:
         required: false
         type: string
 
@@ -45,34 +48,35 @@ jobs:
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW and GDS"
-        run: echo ${{ inputs.start_cmd }}
+        run: ${{ inputs.start_cmd }}
+      - name: "Run Integration tests"
+        run: |
+            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
 
   fsw-gds:
     if: ${{ !inputs.non_embedded && inputs.fsw_first }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW"
-        run: echo ${{ inputs.start_cmd }}
+        run: ${{ inputs.start_cmd }}
       - name: "Start GDS"
         run: |
-            echo ${{ inputs.gds_args }}
+            fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
             sleep 10
+      - name: "Run Integration tests"
+        run: |
+            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+
   gds-fsw:
     if: ${{ !inputs.non_embedded && !inputs.fsw_first }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start GDS"
-        run: echo ${{ inputs.gds_args }}
+        run: fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
       - name: "Start FSW"
         run: |
-            echo ${{ inputs.start_cmd }}
+            ${{ inputs.start_cmd }}
             sleep 10
-
-  fit:
-    runs-on: ${{ inputs.runs_on }}
-    if: ${{ always() }}
-    needs: [non-embedded, fsw-gds, gds-fsw]
-    steps:
       - name: "Run Integration tests"
         run: |
-            echo ${{ inputs.dict-path }} ${{ inputs.log_path }}
+            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
