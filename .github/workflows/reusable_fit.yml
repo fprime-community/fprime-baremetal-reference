@@ -63,9 +63,14 @@ jobs:
         run: |
             fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
             sleep 10
+      - uses: actions/checkout@v4
       - name: "Run Integration tests"
-        run: |
-            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+        uses: ./.github/actions/fit_composite_action.yml
+        with:
+          dict_path: ${{ inputs.dict_path }}
+          log_path: ${{ inputs.log_path }}
+        #run: ${{ github.action_path }}
+        #    pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
 
   gds-fsw:
     if: ${{ !inputs.non_embedded && !inputs.fsw_first }}
@@ -80,3 +85,12 @@ jobs:
       - name: "Run Integration tests"
         run: |
             pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+
+#  fit:
+#    runs-on: ${{ inputs.runs_on }}
+#    if: ${{ always() }}
+#    needs: [non-embedded, fsw-gds, gds-fsw]
+#    steps:
+#      - name: "Run Integration tests"
+#        run: |
+#            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
