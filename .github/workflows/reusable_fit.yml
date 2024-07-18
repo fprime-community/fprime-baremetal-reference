@@ -37,7 +37,7 @@ jobs:
 # job 1 start fsw gds together: if non_embedded is true.
 # job 2 start fsw first and then gds: if not non_embedded and fsw_first is true
 # job 3 start gds and then fsw: if not non_embedded and not fsw_first
-# after one of these 3 jobs run, fit job will run.
+# after one of these 3 jobs run, fit job step will run.
 #
 #           /    non-embedded   \
 # build --->|    fsw-gds        |---> fit
@@ -51,6 +51,7 @@ jobs:
         run: ${{ inputs.start_cmd }}
       - name: "Run Integration tests"
         run: |
+            sleep 12
             pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
 
   fsw-gds:
@@ -62,15 +63,9 @@ jobs:
       - name: "Start GDS"
         run: |
             fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
-            sleep 10
-      - uses: actions/checkout@v4
+            sleep 12
       - name: "Run Integration tests"
-        uses: ./.github/actions/fit_composite_action.yml
-        with:
-          dict_path: ${{ inputs.dict_path }}
-          log_path: ${{ inputs.log_path }}
-        #run: ${{ github.action_path }}
-        #    pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
 
   gds-fsw:
     if: ${{ !inputs.non_embedded && !inputs.fsw_first }}
@@ -81,10 +76,9 @@ jobs:
       - name: "Start FSW"
         run: |
             ${{ inputs.start_cmd }}
-            sleep 10
+            sleep 12
       - name: "Run Integration tests"
-        run: |
-            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
 
 #  fit:
 #    runs-on: ${{ inputs.runs_on }}
