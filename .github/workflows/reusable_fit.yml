@@ -7,17 +7,10 @@ on:
         required: false
         type: string
         default: "ubuntu-latest"
-      log_path:
+      resource_type:
         required: true
         type: string
-      non_embedded:
-        required: true
-        type: boolean
-      # following are labelled as not required but are needed if non_embedded is false
-      fsw_first:
-        required: false
-        type: boolean
-        default: true
+        default: "non_embedded"
       start_cmd:
         required: false
         type: string
@@ -44,7 +37,7 @@ jobs:
 #           \    gds-fsw        /
 
   non-embedded:
-    if: ${{ inputs.non_embedded }}
+    if: ${{ inputs.resource_type == 'non-embedded' }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW and GDS"
@@ -52,10 +45,10 @@ jobs:
       - name: "Run Integration tests"
         run: |
             sleep 12
-            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
   fsw-gds:
-    if: ${{ !inputs.non_embedded && inputs.fsw_first }}
+    if: ${{ inputs.resource_type == 'fsw-gds' }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW"
@@ -65,10 +58,10 @@ jobs:
             fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
             sleep 12
       - name: "Run Integration tests"
-        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
   gds-fsw:
-    if: ${{ !inputs.non_embedded && !inputs.fsw_first }}
+    if: ${{ inputs.resource_type == 'gds-fsw' }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start GDS"
@@ -78,7 +71,7 @@ jobs:
             ${{ inputs.start_cmd }}
             sleep 12
       - name: "Run Integration tests"
-        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
 #  fit:
 #    runs-on: ${{ inputs.runs_on }}
@@ -87,4 +80,4 @@ jobs:
 #    steps:
 #      - name: "Run Integration tests"
 #        run: |
-#            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP | tee ${{ inputs.log_path }}
+#            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
