@@ -7,10 +7,10 @@ on:
         required: false
         type: string
         default: "ubuntu-latest"
-      resource_type:
+      platform_setup:
         required: true
         type: string
-        default: "non_embedded"
+        default: "non-embedded"
       start_cmd:
         required: false
         type: string
@@ -37,7 +37,7 @@ jobs:
 #           \    gds-fsw        /
 
   non-embedded:
-    if: ${{ inputs.resource_type == 'non-embedded' }}
+    if: ${{ inputs.platform_setup == 'non-embedded' }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW and GDS"
@@ -48,7 +48,7 @@ jobs:
             pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
   fsw-gds:
-    if: ${{ inputs.resource_type == 'fsw-gds' }}
+    if: ${{ inputs.platform_setup == 'fsw-gds' }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW"
@@ -61,7 +61,7 @@ jobs:
         run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
   gds-fsw:
-    if: ${{ inputs.resource_type == 'gds-fsw' }}
+    if: ${{ inputs.platform_setup == 'gds-fsw' }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start GDS"

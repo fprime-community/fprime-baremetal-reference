@@ -1,29 +1,25 @@
 name: temp-ci-actions
 run-name: ${{ github.actor }} running Baremetal CI actions
-#on: [push]
+on: [push]
 
 env:
+  platform_setup: 'gds-fsw'
   baremetal_bin: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
   upload_addr: usb:3120000
   gds_args: --comm-adapter uart --uart-device /dev/tty.usbmodem159910601
-  log_path:  ../test_artifacts/test_run_$(date +'%Y-%m-%dT%H%M%S').txt
   dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
   test_path: BaremetalReference/test/int/baremetal_ref_integration_test.py
 
 jobs:
-  vars:
+
+  build:
     runs-on: ubuntu-latest
     outputs:
-      log_path: ${{ env.log_path }}
+      platform_setup: ${{ env.platform_setup }}
       start_cmd: arduino-cli upload --fqbn teensy:avr:teensy41 -p ${{ env.upload_addr }} -i ${{ env.baremetal_bin }}
       gds_args: ${{ env.gds_args }}
       dict_path: ${{ env.dict_path }}
       test_path: ${{ env.test_path }}
-    steps:
-      - run: echo "Expose env vars for reusable workflow."
-
-  build:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: "Checkout F' Repository"
@@ -33,15 +29,14 @@ jobs:
           path: ${{ inputs.fprime_location }}
       - name: "Build"
         run: echo ${{ github.workspace }}
+      - run: echo "Expose env vars for reusable workflow."
 
   fit:
-    needs: [build, vars]
+    needs: build
     uses: ./.github/workflows/reusable_fit.yml
     with:
       runs_on: ubuntu-latest
-      log_path: ${{ needs.vars.outputs.log_path }}
-      non_embedded: false
-      fsw_first: true
+      platform_setup: ${{ needs.build.outputs.platform_setup }}
       start_cmd: ${{ needs.vars.outputs.start_cmd }}
       gds_args: ${{ needs.vars.outputs.gds_args }}
       dict_path: ${{ needs.vars.outputs.dict_path }}
