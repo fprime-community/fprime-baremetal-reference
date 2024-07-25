@@ -58,7 +58,7 @@ jobs:
             fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
             sleep 12
       - name: "Run Integration tests"
-        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
+        run: pytest ${{ inputs.test_path }} -rP --dictionary ${{ inputs.dict_path }} --logs ./
 
   gds-fsw:
     if: ${{ inputs.platform_setup == 'gds-fsw' }}

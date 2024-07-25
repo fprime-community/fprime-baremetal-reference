@@ -1,6 +1,6 @@
 name: temp-ci-actions
 run-name: ${{ github.actor }} running Baremetal CI actions
-on: [push]
+#on: [push]
 
 env:
   platform_setup: 'gds-fsw'
