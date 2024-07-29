@@ -9,6 +9,7 @@ env:
   gds_args: --comm-adapter uart --uart-device /dev/tty.usbmodem159910601
   dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
   test_path: BaremetalReference/test/int/baremetal_ref_integration_test.py
+  workspace_path: ${{ github.workspace }}
 
 jobs:
 
@@ -20,6 +21,7 @@ jobs:
       gds_args: ${{ env.gds_args }}
       dict_path: ${{ env.dict_path }}
       test_path: ${{ env.test_path }}
+      workspace_path: ${{ env.workspace_path }}
     steps:
       - uses: actions/checkout@v4
       - name: "Checkout F' Repository"
@@ -48,7 +50,7 @@ jobs:
 
   fit:
     needs: build
-    uses: ./.github/workflows/reusable_fit.yml
+    uses: ./.github/workflows/reusable_fit_ci.yml
     with:
       runs_on: self-hosted
       platform_setup: ${{ needs.build.outputs.platform_setup }}
@@ -56,3 +58,4 @@ jobs:
       gds_args: ${{ needs.build.outputs.gds_args }}
       dict_path: ${{ needs.build.outputs.dict_path }}
       test_path: ${{ needs.build.outputs.test_path }}
+      workspace_path: ${{ needs.build.outputs.workspace_path }}

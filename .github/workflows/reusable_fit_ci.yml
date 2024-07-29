@@ -24,16 +24,18 @@ on:
       test_path:
         required: false
         type: string
+      workspace_path:
+        required: true
+        type: string
 
 jobs:
-# Following 3 jobs are on a switch, only one will run based on 2 conditionals: non_embedded and fsw_first.
-# job 1 start fsw gds together: if non_embedded is true.
-# job 2 start fsw first and then gds: if not non_embedded and fsw_first is true
-# job 3 start gds and then fsw: if not non_embedded and not fsw_first
-# after one of these 3 jobs run, fit job step will run.
+# Following jobs are on a switch, only one will run based on platform_setup string.
+# Each job has a different method of starting FSW, FIT is run at the end of each job.
+# If adding a new setup make sure it does not collide with an existing job.
+# After one of these jobs is run, the upload FIT artifact job will then run.
 #
 #           /    non-embedded   \
-# build --->|    fsw-gds        |---> fit
+# build --->|    fsw-gds        |---> upload-fit-artifacts
 #           \    gds-fsw        /
 
   non-embedded:
@@ -73,11 +75,21 @@ jobs:
       - name: "Run Integration tests"
         run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
-#  fit:
-#    runs-on: ${{ inputs.runs_on }}
-#    if: ${{ always() }}
-#    needs: [non-embedded, fsw-gds, gds-fsw]
-#    steps:
-#      - name: "Run Integration tests"
-#        run: |
-#            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
+  upload-fit-artifact:
+    runs-on: ${{ inputs.runs_on }}
+    if: ${{ always() }} #as long as one of the above jobs run, this job will run
+    needs: [non-embedded, fsw-gds, gds-fsw]
+    steps:
+      - name: "Upload Integration Test Results"
+        #Navigate to workspace path. nagigate into newest directory, which is for test logs.
+        #Rename test log because it contains date time and time is separated by colons that upload-artifact cannot handle.
+        #Store full path to test log xlsx in a variable for upload-artifact to use.
+        run: |
+            cd ${{ inputs.workspace_path }}
+            cd "$(ls -td -- */ | head -n 1)"
+            mv TestLog*.xlsx TestLog.xlsx
+            echo "TEST_LOG_PATH=$(realpath -s *.xlsx)" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TestLog
+          path: ${{ env.TEST_LOG_PATH }}
