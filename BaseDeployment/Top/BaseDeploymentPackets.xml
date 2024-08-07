@@ -12,38 +12,6 @@
     <packet name="CDHErrors" id="2" level="1">
     </packet>
 
-    <packet name="SystemRes1" id="5" level="2">
-        <channel name="systemResources.MEMORY_TOTAL"/>
-        <channel name="systemResources.MEMORY_USED"/>
-        <channel name="systemResources.NON_VOLATILE_TOTAL"/>
-        <channel name="systemResources.NON_VOLATILE_FREE"/>
-    </packet>
-
-    <packet name="SystemRes2" id="6" level="2">
-        <channel name="systemResources.FRAMEWORK_VERSION"/>
-        <channel name="systemResources.PROJECT_VERSION"/>
-    </packet>
-
-    <packet name="SystemRes3" id="7" level="2">
-        <channel name="systemResources.CPU"/>
-        <channel name="systemResources.CPU_00"/>
-        <channel name="systemResources.CPU_01"/>
-        <channel name="systemResources.CPU_02"/>
-        <channel name="systemResources.CPU_03"/>
-        <channel name="systemResources.CPU_04"/>
-        <channel name="systemResources.CPU_05"/>
-        <channel name="systemResources.CPU_06"/>
-        <channel name="systemResources.CPU_07"/>
-        <channel name="systemResources.CPU_08"/>
-        <channel name="systemResources.CPU_09"/>
-        <channel name="systemResources.CPU_10"/>
-        <channel name="systemResources.CPU_11"/>
-        <channel name="systemResources.CPU_12"/>
-        <channel name="systemResources.CPU_13"/>
-        <channel name="systemResources.CPU_14"/>
-        <channel name="systemResources.CPU_15"/>
-    </packet>
-
     <packet name="BlinkerChannels" id="8" level="1">
         <channel name="blinker.LedTransitions"/>
         <channel name="blinker.BlinkingState"/>

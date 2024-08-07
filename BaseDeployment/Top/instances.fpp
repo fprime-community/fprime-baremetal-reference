@@ -56,7 +56,7 @@ module BaseDeployment {
 
   instance deframer: Svc.Deframer base id 0x4800
 
-  instance systemResources: Svc.SystemResources base id 0x4900
+#  instance systemResources: Svc.SystemResources base id 0x4900
 
   instance rateDriver: Arduino.HardwareRateDriver base id 0x4A00
 

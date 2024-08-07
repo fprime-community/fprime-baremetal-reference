@@ -33,7 +33,6 @@ module BaseDeployment {
     instance rateGroup1
     instance rateGroupDriver
     instance staticMemory
-    instance systemResources
     instance systemTime
     instance textLogger
     instance tlmSend
@@ -65,7 +64,6 @@ module BaseDeployment {
       rateGroup1.RateGroupMemberOut[0] -> blinker.run
       rateGroup1.RateGroupMemberOut[1] -> commDriver.schedIn
       rateGroup1.RateGroupMemberOut[2] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[3] -> systemResources.run
     }
 
     connections FaultProtection {
