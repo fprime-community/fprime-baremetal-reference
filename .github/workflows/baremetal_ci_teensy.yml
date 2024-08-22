@@ -5,8 +5,7 @@ on: [push]
 env:
   platform_setup: "fsw-gds"
   baremetal_bin: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
-  upload_addr: usb:3120000
-  gds_args: --comm-adapter uart --uart-device /dev/tty.usbmodem159910601
+  gds_args: --comm-adapter uart --uart-device /dev/ttyACM0
   dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
   test_path: BaremetalReference/test/int/baremetal_ref_integration_test.py
   workspace_path: ${{ github.workspace }}
@@ -17,7 +16,7 @@ jobs:
     runs-on: self-hosted
     outputs:
       platform_setup: ${{ env.platform_setup }}
-      start_cmd: arduino-cli upload --fqbn teensy:avr:teensy41 -p ${{ env.upload_addr }} -i ${{ env.baremetal_bin }}
+      start_cmd: teensy_loader_cli --mcu=TEENSY41 -v -s ${{ env.baremetal_bin }}
       gds_args: ${{ env.gds_args }}
       dict_path: ${{ env.dict_path }}
       test_path: ${{ env.test_path }}
