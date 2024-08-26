@@ -24,6 +24,14 @@ Note: It has to be the full path to the BaremetalReference.hex file for arduino-
 
 4. While programming the red led will be brighter and then flash. Once done the board will get out of HalfKay bootloader mode (red led off) and run the BaremetalReference application. You should now see an orange flashing led by the button.
 
+### Alternate option for hex file upload
+Instead of using arduino-cli, you can also use teensy_loader_cli. This alternative is best if you are running on a headless machine / SBC and using SSH. teensy_loader_cli requires compiling on the host machine but usage is simpler.
+
+1. After building the hex file, simply call:
+```
+teensy_loader_cli --mcu=TEENSY41 -v -s /full_path/fprime-baremetal-reference/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
+```
+
 ## Using GDS via serial
 1. Find the serial port, this varies by your host system but it should show up as a `/dev/tty*` device. On the mac, it's /dev/tty.usbmodem*(9 digit number).
 2. Launch GDS: 
