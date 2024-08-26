@@ -32,13 +32,8 @@ jobs:
         run: |
              python3 -m venv ./fprime-venv
              . ./fprime-venv/bin/activate
+             pip3 install -U setuptools wheel pip
              pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
-             curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=. sh
-             git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
-             cd arduino-cli-cmake-wrapper
-             git checkout update/refactor
-             pip install .
-             cd ..
              fprime-util generate
              fprime-util build
       - name: "Temp step, file renaming"
