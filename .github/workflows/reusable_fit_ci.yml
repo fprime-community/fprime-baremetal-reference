@@ -43,9 +43,12 @@ jobs:
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW and GDS"
-        run: ${{ inputs.start_cmd }}
+        run: |
+            . ./fprime-venv/bin/activate
+            ${{ inputs.start_cmd }}
       - name: "Run Integration tests"
         run: |
+            . ./fprime-venv/bin/activate
             sleep 12
             pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
@@ -57,23 +60,30 @@ jobs:
         run: ${{ inputs.start_cmd }}
       - name: "Start GDS"
         run: |
+            . ./fprime-venv/bin/activate
             fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
             sleep 12
       - name: "Run Integration tests"
-        run: pytest ${{ inputs.test_path }} -rP --dictionary ${{ inputs.dict_path }} --logs ./
+        run: |
+            . ./fprime-venv/bin/activate
+            pytest ${{ inputs.test_path }} -rP --dictionary ${{ inputs.dict_path }} --logs ./
 
   gds-fsw:
     if: ${{ inputs.platform_setup == 'gds-fsw' }}
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start GDS"
-        run: fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
+        run: |
+            . ./fprime-venv/bin/activate
+            fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
       - name: "Start FSW"
         run: |
             ${{ inputs.start_cmd }}
             sleep 12
       - name: "Run Integration tests"
-        run: pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
+        run: |
+            . ./fprime-venv/bin/activate
+            pytest ${{ inputs.test_path }} --dictionary ${{ inputs.dict_path }} -rP
 
   upload-fit-artifact:
     runs-on: ${{ inputs.runs_on }}
