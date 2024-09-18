@@ -13,7 +13,7 @@ env:
 jobs:
 
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     outputs:
       platform_setup: ${{ env.platform_setup }}
       start_cmd: /home/odroid/teensy_loader_cli/teensy_loader_cli --mcu=TEENSY41 -v -s ${{ env.baremetal_bin }}
@@ -34,22 +34,48 @@ jobs:
              . ./fprime-venv/bin/activate
              pip3 install -U setuptools wheel pip
              pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+
+             mkdir -p ~/.local/bin
+             curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
+             cd ~/.local/bin
+             git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
+             cd arduino-cli-cmake-wrapper
+             git checkout update/refactor
+             pip3 install .
+             export PATH=~/.local/bin:$PATH
+             cd ${{ github.workspace }}
+             arduino-cli config init
+             arduino-cli config add board_manager.additional_urls https://www.pjrc.com/teensy/package_teensy_index.json
+             arduino-cli core update-index
+             arduino-cli core install teensy:avr
+
+             . ./fprime-venv/bin/activate
              fprime-util generate
              fprime-util build
-      - name: "Temp step, file renaming"
-        run: |
-             mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.ino
-             mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.ino
+      - name: "Upload build binary"
+        uses: actions/upload-artifact@v4
+        with:
+          name: BaremetalReference.hex
+          path: ${{ env.baremetal_bin }}
+      - name: "Upload dictionary"
+        uses: actions/upload-artifact@v4
+        with:
+          name: BaremetalReferenceTopologyAppDictionary.xml
+          path: ${{ env.dict_path }}
+      #- name: "Temp step, file renaming"
+      #  run: |
+      #       mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.ino
+      #       mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.ino
       - run: echo "Expose env vars for reusable workflow."
 
-  fit:
-    needs: build
-    uses: ./.github/workflows/reusable_fit_ci.yml
-    with:
-      runs_on: self-hosted
-      platform_setup: ${{ needs.build.outputs.platform_setup }}
-      start_cmd: ${{ needs.build.outputs.start_cmd }}
-      gds_args: ${{ needs.build.outputs.gds_args }}
-      dict_path: ${{ needs.build.outputs.dict_path }}
-      test_path: ${{ needs.build.outputs.test_path }}
-      workspace_path: ${{ needs.build.outputs.workspace_path }}
+#  fit:
+#    needs: build
+#    uses: ./.github/workflows/reusable_fit_ci.yml
+#    with:
+#      runs_on: self-hosted
+#      platform_setup: ${{ needs.build.outputs.platform_setup }}
+#      start_cmd: ${{ needs.build.outputs.start_cmd }}
+#      gds_args: ${{ needs.build.outputs.gds_args }}
+#      dict_path: ${{ needs.build.outputs.dict_path }}
+#      test_path: ${{ needs.build.outputs.test_path }}
+#      workspace_path: ${{ needs.build.outputs.workspace_path }}
