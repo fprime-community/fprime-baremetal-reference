@@ -9,6 +9,8 @@ env:
   dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
   test_path: BaremetalReference/test/int/baremetal_ref_integration_test.py
   workspace_path: ${{ github.workspace }}
+  new_baremetal_bin: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/build_binary
+  new_dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/dictionary.xml
 
 jobs:
 
@@ -16,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       platform_setup: ${{ env.platform_setup }}
-      start_cmd: /home/odroid/teensy_loader_cli/teensy_loader_cli --mcu=TEENSY41 -v -s ${{ env.baremetal_bin }}
+      start_cmd: /home/odroid/teensy_loader_cli/teensy_loader_cli --mcu=TEENSY41 -v -s ./build_binary
       gds_args: ${{ env.gds_args }}
       dict_path: ${{ env.dict_path }}
       test_path: ${{ env.test_path }}
@@ -52,30 +54,34 @@ jobs:
              . ./fprime-venv/bin/activate
              fprime-util generate
              fprime-util build
+      - name: "Rename build files"
+        run: |
+             mv ${{ env.baremetal_bin }} ${{ env.new_baremetal_bin }}
+             mv ${{ env.dict_path}} ${{ env.new_dict_path}}
       - name: "Upload build binary"
         uses: actions/upload-artifact@v4
         with:
-          name: BaremetalReference.hex
-          path: ${{ env.baremetal_bin }}
+          name: build_binary
+          path: ${{ env.new_baremetal_bin }}
       - name: "Upload dictionary"
         uses: actions/upload-artifact@v4
         with:
-          name: BaremetalReferenceTopologyAppDictionary.xml
-          path: ${{ env.dict_path }}
+          name: dictionary.xml
+          path: ${{ env.new_dict_path }}
       #- name: "Temp step, file renaming"
       #  run: |
       #       mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.ino
       #       mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.ino
       - run: echo "Expose env vars for reusable workflow."
 
-#  fit:
-#    needs: build
-#    uses: ./.github/workflows/reusable_fit_ci.yml
-#    with:
-#      runs_on: self-hosted
-#      platform_setup: ${{ needs.build.outputs.platform_setup }}
-#      start_cmd: ${{ needs.build.outputs.start_cmd }}
-#      gds_args: ${{ needs.build.outputs.gds_args }}
-#      dict_path: ${{ needs.build.outputs.dict_path }}
-#      test_path: ${{ needs.build.outputs.test_path }}
-#      workspace_path: ${{ needs.build.outputs.workspace_path }}
+  fit:
+    needs: build
+    uses: ./.github/workflows/reusable_fit_ci.yml
+    with:
+      runs_on: self-hosted
+      platform_setup: ${{ needs.build.outputs.platform_setup }}
+      start_cmd: ${{ needs.build.outputs.start_cmd }}
+      gds_args: ${{ needs.build.outputs.gds_args }}
+      dict_path: ${{ needs.build.outputs.dict_path }}
+      test_path: ${{ needs.build.outputs.test_path }}
+      workspace_path: ${{ needs.build.outputs.workspace_path }}

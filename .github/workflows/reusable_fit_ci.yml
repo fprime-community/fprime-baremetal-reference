@@ -38,9 +38,34 @@ jobs:
 # build --->|    fsw-gds        |---> upload-fit-artifacts
 #           \    gds-fsw        /
 
+  setup:
+    runs-on: ${{ inputs.runs_on }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Checkout F' Repository"
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          path: ${{ inputs.fprime_location }}
+      - name: "Build"
+        run: |
+             python3 -m venv ./fprime-venv
+             . ./fprime-venv/bin/activate
+             pip3 install -U setuptools wheel pip
+             pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+      - name: "Download Binary"
+        uses: actions/download-artifact@v4
+        with:
+          name: build_binary
+      - name: "Download dictionary"
+        uses: actions/download-artifact@v4
+        with:
+          name: dictionary.xml
+
   non-embedded:
     if: ${{ inputs.platform_setup == 'non-embedded' }}
     runs-on: ${{ inputs.runs_on }}
+    needs: setup
     steps:
       - name: "Start FSW and GDS"
         run: |
@@ -54,6 +79,7 @@ jobs:
 
   fsw-gds:
     if: ${{ inputs.platform_setup == 'fsw-gds' }}
+    needs: setup
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start FSW"
@@ -61,15 +87,16 @@ jobs:
       - name: "Start GDS"
         run: |
             . ./fprime-venv/bin/activate
-            fprime-gds -n --dictionary ${{ inputs.dict_path }} --gui none ${{ inputs.gds_args }} &
+            fprime-gds -n --dictionary ./dictionary.xml --gui none ${{ inputs.gds_args }} &
             sleep 12
       - name: "Run Integration tests"
         run: |
             . ./fprime-venv/bin/activate
-            pytest ${{ inputs.test_path }} -rP --dictionary ${{ inputs.dict_path }} --logs ./
+            pytest ${{ inputs.test_path }} -rP --dictionary ./dictionary.xml --logs ./
 
   gds-fsw:
     if: ${{ inputs.platform_setup == 'gds-fsw' }}
+    needs: setup
     runs-on: ${{ inputs.runs_on }}
     steps:
       - name: "Start GDS"
@@ -94,8 +121,8 @@ jobs:
         #Navigate to workspace path. nagigate into newest directory, which is for test logs.
         #Rename test log because it contains date time and time is separated by colons that upload-artifact cannot handle.
         #Store full path to test log xlsx in a variable for upload-artifact to use.
+        #    cd ${{ inputs.workspace_path }}
         run: |
-            cd ${{ inputs.workspace_path }}
             cd "$(ls -td -- */ | head -n 1)"
             mv TestLog*.xlsx TestLog.xlsx
             echo "TEST_LOG_PATH=$(realpath -s *.xlsx)" >> $GITHUB_ENV
