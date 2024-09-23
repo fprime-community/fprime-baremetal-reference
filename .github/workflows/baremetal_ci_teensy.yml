@@ -3,13 +3,12 @@ run-name: ${{ github.actor }} running Baremetal CI actions
 on: [push]
 
 env:
-  platform_setup: "fsw-gds"
-  baremetal_bin: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
+  run_job_select: "fsw-gds"
+  build_binary: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
   gds_args: --comm-adapter uart --uart-device /dev/ttyACM0
   dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
   test_path: BaremetalReference/test/int/baremetal_ref_integration_test.py
-  workspace_path: ${{ github.workspace }}
-  new_baremetal_bin: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/build_binary
+  new_build_binary: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/build_binary
   new_dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/dictionary.xml
 
 jobs:
@@ -17,12 +16,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     outputs:
-      platform_setup: ${{ env.platform_setup }}
+      run_job_select: ${{ env.run_job_select }}
       start_cmd: /home/odroid/teensy_loader_cli/teensy_loader_cli --mcu=TEENSY41 -v -s ./build_binary
       gds_args: ${{ env.gds_args }}
-      dict_path: ${{ env.dict_path }}
       test_path: ${{ env.test_path }}
-      workspace_path: ${{ env.workspace_path }}
     steps:
       - uses: actions/checkout@v4
       - name: "Checkout F' Repository"
@@ -30,13 +27,13 @@ jobs:
         with:
           submodules: true
           path: ${{ inputs.fprime_location }}
-      - name: "Build"
+      - name: "Fprime Venv and Requirements Install"
         run: |
              python3 -m venv ./fprime-venv
              . ./fprime-venv/bin/activate
-             pip3 install -U setuptools wheel pip
              pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
-
+      - name: "Platform Specific Requirements Install"
+        run: |
              mkdir -p ~/.local/bin
              curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
              cd ~/.local/bin
@@ -50,38 +47,33 @@ jobs:
              arduino-cli config add board_manager.additional_urls https://www.pjrc.com/teensy/package_teensy_index.json
              arduino-cli core update-index
              arduino-cli core install teensy:avr
-
+      - name: "Build"
+        run: |
              . ./fprime-venv/bin/activate
              fprime-util generate
              fprime-util build
       - name: "Rename build files"
         run: |
-             mv ${{ env.baremetal_bin }} ${{ env.new_baremetal_bin }}
+             mv ${{ env.build_binary }} ${{ env.new_build_binary }}
              mv ${{ env.dict_path}} ${{ env.new_dict_path}}
       - name: "Upload build binary"
         uses: actions/upload-artifact@v4
         with:
           name: build_binary
-          path: ${{ env.new_baremetal_bin }}
+          path: ${{ env.new_build_binary }}
       - name: "Upload dictionary"
         uses: actions/upload-artifact@v4
         with:
           name: dictionary.xml
           path: ${{ env.new_dict_path }}
-      #- name: "Temp step, file renaming"
-      #  run: |
-      #       mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/FanSpeed/FanSpeed.ino
-      #       mv ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.pde ${{ github.workspace }}/lib/arduino/fprime-arduino/ATmega/vendor/libraries/TimerOne/examples/Interrupt/Interrupt.ino
       - run: echo "Expose env vars for reusable workflow."
 
   fit:
     needs: build
     uses: ./.github/workflows/reusable_fit_ci.yml
     with:
+      test_path: ${{ needs.build.outputs.test_path }}
       runs_on: self-hosted
-      platform_setup: ${{ needs.build.outputs.platform_setup }}
+      run_job_select: ${{ needs.build.outputs.run_job_select }}
       start_cmd: ${{ needs.build.outputs.start_cmd }}
       gds_args: ${{ needs.build.outputs.gds_args }}
-      dict_path: ${{ needs.build.outputs.dict_path }}
-      test_path: ${{ needs.build.outputs.test_path }}
-      workspace_path: ${{ needs.build.outputs.workspace_path }}
