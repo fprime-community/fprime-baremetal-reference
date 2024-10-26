@@ -8,28 +8,59 @@
  * ALL RIGHTS RESERVED.  United States Government Sponsorship
  * acknowledged.
  */
-#include <Fw/Types/BasicTypes.h>
 #ifndef FPCONFIG_H_
 #define FPCONFIG_H_
 
+#include <Fw/Types/BasicTypes.h>
+
+#ifdef  __cplusplus
+extern "C" {
+#endif
+
+// ----------------------------------------------------------------------
+// Type aliases
+// ----------------------------------------------------------------------
+
+// The type of port indices and smaller sizes internal to the software
 typedef PlatformIndexType FwIndexType;
 #define PRI_FwIndexType PRI_PlatformIndexType
 
+// The signed type of larger sizes internal to the software, e.g., memory buffer sizes,
+// file sizes
+typedef PlatformSignedSizeType FwSignedSizeType;
+#define PRI_FwSignedSizeType PRI_PlatformSignedSizeType
+
+// The unsigned type of larger sizes internal to the software, e.g., memory buffer sizes,
+// file sizes
 typedef PlatformSizeType FwSizeType;
 #define PRI_FwSizeType PRI_PlatformSizeType
 
+// The type of an assertion argument
 typedef PlatformAssertArgType FwAssertArgType;
 #define PRI_FwAssertArgType PRI_PlatformAssertArgType
 
+// The type of a machine integer. Ordinarily this should be int.
 typedef PlatformIntType FwNativeIntType;
 #define PRI_FwNativeIntType PRI_PlatformIntType
 
+// The type of a machine unsigned integer. Ordinarily this should be unsigned int.
 typedef PlatformUIntType FwNativeUIntType;
 #define PRI_FwNativeUIntType PRI_PlatformUIntType
 
-typedef U16 FwBuffSizeType;
-#define PRI_FwBuffSizeType PRIu16
+// Task priority type
+typedef PlatformTaskPriorityType FwTaskPriorityType;
+#define PRI_FwTaskPriorityType PRI_PlatformTaskPriorityType
 
+// Queue priority type
+typedef PlatformQueuePriorityType FwQueuePriorityType;
+#define PRI_FwQueuePriorityType PRI_PlatformQueuePriorityType
+
+// The type used to serialize a size value
+typedef U16 FwSizeStoreType;
+#define PRI_FwSizeStoreType PRIu16
+
+// The type used to serialize a C++ enumeration constant
+// FPP enumerations are serialized according to their representation types
 typedef I32 FwEnumStoreType;
 #define PRI_FwEnumStoreType PRId32
 
@@ -44,35 +75,64 @@ typedef enum {
 } TimeBase;
 #define FW_CONTEXT_DONT_CARE 0xFF  //!< Don't care value for time contexts in sequences
 
+// The type used to serialize a time base value
 typedef U16 FwTimeBaseStoreType;
 #define PRI_FwTimeBaseStoreType PRIu16
 
+// The type used to serialize a time context value
 typedef U8 FwTimeContextStoreType;
 #define PRI_FwTimeContextStoreType PRIu8
 
+// The type of a com packet descriptor
 typedef U32 FwPacketDescriptorType;
 #define PRI_FwPacketDescriptorType PRIu32
 
+// The type of a command opcode
 typedef U32 FwOpcodeType;
 #define PRI_FwOpcodeType PRIu32
 
+// The type of a telemetry channel identifier
 typedef U32 FwChanIdType;
 #define PRI_FwChanIdType PRIu32
 
+// The type of a trace identifier
+typedef U32 FwTraceIdType;
+#define PRI_FwTraceIdType PRIu32
+
+// The type of an event identifier
 typedef U32 FwEventIdType;
 #define PRI_FwEventIdType PRIu32
 
+// The type of a parameter identifier
 typedef U32 FwPrmIdType;
 #define PRI_FwPrmIdType PRIu32
 
+// The type of a telemetry packet identifier
 typedef U16 FwTlmPacketizeIdType;
 #define PRI_FwTlmPacketizeIdType PRIu16
 
+// The type of a data product identifier
 typedef U32 FwDpIdType;
 #define PRI_FwDpIdType PRIu32
 
+// The type of a data product priority
 typedef U32 FwDpPriorityType;
 #define PRI_FwDpPriorityType PRIu32
+
+// ----------------------------------------------------------------------
+// Derived type aliases
+// By default, these types are aliases of types defined above
+// If necessary, you can change these definitions
+// In most cases, the defaults should work
+// ----------------------------------------------------------------------
+
+// The type of a queue size
+typedef FwIndexType FwQueueSizeType;
+#define PRI_FwQueueSizeType PRI_FwIndexType
+
+// ----------------------------------------------------------------------
+// Configuration switches
+// ----------------------------------------------------------------------
 
 // Boolean values for serialization
 #ifndef FW_SERIALIZE_TRUE_VALUE
@@ -86,7 +146,7 @@ typedef U32 FwDpPriorityType;
 // Allow objects to have names. Allocates storage for each instance
 #ifndef FW_OBJECT_NAMES
 #define FW_OBJECT_NAMES \
-    0  //!< Indicates whether or not object names are stored (more memory, can be used for tracking objects)
+    1  //!< Indicates whether or not object names are stored (more memory, can be used for tracking objects)
 #endif
 
 // To reduce binary size, FW_OPTIONAL_NAME(<string>) can be used to substitute strings with an empty string
@@ -112,16 +172,24 @@ typedef U32 FwDpPriorityType;
 // centrally.
 #ifndef FW_OBJECT_REGISTRATION
 #define FW_OBJECT_REGISTRATION \
-    0  //!< Indicates whether or not objects can register themselves (more code, more object tracking)
+    1  //!< Indicates whether or not objects can register themselves (more code, more object tracking)
 #endif
 
 #ifndef FW_QUEUE_REGISTRATION
-#define FW_QUEUE_REGISTRATION 0  //!< Indicates whether or not queue registration is used
+#define FW_QUEUE_REGISTRATION 1  //!< Indicates whether or not queue registration is used
 #endif
 
 #ifndef FW_BAREMETAL_SCHEDULER
 #define FW_BAREMETAL_SCHEDULER \
     0  //!< Indicates whether or not a baremetal scheduler should be used. Alternatively the Os scheduler is used.
+#endif
+
+// On some systems, use of *printf family functions (snprintf, printf, etc) require a prohibitive amount of program
+// space. Setting this to `0` indicates that the Fw/String methods should stop using these functions to conserve
+// program size. However, this comes at the expense of discarding format parameters. i.e. the format string is returned
+// unchanged.
+#ifndef FW_USE_PRINTF_FAMILY_FUNCTIONS_IN_STRING_FORMATTING
+#define FW_USE_PRINTF_FAMILY_FUNCTIONS_IN_STRING_FORMATTING 1
 #endif
 
 // Port Facilities
@@ -160,35 +228,23 @@ typedef U32 FwDpPriorityType;
 #endif
 
 // Set assertion form. Options:
-//   1. FW_NO_ASSERT: assertions are compiled out
+//   1. FW_NO_ASSERT: assertions are compiled out, side effects are kept
 //   2. FW_FILEID_ASSERT: asserts report a file CRC and line number
 //   3. FW_FILENAME_ASSERT: asserts report a file path (__FILE__) and line number
 //   4. FW_RELATIVE_PATH_ASSERT: asserts report a relative path within F´ or F´ library and line number
-#define FW_ASSERT_DFL_MSG_LEN 128  //!< Maximum assert message length when using the default assert handler
+//
+// Note: users who want alternate asserts should set assert level to FW_NO_ASSERT and define FW_ASSERT in this header
 #ifndef FW_ASSERT_LEVEL
 #define FW_ASSERT_LEVEL FW_RELATIVE_PATH_ASSERT  //!< Defines the type of assert used
-#endif
-
-// Define max length of assert string
-#ifndef FW_ASSERT_TEXT_SIZE
-#define FW_ASSERT_TEXT_SIZE 128  //!< Size of string used to store assert description
 #endif
 
 // Adjust various configuration parameters in the architecture. Some of the above enables may disable some of the values
 
 // The size of the object name stored in the object base class. Larger names will be truncated.
 #if FW_OBJECT_NAMES
-#ifndef FW_OBJ_NAME_MAX_SIZE
-#define FW_OBJ_NAME_MAX_SIZE \
+#ifndef FW_OBJ_NAME_BUFFER_SIZE
+#define FW_OBJ_NAME_BUFFER_SIZE \
     80  //!< Size of object name (if object names enabled). AC Limits to 80, truncation occurs above 80.
-#endif
-#endif
-
-// When querying an object as to an object-specific description, this specifies the size of the buffer to store the
-// description.
-#if FW_OBJECT_TO_STRING
-#ifndef FW_OBJ_TO_STRING_BUFFER_SIZE
-#define FW_OBJ_TO_STRING_BUFFER_SIZE 255  //!< Size of string storing toString() text
 #endif
 #endif
 
@@ -198,7 +254,7 @@ typedef U32 FwDpPriorityType;
 #define FW_OBJ_SIMPLE_REG_ENTRIES 500  //!< Number of objects stored in simple object registry
 #endif
 // When dumping the contents of the registry, this specifies the size of the buffer used to store object names. Should
-// be >= FW_OBJ_NAME_MAX_SIZE.
+// be >= FW_OBJ_NAME_BUFFER_SIZE.
 #ifndef FW_OBJ_SIMPLE_REG_BUFF_SIZE
 #define FW_OBJ_SIMPLE_REG_BUFF_SIZE 255  //!< Size of object registry dump string
 #endif
@@ -212,18 +268,23 @@ typedef U32 FwDpPriorityType;
 #endif
 
 // Specifies the size of the string holding the queue name for queues
-#ifndef FW_QUEUE_NAME_MAX_SIZE
-#define FW_QUEUE_NAME_MAX_SIZE 1  //!< Max size of message queue name
+#ifndef FW_QUEUE_NAME_BUFFER_SIZE
+#define FW_QUEUE_NAME_BUFFER_SIZE 10  //!< Max size of message queue name
 #endif
 
 // Specifies the size of the string holding the task name for active components and tasks
-#ifndef FW_TASK_NAME_MAX_SIZE
-#define FW_TASK_NAME_MAX_SIZE 1  //!< Max size of task name
+#ifndef FW_TASK_NAME_BUFFER_SIZE
+#define FW_TASK_NAME_BUFFER_SIZE 10  //!< Max size of task name
 #endif
 
 // Specifies the size of the buffer that contains a communications packet.
 #ifndef FW_COM_BUFFER_MAX_SIZE
-#define FW_COM_BUFFER_MAX_SIZE 128  //!< Max size of Fw::Com buffer
+#define FW_COM_BUFFER_MAX_SIZE 128
+#endif
+
+// Specifies the size of the buffer attached to state machine signals.
+#ifndef FW_SM_SIGNAL_BUFFER_MAX_SIZE
+#define FW_SM_SIGNAL_BUFFER_MAX_SIZE 128  // Not to exceed size of NATIVE_UINT_TYPE
 #endif
 
 // Specifies the size of the buffer that contains the serialized command arguments.
@@ -244,7 +305,7 @@ typedef U32 FwDpPriorityType;
 // Setting the below to zero will disable the check at the cost of not detecting commands that
 // are too large.
 #ifndef FW_CMD_CHECK_RESIDUAL
-#define FW_CMD_CHECK_RESIDUAL 0  //!< Check for leftover command bytes
+#define FW_CMD_CHECK_RESIDUAL 1  //!< Check for leftover command bytes
 #endif
 
 // Specifies the size of the buffer that contains the serialized log arguments.
@@ -253,18 +314,19 @@ typedef U32 FwDpPriorityType;
 #endif
 
 // Specifies the maximum size of a string in a log event
+// Note: This constant truncates file names in assertion failure event reports
 #ifndef FW_LOG_STRING_MAX_SIZE
-#define FW_LOG_STRING_MAX_SIZE 64  //!< Max size of log string parameter type
+#define FW_LOG_STRING_MAX_SIZE 120  //!< Max size of log string parameter type
 #endif
 
 // Specifies the size of the buffer that contains the serialized telemetry value.
 #ifndef FW_TLM_BUFFER_MAX_SIZE
-#define FW_TLM_BUFFER_MAX_SIZE 12 + sizeof(FwChanIdType) + sizeof(FwPacketDescriptorType) // (FW_COM_BUFFER_MAX_SIZE - sizeof(FwChanIdType) - sizeof(FwPacketDescriptorType))
+#define FW_TLM_BUFFER_MAX_SIZE (FW_COM_BUFFER_MAX_SIZE - sizeof(FwChanIdType) - sizeof(FwPacketDescriptorType))
 #endif
 
 // Specifies the maximum size of a string in a telemetry channel
 #ifndef FW_TLM_STRING_MAX_SIZE
-#define FW_TLM_STRING_MAX_SIZE 10  //!< Max size of channelized telemetry string type
+#define FW_TLM_STRING_MAX_SIZE 20  //!< Max size of channelized telemetry string type
 #endif
 
 // Specifies the size of the buffer that contains the serialized parameter value.
@@ -284,7 +346,7 @@ typedef U32 FwDpPriorityType;
 
 // Specifies the maximum size of a string in an interface call
 #ifndef FW_INTERNAL_INTERFACE_STRING_MAX_SIZE
-#define FW_INTERNAL_INTERFACE_STRING_MAX_SIZE 64  //!< Max size of interface string parameter type
+#define FW_INTERNAL_INTERFACE_STRING_MAX_SIZE 256  //!< Max size of interface string parameter type
 #endif
 
 // enables text logging of events as well as data logging. Adds a second logging port for text output.
@@ -294,30 +356,13 @@ typedef U32 FwDpPriorityType;
 
 // Define the size of the text log string buffer. Should be large enough for format string and arguments
 #ifndef FW_LOG_TEXT_BUFFER_SIZE
-#define FW_LOG_TEXT_BUFFER_SIZE 50  //!< Max size of string for text log message
+#define FW_LOG_TEXT_BUFFER_SIZE 256  //!< Max size of string for text log message
 #endif
 
 // Define if serializables have toString() method. Turning off will save code space and
 // string constants. Must be enabled if text logging enabled
 #ifndef FW_SERIALIZABLE_TO_STRING
 #define FW_SERIALIZABLE_TO_STRING 1  //!< Indicates if autocoded serializables have toString() methods
-#endif
-
-#if FW_SERIALIZABLE_TO_STRING
-#ifndef FW_SERIALIZABLE_TO_STRING_BUFFER_SIZE
-#define FW_SERIALIZABLE_TO_STRING_BUFFER_SIZE 10  //!< Size of string to store toString() string output
-#endif
-#endif
-
-// Define if arrays have toString() method.
-#ifndef FW_ARRAY_TO_STRING
-#define FW_ARRAY_TO_STRING 0  //!< Indicates if autocoded arrays have toString() methods
-#endif
-
-#if FW_ARRAY_TO_STRING
-#ifndef FW_ARRAY_TO_STRING_BUFFER_SIZE
-#define FW_ARRAY_TO_STRING_BUFFER_SIZE 256  //!< Size of string to store toString() string output
-#endif
 #endif
 
 // Some settings to enable AMPCS compatibility. This breaks regular ISF GUI compatibility
@@ -335,14 +380,80 @@ typedef U32 FwDpPriorityType;
 #ifndef FW_USE_TIME_CONTEXT
 #define FW_USE_TIME_CONTEXT 1  //!< Whether or not to serialize the time context
 #endif
-//
-// These defines used for the FilepathCharString type
+
+// Configuration for Fw::String
 
 #ifndef FW_FIXED_LENGTH_STRING_SIZE
-#define FW_FIXED_LENGTH_STRING_SIZE 10  //!< Character array size for the filepath character type
+#define FW_FIXED_LENGTH_STRING_SIZE 128  //!< Character array size for Fw::String
+#endif
+
+// OS configuration
+#ifndef FW_CONSOLE_HANDLE_MAX_SIZE
+#define FW_CONSOLE_HANDLE_MAX_SIZE 8  //!< Maximum size of a handle for OS queues
+#endif
+
+#ifndef FW_TASK_HANDLE_MAX_SIZE
+#define FW_TASK_HANDLE_MAX_SIZE 12  //!< Maximum size of a handle for OS queues
+#endif
+
+#ifndef FW_FILE_HANDLE_MAX_SIZE
+#define FW_FILE_HANDLE_MAX_SIZE 16  //!< Maximum size of a handle for OS queues
+#endif
+
+#ifndef FW_MUTEX_HANDLE_MAX_SIZE
+#define FW_MUTEX_HANDLE_MAX_SIZE 16  //!< Maximum size of a handle for OS queues
+#endif
+
+#ifndef FW_QUEUE_HANDLE_MAX_SIZE
+#define FW_QUEUE_HANDLE_MAX_SIZE 152  //!< Maximum size of a handle for OS queues
+#endif
+
+#ifndef FW_DIRECTORY_HANDLE_MAX_SIZE
+#define FW_DIRECTORY_HANDLE_MAX_SIZE 16  //!< Maximum size of a handle for OS resources (files, queues, locks, etc.)
+#endif
+
+#ifndef FW_FILESYSTEM_HANDLE_MAX_SIZE
+#define FW_FILESYSTEM_HANDLE_MAX_SIZE 16  //!< Maximum size of a handle for OS resources (files, queues, locks, etc.)
+#endif
+
+#ifndef FW_RAW_TIME_HANDLE_MAX_SIZE
+#define FW_RAW_TIME_HANDLE_MAX_SIZE 24  //!< Maximum size of a handle for OS::RawTime objects
+#endif
+
+#ifndef FW_RAW_TIME_SERIALIZATION_MAX_SIZE
+#define FW_RAW_TIME_SERIALIZATION_MAX_SIZE 8  //!< Maximum allowed serialization size for Os::RawTime objects
+#endif
+
+#ifndef FW_CONDITION_VARIABLE_HANDLE_MAX_SIZE
+#define FW_CONDITION_VARIABLE_HANDLE_MAX_SIZE 16  //!< Maximum size of a handle for OS condition variables
+#endif
+
+#ifndef FW_CPU_HANDLE_MAX_SIZE
+#define FW_CPU_HANDLE_MAX_SIZE 16  //!< Maximum size of a handle for OS cpu
+#endif
+
+#ifndef FW_MEMORY_HANDLE_MAX_SIZE
+#define FW_MEMORY_HANDLE_MAX_SIZE 16  //!< Maximum size of a handle for OS memory
+#endif
+
+#ifndef FW_HANDLE_ALIGNMENT
+#define FW_HANDLE_ALIGNMENT 8  //!< Alignment of handle storage
+#endif
+
+// Note: One buffer of this size will be stack-allocated during certain OSAL operations e.g. when copying a file
+#ifndef FW_FILE_CHUNK_SIZE
+#define FW_FILE_CHUNK_SIZE 128  //!< Chunk size for working with files in the OSAL layer
 #endif
 
 // *** NOTE configuration checks are in Fw/Cfg/ConfigCheck.cpp in order to have
 // the type definitions in Fw/Types/BasicTypes available.
+
+// DO NOT TOUCH.  These types are specified for backwards naming compatibility.
+typedef FwSizeStoreType FwBuffSizeType;
+#define PRI_FwBuffSizeType PRI_FwSizeStoreType
+
+#ifdef  __cplusplus
+}
+#endif
 
 #endif

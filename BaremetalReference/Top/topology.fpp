@@ -22,7 +22,7 @@ module BaremetalReference {
     instance commQueue
     instance deframer
     instance eventLogger
-    instance fatalAdapter
+#    instance fatalAdapter
     instance fatalHandler
     instance framer
     instance gpioDriver

@@ -7,7 +7,6 @@
 
 set(SOURCE_FILES
   "${CMAKE_CURRENT_LIST_DIR}/instances.fpp"
-  "${CMAKE_CURRENT_LIST_DIR}/BaremetalReferencePackets.xml"
   "${CMAKE_CURRENT_LIST_DIR}/topology.fpp"
   "${CMAKE_CURRENT_LIST_DIR}/BaremetalReferenceTopology.cpp"
 )
@@ -16,7 +15,7 @@ set(MOD_DEPS
   Arduino/ArduinoTime
   Arduino/Drv/StreamDriver
   Arduino/Drv/I2cDriver
-  Os/Baremetal/TaskRunner
+#  Os/Baremetal/TaskRunner
 )
 
 register_fprime_module()
