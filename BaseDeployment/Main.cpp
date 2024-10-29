@@ -7,32 +7,23 @@
 #include <BaseDeployment/Top/BaseDeploymentTopologyAc.hpp>
 #include <BaseDeployment/Top/BaseDeploymentTopology.hpp>
 // Used for Task Runner
-#include <Os/Baremetal/TaskRunner/TaskRunner.hpp>
+#include <fprime-baremetal/Os/TaskRunner/TaskRunner.hpp>
 
 // Used for logging
-#include <Os/Log.hpp>
-#include <Arduino/Os/StreamLog.hpp>
-
-// Instantiate a system logger that will handle Fw::Logger::logMsg calls
-Os::Log logger;
-
-// Task Runner
-Os::TaskRunner taskrunner;
+#include <Fw/Logger/Logger.hpp>
+#include <Arduino/Os/Console.hpp>
 
 /**
- * \brief execute the program
- *
- * This F´ program is designed to run in standard environments (e.g. Linux/macOs running on a laptop). Thus it uses
- * command line inputs to specify how to connect.
- *
- * @return: 0 on success, something else on failure
+ * \brief setup the program
  */
 void setup()
 {
-    Serial.begin(115200);
-    Os::setArduinoStreamLogHandler(&Serial);
+    // Setup Serial
+    Serial.begin(115200); //Uart Comm and logging
+    static_cast<Os::Arduino::StreamConsoleHandle*>(Os::Console::getSingleton().getHandle())->setStreamHandler(Serial);
+
     delay(1000);
-    Fw::Logger::logMsg("Program Started\n");
+    Fw::Logger::log("Program Started\n");
 
     // Object for communicating state to the reference topology
     BaseDeployment::TopologyState inputs;
@@ -41,13 +32,11 @@ void setup()
 
     // Setup, cycle, and teardown topology
     BaseDeployment::setupTopology(inputs);
-    // BaseDeployment::teardownTopology(inputs);
 }
 
-void loop()
-{
+void loop() {
 #ifdef USE_BASIC_TIMER
     rateDriver.cycle();
 #endif
-    taskrunner.run();
+    Os::Baremetal::TaskRunner::getSingleton().run();
 }

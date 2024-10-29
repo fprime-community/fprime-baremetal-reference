@@ -9,7 +9,6 @@
 #include <config/FppConstantsAc.hpp>
 
 // Necessary project-specified types
-#include <Os/Log.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
 
 #include  <Components/Radio/RFM69/RFM69.hpp>

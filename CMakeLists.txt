@@ -13,3 +13,4 @@ include("${FPRIME_FRAMEWORK_PATH}/cmake/FPrime-Code.cmake")
 
 # This includes project-wide objects
 include("${CMAKE_CURRENT_LIST_DIR}/project.cmake")
+set_target_properties(Svc_FatalHandler PROPERTIES EXCLUDE_FROM_ALL TRUE)
