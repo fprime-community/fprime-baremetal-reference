@@ -16,7 +16,7 @@ Note: Teensy has 2 different serial addresses, one for when programming is runni
 - if on a Mac, About -> System Report. Look for USB Serial device. Manufacturer should be Teensyduino. Location id given is the address.
 
 3. Program the reference hex file:
-```
+```sh
 arduino-cli upload --fqbn teensy:avr:teensy41 -p usb:3120000 -i /full_path/fprime-baremetal-reference/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
 ```
 
@@ -27,14 +27,14 @@ Note: It has to be the full path to the BaremetalReference.hex file for arduino-
 ## Using GDS via serial
 1. Find the serial port, this varies by your host system but it should show up as a `/dev/tty*` device. On the mac, it's /dev/tty.usbmodem*(9 digit number).
 2. Launch GDS: 
-```
-fprime-gds -n --dictionary ./build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/tty.usbmodem159910601 --uart-baud 115200
+```sh
+fprime-gds -n --dictionary ./build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --communication-selection uart --uart-device /dev/tty.usbmodem159910601 --uart-baud 115200
 ```
 3. GDS should now launch in your browser. Connection should be good, you should see a green circle in the upper right by the warning hi, fatal, and GDS errors counter table. If connection is bad, instead of a green circle you would see a red X.
 
 ## Running BaremetalReference integration tests
 BaremetalReference comes with a set of integration tests. With board connecting and GDS running:
-```
+```sh
 pytest BaremetalReference/test/int/baremetal_ref_integration_test.py --dictionary ./build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
 ```
 This will run through the test and give you results. With GDS up you can check the Events tab and see EVRs come in as the test runs.
@@ -42,7 +42,7 @@ This will run through the test and give you results. With GDS up you can check t
 There are various options that you can try with pytest, see their documentation for more information. To run the test with a more verbose output, try options `-s` `-rP`. Both offer similar verbose outputs but `-s` outputs real time while `-rP` outputs at the end of testing and shows the beginning and end of tests.
 
 You can also run specific tests:
-```
+```sh
 pytest BaremetalReference/test/int/baremetal_ref_integration_test.py --dictionary ./build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml -k 'test_id'
 ```
 This runs just the `test_id_filter` test. Note that this is string / pattern matching so you don't need to type in the full name. With this comes limitations:

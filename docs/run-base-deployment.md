@@ -9,14 +9,13 @@ Double press on the reset button on the Feather to set it to programming mode. T
 
 ```sh
 ~/.arduino15/packages/adafruit/tools/bossac/1.8.0-48-gb176eee/bossac -i -d --port=ttyACM0 -U -i --offset=0x2000 -w -v ./build-artifacts/featherM0/BaseDeployment/bin/BaseDeployment.bin -R
-
 ```
 Note:
   - If you have more than one device connected, or if you are using a different OS, `ttyACM0` may differ for your system.
 
 ## Using GDS over serial
 ```sh
-fprime-gds -n --dictionary ./build-artifacts/YOUR_DEVICE/BaseDeployment/dict/BaseDeploymentTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
+fprime-gds -n --dictionary ./build-artifacts/YOUR_DEVICE/BaseDeployment/dict/BaseDeploymentTopologyAppDictionary.xml --communication-selection uart --uart-device /dev/ttyACM0 --uart-baud 115200
 ```
 Note:
   - If you have more than one device connected, or if you are using a different OS, `/dev/ttyACM0` may differ for your system.
