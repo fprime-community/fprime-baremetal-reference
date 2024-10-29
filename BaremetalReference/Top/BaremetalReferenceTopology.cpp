@@ -90,60 +90,25 @@ void setupTopology(const TopologyState& state) {
     connectComponents();
     // Autocoded command registration. Function provided by autocoder.
     regCommands();
-
-    Fw::Logger::log("Commands done!!!!!!\n");
-    delay(1000);
-    Fw::Logger::log("Commands done!!!!!!\n");
-    delay(1000);
     // Project-specific component configuration. Function provided above. May be inlined, if desired.
     configureTopology();
     // Autocoded parameter loading. Function provided by autocoder.
     // loadParameters();
     // Autocoded task kick-off (active components). Function provided by autocoder.
     startTasks(state);
-
-    Fw::Logger::log("Start RG\n");
-    delay(1000);
-
     // Configure hardware rate driver
     rateDriver.configure(1);
-
-    Fw::Logger::log("Start GPIO\n");
-    delay(1000);
-
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
     //gpioRadioReset.open(Radio::RFM69_RST, Arduino::GpioDriver::GpioDirection::OUT); //***Turn off for Uart Comm
-
-    Fw::Logger::log("Start I2C\n");
-    delay(1000);
-
     // Configure I2C driver
     i2cDriver.open(&Wire);
-
-    Fw::Logger::log("Start IMU\n");
-    delay(1000);
-
     // Configure IMU
     imu.setup(Sensors::IMU_MPU9250::I2cDevAddr::AD0_0);
-
-    Fw::Logger::log("Start COMS\n");
-    delay(1000);
-
     // Configure StreamDriver / UART
     comDriver.configure(&Serial); //***turn off if using radio
-
-    Fw::Logger::log("Start CYCLING\n");
-    delay(1000);
-
     // Start hardware rate driver
     rateDriver.start();
-
-    Fw::Logger::log("CYCLING\n");
-    delay(1000);
-
-    Fw::Logger::log("CYCLING\n");
-    delay(1000);
 }
 
 void teardownTopology(const TopologyState& state) {

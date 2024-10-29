@@ -13,8 +13,6 @@ set(SOURCE_FILES
 )
 set(MOD_DEPS
   Fw/Logger
-  Arduino/ArduinoTime
-  Arduino/Drv/StreamDriver
 )
 
 register_fprime_module()
