@@ -69,7 +69,7 @@ Note:
 
 ## Using GDS over serial
 ```sh
-fprime-gds -n --dictionary ./build-artifacts/YOUR_DEVICE/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --comm-adapter uart --uart-device /dev/ttyACM0 --uart-baud 115200
+fprime-gds -n --dictionary ./build-artifacts/YOUR_DEVICE/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml --communication-selection uart --uart-device /dev/ttyACM0 --uart-baud 115200
 ```
 Note:
   - If you have more than one device connected, or if you are using a different OS, `/dev/ttyACM0` may differ for your system.
