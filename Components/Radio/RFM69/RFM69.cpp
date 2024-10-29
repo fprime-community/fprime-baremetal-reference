@@ -6,7 +6,7 @@
 
 #include <Components/Radio/RFM69/RFM69.hpp>
 #include <FpConfig.hpp>
-#include <Os/Log.hpp>
+#include <Fw/Logger/Logger.hpp>
 
 namespace Radio {
 
@@ -111,7 +111,7 @@ void RFM69 ::run_handler(const NATIVE_INT_TYPE portNum, NATIVE_UINT_TYPE context
         }
 
         if (!rfm69.init()) {
-            Fw::Logger::logMsg("Failed to initialize radio... Trying again...\n");
+            Fw::Logger::log("Failed to initialize radio... Trying again...\n");
             return;
         }
 

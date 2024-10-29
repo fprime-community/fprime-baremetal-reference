@@ -44,7 +44,7 @@ module BaseDeployment {
 
   instance fatalAdapter: Svc.AssertFatalAdapter base id 0x4200
 
-  instance fatalHandler: Svc.FatalHandler base id 0x4300
+  instance fatalHandler: Baremetal.FatalHandler base id 0x4300
 
   instance systemTime: Arduino.ArduinoTime base id 0x4400 \
 

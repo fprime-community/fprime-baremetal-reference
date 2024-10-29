@@ -5,9 +5,9 @@
 // ======================================================================
 // Provides access to autocoded functions
 #include <BaremetalReference/Top/BaremetalReferenceTopologyAc.hpp>
-#include <BaremetalReference/Top/BaremetalReferencePacketsAc.hpp>
 #include <config/FppConstantsAc.hpp>
-
+#include "Fw/Logger/Logger.hpp"
+#include "FprimeArduino.hpp"
 // Necessary project-specified types
 #include <Fw/Types/MallocAllocator.hpp>
 #include <Svc/FramingProtocol/FprimeProtocol.hpp>
@@ -96,23 +96,17 @@ void setupTopology(const TopologyState& state) {
     // loadParameters();
     // Autocoded task kick-off (active components). Function provided by autocoder.
     startTasks(state);
-    
     // Configure hardware rate driver
     rateDriver.configure(1);
-
     // Configure GPIO pins
     gpioDriver.open(Arduino::DEF_LED_BUILTIN, Arduino::GpioDriver::GpioDirection::OUT);
     //gpioRadioReset.open(Radio::RFM69_RST, Arduino::GpioDriver::GpioDirection::OUT); //***Turn off for Uart Comm
-
     // Configure I2C driver
     i2cDriver.open(&Wire);
-
     // Configure IMU
     imu.setup(Sensors::IMU_MPU9250::I2cDevAddr::AD0_0);
-
     // Configure StreamDriver / UART
     comDriver.configure(&Serial); //***turn off if using radio
-
     // Start hardware rate driver
     rateDriver.start();
 }

@@ -1,0 +1,35 @@
+{
+  "version": 4,
+  "configurePresets": [
+    {
+      "name": "rp2040",
+      "inherits": "fprime",
+      "displayName": "RP2040 Release Preset",
+      "description": "F´ release build using local fprime-venv",
+      "binaryDir": "${sourceDir}/build-fprime-automatic-featherrp2040",
+      "cacheVariables": {
+        "CMAKE_DEBUG_OUTPUT": "ON"
+      },
+      "toolchainFile": "${sourceDir}/lib/fprime-arduino/cmake/toolchain/featherrp2040.cmake"
+    },
+    {
+      "name": "rp2040-debug",
+      "inherits": [
+        "fprime-debug",
+        "rp2040"
+      ],
+      "displayName": "RP2040 Debug Preset",
+      "description": "RP2040 debug build using local fprime-venv"
+    },
+    {
+      "name": "teensy41",
+      "inherits": "fprime",
+      "displayName": "F´ Cross-Compile Preset",
+      "description": "F´ Cross-Compile build using local fprime-venv",
+      "binaryDir": "${sourceDir}/build-fprime-automatic-teensy41",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/lib/fprime-arduino/cmake/toolchain/teensy41.cmake"
+      }
+    }
+  ]
+}
