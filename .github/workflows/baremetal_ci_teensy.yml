@@ -34,9 +34,9 @@ jobs:
              pip3 install -r ${{ inputs.fprime_location }}./lib/fprime/requirements.txt
       - name: "Platform Specific Requirements Install"
         run: |
+             . ./fprime-venv/bin/activate
              curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=$VIRTUAL_ENV/bin sh
-             pip3 install arduino-cli-cmake-wrapper==0.2.0a1
-             export PATH=~/.local/bin:$PATH
+             pip install arduino-cli-cmake-wrapper==0.2.0a1
              cd ${{ github.workspace }}
              arduino-cli config init
              arduino-cli config add board_manager.additional_urls https://www.pjrc.com/teensy/package_teensy_index.json
