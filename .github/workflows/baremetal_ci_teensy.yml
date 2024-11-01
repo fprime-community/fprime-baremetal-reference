@@ -4,7 +4,7 @@ on: [push]
 
 env:
   run_job_select: "fsw-gds"
-  build_binary: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
+  build_binary: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.elf.hex
   gds_args: --comm-adapter uart --uart-device /dev/ttyACM0
   dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
   test_path: BaremetalReference/test/int/baremetal_ref_integration_test.py
@@ -31,17 +31,12 @@ jobs:
         run: |
              python3 -m venv ./fprime-venv
              . ./fprime-venv/bin/activate
-             pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+             pip3 install -r ${{ inputs.fprime_location }}./lib/fprime/requirements.txt
       - name: "Platform Specific Requirements Install"
         run: |
-             mkdir -p ~/.local/bin
-             curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
-             cd ~/.local/bin
-             git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
-             cd arduino-cli-cmake-wrapper
-             git checkout update/refactor
-             pip3 install .
-             export PATH=~/.local/bin:$PATH
+             . ./fprime-venv/bin/activate
+             curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=$VIRTUAL_ENV/bin sh
+             pip install arduino-cli-cmake-wrapper==0.2.0a1
              cd ${{ github.workspace }}
              arduino-cli config init
              arduino-cli config add board_manager.additional_urls https://www.pjrc.com/teensy/package_teensy_index.json
