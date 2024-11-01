@@ -37,10 +37,10 @@ jobs:
              mkdir -p ~/.local/bin
              curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
              cd ~/.local/bin
-             git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
-             cd arduino-cli-cmake-wrapper
-             git checkout update/refactor
-             pip3 install .
+             #git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
+             #cd arduino-cli-cmake-wrapper
+             #git checkout update/refactor
+             pip3 install arduino-cli-cmake-wrapper==0.2.0a1
              export PATH=~/.local/bin:$PATH
              cd ${{ github.workspace }}
              arduino-cli config init
