@@ -4,7 +4,7 @@ on: [push]
 
 env:
   run_job_select: "fsw-gds"
-  build_binary: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.hex
+  build_binary: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/bin/BaremetalReference.elf.hex
   gds_args: --comm-adapter uart --uart-device /dev/ttyACM0
   dict_path: ${{ github.workspace }}/build-artifacts/teensy41/BaremetalReference/dict/BaremetalReferenceTopologyAppDictionary.xml
   test_path: BaremetalReference/test/int/baremetal_ref_integration_test.py
@@ -37,9 +37,6 @@ jobs:
              mkdir -p ~/.local/bin
              curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
              cd ~/.local/bin
-             #git clone https://github.com/SterlingPeet/arduino-cli-cmake-wrapper.git
-             #cd arduino-cli-cmake-wrapper
-             #git checkout update/refactor
              pip3 install arduino-cli-cmake-wrapper==0.2.0a1
              export PATH=~/.local/bin:$PATH
              cd ${{ github.workspace }}
