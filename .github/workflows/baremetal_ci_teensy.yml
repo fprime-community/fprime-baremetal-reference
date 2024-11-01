@@ -31,7 +31,7 @@ jobs:
         run: |
              python3 -m venv ./fprime-venv
              . ./fprime-venv/bin/activate
-             pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+             pip3 install -r ${{ inputs.fprime_location }}./lib/fprime/requirements.txt
       - name: "Platform Specific Requirements Install"
         run: |
              mkdir -p ~/.local/bin
