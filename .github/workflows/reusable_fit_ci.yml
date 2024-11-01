@@ -1,0 +1,129 @@
+name: resuable-fit
+
+on:
+  workflow_call:
+    inputs:
+      test_path:
+        required: true
+        type: string
+      runs_on:
+        required: false
+        type: string
+        default: "ubuntu-latest"
+      run_job_select:
+        required: false
+        type: string
+        default: "non-embedded"
+      start_cmd:
+        required: false
+        type: string
+        default: "fprime-gds"
+      gds_args:
+        required: false
+        type: string
+        default: ""
+
+jobs:
+# Setup job will run first by creating the virtual environment and then downloading the
+# FSW binary and dictionary created in the build job step of the caller workflow to this
+# workflow. After that the following run jobs are on a switch, only one will run based
+# on run_job_select string. Each run job has a different method of starting FSW, FIT is
+# run at the end of each job. If adding a new run job make sure it does not collide with
+# an existing job. After one of these jobs is run, the upload FIT artifact job will then
+# run.
+#
+#           /  run-non-embedded  \
+# setup --->|  run-fsw-gds       |---> upload-fit-artifacts
+#           \  run-gds-fsw       /
+
+  setup:
+    runs-on: ${{ inputs.runs_on }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Checkout F' Repository"
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          path: ${{ inputs.fprime_location }}
+      - name: "Install and activate Virtual Environment"
+        run: |
+             python3 -m venv ./fprime-venv
+             . ./fprime-venv/bin/activate
+             pip3 install -U setuptools wheel pip
+             pip3 install -r ${{ inputs.fprime_location }}./fprime/requirements.txt
+      - name: "Download FSW Binary"
+        uses: actions/download-artifact@v4
+        with:
+          name: build_binary
+      - name: "Download Dictionary"
+        uses: actions/download-artifact@v4
+        with:
+          name: dictionary.xml
+
+  run-non-embedded:
+    if: ${{ inputs.run_job_select == 'non-embedded' }}
+    runs-on: ${{ inputs.runs_on }}
+    needs: setup
+    steps:
+      - name: "Start FSW and GDS"
+        run: |
+            . ./fprime-venv/bin/activate
+            ${{ inputs.start_cmd }}
+      - name: "Run Integration tests"
+        run: |
+            . ./fprime-venv/bin/activate
+            sleep 12
+            pytest ${{ inputs.test_path }} --dictionary ./dictionary.xml -rP
+
+  run-fsw-gds:
+    if: ${{ inputs.run_job_select == 'fsw-gds' }}
+    needs: setup
+    runs-on: ${{ inputs.runs_on }}
+    steps:
+      - name: "Start FSW"
+        run: ${{ inputs.start_cmd }}
+      - name: "Start GDS"
+        run: |
+            . ./fprime-venv/bin/activate
+            fprime-gds -n --dictionary ./dictionary.xml --gui none ${{ inputs.gds_args }} &
+            sleep 12
+      - name: "Run Integration tests"
+        run: |
+            . ./fprime-venv/bin/activate
+            pytest ${{ inputs.test_path }} -rP --dictionary ./dictionary.xml --logs ./
+
+  run-gds-fsw:
+    if: ${{ inputs.run_job_select == 'gds-fsw' }}
+    needs: setup
+    runs-on: ${{ inputs.runs_on }}
+    steps:
+      - name: "Start GDS"
+        run: |
+            . ./fprime-venv/bin/activate
+            fprime-gds -n --dictionary ./dictionary.xml --gui none ${{ inputs.gds_args }} &
+      - name: "Start FSW"
+        run: |
+            ${{ inputs.start_cmd }}
+            sleep 12
+      - name: "Run Integration tests"
+        run: |
+            . ./fprime-venv/bin/activate
+            pytest ${{ inputs.test_path }} --dictionary ./dictionary.xml -rP
+
+  upload-fit-artifact:
+    runs-on: ${{ inputs.runs_on }}
+    if: ${{ always() }} #as long as one of the above jobs run, this job will run
+    needs: [run-non-embedded, run-fsw-gds, run-gds-fsw]
+    steps:
+      - name: "Upload Integration Test Results"
+        #Navigate into newest directory, which is for test logs.
+        #Rename test log because it contains date time and time is separated by colons that upload-artifact cannot handle.
+        #Store full path to test log xlsx in a variable for upload-artifact to use.
+        run: |
+            cd "$(ls -td -- */ | head -n 1)"
+            mv TestLog*.xlsx TestLog.xlsx
+            echo "TEST_LOG_PATH=$(realpath -s *.xlsx)" >> $GITHUB_ENV
+      - uses: actions/upload-artifact@v4
+        with:
+          name: TestLog
+          path: ${{ env.TEST_LOG_PATH }}
