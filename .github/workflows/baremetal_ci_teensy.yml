@@ -34,9 +34,7 @@ jobs:
              pip3 install -r ${{ inputs.fprime_location }}./lib/fprime/requirements.txt
       - name: "Platform Specific Requirements Install"
         run: |
-             mkdir -p ~/.local/bin
-             curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=~/.local/bin sh
-             cd ~/.local/bin
+             curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | BINDIR=$VIRTUAL_ENV/bin sh
              pip3 install arduino-cli-cmake-wrapper==0.2.0a1
              export PATH=~/.local/bin:$PATH
              cd ${{ github.workspace }}
