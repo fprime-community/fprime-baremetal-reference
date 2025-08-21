@@ -6,7 +6,7 @@
 
 
 #include <Components/Sensors/IMU_MPU9250/IMU_MPU9250.hpp>
-#include <FpConfig.hpp>
+#include <Fw/FPrimeBasicTypes.hpp>
 
 namespace Sensors {
 
@@ -142,8 +142,8 @@ namespace Sensors {
 
   void IMU_MPU9250 ::
     run_handler(
-        const NATIVE_INT_TYPE portNum,
-        NATIVE_UINT_TYPE context
+        const FwIndexType portNum,
+        U32 context
     )
   {
     if(m_power == Fw::On::ON)

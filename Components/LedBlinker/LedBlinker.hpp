@@ -36,7 +36,7 @@ namespace Components {
       void parameterUpdated(FwPrmIdType id /*!< The parameter ID*/
       );
 
-    PRIVATE:
+    private:
 
       // ----------------------------------------------------------------------
       // Handler implementations for user-defined typed input ports
@@ -45,13 +45,13 @@ namespace Components {
       //! Handler implementation for run
       //!
       void run_handler(
-          const NATIVE_INT_TYPE portNum, /*!< The port number*/
-          NATIVE_UINT_TYPE context /*!< 
+          const FwIndexType portNum, /*!< The port number*/
+          U32 context /*!<
       The call order
       */
       );
 
-    PRIVATE:
+    private:
 
       // ----------------------------------------------------------------------
       // Command handler implementations

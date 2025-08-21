@@ -1,13 +1,13 @@
-####
-# config/CMakeLists.txt:
-#
-# Sets a list of source files for cmake to process as part of autocoding.
-####
-set(SOURCE_FILES
-    "${CMAKE_CURRENT_LIST_DIR}/AcConstants.fpp"
-    "${CMAKE_CURRENT_LIST_DIR}/DpCfg.fpp"
-    "${CMAKE_CURRENT_LIST_DIR}/FpConfig.fpp"
-    "${CMAKE_CURRENT_LIST_DIR}/PolyDbCfg.fpp"
-    "${CMAKE_CURRENT_LIST_DIR}/VersionCfg.fpp"
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/ComFprimeConfig")
+add_fprime_subdirectory("${CMAKE_CURRENT_LIST_DIR}/ComCcsdsConfig")
+
+register_fprime_config(
+    CONFIGURATION_OVERRIDES
+        "${CMAKE_CURRENT_LIST_DIR}/AcConstants.fpp"
+        "${CMAKE_CURRENT_LIST_DIR}/BufferManagerComponentImplCfg.hpp"
+        "${CMAKE_CURRENT_LIST_DIR}/CommandDispatcherImplCfg.hpp"
+        "${CMAKE_CURRENT_LIST_DIR}/FpConfig.h"
+        "${CMAKE_CURRENT_LIST_DIR}/StaticMemoryConfig.hpp"
+        "${CMAKE_CURRENT_LIST_DIR}/TlmChanImplCfg.hpp"
+    INTERFACE
 )
-register_fprime_module(config)

@@ -1,17 +1,17 @@
 // ======================================================================
-// \title  BaseDeploymentTopology.hpp
+// \title  ReferenceDeploymentTopology.hpp
 // \brief header file containing the topology instantiation definitions
 //
 // ======================================================================
-#ifndef BASEDEPLOYMENT_BASEDEPLOYMENTTOPOLOGY_HPP
-#define BASEDEPLOYMENT_BASEDEPLOYMENTTOPOLOGY_HPP
-// Included for access to BaseDeployment::TopologyState and BaseDeployment::ConfigObjects::pingEntries. These definitions are required by the
+#ifndef REFERENCEDEPLOYMENT_REFERENCEDEPLOYMENTTOPOLOGY_HPP
+#define REFERENCEDEPLOYMENT_REFERENCEDEPLOYMENTTOPOLOGY_HPP
+// Included for access to ReferenceDeployment::TopologyState and ReferenceDeployment::ConfigObjects::pingEntries. These definitions are required by the
 // autocoder, but are also used in this hand-coded topology.
-#include <BaseDeployment/Top/BaseDeploymentTopologyDefs.hpp>
+#include <ReferenceDeployment/Top/ReferenceDeploymentTopologyDefs.hpp>
 
-// Remove unnecessary BaseDeployment:: qualifications
-using namespace BaseDeployment;
-namespace BaseDeployment {
+// Remove unnecessary ReferenceDeployment:: qualifications
+using namespace ReferenceDeployment;
+namespace ReferenceDeployment {
 /**
  * \brief initialize and run the F´ topology
  *
@@ -32,7 +32,7 @@ namespace BaseDeployment {
  * custom tasks often start radio communication it is convenient to start them last.
  *
  * The state argument carries command line inputs used to setup the topology. For an explanation of the required type
- * BaseDeployment::TopologyState see: BaseDeploymentTopologyDefs.hpp.
+ * ReferenceDeployment::TopologyState see: ReferenceDeploymentTopologyDefs.hpp.
  *
  * \param state: object shuttling CLI arguments (hostname, port) needed to construct the topology
  */
@@ -53,11 +53,11 @@ void setupTopology(const TopologyState& state);
  * Step 1, 2, 3, and 4 must occur in-order as the tasks must be stopped before being joined. These tasks must be stopped
  * and joined before any active resources may be deallocated.
  *
- * For an explanation of the required type BaseDeployment::TopologyState see: BaseDeploymentTopologyDefs.hpp.
+ * For an explanation of the required type ReferenceDeployment::TopologyState see: ReferenceDeploymentTopologyDefs.hpp.
  *
  * \param state: state object provided to setupTopology
  */
 void teardownTopology(const TopologyState& state);
 
-} // namespace BaseDeployment
+} // namespace ReferenceDeployment
 #endif

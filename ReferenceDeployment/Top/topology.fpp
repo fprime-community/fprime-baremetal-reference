@@ -1,4 +1,4 @@
-module BaseDeployment {
+module ReferenceDeployment {
 
   # ----------------------------------------------------------------------
   # Symbolic constants for port numbers
@@ -8,13 +8,14 @@ module BaseDeployment {
       rateGroup1
     }
 
-    enum Ports_StaticMemory {
-      framer
-      deframer
-      deframing
-    }
+  topology ReferenceDeployment {
 
-  topology BaseDeployment {
+    # ----------------------------------------------------------------------
+    # Subtopology imports
+    # ----------------------------------------------------------------------
+
+
+    import ComFprime.Subtopology
 
     # ----------------------------------------------------------------------
     # Instances used in the topology
@@ -22,20 +23,16 @@ module BaseDeployment {
 
     instance blinker
     instance cmdDisp
-    instance commDriver
-    instance deframer
+    instance comDriver
     instance eventLogger
-    instance fatalAdapter
     instance fatalHandler
-    instance framer
     instance gpioDriver
     instance rateDriver
     instance rateGroup1
     instance rateGroupDriver
-    instance staticMemory
     instance systemResources
-    instance systemTime
     instance textLogger
+    instance timeHandler
     instance tlmSend
 
     # ----------------------------------------------------------------------
@@ -50,7 +47,7 @@ module BaseDeployment {
 
     text event connections instance textLogger
 
-    time connections instance systemTime
+    time connections instance timeHandler
 
     # ----------------------------------------------------------------------
     # Direct graph specifiers
@@ -62,43 +59,40 @@ module BaseDeployment {
 
       # Rate group 1
       rateGroupDriver.CycleOut[Ports_RateGroups.rateGroup1] -> rateGroup1.CycleIn
-      rateGroup1.RateGroupMemberOut[0] -> blinker.run
-      rateGroup1.RateGroupMemberOut[1] -> commDriver.schedIn
-      rateGroup1.RateGroupMemberOut[2] -> tlmSend.Run
-      rateGroup1.RateGroupMemberOut[3] -> systemResources.run
+      rateGroup1.RateGroupMemberOut[0] -> tlmSend.Run
+      rateGroup1.RateGroupMemberOut[1] -> systemResources.run
+      rateGroup1.RateGroupMemberOut[2] -> comDriver.schedIn
+      rateGroup1.RateGroupMemberOut[3] -> blinker.run
     }
 
     connections FaultProtection {
       eventLogger.FatalAnnounce -> fatalHandler.FatalReceive
     }
 
-    connections Downlink {
 
-      tlmSend.PktSend -> framer.comIn
-      eventLogger.PktSend -> framer.comIn
+    connections Communications {
+      # Inputs to ComQueue (events, telemetry, file)
+      eventLogger.PktSend -> ComFprime.comQueue.comPacketQueueIn[ComFprime.Ports_ComPacketQueue.EVENTS]
+      tlmSend.PktSend     -> ComFprime.comQueue.comPacketQueueIn[ComFprime.Ports_ComPacketQueue.TELEMETRY]
 
-      framer.framedAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.framer]
-      framer.framedOut -> commDriver.$send
+      # ComDriver buffer allocations
+      comDriver.allocate      -> ComFprime.commsBufferManager.bufferGetCallee
+      comDriver.deallocate    -> ComFprime.commsBufferManager.bufferSendIn
+      
+      # ComDriver <-> ComStub (Uplink)
+      comDriver.$recv                     -> ComFprime.comStub.drvReceiveIn
+      ComFprime.comStub.drvReceiveReturnOut -> comDriver.recvReturnIn
+      
+      # ComStub <-> ComDriver (Downlink)
+      ComFprime.comStub.drvSendOut      -> comDriver.$send
+      comDriver.ready         -> ComFprime.comStub.drvConnected
 
-      commDriver.deallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.framer]
-
+      # Router <-> CmdDispatcher
+      ComFprime.fprimeRouter.commandOut  -> cmdDisp.seqCmdBuff
+      cmdDisp.seqCmdStatus     -> ComFprime.fprimeRouter.cmdResponseIn
     }
 
-    connections Uplink {
-
-      commDriver.allocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframer]
-      commDriver.$recv -> deframer.framedIn
-      deframer.framedDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframer]
-
-      deframer.comOut -> cmdDisp.seqCmdBuff
-      cmdDisp.seqCmdStatus -> deframer.cmdResponseIn
-
-      deframer.bufferAllocate -> staticMemory.bufferAllocate[Ports_StaticMemory.deframing]
-      deframer.bufferDeallocate -> staticMemory.bufferDeallocate[Ports_StaticMemory.deframing]
-
-    }
-
-    connections BaseDeployment {
+    connections ReferenceDeployment {
       # Add here connections to user-defined components
       blinker.gpioSet -> gpioDriver.gpioWrite
     }
