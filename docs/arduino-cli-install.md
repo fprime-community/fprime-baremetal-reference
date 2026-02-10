@@ -34,9 +34,13 @@ arduino-cli config add board_manager.additional_urls https://github.com/earlephi
 arduino-cli config add board_manager.additional_urls https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
 ```
 
+Update the arduino-cli core index.
+```
+arduino-cli core update-index
+```
+
 Install the new board packages. Only install the ones you have added to your board manager in the previous step.
 ```shell
-arduino-cli core update-index
 arduino-cli core install teensy:avr
 arduino-cli core install adafruit:samd
 arduino-cli core install esp32:esp32@2.0.9

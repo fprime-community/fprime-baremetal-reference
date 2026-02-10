@@ -26,6 +26,7 @@ To generate/build for a specific device, append the device name to the end of th
 These devices have been tested:
   - teensy41
   - featherM0
+  - Nucleo-H723ZG
 
 To set a specific build as the default, append this line to the end of the `settings.ini` file, where `<build name>` is the default build (i.e. `teensy41`):
 
